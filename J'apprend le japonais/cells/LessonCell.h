@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LessonCell.h
 //  J'apprend le japonais
 //
 //  Created by Guillaume chave on 27/10/12.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface LessonCell : UICollectionViewCell
+
+@property (strong, nonatomic) IBOutlet UILabel * title;
 
 @end

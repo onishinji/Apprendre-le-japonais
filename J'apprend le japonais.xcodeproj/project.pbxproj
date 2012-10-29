@@ -18,7 +18,21 @@
 		F060E98A163C0A4B009C01E3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F060E989163C0A4B009C01E3 /* Default-568h@2x.png */; };
 		F060E98D163C0A4B009C01E3 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F060E98B163C0A4B009C01E3 /* MainStoryboard_iPhone.storyboard */; };
 		F060E990163C0A4B009C01E3 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F060E98E163C0A4B009C01E3 /* MainStoryboard_iPad.storyboard */; };
-		F060E993163C0A4B009C01E3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F060E992163C0A4B009C01E3 /* ViewController.m */; };
+		F060E993163C0A4B009C01E3 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = F060E992163C0A4B009C01E3 /* MainController.m */; };
+		F060E99F163C0D8F009C01E3 /* LessonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F060E99E163C0D8F009C01E3 /* LessonCell.m */; };
+		F060E9A4163C1008009C01E3 /* Lesson.m in Sources */ = {isa = PBXBuildFile; fileRef = F060E9A3163C1008009C01E3 /* Lesson.m */; };
+		F060E9AC163C1695009C01E3 /* LessonController.m in Sources */ = {isa = PBXBuildFile; fileRef = F060E9AA163C1695009C01E3 /* LessonController.m */; };
+		F060E9B1163C1C1F009C01E3 /* LessonRandomHiragana.m in Sources */ = {isa = PBXBuildFile; fileRef = F060E9AF163C1C1F009C01E3 /* LessonRandomHiragana.m */; };
+		F060E9B2163C1C1F009C01E3 /* LessonRandomHiragana.xib in Resources */ = {isa = PBXBuildFile; fileRef = F060E9B0163C1C1F009C01E3 /* LessonRandomHiragana.xib */; };
+		F060E9B4163D5BB3009C01E3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F060E9B3163D5BB3009C01E3 /* CoreData.framework */; };
+		F060E9B7163D5C03009C01E3 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F060E9B5163D5C03009C01E3 /* Model.xcdatamodeld */; };
+		F060E9C1163D6224009C01E3 /* Hiragana.m in Sources */ = {isa = PBXBuildFile; fileRef = F060E9C0163D6224009C01E3 /* Hiragana.m */; };
+		F060E9C5163D67FD009C01E3 /* Computer.m in Sources */ = {isa = PBXBuildFile; fileRef = F060E9C4163D67FD009C01E3 /* Computer.m */; };
+		F0CE945A163DCD8A004F7E2B /* ParametersHiraganaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CE9458163DCD8A004F7E2B /* ParametersHiraganaViewController.m */; };
+		F0CE945B163DCD8A004F7E2B /* ParametersHiraganaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0CE9459163DCD8A004F7E2B /* ParametersHiraganaViewController.xib */; };
+		F0CE945F163DD117004F7E2B /* JapanCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CE945E163DD117004F7E2B /* JapanCell.m */; };
+		F0CE9461163DD570004F7E2B /* JapanCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0CE9460163DD570004F7E2B /* JapanCell.xib */; };
+		F0CE9467163F21EB004F7E2B /* HiraganaFlipView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CE9466163F21EB004F7E2B /* HiraganaFlipView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +51,31 @@
 		F060E989163C0A4B009C01E3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		F060E98C163C0A4B009C01E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		F060E98F163C0A4B009C01E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		F060E991163C0A4B009C01E3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F060E992163C0A4B009C01E3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F060E991163C0A4B009C01E3 /* MainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
+		F060E992163C0A4B009C01E3 /* MainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
+		F060E99D163C0D8F009C01E3 /* LessonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LessonCell.h; path = cells/LessonCell.h; sourceTree = "<group>"; };
+		F060E99E163C0D8F009C01E3 /* LessonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LessonCell.m; path = cells/LessonCell.m; sourceTree = "<group>"; };
+		F060E9A2163C1008009C01E3 /* Lesson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Lesson.h; path = model/Lesson.h; sourceTree = "<group>"; };
+		F060E9A3163C1008009C01E3 /* Lesson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Lesson.m; path = model/Lesson.m; sourceTree = "<group>"; };
+		F060E9A9163C1695009C01E3 /* LessonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LessonController.h; path = lessons/LessonController.h; sourceTree = "<group>"; };
+		F060E9AA163C1695009C01E3 /* LessonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LessonController.m; path = lessons/LessonController.m; sourceTree = "<group>"; };
+		F060E9AE163C1C1F009C01E3 /* LessonRandomHiragana.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LessonRandomHiragana.h; path = lessons/LessonRandomHiragana.h; sourceTree = "<group>"; };
+		F060E9AF163C1C1F009C01E3 /* LessonRandomHiragana.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LessonRandomHiragana.m; path = lessons/LessonRandomHiragana.m; sourceTree = "<group>"; };
+		F060E9B0163C1C1F009C01E3 /* LessonRandomHiragana.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LessonRandomHiragana.xib; path = lessons/LessonRandomHiragana.xib; sourceTree = "<group>"; };
+		F060E9B3163D5BB3009C01E3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F060E9B6163D5C03009C01E3 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		F060E9BF163D6223009C01E3 /* Hiragana.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hiragana.h; path = model/Hiragana.h; sourceTree = "<group>"; };
+		F060E9C0163D6224009C01E3 /* Hiragana.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Hiragana.m; path = model/Hiragana.m; sourceTree = "<group>"; };
+		F060E9C3163D67FD009C01E3 /* Computer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Computer.h; sourceTree = "<group>"; };
+		F060E9C4163D67FD009C01E3 /* Computer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Computer.m; sourceTree = "<group>"; };
+		F0CE9457163DCD8A004F7E2B /* ParametersHiraganaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParametersHiraganaViewController.h; sourceTree = "<group>"; };
+		F0CE9458163DCD8A004F7E2B /* ParametersHiraganaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParametersHiraganaViewController.m; sourceTree = "<group>"; };
+		F0CE9459163DCD8A004F7E2B /* ParametersHiraganaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParametersHiraganaViewController.xib; sourceTree = "<group>"; };
+		F0CE945D163DD117004F7E2B /* JapanCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JapanCell.h; path = cells/JapanCell.h; sourceTree = "<group>"; };
+		F0CE945E163DD117004F7E2B /* JapanCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JapanCell.m; path = cells/JapanCell.m; sourceTree = "<group>"; };
+		F0CE9460163DD570004F7E2B /* JapanCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JapanCell.xib; sourceTree = "<group>"; };
+		F0CE9465163F21EB004F7E2B /* HiraganaFlipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HiraganaFlipView.h; sourceTree = "<group>"; };
+		F0CE9466163F21EB004F7E2B /* HiraganaFlipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HiraganaFlipView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F060E9B4163D5BB3009C01E3 /* CoreData.framework in Frameworks */,
 				F060E974163C0A4B009C01E3 /* UIKit.framework in Frameworks */,
 				F060E976163C0A4B009C01E3 /* Foundation.framework in Frameworks */,
 				F060E978163C0A4B009C01E3 /* CoreGraphics.framework in Frameworks */,
@@ -75,6 +113,7 @@
 		F060E972163C0A4B009C01E3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F060E9B3163D5BB3009C01E3 /* CoreData.framework */,
 				F060E973163C0A4B009C01E3 /* UIKit.framework */,
 				F060E975163C0A4B009C01E3 /* Foundation.framework */,
 				F060E977163C0A4B009C01E3 /* CoreGraphics.framework */,
@@ -85,13 +124,13 @@
 		F060E979163C0A4B009C01E3 /* J'apprend le japonais */ = {
 			isa = PBXGroup;
 			children = (
+				F060E999163C0C3C009C01E3 /* ressources */,
 				F060E982163C0A4B009C01E3 /* AppDelegate.h */,
 				F060E983163C0A4B009C01E3 /* AppDelegate.m */,
 				F060E98B163C0A4B009C01E3 /* MainStoryboard_iPhone.storyboard */,
 				F060E98E163C0A4B009C01E3 /* MainStoryboard_iPad.storyboard */,
-				F060E991163C0A4B009C01E3 /* ViewController.h */,
-				F060E992163C0A4B009C01E3 /* ViewController.m */,
 				F060E97A163C0A4B009C01E3 /* Supporting Files */,
+				F060E9B5163D5C03009C01E3 /* Model.xcdatamodeld */,
 			);
 			path = "J'apprend le japonais";
 			sourceTree = "<group>";
@@ -108,6 +147,76 @@
 				F060E989163C0A4B009C01E3 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F060E999163C0C3C009C01E3 /* ressources */ = {
+			isa = PBXGroup;
+			children = (
+				F060E9A5163C1636009C01E3 /* controllers */,
+				F060E9A1163C0FE4009C01E3 /* model */,
+				F060E99A163C0C43009C01E3 /* views */,
+			);
+			name = ressources;
+			sourceTree = "<group>";
+		};
+		F060E99A163C0C43009C01E3 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				F060E9A0163C0FD5009C01E3 /* cells */,
+				F060E9B0163C1C1F009C01E3 /* LessonRandomHiragana.xib */,
+				F0CE9459163DCD8A004F7E2B /* ParametersHiraganaViewController.xib */,
+				F0CE9465163F21EB004F7E2B /* HiraganaFlipView.h */,
+				F0CE9466163F21EB004F7E2B /* HiraganaFlipView.m */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		F060E9A0163C0FD5009C01E3 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				F060E99D163C0D8F009C01E3 /* LessonCell.h */,
+				F060E99E163C0D8F009C01E3 /* LessonCell.m */,
+				F0CE945D163DD117004F7E2B /* JapanCell.h */,
+				F0CE945E163DD117004F7E2B /* JapanCell.m */,
+				F0CE9460163DD570004F7E2B /* JapanCell.xib */,
+			);
+			name = cells;
+			sourceTree = "<group>";
+		};
+		F060E9A1163C0FE4009C01E3 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F060E9C2163D6234009C01E3 /* base */,
+				F060E9C3163D67FD009C01E3 /* Computer.h */,
+				F060E9C4163D67FD009C01E3 /* Computer.m */,
+				F060E9A2163C1008009C01E3 /* Lesson.h */,
+				F060E9A3163C1008009C01E3 /* Lesson.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		F060E9A5163C1636009C01E3 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F060E991163C0A4B009C01E3 /* MainController.h */,
+				F060E992163C0A4B009C01E3 /* MainController.m */,
+				F060E9A9163C1695009C01E3 /* LessonController.h */,
+				F060E9AA163C1695009C01E3 /* LessonController.m */,
+				F0CE9457163DCD8A004F7E2B /* ParametersHiraganaViewController.h */,
+				F0CE9458163DCD8A004F7E2B /* ParametersHiraganaViewController.m */,
+				F060E9AE163C1C1F009C01E3 /* LessonRandomHiragana.h */,
+				F060E9AF163C1C1F009C01E3 /* LessonRandomHiragana.m */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		F060E9C2163D6234009C01E3 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				F060E9BF163D6223009C01E3 /* Hiragana.h */,
+				F060E9C0163D6224009C01E3 /* Hiragana.m */,
+			);
+			name = base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +276,9 @@
 				F060E98A163C0A4B009C01E3 /* Default-568h@2x.png in Resources */,
 				F060E98D163C0A4B009C01E3 /* MainStoryboard_iPhone.storyboard in Resources */,
 				F060E990163C0A4B009C01E3 /* MainStoryboard_iPad.storyboard in Resources */,
+				F060E9B2163C1C1F009C01E3 /* LessonRandomHiragana.xib in Resources */,
+				F0CE945B163DCD8A004F7E2B /* ParametersHiraganaViewController.xib in Resources */,
+				F0CE9461163DD570004F7E2B /* JapanCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,7 +291,17 @@
 			files = (
 				F060E980163C0A4B009C01E3 /* main.m in Sources */,
 				F060E984163C0A4B009C01E3 /* AppDelegate.m in Sources */,
-				F060E993163C0A4B009C01E3 /* ViewController.m in Sources */,
+				F060E993163C0A4B009C01E3 /* MainController.m in Sources */,
+				F060E99F163C0D8F009C01E3 /* LessonCell.m in Sources */,
+				F060E9A4163C1008009C01E3 /* Lesson.m in Sources */,
+				F060E9AC163C1695009C01E3 /* LessonController.m in Sources */,
+				F060E9B1163C1C1F009C01E3 /* LessonRandomHiragana.m in Sources */,
+				F060E9B7163D5C03009C01E3 /* Model.xcdatamodeld in Sources */,
+				F060E9C1163D6224009C01E3 /* Hiragana.m in Sources */,
+				F060E9C5163D67FD009C01E3 /* Computer.m in Sources */,
+				F0CE945A163DCD8A004F7E2B /* ParametersHiraganaViewController.m in Sources */,
+				F0CE945F163DD117004F7E2B /* JapanCell.m in Sources */,
+				F0CE9467163F21EB004F7E2B /* HiraganaFlipView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,8 +428,22 @@
 				F060E998163C0A4B009C01E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F060E9B5163D5C03009C01E3 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F060E9B6163D5C03009C01E3 /* Model.xcdatamodel */,
+			);
+			currentVersion = F060E9B6163D5C03009C01E3 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F060E966163C0A4B009C01E3 /* Project object */;
 }
