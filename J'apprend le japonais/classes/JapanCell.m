@@ -22,7 +22,7 @@
         
         if ([arrayOfViews count] > 1) { return nil; }
         
-        if (![[arrayOfViews objectAtIndex:0] isKindOfClass:[UICollectionViewCell class]]) { return nil; }
+        if (![[arrayOfViews objectAtIndex:0] isKindOfClass:[PSTCollectionViewCell class]]) { return nil; }
         
         self = [arrayOfViews objectAtIndex:0];
         

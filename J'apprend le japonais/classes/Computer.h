@@ -24,6 +24,8 @@
 
 -(Hiragana *) toggleSelectedHiragana:(Hiragana *)hiragana;
 -(NSArray *)  getAllHiragana;
+-(NSArray *) getSelectedsHiragana;
+
 -(void)flush;
 
 @end

@@ -42,14 +42,22 @@
      
 -(void) displayNextHiragana
 {
-    _msg.text = @"";
+    int nb = [[[Computer sharedInstance] getSelectedsHiragana] count] - [knows count]-1;
     
+    if(nb == 0)
+    {
+        _msg.text = @"Encore un dernier effort et c'est fini !";
+    }
+    else
+    {
+        _msg.text = [NSString stringWithFormat:@"Encore %i hiragana(s) à deviner", nb ];
+    }
     Hiragana * hiragana = [[Computer sharedInstance] getRandomHiragana:knows];
     
     if(hiragana == nil)
     {
         knows = [[NSMutableArray alloc] init];
-        _msg.text = @"Fini ! Mu Ikkai ?";
+        _msg.text = @"Fini ! ";
         [_hiraganaView displayEmpty];
     }
     else
@@ -65,7 +73,4 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)getNextHiragana:(id)sender {
-    NSLog(@"clock");
-}
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "MainController.h"
+#import "MainViewController.h"
 #import "Computer.h"
 
 @implementation AppDelegate
@@ -62,7 +62,7 @@
     NSManagedObjectContext *context = [self managedObjectContext];
     
     UINavigationController *rootViewController = (UINavigationController *)self.window.rootViewController;
-    MainController * main = (MainController *)[[rootViewController viewControllers] objectAtIndex:0];
+    MainViewController * main = (MainViewController *)[[rootViewController viewControllers] objectAtIndex:0];
     main.managedObjectContext = context;
     
     [[Computer sharedInstance] setManagedObjectContext:context];
@@ -75,6 +75,7 @@
         
         [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"firstLaunch"];
 
+        [[NSUserDefaults standardUserDefaults] synchronize];
     }
     
     return YES;

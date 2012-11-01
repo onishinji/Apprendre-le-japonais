@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LessonCell : UICollectionViewCell
+@interface LessonCell : PSUICollectionViewCell
 
 @property (strong, nonatomic) IBOutlet UILabel * title;
+@property (weak, nonatomic) IBOutlet UIImageView *icon;
 
 @end

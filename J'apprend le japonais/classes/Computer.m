@@ -71,6 +71,38 @@ static Computer *sharedObject;
     }
 }
 
+-(NSArray *) getSelectedsHiragana
+{
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Hiragana" inManagedObjectContext:_managedObjectContext];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@" isSelected = 1"];
+    [request setPredicate:predicate];
+    
+    NSSortDescriptor *sort = [[NSSortDescriptor alloc] initWithKey:@"romanji" ascending:NO];
+    [request setSortDescriptors:[NSArray arrayWithObject:sort]];
+    
+    NSError *error = nil;
+    NSArray *array = [_managedObjectContext executeFetchRequest:request error:&error];
+    if (array == nil)
+    {
+        NSLog(@"Error while retriving\n%@",
+              ([error localizedDescription] != nil) ? [error localizedDescription]: @"Unknown Error");
+    }
+    
+    NSLog(@"nb hiragana %d", [array count]);
+    
+    if([array count] == 0)
+    {
+        return nil;
+    }
+    else
+    {
+        return array;
+    }
+}
+
 -(NSArray *) getAllHiragana
 {
     NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Hiragana" inManagedObjectContext:_managedObjectContext];

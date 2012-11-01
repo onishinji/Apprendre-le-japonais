@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainController : UICollectionViewController
+@interface MainViewController : PSUICollectionViewController <PSTCollectionViewDelegate, PSTCollectionViewDataSource>
 
 @property (strong, nonatomic) NSManagedObjectContext * managedObjectContext;
 @property (strong, nonatomic) NSMutableArray * lessons;

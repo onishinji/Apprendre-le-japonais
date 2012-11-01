@@ -1,17 +1,17 @@
+
 //
-//  LessonCell.m
+//  SectionLessonCell.m
 //  J'apprend le japonais
 //
-//  Created by Guillaume chave on 27/10/12.
+//  Created by Guillaume chave on 01/11/12.
 //  Copyright (c) 2012 Guillaume chave. All rights reserved.
 //
 
-#import "LessonCell.h"
+#import "SectionLessonCell.h"
 
-@implementation LessonCell
+@implementation SectionLessonCell
 
 @synthesize title = _title;
-@synthesize icon = _icon;
 
 - (id)initWithFrame:(CGRect)frame
 {

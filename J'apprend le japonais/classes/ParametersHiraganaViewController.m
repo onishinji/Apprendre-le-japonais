@@ -16,23 +16,43 @@
 
 @implementation ParametersHiraganaViewController
 
-@synthesize collectionsView;
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        
+        hiraganas = [[Computer sharedInstance] getAllHiragana];
+        
+        
     }
     return self;
+}
+
+- (void)loadView {
+    [super loadView];
+    
+    _collectionViewLayout = [[PSTCollectionViewFlowLayout alloc] init];
+    _collectionViewLayout.itemSize = CGSizeMake(50, 50.0f);
+    
+    _collectionView = [[PSTCollectionView alloc] initWithFrame:CGRectMake(0, 70, 320, 340) collectionViewLayout:_collectionViewLayout];
+    _collectionView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    _collectionView.backgroundColor = [UIColor clearColor];
+    _collectionView.delegate = self;
+    _collectionView.dataSource = self;
+    _collectionView.alwaysBounceVertical = YES;
+    [self.view addSubview:_collectionView];
+    
+    [_collectionView registerClass:PSTCollectionViewCell.class forCellWithReuseIdentifier:@"PSTCollectionViewCell"];
+    
+    [_collectionView registerClass:JapanCell.class forCellWithReuseIdentifier:@"Japan"];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    hiraganas = [[Computer sharedInstance] getAllHiragana];
-    [collectionsView registerClass:[JapanCell class] forCellWithReuseIdentifier:@"Japan"];
+    NSLog(@"Parameters  :/ viewDidLoad");
     
     // Do any additional setup after loading the view from its nib.
 }
@@ -43,30 +63,30 @@
     return 1;
 }
 
--(NSInteger)collectionView:(UICollectionView *)collectionView
-    numberOfItemsInSection:(NSInteger)section
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     return [hiraganas count];
 }
 
--(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
-                 cellForItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    JapanCell *myCell = [collectionView
-                          dequeueReusableCellWithReuseIdentifier:@"Japan"
-                          forIndexPath:indexPath];
+- (PSTCollectionViewCell *)collectionView:(PSTCollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+  
+    JapanCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Japan" forIndexPath:indexPath];
     
-    Hiragana * hir = [hiraganas objectAtIndex:indexPath.row];
-    myCell.title.text = hir.japan;
+    cell.backgroundColor = [UIColor greenColor];
     
-    myCell.backgroundColor = [UIColor grayColor];
+    
+    Hiragana * hir = [hiraganas objectAtIndex:indexPath.row]; 
+    
+    cell.title.text = hir.japan;
+    cell.backgroundColor = [UIColor grayColor];
     
     if([hir.isSelected boolValue])
     {
-        myCell.backgroundColor = [UIColor whiteColor];
+        cell.backgroundColor = [UIColor whiteColor];
     }
     
-    return myCell;
+    
+    return cell;
 }
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
@@ -74,7 +94,7 @@
     Hiragana * hir = (Hiragana *) [hiraganas objectAtIndex:[indexPath row]];
     [[Computer sharedInstance] toggleSelectedHiragana:hir];
     
-    [collectionsView reloadData];
+    [_collectionView reloadData];
     NSLog(@"%@ a été cliqué", [hir romanji]);
 }
 
