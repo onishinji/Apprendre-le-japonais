@@ -1,4 +1,4 @@
-//
+    //
 //  HiraganaFlipView.m
 //  J'apprend le japonais
 //
@@ -10,6 +10,7 @@
 
 @implementation HiraganaFlipView
 
+@synthesize imgCentral = _imgCentral;
 @synthesize lblHiragana = _lblHiragana;
 
 - (void) initialize{
@@ -50,12 +51,17 @@
     
     isJapanFace = TRUE;
     _lblHiragana.text = hiragana.japan;
+    _imgCentral.image = nil;
 }
 
 - (void) displayEmpty
 {
     _lblHiragana.text = @"";
     _hiragana = nil;
+    _imgCentral.image = [UIImage imageNamed:@"tired-konata.jpeg"];
+    [_imgCentral setContentMode:UIViewContentModeScaleAspectFill];
+    [_imgCentral setClipsToBounds:YES];
+    NSLog(@"%@", NSStringFromCGRect(_imgCentral.frame));
 }
 
 
@@ -75,7 +81,6 @@
 
 - (void)oneFingerSwipeLeft:(UITapGestureRecognizer *)recognizer {
     // Insert your own code to handle swipe right
-    NSLog(@"swip");
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:self cache:YES];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];

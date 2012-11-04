@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ParametersHiraganaViewController : UIViewController <PSTCollectionViewDataSource, PSTCollectionViewDelegateFlowLayout>
+@interface ParametersHiraganaViewController : UIViewController <PSTCollectionViewDataSource, PSTCollectionViewDelegateFlowLayout, NSFetchedResultsControllerDelegate>
 {
-    NSArray * hiraganas;
+    
+    NSMutableDictionary * allResult;
+
     PSTCollectionViewFlowLayout * _collectionViewLayout;
     PSTCollectionView * _collectionView;
 } 

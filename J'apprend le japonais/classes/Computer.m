@@ -23,7 +23,7 @@ static Computer *sharedObject;
     return sharedObject;
 }
 
--(Hiragana *) createHiragana:(NSString *)romanji japan:(NSString *)japan position:(int)position
+-(Hiragana *) createHiragana:(NSString *)romanji japan:(NSString *)japan position:(int)position col:(int)col row:(int)row section:(int)section
 {
     
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Hiragana" inManagedObjectContext:_managedObjectContext];
@@ -34,6 +34,10 @@ static Computer *sharedObject;
     hir.romanji = romanji;
     hir.japan = japan;
     hir.isSelected = [NSNumber numberWithBool:TRUE];
+    hir.row = [NSNumber numberWithInt:row];
+    hir.col = [NSNumber numberWithInt:col];
+    hir.section = [NSNumber numberWithInt:section];
+    
     
     return hir;
 }
@@ -57,8 +61,6 @@ static Computer *sharedObject;
             NSLog(@"Error while retriving\n%@",
               ([error localizedDescription] != nil) ? [error localizedDescription]: @"Unknown Error");
     }
-    
-    NSLog(@"nb hiragana %d", [array count]);
     
     if([array count] == 0)
     {
@@ -91,8 +93,6 @@ static Computer *sharedObject;
               ([error localizedDescription] != nil) ? [error localizedDescription]: @"Unknown Error");
     }
     
-    NSLog(@"nb hiragana %d", [array count]);
-    
     if([array count] == 0)
     {
         return nil;
@@ -119,10 +119,42 @@ static Computer *sharedObject;
         NSLog(@"Error while retriving\n%@",
               ([error localizedDescription] != nil) ? [error localizedDescription]: @"Unknown Error");
     }
+    
+    NSLog(@"nb item %d", [array count]);
 
     return array;
 }
 
+-(NSFetchedResultsController *) getHiraganaPerSections
+{
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Hiragana" inManagedObjectContext:_managedObjectContext];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    
+    NSSortDescriptor *sort = [[NSSortDescriptor alloc] initWithKey:@"position" ascending:YES];
+    NSSortDescriptor *sort2 = [[NSSortDescriptor alloc] initWithKey:@"section" ascending:YES];
+    [request setSortDescriptors:[NSArray arrayWithObjects: sort, sort2, nil]];
+    
+    
+    // Create and initialize the fetch results controller
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:_managedObjectContext sectionNameKeyPath:@"section" cacheName:@"Root"];
+    
+    
+    NSError *error = nil;
+
+    [aFetchedResultsController performFetch:&error];
+    
+    if(error != nil)
+    {
+        
+        NSLog(@"Error while retriving\n%@",
+              ([error localizedDescription] != nil) ? [error localizedDescription]: @"Unknown Error");
+        
+    }
+    NSLog(@"nb section %d", [[aFetchedResultsController sections] count]);
+    
+    return aFetchedResultsController;
+}
 
 -(Hiragana *) toggleSelectedHiragana:(Hiragana *)hiragana
 {

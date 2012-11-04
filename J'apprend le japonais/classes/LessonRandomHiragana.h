@@ -12,9 +12,12 @@
 @interface LessonRandomHiragana : UIViewController
 {
     NSMutableArray * knows;
+    NSMutableArray * knowsRomanji;
+    int currentPos;
 }
 
 @property (strong, nonatomic) IBOutlet UIButton *btnNext;
+@property (weak, nonatomic) IBOutlet UIButton *btnPrev;
 @property (weak, nonatomic) IBOutlet UILabel *msg;
 
 @property (strong, nonatomic) IBOutlet HiraganaFlipView * hiraganaView;

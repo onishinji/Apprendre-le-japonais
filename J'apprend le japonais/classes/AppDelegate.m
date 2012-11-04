@@ -83,62 +83,64 @@
 
 - (void) initHiragana
 {
-    [[Computer sharedInstance] createHiragana:@"a" japan:@"あ" position:1];
-    [[Computer sharedInstance] createHiragana:@"i" japan:@"い" position:2];
-    [[Computer sharedInstance] createHiragana:@"u" japan:@"う" position:3];
-    [[Computer sharedInstance] createHiragana:@"e" japan:@"え" position:4];
-    [[Computer sharedInstance] createHiragana:@"o" japan:@"お" position:5];
+   // [[Computer sharedInstance] createHiragana:<#(NSString *)#> japan:<#(NSString *)#> position:<#(int)#> col:<#(int)#> row:<#(int)#> section:<#(int)#>];
     
-    [[Computer sharedInstance] createHiragana:@"ka" japan:@"か" position:6];
-    [[Computer sharedInstance] createHiragana:@"ki" japan:@"き" position:7];
-    [[Computer sharedInstance] createHiragana:@"ku" japan:@"く" position:8];
-    [[Computer sharedInstance] createHiragana:@"ke" japan:@"け" position:9];
-    [[Computer sharedInstance] createHiragana:@"ko" japan:@"こ" position:10];
+    [[Computer sharedInstance] createHiragana:@"a" japan:@"あ" position:1 col:1 row:1 section:1];
+    [[Computer sharedInstance] createHiragana:@"i" japan:@"い" position:2 col:2 row:1 section:1];
+    [[Computer sharedInstance] createHiragana:@"u" japan:@"う" position:3 col:3 row:1 section:1];
+    [[Computer sharedInstance] createHiragana:@"e" japan:@"え" position:4 col:4 row:1 section:1];
+    [[Computer sharedInstance] createHiragana:@"o" japan:@"お" position:5 col:5 row:1 section:1];
     
-    [[Computer sharedInstance] createHiragana:@"sa" japan:@"さ"  position:11];
-    [[Computer sharedInstance] createHiragana:@"shi" japan:@"し" position:12];
-    [[Computer sharedInstance] createHiragana:@"su" japan:@"す"  position:13];
-    [[Computer sharedInstance] createHiragana:@"se" japan:@"せ"  position:14];
-    [[Computer sharedInstance] createHiragana:@"so" japan:@"そ"  position:15];
+    [[Computer sharedInstance] createHiragana:@"ka" japan:@"か" position:6 col:1 row:2 section:1];
+    [[Computer sharedInstance] createHiragana:@"ki" japan:@"き" position:7 col:2 row:2 section:1];
+    [[Computer sharedInstance] createHiragana:@"ku" japan:@"く" position:8 col:3 row:2 section:1];
+    [[Computer sharedInstance] createHiragana:@"ke" japan:@"け" position:9 col:4 row:2 section:1];
+    [[Computer sharedInstance] createHiragana:@"ko" japan:@"こ" position:10 col:5 row:2 section:1];
     
-    [[Computer sharedInstance] createHiragana:@"ta" japan:@"た" position:16];
-    [[Computer sharedInstance] createHiragana:@"chi" japan:@"ち" position:17];
-    [[Computer sharedInstance] createHiragana:@"tsu" japan:@"つ" position:18];
-    [[Computer sharedInstance] createHiragana:@"te" japan:@"て" position:19];
-    [[Computer sharedInstance] createHiragana:@"to" japan:@"と" position:20];
+    [[Computer sharedInstance] createHiragana:@"sa" japan:@"さ"  position:11 col:1 row:3 section:1];
+    [[Computer sharedInstance] createHiragana:@"shi" japan:@"し" position:12 col:2 row:3 section:1];
+    [[Computer sharedInstance] createHiragana:@"su" japan:@"す"  position:13 col:3 row:3 section:1];
+    [[Computer sharedInstance] createHiragana:@"se" japan:@"せ"  position:14 col:4 row:3 section:1];
+    [[Computer sharedInstance] createHiragana:@"so" japan:@"そ"  position:15 col:5 row:3 section:1];
     
-    [[Computer sharedInstance] createHiragana:@"na" japan:@"な" position:21];
-    [[Computer sharedInstance] createHiragana:@"ni" japan:@"に" position:22];
-    [[Computer sharedInstance] createHiragana:@"nu" japan:@"ぬ" position:23];
-    [[Computer sharedInstance] createHiragana:@"ne" japan:@"ね" position:24];
-    [[Computer sharedInstance] createHiragana:@"no" japan:@"の" position:25];
+    [[Computer sharedInstance] createHiragana:@"ta" japan:@"た" position:16  col:1  row:4 section:1];
+    [[Computer sharedInstance] createHiragana:@"chi" japan:@"ち" position:17 col:2  row:4 section:1];
+    [[Computer sharedInstance] createHiragana:@"tsu" japan:@"つ" position:18 col:3  row:4 section:1];
+    [[Computer sharedInstance] createHiragana:@"te" japan:@"て" position:19  col:4  row:4 section:1];
+    [[Computer sharedInstance] createHiragana:@"to" japan:@"と" position:20  col:5  row:4 section:1];
     
-    [[Computer sharedInstance] createHiragana:@"ha" japan:@"は" position:26];
-    [[Computer sharedInstance] createHiragana:@"hi" japan:@"ひ" position:27];
-    [[Computer sharedInstance] createHiragana:@"fu" japan:@"ふ" position:28];
-    [[Computer sharedInstance] createHiragana:@"he" japan:@"へ" position:29];
-    [[Computer sharedInstance] createHiragana:@"ho" japan:@"ほ" position:30];
+    [[Computer sharedInstance] createHiragana:@"na" japan:@"な" position:21 col:1  row:5 section:1];
+    [[Computer sharedInstance] createHiragana:@"ni" japan:@"に" position:22 col:2  row:5 section:1];
+    [[Computer sharedInstance] createHiragana:@"nu" japan:@"ぬ" position:23 col:3  row:5 section:1];
+    [[Computer sharedInstance] createHiragana:@"ne" japan:@"ね" position:24 col:4  row:5 section:1];
+    [[Computer sharedInstance] createHiragana:@"no" japan:@"の" position:25 col:5  row:5 section:1];
     
-    [[Computer sharedInstance] createHiragana:@"ma" japan:@"ま" position:31];
-    [[Computer sharedInstance] createHiragana:@"mi" japan:@"み" position:32];
-    [[Computer sharedInstance] createHiragana:@"mu" japan:@"む" position:33];
-    [[Computer sharedInstance] createHiragana:@"me" japan:@"め" position:34];
-    [[Computer sharedInstance] createHiragana:@"mo" japan:@"も" position:35];
+    [[Computer sharedInstance] createHiragana:@"ha" japan:@"は" position:26 col:1  row:6 section:1];
+    [[Computer sharedInstance] createHiragana:@"hi" japan:@"ひ" position:27 col:2  row:6 section:1];
+    [[Computer sharedInstance] createHiragana:@"fu" japan:@"ふ" position:28 col:3  row:6 section:1];
+    [[Computer sharedInstance] createHiragana:@"he" japan:@"へ" position:29 col:4  row:6 section:1];
+    [[Computer sharedInstance] createHiragana:@"ho" japan:@"ほ" position:30 col:5  row:6 section:1];
     
-    [[Computer sharedInstance] createHiragana:@"ya" japan:@"や" position:36];
-    [[Computer sharedInstance] createHiragana:@"yu" japan:@"ゆ" position:37];
-    [[Computer sharedInstance] createHiragana:@"yo" japan:@"よ" position:38];
+    [[Computer sharedInstance] createHiragana:@"ma" japan:@"ま" position:31 col:1  row:7 section:1];
+    [[Computer sharedInstance] createHiragana:@"mi" japan:@"み" position:32 col:2  row:7 section:1];
+    [[Computer sharedInstance] createHiragana:@"mu" japan:@"む" position:33 col:3  row:7 section:1];
+    [[Computer sharedInstance] createHiragana:@"me" japan:@"め" position:34 col:4  row:7 section:1];
+    [[Computer sharedInstance] createHiragana:@"mo" japan:@"も" position:35 col:5  row:7 section:1];
     
-    [[Computer sharedInstance] createHiragana:@"ra" japan:@"ら" position:39];
-    [[Computer sharedInstance] createHiragana:@"ri" japan:@"り" position:40];
-    [[Computer sharedInstance] createHiragana:@"ru" japan:@"る" position:41];
-    [[Computer sharedInstance] createHiragana:@"re" japan:@"れ" position:42];
-    [[Computer sharedInstance] createHiragana:@"ro" japan:@"ろ" position:43];
+    [[Computer sharedInstance] createHiragana:@"ya" japan:@"や" position:36 col:1  row:8 section:1];
+    [[Computer sharedInstance] createHiragana:@"yu" japan:@"ゆ" position:37 col:3  row:8 section:1];
+    [[Computer sharedInstance] createHiragana:@"yo" japan:@"よ" position:38 col:5  row:8 section:1];
     
-    [[Computer sharedInstance] createHiragana:@"wa" japan:@"わ" position:44];
-    [[Computer sharedInstance] createHiragana:@"wo" japan:@"を" position:45];
+    [[Computer sharedInstance] createHiragana:@"ra" japan:@"ら" position:39 col:1  row:9 section:1];
+    [[Computer sharedInstance] createHiragana:@"ri" japan:@"り" position:40 col:2  row:9 section:1];
+    [[Computer sharedInstance] createHiragana:@"ru" japan:@"る" position:41 col:3  row:9 section:1];
+    [[Computer sharedInstance] createHiragana:@"re" japan:@"れ" position:42 col:4  row:9 section:1];
+    [[Computer sharedInstance] createHiragana:@"ro" japan:@"ろ" position:43 col:5  row:9 section:1];
     
-    [[Computer sharedInstance] createHiragana:@"n" japan:@"ん" position:46];
+    [[Computer sharedInstance] createHiragana:@"wa" japan:@"わ" position:44 col:1  row:10 section:1];
+    [[Computer sharedInstance] createHiragana:@"wo" japan:@"を" position:45 col:5  row:10 section:1];
+    
+    [[Computer sharedInstance] createHiragana:@"n" japan:@"ん" position:46 col:5  row:11 section:1];
 
     [[Computer sharedInstance] flush];
 }

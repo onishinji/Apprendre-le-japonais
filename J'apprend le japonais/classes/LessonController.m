@@ -39,16 +39,13 @@
     self.navigationItem.backBarButtonItem.title = @"Menu";
     self.view.backgroundColor = [UIColor redColor];
     
-    
     _currentController = [[NSClassFromString(_lesson.className) alloc] initWithNibName:_lesson.className bundle:nil];
-    
-    NSLog(@"%@", _currentController);
     
     UIScrollView *scroll = [[UIScrollView alloc] initWithFrame:CGRectMake(
                                                                           0,
                                                                           0,
-                                                                          self.view.frame.size.width,
-                                                                          self.view.frame.size.height - 44
+                                                                          480,
+                                                                          320
                                                                           )
                             ];
     scroll.scrollEnabled = YES;
@@ -61,6 +58,12 @@
     
     
     // Do any additional setup after loading the view from its nib.
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    // Return YES for supported orientations
+    return UIInterfaceOrientationIsLandscape(interfaceOrientation);
 }
 
 - (void)didReceiveMemoryWarning

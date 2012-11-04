@@ -16,6 +16,8 @@
 }
  
 @property (strong, nonatomic) IBOutlet UILabel * lblHiragana;
+@property (strong, nonatomic) IBOutlet UIImageView * imgCentral;
+
 
 - (void) displayNewHiragana:(Hiragana *)hiragana;
 - (void) displayEmpty;

@@ -2,7 +2,7 @@
 //  Hiragana.m
 //  J'apprend le japonais
 //
-//  Created by Guillaume chave on 28/10/12.
+//  Created by Guillaume chave on 04/11/12.
 //  Copyright (c) 2012 Guillaume chave. All rights reserved.
 //
 
@@ -13,8 +13,11 @@
 
 @dynamic isSelected;
 @dynamic japan;
+@dynamic position;
 @dynamic romanji;
 @dynamic scoring;
-@dynamic position;
+@dynamic col;
+@dynamic row;
+@dynamic section;
 
 @end

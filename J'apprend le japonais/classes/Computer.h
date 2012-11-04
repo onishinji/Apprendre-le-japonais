@@ -19,11 +19,15 @@
 
 + (id)sharedInstance;
 
--(Hiragana *) createHiragana:(NSString *)romanji japan:(NSString *)japan position:(int)position;
+-(Hiragana *) createHiragana:(NSString *)romanji japan:(NSString *)japan position:(int)position col:(int)col row:(int)col section:(int)section;
 -(Hiragana *) getRandomHiragana:(NSArray *)knowRomanjis;
+
+
 
 -(Hiragana *) toggleSelectedHiragana:(Hiragana *)hiragana;
 -(NSArray *)  getAllHiragana;
+-(NSFetchedResultsController *)  getHiraganaPerSections;
+
 -(NSArray *) getSelectedsHiragana;
 
 -(void)flush;
