@@ -22,6 +22,8 @@
 		F02D137B1646AFDC0093EAD0 /* Model.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = F0CE948F163F2F95004F7E2B /* Model.xcdatamodeld */; };
 		F02D137C1646AFFA0093EAD0 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F060E98B163C0A4B009C01E3 /* MainStoryboard_iPhone.storyboard */; };
 		F02D137D1646AFFA0093EAD0 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F060E98E163C0A4B009C01E3 /* MainStoryboard_iPad.storyboard */; };
+		F02D13841647EA240093EAD0 /* LessonQCMHiragana.m in Sources */ = {isa = PBXBuildFile; fileRef = F02D13821647EA240093EAD0 /* LessonQCMHiragana.m */; };
+		F02D13871647EA460093EAD0 /* LessonQCMHiragana.xib in Resources */ = {isa = PBXBuildFile; fileRef = F02D13861647EA460093EAD0 /* LessonQCMHiragana.xib */; };
 		F04C00B31642E33300EAF61D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04C00B21642E33300EAF61D /* QuartzCore.framework */; };
 		F060E974163C0A4B009C01E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F060E973163C0A4B009C01E3 /* UIKit.framework */; };
 		F060E976163C0A4B009C01E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F060E975163C0A4B009C01E3 /* Foundation.framework */; };
@@ -78,6 +80,10 @@
 		F00EEA5D1643293B006D21DA /* PSTGridLayoutSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSTGridLayoutSection.h; path = vendors/PSTCollectionView/PSTGridLayoutSection.h; sourceTree = "<group>"; };
 		F00EEA5E1643293B006D21DA /* PSTGridLayoutSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSTGridLayoutSection.m; path = vendors/PSTCollectionView/PSTGridLayoutSection.m; sourceTree = "<group>"; };
 		F02D13791646AAE90093EAD0 /* tired-konata.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tired-konata.jpeg"; sourceTree = "<group>"; };
+		F02D13811647EA240093EAD0 /* LessonQCMHiragana.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LessonQCMHiragana.h; path = classes/LessonQCMHiragana.h; sourceTree = "<group>"; };
+		F02D13821647EA240093EAD0 /* LessonQCMHiragana.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LessonQCMHiragana.m; path = classes/LessonQCMHiragana.m; sourceTree = "<group>"; };
+		F02D13861647EA460093EAD0 /* LessonQCMHiragana.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LessonQCMHiragana.xib; path = ressources/LessonQCMHiragana.xib; sourceTree = "<group>"; };
+		F02D138D164837750093EAD0 /* NSMutableArray+Shuffling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+Shuffling.h"; path = "classes/NSMutableArray+Shuffling.h"; sourceTree = "<group>"; };
 		F04C00B21642E33300EAF61D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F060E96F163C0A4B009C01E3 /* J'apprend le japonais.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "J'apprend le japonais.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F060E973163C0A4B009C01E3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -142,9 +148,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F04C008E1642E19300EAF61D /* vendors */ = {
+		F02D1388164836EC0093EAD0 /* PSTCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				F00EEA5E1643293B006D21DA /* PSTGridLayoutSection.m */,
 				F00EEA481643293B006D21DA /* PSTCollectionView.h */,
 				F00EEA491643293B006D21DA /* PSTCollectionView.m */,
 				F00EEA4A1643293B006D21DA /* PSTCollectionViewCell.h */,
@@ -167,7 +174,23 @@
 				F00EEA5B1643293B006D21DA /* PSTGridLayoutRow.h */,
 				F00EEA5C1643293B006D21DA /* PSTGridLayoutRow.m */,
 				F00EEA5D1643293B006D21DA /* PSTGridLayoutSection.h */,
-				F00EEA5E1643293B006D21DA /* PSTGridLayoutSection.m */,
+			);
+			name = PSTCollectionView;
+			sourceTree = "<group>";
+		};
+		F02D13891648370F0093EAD0 /* categories */ = {
+			isa = PBXGroup;
+			children = (
+				F02D138D164837750093EAD0 /* NSMutableArray+Shuffling.h */,
+			);
+			name = categories;
+			sourceTree = "<group>";
+		};
+		F04C008E1642E19300EAF61D /* vendors */ = {
+			isa = PBXGroup;
+			children = (
+				F02D13891648370F0093EAD0 /* categories */,
+				F02D1388164836EC0093EAD0 /* PSTCollectionView */,
 			);
 			name = vendors;
 			sourceTree = "<group>";
@@ -228,9 +251,10 @@
 		F060E999163C0C3C009C01E3 /* ressources */ = {
 			isa = PBXGroup;
 			children = (
+				F0CE948E163F2F95004F7E2B /* LessonRandomHiragana.xib */,
+				F02D13861647EA460093EAD0 /* LessonQCMHiragana.xib */,
 				F0CE9491163F2F95004F7E2B /* ParametersHiraganaViewController.xib */,
 				F0CE948D163F2F95004F7E2B /* JapanCell.xib */,
-				F0CE948E163F2F95004F7E2B /* LessonRandomHiragana.xib */,
 				F02D13791646AAE90093EAD0 /* tired-konata.jpeg */,
 				F073AE011643153900332D78 /* memory.png */,
 				F073ADFE164312D800332D78 /* parameters.png */,
@@ -281,12 +305,14 @@
 			children = (
 				F0CE94D7164084B9004F7E2B /* LessonController.h */,
 				F0CE94D8164084B9004F7E2B /* LessonController.m */,
-				F0CE94D9164084B9004F7E2B /* LessonRandomHiragana.h */,
-				F0CE94DA164084B9004F7E2B /* LessonRandomHiragana.m */,
 				F0CE94DB164084B9004F7E2B /* MainViewController.h */,
 				F0CE94DC164084B9004F7E2B /* MainViewController.m */,
 				F0CE94DD164084B9004F7E2B /* ParametersHiraganaViewController.h */,
 				F0CE94DE164084B9004F7E2B /* ParametersHiraganaViewController.m */,
+				F0CE94D9164084B9004F7E2B /* LessonRandomHiragana.h */,
+				F0CE94DA164084B9004F7E2B /* LessonRandomHiragana.m */,
+				F02D13811647EA240093EAD0 /* LessonQCMHiragana.h */,
+				F02D13821647EA240093EAD0 /* LessonQCMHiragana.m */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -372,6 +398,7 @@
 				F073ADFF164312D800332D78 /* parameters.png in Resources */,
 				F073AE021643153900332D78 /* memory.png in Resources */,
 				F02D137A1646AAE90093EAD0 /* tired-konata.jpeg in Resources */,
+				F02D13871647EA460093EAD0 /* LessonQCMHiragana.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +433,7 @@
 				F00EEA671643293B006D21DA /* PSTGridLayoutItem.m in Sources */,
 				F00EEA681643293B006D21DA /* PSTGridLayoutRow.m in Sources */,
 				F00EEA691643293B006D21DA /* PSTGridLayoutSection.m in Sources */,
+				F02D13841647EA240093EAD0 /* LessonQCMHiragana.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

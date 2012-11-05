@@ -8,6 +8,7 @@
 
 #import "LessonController.h"
 #import "LessonRandomHiragana.h"
+#import "LessonQCMHiragana.h"
 
 @interface LessonController ()
 

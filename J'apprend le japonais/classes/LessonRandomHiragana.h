@@ -16,7 +16,7 @@
     int currentPos;
 }
 
-@property (strong, nonatomic) IBOutlet UIButton *btnNext;
+@property (weak, nonatomic) IBOutlet UIButton *btnNext;
 @property (weak, nonatomic) IBOutlet UIButton *btnPrev;
 @property (weak, nonatomic) IBOutlet UILabel *msg;
 

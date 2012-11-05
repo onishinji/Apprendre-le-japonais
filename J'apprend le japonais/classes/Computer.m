@@ -58,7 +58,7 @@ static Computer *sharedObject;
     NSArray *array = [_managedObjectContext executeFetchRequest:request error:&error];
     if (array == nil)
     {
-            NSLog(@"Error while retriving\n%@",
+        NSLog(@"Error while retriving\n%@",
               ([error localizedDescription] != nil) ? [error localizedDescription]: @"Unknown Error");
     }
     
@@ -70,6 +70,50 @@ static Computer *sharedObject;
     {
         Hiragana * aResult = [array objectAtIndex: arc4random() % [array count]];
         return aResult;
+    }
+}
+
+
+-(NSMutableArray *) getRandomHiraganaExcept:(Hiragana *)hiragana limit:(int)limit
+{
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Hiragana" inManagedObjectContext:_managedObjectContext];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    
+    [request setFetchLimit:limit];
+    
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"NOT romanji = %@ AND isSelected = 1", hiragana.romanji];
+    [request setPredicate:predicate];
+    
+    NSSortDescriptor *sort = [[NSSortDescriptor alloc] initWithKey:@"romanji" ascending:NO];
+    [request setSortDescriptors:[NSArray arrayWithObject:sort]];
+    
+    NSError *error = nil;
+    NSArray *array = [_managedObjectContext executeFetchRequest:request error:&error];
+    if (array == nil)
+    {
+        NSLog(@"Error while retriving\n%@",
+              ([error localizedDescription] != nil) ? [error localizedDescription]: @"Unknown Error");
+    }
+    
+    if([array count] == 0)
+    {
+        return nil;
+    }
+    else
+    {
+        NSMutableArray * mutable = [NSMutableArray arrayWithArray:array];
+        [mutable shuffle];
+        
+        if([mutable count] < limit)
+        {
+            for(int i = 0; i < [mutable count] - limit; i++)
+            {
+                [mutable addObject:[mutable objectAtIndex:0]];
+            }
+        }
+        
+        return mutable;
     }
 }
 
@@ -121,7 +165,7 @@ static Computer *sharedObject;
     }
     
     NSLog(@"nb item %d", [array count]);
-
+    
     return array;
 }
 
@@ -141,7 +185,7 @@ static Computer *sharedObject;
     
     
     NSError *error = nil;
-
+    
     [aFetchedResultsController performFetch:&error];
     
     if(error != nil)
@@ -168,6 +212,37 @@ static Computer *sharedObject;
     [self flush];
     
     return hiragana;
+}
+
+-(Hiragana *) getHiraganaWithRomanji:(NSString *)romanji
+{
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Hiragana" inManagedObjectContext:_managedObjectContext];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"romanji = %@", romanji];
+    [request setPredicate:predicate];
+    
+    NSSortDescriptor *sort = [[NSSortDescriptor alloc] initWithKey:@"romanji" ascending:NO];
+    [request setSortDescriptors:[NSArray arrayWithObject:sort]];
+    
+    NSError *error = nil;
+    NSArray *array = [_managedObjectContext executeFetchRequest:request error:&error];
+    if (array == nil)
+    {
+        NSLog(@"Error while retriving\n%@",
+              ([error localizedDescription] != nil) ? [error localizedDescription]: @"Unknown Error");
+    }
+    
+    if([array count] == 0)
+    {
+        return nil;
+    }
+    else
+    {
+        Hiragana * aResult = [array objectAtIndex: arc4random() % [array count]];
+        return aResult;
+    }
 }
 
 -(void) flush

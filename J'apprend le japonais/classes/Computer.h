@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "Hiragana.h"
+#import "NSMutableArray+Shuffling.h"
+
 @interface Computer : NSObject
 {
     
@@ -20,15 +22,17 @@
 + (id)sharedInstance;
 
 -(Hiragana *) createHiragana:(NSString *)romanji japan:(NSString *)japan position:(int)position col:(int)col row:(int)col section:(int)section;
--(Hiragana *) getRandomHiragana:(NSArray *)knowRomanjis;
 
-
-
--(Hiragana *) toggleSelectedHiragana:(Hiragana *)hiragana;
 -(NSArray *)  getAllHiragana;
 -(NSFetchedResultsController *)  getHiraganaPerSections;
-
+-(NSMutableArray *) getRandomHiraganaExcept:(Hiragana *)hiragana limit:(int)limit;
 -(NSArray *) getSelectedsHiragana;
+
+
+-(Hiragana *) getRandomHiragana:(NSArray *)knowRomanjis;
+-(Hiragana *) getHiraganaWithRomanji:(NSString *)romanji;
+-(Hiragana *) toggleSelectedHiragana:(Hiragana *)hiragana;
+
 
 -(void)flush;
 

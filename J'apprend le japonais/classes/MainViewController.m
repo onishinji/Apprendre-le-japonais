@@ -32,6 +32,8 @@
     [_lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle Hiragana" icon:[UIImage imageNamed:@"memory.png"] className:@"LessonRandomHiragana"]];
     
     
+    [_lessons addObject:[[Lesson alloc] initWithTitle:@"QCM" icon:[UIImage imageNamed:@"qcm"] className:@"LessonQCMHiragana"]];
+    
     [_lessons addObject:[[Lesson alloc] initWithTitle:@"Parametres" icon:[UIImage imageNamed:@"parameters.png"] className:@"ParametersHiraganaViewController"]];
     
     
