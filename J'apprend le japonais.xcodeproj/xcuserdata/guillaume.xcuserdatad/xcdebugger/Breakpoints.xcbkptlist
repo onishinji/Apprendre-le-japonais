@@ -60,11 +60,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/JapanCell.m"
-         timestampString = "373486106.658614"
+         timestampString = "373811125.57916"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "21"
-         endingLineNumber = "21"
+         startingLineNumber = "22"
+         endingLineNumber = "22"
          landmarkName = "-initWithFrame:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -73,11 +73,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/JapanCell.m"
-         timestampString = "373486140.332112"
+         timestampString = "373811125.57916"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "23"
-         endingLineNumber = "23"
+         startingLineNumber = "24"
+         endingLineNumber = "24"
          landmarkName = "-initWithFrame:"
          landmarkType = "5">
       </FileBreakpoint>

@@ -131,6 +131,7 @@
         Hiragana * hir = objetInArray;
         
         cell.title.text = hir.japan;
+        cell.subTitle.text = hir.romanji;
         cell.backgroundColor = [UIColor grayColor];
         
         if([hir.isSelected boolValue])
@@ -141,7 +142,8 @@
     else
     {
         cell.title.text = @"";
-        cell.backgroundColor = [UIColor greenColor];
+        cell.subTitle.text = @"";
+        cell.backgroundColor = [UIColor clearColor];
     }  
     
     return cell;

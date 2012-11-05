@@ -11,4 +11,5 @@
 @interface JapanCell : PSTCollectionViewCell
 
 @property (strong, nonatomic) IBOutlet UILabel * title;
+@property (strong, nonatomic) IBOutlet UILabel * subTitle;
 @end

@@ -11,6 +11,7 @@
 @implementation JapanCell
 
 @synthesize title = _title;
+@synthesize subTitle = _subTitle;
 
 - (id)initWithFrame:(CGRect)frame
 {
