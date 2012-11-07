@@ -80,12 +80,24 @@
     _collectionViewLayout.minimumInteritemSpacing = 3;
     _collectionViewLayout.minimumLineSpacing = 3;
     
-    _collectionView = [[PSTCollectionView alloc] initWithFrame:CGRectMake(0, 35, 480, 230) collectionViewLayout:_collectionViewLayout];
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
+    {
+        _collectionView = [[PSTCollectionView alloc] initWithFrame:CGRectMake(0, 35, 900, 670) collectionViewLayout:_collectionViewLayout];
+    }
+    else
+    {
+        _collectionView = [[PSTCollectionView alloc] initWithFrame:CGRectMake(0, 35, 480, 230) collectionViewLayout:_collectionViewLayout];
+        
+    }
+    
+    
     _collectionView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     _collectionView.backgroundColor = [UIColor clearColor];
     _collectionView.delegate = self;
     _collectionView.dataSource = self;
     _collectionView.alwaysBounceVertical = YES;
+    
+        
     [self.view addSubview:_collectionView];
     
     [_collectionView registerClass:PSTCollectionViewCell.class forCellWithReuseIdentifier:@"PSTCollectionViewCell"];

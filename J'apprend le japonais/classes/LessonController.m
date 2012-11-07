@@ -49,6 +49,14 @@
                                                                           320
                                                                           )
                             ];
+    
+    NSLog(@" frame %@", NSStringFromCGRect(self.view.frame));
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
+    {
+    }
+    scroll.frame = CGRectMake(0, 0, self.view.frame.size.height, self.view.frame.size.width);
+    
+    
     scroll.scrollEnabled = YES;
     scroll.bounces = FALSE;
     scroll.contentSize = CGSizeMake(_currentController.view.frame.size.width, _currentController.view.frame.size.height);

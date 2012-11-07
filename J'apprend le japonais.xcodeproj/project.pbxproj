@@ -30,6 +30,9 @@
 		F060E978163C0A4B009C01E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F060E977163C0A4B009C01E3 /* CoreGraphics.framework */; };
 		F060E97E163C0A4B009C01E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F060E97C163C0A4B009C01E3 /* InfoPlist.strings */; };
 		F060E9B4163D5BB3009C01E3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F060E9B3163D5BB3009C01E3 /* CoreData.framework */; };
+		F0679533164B10BE00347CF2 /* LessonRandomHiragana~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0679532164B10BE00347CF2 /* LessonRandomHiragana~ipad.xib */; };
+		F0679536164B154200347CF2 /* LessonQCMHiragana~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0679535164B154200347CF2 /* LessonQCMHiragana~ipad.xib */; };
+		F0679538164B187C00347CF2 /* ParametersHiraganaViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0679537164B187C00347CF2 /* ParametersHiraganaViewController~ipad.xib */; };
 		F073ADFF164312D800332D78 /* parameters.png in Resources */ = {isa = PBXBuildFile; fileRef = F073ADFE164312D800332D78 /* parameters.png */; };
 		F073AE021643153900332D78 /* memory.png in Resources */ = {isa = PBXBuildFile; fileRef = F073AE011643153900332D78 /* memory.png */; };
 		F073AE0516431ACB00332D78 /* SectionLessonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F073AE0416431ACA00332D78 /* SectionLessonCell.m */; };
@@ -97,6 +100,9 @@
 		F060E98F163C0A4B009C01E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		F060E9B3163D5BB3009C01E3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		F060E9B6163D5C03009C01E3 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		F0679532164B10BE00347CF2 /* LessonRandomHiragana~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "LessonRandomHiragana~ipad.xib"; path = "ressources/LessonRandomHiragana~ipad.xib"; sourceTree = "<group>"; };
+		F0679535164B154200347CF2 /* LessonQCMHiragana~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "LessonQCMHiragana~ipad.xib"; path = "ressources/LessonQCMHiragana~ipad.xib"; sourceTree = "<group>"; };
+		F0679537164B187C00347CF2 /* ParametersHiraganaViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "ParametersHiraganaViewController~ipad.xib"; path = "ressources/ParametersHiraganaViewController~ipad.xib"; sourceTree = "<group>"; };
 		F073ADFE164312D800332D78 /* parameters.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = parameters.png; sourceTree = "<group>"; };
 		F073AE011643153900332D78 /* memory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = memory.png; sourceTree = "<group>"; };
 		F073AE0316431ACA00332D78 /* SectionLessonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SectionLessonCell.h; path = Classes/SectionLessonCell.h; sourceTree = "<group>"; };
@@ -251,6 +257,9 @@
 		F060E999163C0C3C009C01E3 /* ressources */ = {
 			isa = PBXGroup;
 			children = (
+				F0679537164B187C00347CF2 /* ParametersHiraganaViewController~ipad.xib */,
+				F0679535164B154200347CF2 /* LessonQCMHiragana~ipad.xib */,
+				F0679532164B10BE00347CF2 /* LessonRandomHiragana~ipad.xib */,
 				F0CE948E163F2F95004F7E2B /* LessonRandomHiragana.xib */,
 				F02D13861647EA460093EAD0 /* LessonQCMHiragana.xib */,
 				F0CE9491163F2F95004F7E2B /* ParametersHiraganaViewController.xib */,
@@ -399,6 +408,9 @@
 				F073AE021643153900332D78 /* memory.png in Resources */,
 				F02D137A1646AAE90093EAD0 /* tired-konata.jpeg in Resources */,
 				F02D13871647EA460093EAD0 /* LessonQCMHiragana.xib in Resources */,
+				F0679533164B10BE00347CF2 /* LessonRandomHiragana~ipad.xib in Resources */,
+				F0679536164B154200347CF2 /* LessonQCMHiragana~ipad.xib in Resources */,
+				F0679538164B187C00347CF2 /* ParametersHiraganaViewController~ipad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
