@@ -21,5 +21,5 @@
 
 - (void) displayNewHiragana:(Hiragana *)hiragana;
 - (void) displayEmpty;
-
+- (void) switchToggleFace;
 @end

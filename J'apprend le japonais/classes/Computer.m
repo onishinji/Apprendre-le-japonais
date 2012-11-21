@@ -23,7 +23,7 @@ static Computer *sharedObject;
     return sharedObject;
 }
 
--(Hiragana *) createHiragana:(NSString *)romanji japan:(NSString *)japan position:(int)position col:(int)col row:(int)row section:(int)section
+-(Hiragana *) createHiragana:(NSString *)romanji japan:(NSString *)japan position:(int)position col:(int)col row:(int)row section:(int)section type:(int)type
 {
     
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Hiragana" inManagedObjectContext:_managedObjectContext];

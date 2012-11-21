@@ -56,7 +56,7 @@
 							<object class="IBUILabel" id="792614853">
 								<reference key="NSNextResponder" ref="62962641"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{0, -1}, {204, 205}}</string>
+								<string key="NSFrame">{{-13, -1}, {230, 205}}</string>
 								<reference key="NSSuperview" ref="62962641"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="285072621"/>
@@ -66,7 +66,7 @@
 								<int key="IBUIContentMode">7</int>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<string key="IBUIText">mo</string>
+								<string key="IBUIText">きゃ</string>
 								<object class="NSColor" key="IBUITextColor" id="292657235">
 									<int key="NSColorSpace">1</int>
 									<bytes key="NSRGB">MCAwIDAAA</bytes>
@@ -77,11 +77,11 @@
 								<int key="IBUITextAlignment">1</int>
 								<object class="IBUIFontDescription" key="IBUIFontDescription">
 									<int key="type">1</int>
-									<double key="pointSize">139</double>
+									<double key="pointSize">110</double>
 								</object>
 								<object class="NSFont" key="IBUIFont">
 									<string key="NSName">Helvetica</string>
-									<double key="NSSize">139</double>
+									<double key="NSSize">110</double>
 									<int key="NSfFlags">16</int>
 								</object>
 								<bool key="IBUIAdjustsFontSizeToFit">NO</bool>

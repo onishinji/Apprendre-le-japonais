@@ -92,6 +92,18 @@
     
 }
 
+- (void) switchToggleFace
+{
+    if(isJapanFace)
+    {        
+        [self oneFingerSwipeRight:nil];
+    }
+    else
+    {
+        [self oneFingerSwipeLeft:nil];
+    }
+}
+
 - (void) toggleFace
 {
     

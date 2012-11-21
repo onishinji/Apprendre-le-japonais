@@ -24,6 +24,22 @@
 		F02D137D1646AFFA0093EAD0 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F060E98E163C0A4B009C01E3 /* MainStoryboard_iPad.storyboard */; };
 		F02D13841647EA240093EAD0 /* LessonQCMHiragana.m in Sources */ = {isa = PBXBuildFile; fileRef = F02D13821647EA240093EAD0 /* LessonQCMHiragana.m */; };
 		F02D13871647EA460093EAD0 /* LessonQCMHiragana.xib in Resources */ = {isa = PBXBuildFile; fileRef = F02D13861647EA460093EAD0 /* LessonQCMHiragana.xib */; };
+		F040096A1659365A0090AA18 /* cmu07a.dic in Resources */ = {isa = PBXBuildFile; fileRef = F040095A1659365A0090AA18 /* cmu07a.dic */; };
+		F040096B1659365A0090AA18 /* feat.params in Resources */ = {isa = PBXBuildFile; fileRef = F040095C1659365A0090AA18 /* feat.params */; };
+		F040096C1659365A0090AA18 /* mdef in Resources */ = {isa = PBXBuildFile; fileRef = F040095D1659365A0090AA18 /* mdef */; };
+		F040096D1659365A0090AA18 /* means in Resources */ = {isa = PBXBuildFile; fileRef = F040095E1659365A0090AA18 /* means */; };
+		F040096E1659365A0090AA18 /* noisedict in Resources */ = {isa = PBXBuildFile; fileRef = F040095F1659365A0090AA18 /* noisedict */; };
+		F040096F1659365A0090AA18 /* sendump in Resources */ = {isa = PBXBuildFile; fileRef = F04009601659365A0090AA18 /* sendump */; };
+		F04009701659365A0090AA18 /* transition_matrices in Resources */ = {isa = PBXBuildFile; fileRef = F04009611659365A0090AA18 /* transition_matrices */; };
+		F04009711659365A0090AA18 /* variances in Resources */ = {isa = PBXBuildFile; fileRef = F04009621659365A0090AA18 /* variances */; };
+		F04009721659365A0090AA18 /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04009631659365A0090AA18 /* OpenEars.framework */; };
+		F04009731659365A0090AA18 /* OpenEars1.dic in Resources */ = {isa = PBXBuildFile; fileRef = F04009641659365A0090AA18 /* OpenEars1.dic */; };
+		F04009741659365A0090AA18 /* OpenEars1.gram in Resources */ = {isa = PBXBuildFile; fileRef = F04009651659365A0090AA18 /* OpenEars1.gram */; };
+		F04009751659365A0090AA18 /* OpenEars1.languagemodel in Resources */ = {isa = PBXBuildFile; fileRef = F04009661659365A0090AA18 /* OpenEars1.languagemodel */; };
+		F04009761659365A0090AA18 /* OpenEars2.gram in Resources */ = {isa = PBXBuildFile; fileRef = F04009671659365A0090AA18 /* OpenEars2.gram */; };
+		F04009771659365A0090AA18 /* OpenEarsCorpus.txt in Resources */ = {isa = PBXBuildFile; fileRef = F04009681659365A0090AA18 /* OpenEarsCorpus.txt */; };
+		F04009781659365A0090AA18 /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04009691659365A0090AA18 /* Slt.framework */; };
+		F040097B165CBDDF0090AA18 /* epkyouka.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F040097A165CBDDF0090AA18 /* epkyouka.ttf */; };
 		F04C00B31642E33300EAF61D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04C00B21642E33300EAF61D /* QuartzCore.framework */; };
 		F060E974163C0A4B009C01E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F060E973163C0A4B009C01E3 /* UIKit.framework */; };
 		F060E976163C0A4B009C01E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F060E975163C0A4B009C01E3 /* Foundation.framework */; };
@@ -36,6 +52,8 @@
 		F073ADFF164312D800332D78 /* parameters.png in Resources */ = {isa = PBXBuildFile; fileRef = F073ADFE164312D800332D78 /* parameters.png */; };
 		F073AE021643153900332D78 /* memory.png in Resources */ = {isa = PBXBuildFile; fileRef = F073AE011643153900332D78 /* memory.png */; };
 		F073AE0516431ACB00332D78 /* SectionLessonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F073AE0416431ACA00332D78 /* SectionLessonCell.m */; };
+		F0A64DA616593554009752E8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A64DA516593554009752E8 /* AudioToolbox.framework */; };
+		F0A64DA91659356F009752E8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A64DA81659356F009752E8 /* AVFoundation.framework */; };
 		F0CE9492163F2F95004F7E2B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0CE948A163F2F95004F7E2B /* Default-568h@2x.png */; };
 		F0CE9493163F2F95004F7E2B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F0CE948B163F2F95004F7E2B /* Default.png */; };
 		F0CE9494163F2F95004F7E2B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0CE948C163F2F95004F7E2B /* Default@2x.png */; };
@@ -87,6 +105,22 @@
 		F02D13821647EA240093EAD0 /* LessonQCMHiragana.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LessonQCMHiragana.m; path = classes/LessonQCMHiragana.m; sourceTree = "<group>"; };
 		F02D13861647EA460093EAD0 /* LessonQCMHiragana.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LessonQCMHiragana.xib; path = ressources/LessonQCMHiragana.xib; sourceTree = "<group>"; };
 		F02D138D164837750093EAD0 /* NSMutableArray+Shuffling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+Shuffling.h"; path = "classes/NSMutableArray+Shuffling.h"; sourceTree = "<group>"; };
+		F040095A1659365A0090AA18 /* cmu07a.dic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cmu07a.dic; sourceTree = "<group>"; };
+		F040095C1659365A0090AA18 /* feat.params */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = feat.params; sourceTree = "<group>"; };
+		F040095D1659365A0090AA18 /* mdef */ = {isa = PBXFileReference; lastKnownFileType = file; path = mdef; sourceTree = "<group>"; };
+		F040095E1659365A0090AA18 /* means */ = {isa = PBXFileReference; lastKnownFileType = file; path = means; sourceTree = "<group>"; };
+		F040095F1659365A0090AA18 /* noisedict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = noisedict; sourceTree = "<group>"; };
+		F04009601659365A0090AA18 /* sendump */ = {isa = PBXFileReference; lastKnownFileType = file; path = sendump; sourceTree = "<group>"; };
+		F04009611659365A0090AA18 /* transition_matrices */ = {isa = PBXFileReference; lastKnownFileType = file; path = transition_matrices; sourceTree = "<group>"; };
+		F04009621659365A0090AA18 /* variances */ = {isa = PBXFileReference; lastKnownFileType = file; path = variances; sourceTree = "<group>"; };
+		F04009631659365A0090AA18 /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenEars.framework; sourceTree = "<group>"; };
+		F04009641659365A0090AA18 /* OpenEars1.dic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenEars1.dic; sourceTree = "<group>"; };
+		F04009651659365A0090AA18 /* OpenEars1.gram */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenEars1.gram; sourceTree = "<group>"; };
+		F04009661659365A0090AA18 /* OpenEars1.languagemodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenEars1.languagemodel; sourceTree = "<group>"; };
+		F04009671659365A0090AA18 /* OpenEars2.gram */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenEars2.gram; sourceTree = "<group>"; };
+		F04009681659365A0090AA18 /* OpenEarsCorpus.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenEarsCorpus.txt; sourceTree = "<group>"; };
+		F04009691659365A0090AA18 /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
+		F040097A165CBDDF0090AA18 /* epkyouka.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = epkyouka.ttf; path = ressources/epkyouka.ttf; sourceTree = "<group>"; };
 		F04C00B21642E33300EAF61D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F060E96F163C0A4B009C01E3 /* J'apprend le japonais.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "J'apprend le japonais.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F060E973163C0A4B009C01E3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -107,6 +141,8 @@
 		F073AE011643153900332D78 /* memory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = memory.png; sourceTree = "<group>"; };
 		F073AE0316431ACA00332D78 /* SectionLessonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SectionLessonCell.h; path = Classes/SectionLessonCell.h; sourceTree = "<group>"; };
 		F073AE0416431ACA00332D78 /* SectionLessonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SectionLessonCell.m; path = Classes/SectionLessonCell.m; sourceTree = "<group>"; };
+		F0A64DA516593554009752E8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F0A64DA81659356F009752E8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F0CE9469163F2F87004F7E2B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = classes/AppDelegate.h; sourceTree = "<group>"; };
 		F0CE946A163F2F87004F7E2B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = classes/AppDelegate.m; sourceTree = "<group>"; };
 		F0CE948A163F2F95004F7E2B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "ressources/Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -143,11 +179,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0A64DA91659356F009752E8 /* AVFoundation.framework in Frameworks */,
+				F0A64DA616593554009752E8 /* AudioToolbox.framework in Frameworks */,
 				F04C00B31642E33300EAF61D /* QuartzCore.framework in Frameworks */,
 				F060E9B4163D5BB3009C01E3 /* CoreData.framework in Frameworks */,
 				F060E974163C0A4B009C01E3 /* UIKit.framework in Frameworks */,
 				F060E976163C0A4B009C01E3 /* Foundation.framework in Frameworks */,
 				F060E978163C0A4B009C01E3 /* CoreGraphics.framework in Frameworks */,
+				F04009721659365A0090AA18 /* OpenEars.framework in Frameworks */,
+				F04009781659365A0090AA18 /* Slt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,9 +232,40 @@
 			name = categories;
 			sourceTree = "<group>";
 		};
+		F04009591659365A0090AA18 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				F040095A1659365A0090AA18 /* cmu07a.dic */,
+				F040095B1659365A0090AA18 /* hub4wsj_sc_8k */,
+				F04009631659365A0090AA18 /* OpenEars.framework */,
+				F04009641659365A0090AA18 /* OpenEars1.dic */,
+				F04009651659365A0090AA18 /* OpenEars1.gram */,
+				F04009661659365A0090AA18 /* OpenEars1.languagemodel */,
+				F04009671659365A0090AA18 /* OpenEars2.gram */,
+				F04009681659365A0090AA18 /* OpenEarsCorpus.txt */,
+				F04009691659365A0090AA18 /* Slt.framework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		F040095B1659365A0090AA18 /* hub4wsj_sc_8k */ = {
+			isa = PBXGroup;
+			children = (
+				F040095C1659365A0090AA18 /* feat.params */,
+				F040095D1659365A0090AA18 /* mdef */,
+				F040095E1659365A0090AA18 /* means */,
+				F040095F1659365A0090AA18 /* noisedict */,
+				F04009601659365A0090AA18 /* sendump */,
+				F04009611659365A0090AA18 /* transition_matrices */,
+				F04009621659365A0090AA18 /* variances */,
+			);
+			path = hub4wsj_sc_8k;
+			sourceTree = "<group>";
+		};
 		F04C008E1642E19300EAF61D /* vendors */ = {
 			isa = PBXGroup;
 			children = (
+				F04009591659365A0090AA18 /* Framework */,
 				F02D13891648370F0093EAD0 /* categories */,
 				F02D1388164836EC0093EAD0 /* PSTCollectionView */,
 			);
@@ -204,6 +275,8 @@
 		F060E964163C0A4B009C01E3 = {
 			isa = PBXGroup;
 			children = (
+				F0A64DA81659356F009752E8 /* AVFoundation.framework */,
+				F0A64DA516593554009752E8 /* AudioToolbox.framework */,
 				F04C00B21642E33300EAF61D /* QuartzCore.framework */,
 				F060E979163C0A4B009C01E3 /* J'apprend le japonais */,
 				F060E972163C0A4B009C01E3 /* Frameworks */,
@@ -257,6 +330,7 @@
 		F060E999163C0C3C009C01E3 /* ressources */ = {
 			isa = PBXGroup;
 			children = (
+				F040097A165CBDDF0090AA18 /* epkyouka.ttf */,
 				F0679537164B187C00347CF2 /* ParametersHiraganaViewController~ipad.xib */,
 				F0679535164B154200347CF2 /* LessonQCMHiragana~ipad.xib */,
 				F0679532164B10BE00347CF2 /* LessonRandomHiragana~ipad.xib */,
@@ -411,6 +485,20 @@
 				F0679533164B10BE00347CF2 /* LessonRandomHiragana~ipad.xib in Resources */,
 				F0679536164B154200347CF2 /* LessonQCMHiragana~ipad.xib in Resources */,
 				F0679538164B187C00347CF2 /* ParametersHiraganaViewController~ipad.xib in Resources */,
+				F040096A1659365A0090AA18 /* cmu07a.dic in Resources */,
+				F040096B1659365A0090AA18 /* feat.params in Resources */,
+				F040096C1659365A0090AA18 /* mdef in Resources */,
+				F040096D1659365A0090AA18 /* means in Resources */,
+				F040096E1659365A0090AA18 /* noisedict in Resources */,
+				F040096F1659365A0090AA18 /* sendump in Resources */,
+				F04009701659365A0090AA18 /* transition_matrices in Resources */,
+				F04009711659365A0090AA18 /* variances in Resources */,
+				F04009731659365A0090AA18 /* OpenEars1.dic in Resources */,
+				F04009741659365A0090AA18 /* OpenEars1.gram in Resources */,
+				F04009751659365A0090AA18 /* OpenEars1.languagemodel in Resources */,
+				F04009761659365A0090AA18 /* OpenEars2.gram in Resources */,
+				F04009771659365A0090AA18 /* OpenEarsCorpus.txt in Resources */,
+				F040097B165CBDDF0090AA18 /* epkyouka.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,6 +623,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer: Guillaume chave (BV76CP9635)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/J'apprend le japonais/Framework\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "J'apprend le japonais/J'apprend le japonais-Prefix.pch";
 				INFOPLIST_FILE = "J'apprend le japonais/J'apprend le japonais-Info.plist";
@@ -550,6 +642,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer: Guillaume chave (BV76CP9635)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/J'apprend le japonais/Framework\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "J'apprend le japonais/J'apprend le japonais-Prefix.pch";
 				INFOPLIST_FILE = "J'apprend le japonais/J'apprend le japonais-Info.plist";

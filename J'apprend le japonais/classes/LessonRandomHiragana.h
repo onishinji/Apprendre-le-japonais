@@ -8,17 +8,32 @@
 
 #import <UIKit/UIKit.h>
 #import "HiraganaFlipView.h"
+#import <Slt/Slt.h>
+#import <OpenEars/FliteController.h>
+#import <OpenEars/LanguageModelGenerator.h>
+#import <OpenEars/PocketsphinxController.h>
+#import <OpenEars/OpenEarsEventsObserver.h>
 
-@interface LessonRandomHiragana : UIViewController
+@interface LessonRandomHiragana : UIViewController <OpenEarsEventsObserverDelegate>
 {
     NSMutableArray * knows;
     NSMutableArray * knowsRomanji;
     int currentPos;
+    LanguageModelGenerator *lmGenerator;
+    FliteController *fliteController;
+    PocketsphinxController *pocketsphinxController;
+    Slt *slt;
+    OpenEarsEventsObserver *openEarsEventsObserver;
 }
 
 @property (weak, nonatomic) IBOutlet UIButton *btnNext;
 @property (weak, nonatomic) IBOutlet UIButton *btnPrev;
 @property (weak, nonatomic) IBOutlet UILabel *msg;
+
+@property (strong, nonatomic) FliteController *fliteController;
+@property (strong, nonatomic) Slt *slt;
+@property (strong, nonatomic) PocketsphinxController *pocketsphinxController;
+@property (strong, nonatomic) OpenEarsEventsObserver *openEarsEventsObserver;
 
 @property (strong, nonatomic) IBOutlet HiraganaFlipView * hiraganaView;
 

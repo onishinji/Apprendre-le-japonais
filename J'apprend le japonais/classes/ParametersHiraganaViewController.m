@@ -37,8 +37,15 @@
                 [hiraganas addObject:[[info objects] objectAtIndex:j]];
             }
             
+            NSMutableDictionary * nbRow = [[NSMutableDictionary alloc] init];
+            for(Hiragana * h in hiraganas)
+            {
+                [nbRow setObject:@"1" forKey:[h.row stringValue]];
+            }
+            
+            
             NSMutableArray * sectionHiragana = [[NSMutableArray alloc] init];
-            for (int row = 1; row <= 11; row ++)
+            for (int row = 1; row <= [nbRow count]; row ++)
             {
                 for(int col = 1; col <= 5; col++)
                 {
@@ -62,6 +69,8 @@
                 }
             }
             
+            NSLog(@"section%d  nb = %d", sectionId, [sectionHiragana count]);
+            
             [allResult setObject:sectionHiragana forKey:[NSString stringWithFormat:@"section_%d", sectionId] ];
             sectionId++;
             
@@ -79,6 +88,7 @@
     _collectionViewLayout.sectionInset =  UIEdgeInsetsMake(0, 5, 0, 5);
     _collectionViewLayout.minimumInteritemSpacing = 3;
     _collectionViewLayout.minimumLineSpacing = 3;
+    _collectionViewLayout.headerReferenceSize = CGSizeMake(480, 30);
     
     if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
     {
@@ -100,8 +110,9 @@
         
     [self.view addSubview:_collectionView];
     
-    [_collectionView registerClass:PSTCollectionViewCell.class forCellWithReuseIdentifier:@"PSTCollectionViewCell"];
+    [_collectionView registerClass:PSTCollectionViewCell.class forCellWithReuseIdentifier:@"PSTCollectionViewCell"]; 
     
+    [_collectionView registerClass:JapanCell.class forCellWithReuseIdentifier:@"Section"];
     [_collectionView registerClass:JapanCell.class forCellWithReuseIdentifier:@"Japan"];
 }
 
@@ -118,15 +129,46 @@
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
     int nb = [allResult count];
-    NSLog(@"nb section is %d", nb);
     return nb;
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     int nb = [[allResult objectForKey:[NSString stringWithFormat:@"section_%d", section ]] count];
-    NSLog(@"nb item in section %d is %d", section, nb);
    return nb;
+}
+
+- (PSTCollectionReusableView *)collectionView: (UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+   
+    
+    PSTCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Section" forIndexPath:indexPath];
+    
+    UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(15, 0, 480, 30)]; 
+    
+    switch (indexPath.section) {
+        case 0:
+            label.text = @"gojûon";
+            break;
+        case 1:
+            label.text = @"gojûon avec (han)dakuten";
+            break;
+        case 2:
+            label.text = @"yôon";
+            break;
+        case 3:
+            label.text = @"yôon avec (han)dakuten";
+            break;
+        default:
+            break;
+    }
+    
+    label.textColor = [UIColor whiteColor];
+    label.backgroundColor = [UIColor clearColor];
+    
+    cell.backgroundColor = [UIColor blackColor];
+    [cell addSubview:label];
+    
+    return cell;
 }
 
 - (PSTCollectionViewCell *)collectionView:(PSTCollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -136,7 +178,7 @@
     
     cell.backgroundColor = [UIColor greenColor];
     
-    id objetInArray = [[allResult objectForKey:[NSString stringWithFormat:@"section_%d",0 ]] objectAtIndex:indexPath.row];
+    id objetInArray = [[allResult objectForKey:[NSString stringWithFormat:@"section_%d",indexPath.section ]] objectAtIndex:indexPath.row];
     
     if([objetInArray isKindOfClass:[Hiragana class]])
     {
@@ -163,7 +205,7 @@
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    id objetInArray = [[allResult objectForKey:[NSString stringWithFormat:@"section_%d",0 ]] objectAtIndex:indexPath.row];
+    id objetInArray = [[allResult objectForKey:[NSString stringWithFormat:@"section_%d",indexPath.section ]] objectAtIndex:indexPath.row];
     
     if([objetInArray isKindOfClass:[Hiragana class]])
     {

@@ -21,7 +21,7 @@
 
 + (id)sharedInstance;
 
--(Hiragana *) createHiragana:(NSString *)romanji japan:(NSString *)japan position:(int)position col:(int)col row:(int)col section:(int)section;
+-(Hiragana *) createHiragana:(NSString *)romanji japan:(NSString *)japan position:(int)position col:(int)col row:(int)col section:(int)section type:(int)type;
 
 -(NSArray *)  getAllHiragana;
 -(NSFetchedResultsController *)  getHiraganaPerSections;
