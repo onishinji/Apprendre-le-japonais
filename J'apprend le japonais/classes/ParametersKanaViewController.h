@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LessonControllerViewController.h"
 
-@interface ParametersHiraganaViewController : UIViewController <PSTCollectionViewDataSource, PSTCollectionViewDelegateFlowLayout, NSFetchedResultsControllerDelegate>
+@interface ParametersKanaViewController : LessonControllerViewController <PSTCollectionViewDataSource, PSTCollectionViewDelegateFlowLayout, NSFetchedResultsControllerDelegate>
 {
     
     NSMutableDictionary * allResult;

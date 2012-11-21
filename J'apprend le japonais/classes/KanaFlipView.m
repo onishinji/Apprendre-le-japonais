@@ -6,9 +6,9 @@
 //  Copyright (c) 2012 Guillaume chave. All rights reserved.
 //
 
-#import "HiraganaFlipView.h"
+#import "KanaFlipView.h"
 
-@implementation HiraganaFlipView
+@implementation KanaFlipView
 
 
 - (void) initialize{

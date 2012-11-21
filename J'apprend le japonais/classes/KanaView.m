@@ -6,9 +6,9 @@
 //  Copyright (c) 2012 Guillaume chave. All rights reserved.
 //
 
-#import "HiraganaView.h"
+#import "KanaView.h"
 
-@implementation HiraganaView
+@implementation KanaView
 
 @synthesize imgCentral = _imgCentral;
 @synthesize lblHiragana = _lblHiragana;

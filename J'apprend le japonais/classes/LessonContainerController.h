@@ -8,12 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "Lesson.h"
+#import "LessonControllerViewController.h"
 
-@interface LessonController : UIViewController <UIScrollViewDelegate>
+@interface LessonContainerController : UIViewController <UIScrollViewDelegate>
+{
+}
 
 @property (strong, nonatomic) NSManagedObjectContext * managedObjectContext;
+@property (strong, nonatomic) NSMutableDictionary * parameters;
 @property (strong, nonatomic) Lesson * lesson;
 
-@property (strong, nonatomic) UIViewController * currentController;
+@property (strong, nonatomic) LessonControllerViewController * currentController;
 
 @end

@@ -6,15 +6,15 @@
 //  Copyright (c) 2012 Guillaume chave. All rights reserved.
 //
 
-#import "ParametersHiraganaViewController.h"
+#import "ParametersKanaViewController.h"
 #import "Computer.h"
 #import "ParametersCell.h"
 
-@interface ParametersHiraganaViewController ()
+@interface ParametersKanaViewController ()
 
 @end
 
-@implementation ParametersHiraganaViewController
+@implementation ParametersKanaViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

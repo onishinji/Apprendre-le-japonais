@@ -6,21 +6,21 @@
 //  Copyright (c) 2012 Guillaume chave. All rights reserved.
 //
 
-#import "LessonRandomHiragana.h"
+#import "LessonRandomKana.h"
 #import "Computer.h"
 
-@interface LessonRandomHiragana ()
+@interface LessonRandomKana ()
 
 - (void) displayNextHiragana;
 
 @end
 
-@implementation LessonRandomHiragana
+@implementation LessonRandomKana
 
 @synthesize btnNext = _btnNext;
 @synthesize btnPrev = _btnPrev;
 @synthesize msg = _msg;
-@synthesize hiraganaView = _hiraganaView;
+@synthesize kanaFlipView = _kanaFlipView;
 
 @synthesize fliteController;
 @synthesize slt;
@@ -88,7 +88,7 @@
             NSLog(@"Error: %@",[err localizedDescription]);
         }
         
-        [self.pocketsphinxController startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:dicPath languageModelIsJSGF:NO];
+      //  [self.pocketsphinxController startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:dicPath languageModelIsJSGF:NO];
         
         [self.openEarsEventsObserver setDelegate:self];
     }
@@ -110,7 +110,7 @@
     
     if([hypothesis isEqualToString:@"SWITCH"])
     {
-        [_hiraganaView switchToggleFace];
+        [_kanaFlipView switchToggleFace];
     }
     
 	NSLog(@"The received hypothesis is %@ with a score of %@ and an ID of %@", hypothesis, recognitionScore, utteranceID);
@@ -171,6 +171,7 @@
 
     currentPos++;
     
+    // @todo switch type
     int nbHiraganaLesson = [[[Computer sharedInstance] getSelectedsHiragana] count];
     
     
@@ -181,6 +182,7 @@
     }
     else
     {
+        // @todo switch type
         hiragana = [[Computer sharedInstance] getRandomHiragana:knowsRomanji];
     
         if(hiragana != nil)
@@ -192,6 +194,7 @@
         }
     }
     
+    // @todo switch type
     int nb = [[[Computer sharedInstance] getSelectedsHiragana] count] - currentPos - 1;
     
     if(nb == 0)
@@ -209,12 +212,12 @@
         knowsRomanji = [[NSMutableArray alloc] init];
         
         _msg.text = @"Fini ! ";
-        [_hiraganaView displayEmpty];
+        [_kanaFlipView displayEmpty];
         currentPos = 0;
     }
     else
     {
-        [_hiraganaView displayNewHiragana:hiragana];
+        [_kanaFlipView displayNewHiragana:hiragana];
     }
 
 }

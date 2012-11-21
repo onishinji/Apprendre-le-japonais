@@ -77,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="-237" y="89"/>
         </scene>
-        <!--Lesson Controller - Random Me la guelle-->
+        <!--Lesson Container Controller - Random Me la guelle-->
         <scene sceneID="IfI-ip-ov3">
             <objects>
-                <viewController id="6nV-nJ-gEk" customClass="LessonController" sceneMemberID="viewController">
+                <viewController id="6nV-nJ-gEk" customClass="LessonContainerController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dcw-He-lVc">
                         <rect key="frame" x="0.0" y="20" width="568" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

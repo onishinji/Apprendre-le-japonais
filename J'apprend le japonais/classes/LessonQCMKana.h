@@ -9,11 +9,12 @@
 #import <UIKit/UIKit.h>
 
 #import "Hiragana.h"
-#import "HiraganaFlipView.h"
+#import "KanaFlipView.h"
+#import "LessonControllerViewController.h"
 
-@interface LessonQCMHiragana : UIViewController
+@interface LessonQCMKana : LessonControllerViewController
 {
-    Hiragana * currentHiragan;
+    Hiragana * currentKana;
     
     int currentScore;
     
@@ -25,7 +26,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *msg;
 
-@property (weak, nonatomic) IBOutlet HiraganaFlipView *hiraganaFlipView;
+@property (weak, nonatomic) IBOutlet KanaFlipView *kanaFlipView;
 
 @property (weak, nonatomic) IBOutlet UIButton *leftTopButton;
 @property (weak, nonatomic) IBOutlet UIButton *leftMiddleButton;
@@ -36,17 +37,17 @@
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 
 
-@property (weak, nonatomic) IBOutlet UILabel *goodHiraganaPlain;
+@property (weak, nonatomic) IBOutlet UILabel *goodKanaPlain;
 @property (weak, nonatomic) IBOutlet UILabel *goodRomanjiPlain;
 
-@property (weak, nonatomic) IBOutlet UILabel *goodHiragana;
+@property (weak, nonatomic) IBOutlet UILabel *goodKana;
 @property (weak, nonatomic) IBOutlet UILabel *goodRomanji;
 
-@property (weak, nonatomic) IBOutlet UILabel *falseHiragana;
+@property (weak, nonatomic) IBOutlet UILabel *falseKana;
 @property (weak, nonatomic) IBOutlet UILabel *falseRomanji;
 
 
-- (void) displayTrueResponse:(Hiragana *)hiragana;
-- (void) displayFalseResponse:(Hiragana *)trueHiragana falseReponse:(Hiragana *)falseReponse;
+- (void) displayTrueResponse:(Hiragana *)kana;
+- (void) displayFalseResponse:(Hiragana *)trueResponse falseReponse:(Hiragana *)falseResponse;
 
 @end

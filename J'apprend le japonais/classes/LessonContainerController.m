@@ -6,19 +6,20 @@
 //  Copyright (c) 2012 Guillaume chave. All rights reserved.
 //
 
-#import "LessonController.h"
-#import "LessonRandomHiragana.h"
-#import "LessonQCMHiragana.h"
+#import "LessonContainerController.h"
+#import "LessonRandomKana.h"
+#import "LessonQCMKana.h"
 
-@interface LessonController ()
+@interface LessonContainerController ()
 
 @end
 
-@implementation LessonController
+@implementation LessonContainerController
 
 @synthesize lesson = _lesson;
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize currentController = _currentController;
+@synthesize parameters = _parameters;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -41,6 +42,8 @@
     self.view.backgroundColor = [UIColor redColor];
     
     _currentController = [[NSClassFromString(_lesson.className) alloc] initWithNibName:_lesson.className bundle:nil];
+    
+    _currentController.currentKanaType = [[self parameters] objectForKey:@"kanaType"];
     
     UIScrollView *scroll = [[UIScrollView alloc] initWithFrame:CGRectMake(
                                                                           0,

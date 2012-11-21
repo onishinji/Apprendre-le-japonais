@@ -7,14 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "HiraganaFlipView.h"
+#import "KanaFlipView.h"
+#import "LessonControllerViewController.h"
+
 #import <Slt/Slt.h>
 #import <OpenEars/FliteController.h>
 #import <OpenEars/LanguageModelGenerator.h>
 #import <OpenEars/PocketsphinxController.h>
 #import <OpenEars/OpenEarsEventsObserver.h>
 
-@interface LessonRandomHiragana : UIViewController <OpenEarsEventsObserverDelegate>
+
+@interface LessonRandomKana : LessonControllerViewController <OpenEarsEventsObserverDelegate>
 {
     NSMutableArray * knows;
     NSMutableArray * knowsRomanji;
@@ -35,6 +38,6 @@
 @property (strong, nonatomic) PocketsphinxController *pocketsphinxController;
 @property (strong, nonatomic) OpenEarsEventsObserver *openEarsEventsObserver;
 
-@property (strong, nonatomic) IBOutlet HiraganaFlipView * hiraganaView;
+@property (strong, nonatomic) IBOutlet KanaFlipView * kanaFlipView;
 
 @end

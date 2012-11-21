@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Hiragana.h"
 
-@interface HiraganaView : UIView
+@interface KanaView : UIView
 {
     Hiragana * _hiragana;
 }

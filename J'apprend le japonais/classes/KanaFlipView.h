@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "Hiragana.h"
-#import "HiraganaView.h"
+#import "KanaView.h"
 
-@interface HiraganaFlipView : HiraganaView
+@interface KanaFlipView : KanaView
 {
     BOOL isJapanFace;
 }

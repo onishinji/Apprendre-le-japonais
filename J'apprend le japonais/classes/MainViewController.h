@@ -13,4 +13,6 @@
 @property (strong, nonatomic) NSManagedObjectContext * managedObjectContext;
 @property (strong, nonatomic) NSMutableArray * lessons;
 
+- (NSMutableArray *) lessonsForSection:(NSInteger) section;
+
 @end

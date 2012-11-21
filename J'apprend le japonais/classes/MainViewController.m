@@ -9,8 +9,9 @@
 #import "MainViewController.h"
 #import "LessonCell.h"
 #import "Lesson.h"
-#import "LessonController.h"
+#import "LessonContainerController.h"
 #import "SectionLessonCell.h"
+#import "constant.h"
 
 @interface MainViewController ()
 
@@ -23,29 +24,58 @@
 @synthesize managedObjectContext = _managedObjectContext;
 
 - (void)viewDidLoad
-{
-    NSLog(@"coucou");
+{ 
     [super viewDidLoad];
-    
-    _lessons = [[NSMutableArray alloc] init];
-    
-    [_lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle Hiragana" icon:[UIImage imageNamed:@"memory.png"] className:@"LessonRandomHiragana"]];
-    
-    
-    [_lessons addObject:[[Lesson alloc] initWithTitle:@"QCM" icon:[UIImage imageNamed:@"qcm"] className:@"LessonQCMHiragana"]];
-    
-    [_lessons addObject:[[Lesson alloc] initWithTitle:@"Parametres" icon:[UIImage imageNamed:@"parameters.png"] className:@"ParametersHiraganaViewController"]];
-    
     
     [self.collectionView registerClass:SectionLessonCell.class forCellWithReuseIdentifier:@"Section"];
     
 	// Do any additional setup after loading the view, tyxpically from a nib.
 }
 
+- (NSMutableArray *) lessonsForSection:(NSInteger) section
+{
+    
+    NSMutableDictionary * paramsHiragana = [[NSMutableDictionary alloc] init];
+    [paramsHiragana setObject:[NSNumber numberWithInt:TYPE_HIRAGANA] forKey:@"kanaType"];
+    
+    
+    NSMutableDictionary * paramsKatakana = [[NSMutableDictionary alloc] init];
+    [paramsKatakana setObject:[NSNumber numberWithInt:TYPE_KATAKANA] forKey:@"kanaType"];
+    
+    
+     NSMutableArray * lessons = [[NSMutableArray alloc] init];
+    switch (section) {
+        case 0:
+            
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle" icon:[UIImage imageNamed:@"memory.png"] className:@"LessonRandomKana" parameters:paramsHiragana]];
+            
+            
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM" icon:[UIImage imageNamed:@"qcm"] className:@"LessonQCMKana" parameters:paramsHiragana]];
+            
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"Parametres" icon:[UIImage imageNamed:@"parameters.png"] className:@"ParametersKanaViewController"]];
+
+            
+            break;
+            
+        case 1:
+            
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle" icon:[UIImage imageNamed:@"memory.png"] className:@"LessonRandomKana" parameters:paramsKatakana]];
+            
+            
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM" icon:[UIImage imageNamed:@"qcm"] className:@"LessonQCMKana" parameters:paramsKatakana]];
+            
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"Parametres" icon:[UIImage imageNamed:@"parameters.png"] className:@"ParametersKanaViewController"]];
+            
+        default:
+            break;
+    }
+    
+    return lessons;
+}
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-    return 1;
+    return 2;
 }
 
 - (PSTCollectionReusableView *)collectionView:(PSTCollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
@@ -62,8 +92,6 @@
     
     test.backgroundColor = [UIColor whiteColor];
     
-    NSLog(@" coucou %@, %@", test, NSStringFromCGRect(test.frame));
-    
     return test;
     
 }
@@ -71,14 +99,14 @@
 -(NSInteger)collectionView:(UICollectionView *)collectionView
     numberOfItemsInSection:(NSInteger)section
 {
-    return [_lessons count];
+    return [[self lessonsForSection:section] count];
 }
 
 - (PSUICollectionViewCell *)collectionView:(PSUICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath;
 {
     LessonCell *myCell = [cv dequeueReusableCellWithReuseIdentifier:@"Lesson" forIndexPath:indexPath];
     
-    Lesson * lesson = [_lessons objectAtIndex:indexPath.row];
+    Lesson * lesson = [[self lessonsForSection:indexPath.section] objectAtIndex:indexPath.row];
     myCell.title.text = lesson.title;
     myCell.icon.image = lesson.icon;
     
@@ -87,14 +115,13 @@
 
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    NSLog(@"%d a été cliqué", [indexPath row]);
+{    
+    Lesson * lesson = [[self lessonsForSection:indexPath.section] objectAtIndex:indexPath.row];
     
-    Lesson * lesson = [_lessons objectAtIndex:indexPath.row];
-    
-    LessonController *lessonController = [[LessonController alloc] init];
+    LessonContainerController *lessonController = [[LessonContainerController alloc] init];
     lessonController.managedObjectContext = _managedObjectContext;
     lessonController.lesson =  lesson;
+    lessonController.parameters = lesson.parameters;
     
     [self.navigationController pushViewController:lessonController animated:YES];
 }
@@ -108,11 +135,12 @@
         LessonCell *cell = (LessonCell *)sender;
         NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
         
-        Lesson * lesson = [_lessons objectAtIndex:indexPath.row];
+        Lesson * lesson = [[self lessonsForSection:indexPath.section] objectAtIndex:indexPath.row];
         
-        LessonController *lessonController = (LessonController *)[segue destinationViewController];
+        LessonContainerController *lessonController = (LessonContainerController *)[segue destinationViewController];
         lessonController.managedObjectContext = _managedObjectContext;
         lessonController.lesson =  lesson;
+        
  
     }
     // Assume self.view is the table view

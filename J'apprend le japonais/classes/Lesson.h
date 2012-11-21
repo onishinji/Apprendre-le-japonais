@@ -13,8 +13,10 @@
 @property (strong, nonatomic) NSString * title;
 @property (strong, nonatomic) UIImage * icon;
 @property (strong, nonatomic) NSString * className;
-
+@property (strong, nonatomic) NSMutableDictionary * parameters;
 
 -(id)initWithTitle:(NSString *)title icon:(UIImage *)icon className:(NSString *)className;
+
+-(id)initWithTitle:(NSString *)title icon:(UIImage *)icon className:(NSString *)className parameters:(NSMutableDictionary *) parameters;
 
 @end

@@ -13,6 +13,7 @@
 @synthesize title = _title;
 @synthesize icon = _icon;
 @synthesize className = _className;
+@synthesize parameters = _parameters;
 
 -(id)initWithTitle:(NSString *)title icon:(UIImage *)icon className:(NSString *)className
 {
@@ -21,6 +22,17 @@
         _title = title;
         _icon  = icon;
         _className = className;
+    }
+    
+    return self;
+}
+
+-(id)initWithTitle:(NSString *)title icon:(UIImage *)icon className:(NSString *)className parameters:(NSMutableDictionary *) parameters
+{
+    self = [self initWithTitle:title icon:icon className:className];
+    if(self)
+    {
+        _parameters = parameters;
     }
     
     return self;
