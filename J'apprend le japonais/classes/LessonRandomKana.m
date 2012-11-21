@@ -203,6 +203,7 @@
     }
     else
     {
+        // @todo switch type
         _msg.text = [NSString stringWithFormat:@"Encore %i hiragana(s) à deviner", nb ];
     }
     
