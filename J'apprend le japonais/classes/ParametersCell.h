@@ -8,8 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JapanCell : PSTCollectionViewCell
+@interface ParametersCell : PSTCollectionViewCell
 
 @property (strong, nonatomic) IBOutlet UILabel * title;
 @property (strong, nonatomic) IBOutlet UILabel * subTitle;
+@property (strong, nonatomic) IBOutlet UIImageView * circle;
+
+- (void) disabled;
+- (void) enabled;
+- (void) empty;
+
 @end

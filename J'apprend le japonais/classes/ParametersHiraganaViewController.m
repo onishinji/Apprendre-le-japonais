@@ -8,7 +8,7 @@
 
 #import "ParametersHiraganaViewController.h"
 #import "Computer.h"
-#import "JapanCell.h"
+#import "ParametersCell.h"
 
 @interface ParametersHiraganaViewController ()
 
@@ -110,10 +110,8 @@
         
     [self.view addSubview:_collectionView];
     
-    [_collectionView registerClass:PSTCollectionViewCell.class forCellWithReuseIdentifier:@"PSTCollectionViewCell"]; 
-    
-    [_collectionView registerClass:JapanCell.class forCellWithReuseIdentifier:@"Section"];
-    [_collectionView registerClass:JapanCell.class forCellWithReuseIdentifier:@"Japan"];
+    [_collectionView registerClass:PSTCollectionViewCell.class forCellWithReuseIdentifier:@"PSTCollectionViewCell"];  
+    [_collectionView registerClass:ParametersCell.class forCellWithReuseIdentifier:@"ParametersCell"];
 }
 
 - (void)viewDidLoad
@@ -141,7 +139,7 @@
 - (PSTCollectionReusableView *)collectionView: (UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
    
     
-    PSTCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Section" forIndexPath:indexPath];
+    PSTCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PSTCollectionViewCell" forIndexPath:indexPath];
     
     UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(15, 0, 480, 30)]; 
     
@@ -162,10 +160,10 @@
             break;
     }
     
-    label.textColor = [UIColor whiteColor];
+    label.textColor = [UIColor blackColor];
     label.backgroundColor = [UIColor clearColor];
     
-    cell.backgroundColor = [UIColor blackColor];
+    cell.backgroundColor = [UIColor whiteColor];
     [cell addSubview:label];
     
     return cell;
@@ -174,9 +172,7 @@
 - (PSTCollectionViewCell *)collectionView:(PSTCollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
   
-    JapanCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Japan" forIndexPath:indexPath];
-    
-    cell.backgroundColor = [UIColor greenColor];
+    ParametersCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ParametersCell" forIndexPath:indexPath];
     
     id objetInArray = [[allResult objectForKey:[NSString stringWithFormat:@"section_%d",indexPath.section ]] objectAtIndex:indexPath.row];
     
@@ -186,18 +182,18 @@
         
         cell.title.text = hir.japan;
         cell.subTitle.text = hir.romanji;
-        cell.backgroundColor = [UIColor grayColor];
+        
+        [cell disabled];
         
         if([hir.isSelected boolValue])
         {
-            cell.backgroundColor = [UIColor whiteColor];
+            
+            [cell enabled];
         }
     }
     else
     {
-        cell.title.text = @"";
-        cell.subTitle.text = @"";
-        cell.backgroundColor = [UIColor clearColor];
+        [cell empty];
     }  
     
     return cell;

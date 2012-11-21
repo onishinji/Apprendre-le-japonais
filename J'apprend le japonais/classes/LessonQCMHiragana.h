@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #import "Hiragana.h"
+#import "HiraganaFlipView.h"
 
 @interface LessonQCMHiragana : UIViewController
 {
@@ -23,8 +24,9 @@
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *msg;
-@property (strong, nonatomic) IBOutlet UIImageView *imgCentral;
-@property (weak, nonatomic) IBOutlet UILabel *hiragana;
+
+@property (weak, nonatomic) IBOutlet HiraganaFlipView *hiraganaFlipView;
+
 @property (weak, nonatomic) IBOutlet UIButton *leftTopButton;
 @property (weak, nonatomic) IBOutlet UIButton *leftMiddleButton;
 @property (weak, nonatomic) IBOutlet UIButton *leftBottomButton;

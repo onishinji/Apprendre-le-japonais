@@ -214,7 +214,6 @@
     }
     else
     {
-     //   [self.fliteController say:@"I am a fucking program who work great" withVoice:self.slt];
         [_hiraganaView displayNewHiragana:hiragana];
     }
 

@@ -8,18 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "Hiragana.h"
+#import "HiraganaView.h"
 
-@interface HiraganaFlipView : UIView
+@interface HiraganaFlipView : HiraganaView
 {
-    Hiragana * _hiragana;
     BOOL isJapanFace;
 }
- 
-@property (strong, nonatomic) IBOutlet UILabel * lblHiragana;
-@property (strong, nonatomic) IBOutlet UIImageView * imgCentral;
 
 
 - (void) displayNewHiragana:(Hiragana *)hiragana;
-- (void) displayEmpty;
 - (void) switchToggleFace;
 @end

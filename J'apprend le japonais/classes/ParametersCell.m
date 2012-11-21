@@ -6,12 +6,13 @@
 //  Copyright (c) 2012 Guillaume chave. All rights reserved.
 //
 
-#import "JapanCell.h"
+#import "ParametersCell.h"
 
-@implementation JapanCell
+@implementation ParametersCell
 
 @synthesize title = _title;
 @synthesize subTitle = _subTitle;
+@synthesize circle = _circle;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -19,7 +20,7 @@
     if (self)
     {
         // Initialization code
-        NSArray *arrayOfViews = [[NSBundle mainBundle] loadNibNamed:@"JapanCell" owner:self options:nil];
+        NSArray *arrayOfViews = [[NSBundle mainBundle] loadNibNamed:@"ParametersCell" owner:self options:nil];
         
         if ([arrayOfViews count] > 1) { return nil; }
         
@@ -27,10 +28,29 @@
         
         self = [arrayOfViews objectAtIndex:0];
         
+        [_title setFont:[UIFont fontWithName:@"EPSON ã≥â»èëëÃÇl" size:45]];
+        
     }
     
     return self;
     
+}
+
+- (void) enabled
+{
+    [_circle setImage:[UIImage imageNamed:@"circle-green"]];
+}
+
+- (void) disabled
+{
+    [_circle setImage:[UIImage imageNamed:@"circle-red"]];
+}
+
+- (void) empty
+{
+    _title.text = @"";
+    _subTitle.text = @"";
+    [_circle setImage:nil];
 }
 
 /*

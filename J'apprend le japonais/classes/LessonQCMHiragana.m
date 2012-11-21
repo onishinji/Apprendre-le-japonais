@@ -24,7 +24,8 @@
 @synthesize rightMiddleButton = _rightMiddleButton;
 @synthesize rightTopButton = _rightTopButton;
 
-@synthesize imgCentral = _imgCentral;
+@synthesize hiraganaFlipView = _hiraganaFlipView;
+
 @synthesize scoreLabel = _scoreLabel;
 
 @synthesize goodHiragana = _goodHiragana;
@@ -137,6 +138,8 @@
         [knowsRomanji addObject:currentHiragan.romanji];
         [knows addObject:currentHiragan];
         
+        [_hiraganaFlipView setCurrentHiragana:currentHiragan];
+        
     }
     
     int nb = [[[Computer sharedInstance] getSelectedsHiragana] count] - [knows count];
@@ -159,19 +162,15 @@
          float percent = (0.0 + currentScore) / (0.0 + [[[Computer sharedInstance] getSelectedsHiragana] count]) * 100;
         // NSLog(@"%f %d  %d", percent, currentScore, [[[Computer sharedInstance] getSelectedsHiragana] count]);
         
-        _hiragana.text = @"";
+        [_hiraganaFlipView displayEmpty];
         
         _msg.text = [NSString stringWithFormat:@"Fini ! ton scocre est de %2.f %% de réussite !", percent];
         currentScore = 0;
-        _imgCentral.image = [UIImage imageNamed:@"tired-konata.jpeg"];
-        [_imgCentral setContentMode:UIViewContentModeScaleAspectFill];
-        [_imgCentral setClipsToBounds:YES];
         
     }
     else
     {
-        _imgCentral.image = nil;
-        _hiragana.text = currentHiragan.japan;
+        [_hiraganaFlipView displayJapan];
     }
     
    // float percent = (0.0 + currentScore) / (0.0 + [[[Computer sharedInstance] getSelectedsHiragana] count]) * 100;
@@ -209,8 +208,7 @@
 }
 
 - (void)viewDidUnload {
-    [self setImgCentral:nil];
-    [self setHiragana:nil];
+    [self setHiraganaFlipView:nil];
     [self setLeftTopButton:nil];
     [self setLeftMiddleButton:nil];
     [self setLeftBottomButton:nil];

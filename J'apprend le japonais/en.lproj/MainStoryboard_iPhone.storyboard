@@ -118,30 +118,6 @@
     <resources>
         <image name="parameters.png" width="128" height="128"/>
     </resources>
-    <classes>
-        <class className="LessonCell" superclassName="PSUICollectionViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LessonCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="icon" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="title" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="LessonController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LessonController.h"/>
-        </class>
-        <class className="MainViewController" superclassName="PSUICollectionViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainViewController.h"/>
-        </class>
-        <class className="SectionLessonCell" superclassName="PSUICollectionReusableView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SectionLessonCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="title" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
