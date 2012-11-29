@@ -25,6 +25,6 @@
 @property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
 - (NSString *)applicationDocumentsDirectory;
-- (void) initHiragana;
+- (void) initKana;
 
 @end

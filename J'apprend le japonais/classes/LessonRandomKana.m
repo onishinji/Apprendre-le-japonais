@@ -100,7 +100,7 @@
     
     if([hypothesis isEqualToString:@"PREVIOUS"])
     {
-        [self displayPrevHiragana];
+        [self displayPrevious];
     }
     
     if([hypothesis isEqualToString:@"NEXT"])
@@ -171,25 +171,42 @@
 
     currentPos++;
     
-    // @todo switch type
-    int nbHiraganaLesson = [[[Computer sharedInstance] getSelectedsHiragana] count];
-    
-    
-    Hiragana * hiragana = nil;
-    if(currentPos < [knows count])
+    // switch type
+    int nbKanaLesson = 0;
+    if([self isForHiragana])
     {
-        hiragana = [knows objectAtIndex:currentPos];
+        nbKanaLesson = [[[Computer sharedInstance] getSelectedsHiragana] count];
     }
     else
     {
-        // @todo switch type
-        hiragana = [[Computer sharedInstance] getRandomHiragana:knowsRomanji];
+        nbKanaLesson = [[[Computer sharedInstance] getSelectedsKatakana] count];
+    }
     
-        if(hiragana != nil)
+    
+    Kana * kana = nil;
+    if(currentPos < [knows count])
+    {
+        kana = [knows objectAtIndex:currentPos];
+    }
+    else
+    {
+        // switch type
+        if([self isForHiragana])
+        {
+            kana = [[Computer sharedInstance] getRandomHiragana:knowsRomanji];
+            
+        }
+        else
+        {
+            kana = [[Computer sharedInstance] getRandomKatakana:knowsRomanji];
+            
+        }
+    
+        if(kana != nil)
         {
             currentPos = [knows count];
-            [knowsRomanji addObject:hiragana.romanji];
-            [knows addObject:hiragana];
+            [knowsRomanji addObject:kana.romanji];
+            [knows addObject:kana];
             
         }
     }
@@ -207,7 +224,7 @@
         _msg.text = [NSString stringWithFormat:@"Encore %i hiragana(s) à deviner", nb ];
     }
     
-    if(currentPos >= nbHiraganaLesson)
+    if(currentPos >= nbKanaLesson)
     {
         knows = [[NSMutableArray alloc] init];
         knowsRomanji = [[NSMutableArray alloc] init];
@@ -218,12 +235,12 @@
     }
     else
     {
-        [_kanaFlipView displayNewHiragana:hiragana];
+        [_kanaFlipView displayNewHiragana:kana];
     }
 
 }
 
-- (void) displayPrevHiragana
+- (void) displayPrevious
 {
     if(currentPos > 0)
     {

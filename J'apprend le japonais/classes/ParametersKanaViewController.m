@@ -22,59 +22,6 @@
     if (self) {
         // Custom initialization
         
-        NSFetchedResultsController * resultsController = [[Computer sharedInstance] getHiraganaPerSections];
-        
-        allResult = [[NSMutableDictionary  alloc] init]; 
-        int sectionId = 0;
-        for(int i = 0; i < [[resultsController sections] count]; i++)
-        {
-            
-            NSMutableArray * hiraganas = [[NSMutableArray alloc] init];
-            
-            id <NSFetchedResultsSectionInfo> info = [[resultsController sections] objectAtIndex:i];
-            for(int j = 0; j < [info numberOfObjects]; j++)
-            {
-                [hiraganas addObject:[[info objects] objectAtIndex:j]];
-            }
-            
-            NSMutableDictionary * nbRow = [[NSMutableDictionary alloc] init];
-            for(Hiragana * h in hiraganas)
-            {
-                [nbRow setObject:@"1" forKey:[h.row stringValue]];
-            }
-            
-            
-            NSMutableArray * sectionHiragana = [[NSMutableArray alloc] init];
-            for (int row = 1; row <= [nbRow count]; row ++)
-            {
-                for(int col = 1; col <= 5; col++)
-                {
-                    Hiragana * thehiragana = nil;
-                    
-                    for(Hiragana * hir in hiraganas)
-                    {
-                        
-                        if([hir.col intValue] == col && [hir.row intValue] == row)
-                        {
-                            thehiragana = hir;
-                        }
-                    }
-                    if(thehiragana == nil) {
-                        [sectionHiragana addObject:@""];
-                    }
-                    else
-                    {
-                        [sectionHiragana addObject:thehiragana];
-                    }
-                }
-            }
-            
-            NSLog(@"section%d  nb = %d", sectionId, [sectionHiragana count]);
-            
-            [allResult setObject:sectionHiragana forKey:[NSString stringWithFormat:@"section_%d", sectionId] ];
-            sectionId++;
-            
-        }
     }
     
     return self;
@@ -82,6 +29,70 @@
 
 - (void)loadView {
     [super loadView];
+    
+    
+    NSFetchedResultsController * resultsController;
+    if([self isForHiragana])
+    {
+        resultsController = [[Computer sharedInstance] getHiraganaPerSections];
+        
+    }
+    else
+    {
+        resultsController = [[Computer sharedInstance] getKatakanaPerSections];
+    }
+    
+    allResult = [[NSMutableDictionary  alloc] init];
+    int sectionId = 0;
+    for(int i = 0; i < [[resultsController sections] count]; i++)
+    {
+        
+        NSMutableArray * hiraganas = [[NSMutableArray alloc] init];
+        
+        id <NSFetchedResultsSectionInfo> info = [[resultsController sections] objectAtIndex:i];
+        for(int j = 0; j < [info numberOfObjects]; j++)
+        {
+            [hiraganas addObject:[[info objects] objectAtIndex:j]];
+        }
+        
+        NSMutableDictionary * nbRow = [[NSMutableDictionary alloc] init];
+        for(Kana * h in hiraganas)
+        {
+            [nbRow setObject:@"1" forKey:[h.row stringValue]];
+        }
+        
+        
+        NSMutableArray * sectionHiragana = [[NSMutableArray alloc] init];
+        for (int row = 1; row <= [nbRow count]; row ++)
+        {
+            for(int col = 1; col <= 5; col++)
+            {
+                Kana * thehiragana = nil;
+                
+                for(Kana * hir in hiraganas)
+                {
+                    
+                    if([hir.col intValue] == col && [hir.row intValue] == row)
+                    {
+                        thehiragana = hir;
+                    }
+                }
+                if(thehiragana == nil) {
+                    [sectionHiragana addObject:@""];
+                }
+                else
+                {
+                    [sectionHiragana addObject:thehiragana];
+                }
+            }
+        }
+        
+        NSLog(@"section%d  nb = %d", sectionId, [sectionHiragana count]);
+        
+        [allResult setObject:sectionHiragana forKey:[NSString stringWithFormat:@"section_%d", sectionId] ];
+        sectionId++;
+        
+    }
     
     _collectionViewLayout = [[PSTCollectionViewFlowLayout alloc] init];
     _collectionViewLayout.itemSize = CGSizeMake(90, 90.0f);
@@ -176,9 +187,9 @@
     
     id objetInArray = [[allResult objectForKey:[NSString stringWithFormat:@"section_%d",indexPath.section ]] objectAtIndex:indexPath.row];
     
-    if([objetInArray isKindOfClass:[Hiragana class]])
+    if([objetInArray isKindOfClass:[Kana class]])
     {
-        Hiragana * hir = objetInArray;
+        Kana * hir = objetInArray;
         
         cell.title.text = hir.japan;
         cell.subTitle.text = hir.romanji;
@@ -203,9 +214,9 @@
 {
     id objetInArray = [[allResult objectForKey:[NSString stringWithFormat:@"section_%d",indexPath.section ]] objectAtIndex:indexPath.row];
     
-    if([objetInArray isKindOfClass:[Hiragana class]])
+    if([objetInArray isKindOfClass:[Kana class]])
     {
-        Hiragana * hir = objetInArray;
+        Kana * hir = objetInArray;
         [[Computer sharedInstance] toggleSelectedHiragana:hir];
         
         

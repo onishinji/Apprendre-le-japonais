@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Hiragana.h"
+#import "Kana.h"
 #import "KanaView.h"
 
 @interface KanaFlipView : KanaView
@@ -16,6 +16,6 @@
 }
 
 
-- (void) displayNewHiragana:(Hiragana *)hiragana;
+- (void) displayNewHiragana:(Kana *)hiragana;
 - (void) switchToggleFace;
 @end

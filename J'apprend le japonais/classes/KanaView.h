@@ -7,18 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Hiragana.h"
+#import "Kana.h"
 
 @interface KanaView : UIView
 {
-    Hiragana * _hiragana;
+    Kana * _hiragana;
 }
 
 
 @property (strong, nonatomic) IBOutlet UILabel * lblHiragana;
 @property (strong, nonatomic) IBOutlet UIImageView * imgCentral;
 
-@property (strong, nonatomic) Hiragana * currentHiragana;
+@property (strong, nonatomic) Kana * currentHiragana;
 
 - (void) displayRomanji;
 - (void) displayJapan;

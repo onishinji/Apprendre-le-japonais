@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Hiragana.h"
+#import "Kana.h"
 #import "NSMutableArray+Shuffling.h"
 
 @interface Computer : NSObject
@@ -21,17 +21,25 @@
 
 + (id)sharedInstance;
 
--(Hiragana *) createHiragana:(NSString *)romanji japan:(NSString *)japan position:(int)position col:(int)col row:(int)col section:(int)section type:(int)type;
+-(Kana *) createKana:(NSString *)romanji japan:(NSString *)japan position:(int)position col:(int)col row:(int)col section:(int)section type:(int)type;
 
--(NSArray *)  getAllHiragana;
 -(NSFetchedResultsController *)  getHiraganaPerSections;
--(NSMutableArray *) getRandomHiraganaExcept:(Hiragana *)hiragana limit:(int)limit;
+-(NSFetchedResultsController *)  getKatakanaPerSections;
+
+
+
+-(NSMutableArray *) getRandomHiraganaExcept:(Kana *)hiragana limit:(int)limit;
+-(NSMutableArray *) getrandomKatakanaExcept:(Kana *)hiragana limit:(int)limit;
 -(NSArray *) getSelectedsHiragana;
+-(NSArray *) getSelectedsKatakana;
 
 
--(Hiragana *) getRandomHiragana:(NSArray *)knowRomanjis;
--(Hiragana *) getHiraganaWithRomanji:(NSString *)romanji;
--(Hiragana *) toggleSelectedHiragana:(Hiragana *)hiragana;
+-(Kana *) getRandomKatakana:(NSArray *)knowRomanjis;
+-(Kana *) getRandomHiragana:(NSArray *)knowRomanjis;
+
+-(Kana *) getKatakanaWithRomanji:(NSString *)romanji;
+-(Kana *) getHiraganaWithRomanji:(NSString *)romanji;
+-(Kana *) toggleSelectedHiragana:(Kana *)hiragana;
 
 
 -(void)flush;

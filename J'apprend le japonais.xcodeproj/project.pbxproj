@@ -67,7 +67,7 @@
 		F0CE94BE164082DC004F7E2B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CE946A163F2F87004F7E2B /* AppDelegate.m */; };
 		F0CE94C916408483004F7E2B /* AppDelegate.m in Resources */ = {isa = PBXBuildFile; fileRef = F0CE946A163F2F87004F7E2B /* AppDelegate.m */; };
 		F0CE94DF164084B9004F7E2B /* Computer.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CE94CC164084B9004F7E2B /* Computer.m */; };
-		F0CE94E0164084B9004F7E2B /* Hiragana.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CE94CE164084B9004F7E2B /* Hiragana.m */; };
+		F0CE94E0164084B9004F7E2B /* Kana.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CE94CE164084B9004F7E2B /* Kana.m */; };
 		F0CE94E1164084B9004F7E2B /* KanaFlipView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CE94D0164084B9004F7E2B /* KanaFlipView.m */; };
 		F0CE94E2164084B9004F7E2B /* ParametersCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CE94D2164084B9004F7E2B /* ParametersCell.m */; };
 		F0CE94E3164084B9004F7E2B /* Lesson.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CE94D4164084B9004F7E2B /* Lesson.m */; };
@@ -165,8 +165,8 @@
 		F0CE9491163F2F95004F7E2B /* ParametersKanaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ParametersKanaViewController.xib; path = ressources/ParametersKanaViewController.xib; sourceTree = "<group>"; };
 		F0CE94CB164084A9004F7E2B /* Computer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Computer.h; path = classes/Computer.h; sourceTree = "<group>"; };
 		F0CE94CC164084B9004F7E2B /* Computer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Computer.m; path = classes/Computer.m; sourceTree = "<group>"; };
-		F0CE94CD164084B9004F7E2B /* Hiragana.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hiragana.h; path = classes/Hiragana.h; sourceTree = "<group>"; };
-		F0CE94CE164084B9004F7E2B /* Hiragana.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Hiragana.m; path = classes/Hiragana.m; sourceTree = "<group>"; };
+		F0CE94CD164084B9004F7E2B /* Kana.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Kana.h; path = classes/Kana.h; sourceTree = "<group>"; };
+		F0CE94CE164084B9004F7E2B /* Kana.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Kana.m; path = classes/Kana.m; sourceTree = "<group>"; };
 		F0CE94CF164084B9004F7E2B /* KanaFlipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KanaFlipView.h; path = classes/KanaFlipView.h; sourceTree = "<group>"; };
 		F0CE94D0164084B9004F7E2B /* KanaFlipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KanaFlipView.m; path = classes/KanaFlipView.m; sourceTree = "<group>"; };
 		F0CE94D1164084B9004F7E2B /* ParametersCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParametersCell.h; path = classes/ParametersCell.h; sourceTree = "<group>"; };
@@ -389,8 +389,8 @@
 			children = (
 				F0CE94CB164084A9004F7E2B /* Computer.h */,
 				F0CE94CC164084B9004F7E2B /* Computer.m */,
-				F0CE94CD164084B9004F7E2B /* Hiragana.h */,
-				F0CE94CE164084B9004F7E2B /* Hiragana.m */,
+				F0CE94CD164084B9004F7E2B /* Kana.h */,
+				F0CE94CE164084B9004F7E2B /* Kana.m */,
 				F0CE94D3164084B9004F7E2B /* Lesson.h */,
 				F0CE94D4164084B9004F7E2B /* Lesson.m */,
 			);
@@ -532,7 +532,7 @@
 				F0CE94E91640850B004F7E2B /* main.m in Sources */,
 				F0CE94BE164082DC004F7E2B /* AppDelegate.m in Sources */,
 				F0CE94DF164084B9004F7E2B /* Computer.m in Sources */,
-				F0CE94E0164084B9004F7E2B /* Hiragana.m in Sources */,
+				F0CE94E0164084B9004F7E2B /* Kana.m in Sources */,
 				F0CE94E1164084B9004F7E2B /* KanaFlipView.m in Sources */,
 				F0CE94E2164084B9004F7E2B /* ParametersCell.m in Sources */,
 				F0CE94E3164084B9004F7E2B /* Lesson.m in Sources */,

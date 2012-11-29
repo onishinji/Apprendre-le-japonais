@@ -112,19 +112,34 @@
 
 -(void) displayNextHiragana
 {
-    // @todo switch type
-    currentKana = [[Computer sharedInstance] getRandomHiragana:knowsRomanji];
+    // switch type
+    if([self isForHiragana])
+    { 
+        currentKana = [[Computer sharedInstance] getRandomHiragana:knowsRomanji];
+    }
+    else
+    {
+        currentKana = [[Computer sharedInstance] getRandomKatakana:knowsRomanji];
+    }
     
     int goodIndex = arc4random() % 6;
     
     UIButton * goodButton = [btnArray objectAtIndex:goodIndex];
     [goodButton setTitle:currentKana.romanji forState:UIControlStateNormal];// = currentKana.romanji;
     
-    // @todo switch type
-    NSMutableArray * mutableArray = [[Computer sharedInstance] getRandomHiraganaExcept:currentKana limit:6];
+    // switch type
+    NSMutableArray * mutableArray;
+    if([self isForHiragana])
+    {
+        mutableArray = [[Computer sharedInstance] getRandomHiraganaExcept:currentKana limit:6];
+    }
+    else
+    {
+        mutableArray = [[Computer sharedInstance] getRandomHiraganaExcept:currentKana limit:6];
+    }
     
     int i = 0;
-    for (Hiragana * hir in mutableArray) {
+    for (Kana * hir in mutableArray) {
         
         if(goodIndex != i)
         {
@@ -145,7 +160,16 @@
     }
     
     // @todo switch type
-    int nb = [[[Computer sharedInstance] getSelectedsHiragana] count] - [knows count];
+    int nb = 0;
+    
+    if([self isForHiragana])
+    {
+        nb = [[[Computer sharedInstance] getSelectedsHiragana] count] - [knows count];
+    }
+    else
+    {
+        nb = [[[Computer sharedInstance] getSelectedsKatakana] count] - [knows count];
+    }
     
     if(nb == 0)
     {
@@ -154,7 +178,7 @@
     else
     {
         // @todo switch type
-        _msg.text = [NSString stringWithFormat:@"Encore %i hiragana(s) à deviner", nb ];
+        _msg.text = [NSString stringWithFormat:@"Encore %i kana(s) à deviner", nb ];
     }
     
     if(currentKana == nil)
@@ -181,7 +205,7 @@
     
 }
 
-- (void) displayTrueResponse:(Hiragana *)kana
+- (void) displayTrueResponse:(Kana *)kana
 {
     [[self.view viewWithTag:100] setHidden:FALSE];
     [[self.view viewWithTag:200] setHidden:TRUE];
@@ -190,7 +214,7 @@
     _goodRomanjiPlain.text = kana.romanji;
 }
 
-- (void) displayFalseResponse:(Hiragana *)trueResponse falseReponse:(Hiragana *)falseResponse
+- (void) displayFalseResponse:(Kana *)trueResponse falseReponse:(Kana *)falseResponse
 {
     [[self.view viewWithTag:100] setHidden:TRUE];
     [[self.view viewWithTag:200] setHidden:FALSE];

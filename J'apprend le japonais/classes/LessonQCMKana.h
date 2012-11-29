@@ -1,5 +1,4 @@
 //
-//  LessonQCMHiraganaViewController.h
 //  J'apprend le japonais
 //
 //  Created by Guillaume chave on 05/11/12.
@@ -8,13 +7,13 @@
 
 #import <UIKit/UIKit.h>
 
-#import "Hiragana.h"
+#import "Kana.h"
 #import "KanaFlipView.h"
 #import "LessonControllerViewController.h"
 
 @interface LessonQCMKana : LessonControllerViewController
 {
-    Hiragana * currentKana;
+    Kana * currentKana;
     
     int currentScore;
     
@@ -47,7 +46,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *falseRomanji;
 
 
-- (void) displayTrueResponse:(Hiragana *)kana;
-- (void) displayFalseResponse:(Hiragana *)trueResponse falseReponse:(Hiragana *)falseResponse;
+- (void) displayTrueResponse:(Kana *)kana;
+- (void) displayFalseResponse:(Kana *)trueResponse falseReponse:(Kana *)falseResponse;
 
 @end
