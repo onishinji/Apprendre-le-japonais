@@ -369,6 +369,38 @@ static Computer *sharedObject;
     }
 }
 
+
+-(Kana *) getKatakanaWithJapan:(NSString *)romanji
+{
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Kana" inManagedObjectContext:_managedObjectContext];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"japan = %@ and type = 1", romanji];
+    [request setPredicate:predicate];
+    
+    NSSortDescriptor *sort = [[NSSortDescriptor alloc] initWithKey:@"romanji" ascending:NO];
+    [request setSortDescriptors:[NSArray arrayWithObject:sort]];
+    
+    NSError *error = nil;
+    NSArray *array = [_managedObjectContext executeFetchRequest:request error:&error];
+    if (array == nil)
+    {
+        NSLog(@"Error while retriving\n%@",
+              ([error localizedDescription] != nil) ? [error localizedDescription]: @"Unknown Error");
+    }
+    
+    if([array count] == 0)
+    {
+        return nil;
+    }
+    else
+    {
+        Kana * aResult = [array objectAtIndex: arc4random() % [array count]];
+        return aResult;
+    }
+}
+
 -(Kana *) getHiraganaWithRomanji:(NSString *)romanji
 {
     NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Kana" inManagedObjectContext:_managedObjectContext];
@@ -399,6 +431,39 @@ static Computer *sharedObject;
         return aResult;
     }
 }
+
+
+-(Kana *) getHiraganaWithJapan:(NSString *)romanji
+{
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Kana" inManagedObjectContext:_managedObjectContext];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"japan = %@ and type = 0", romanji];
+    [request setPredicate:predicate];
+    
+    NSSortDescriptor *sort = [[NSSortDescriptor alloc] initWithKey:@"romanji" ascending:NO];
+    [request setSortDescriptors:[NSArray arrayWithObject:sort]];
+    
+    NSError *error = nil;
+    NSArray *array = [_managedObjectContext executeFetchRequest:request error:&error];
+    if (array == nil)
+    {
+        NSLog(@"Error while retriving\n%@",
+              ([error localizedDescription] != nil) ? [error localizedDescription]: @"Unknown Error");
+    }
+    
+    if([array count] == 0)
+    {
+        return nil;
+    }
+    else
+    {
+        Kana * aResult = [array objectAtIndex: arc4random() % [array count]];
+        return aResult;
+    }
+}
+
 
 -(void) flush
 {

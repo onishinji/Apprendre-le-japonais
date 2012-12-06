@@ -56,6 +56,7 @@
 		F061D98B166BDD2E007E7422 /* nekosensei_kana_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F061D98A166BDD2E007E7422 /* nekosensei_kana_logo@2x.png */; };
 		F061D98E166BE180007E7422 /* qcm.png in Resources */ = {isa = PBXBuildFile; fileRef = F061D98C166BE180007E7422 /* qcm.png */; };
 		F061D98F166BE180007E7422 /* shuffle.png in Resources */ = {isa = PBXBuildFile; fileRef = F061D98D166BE180007E7422 /* shuffle.png */; };
+		F061D993167150AD007E7422 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F061D992167150AC007E7422 /* Default@2x.png */; };
 		F0679533164B10BE00347CF2 /* LessonRandomKana~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0679532164B10BE00347CF2 /* LessonRandomKana~ipad.xib */; };
 		F0679536164B154200347CF2 /* LessonQCMKana~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0679535164B154200347CF2 /* LessonQCMKana~ipad.xib */; };
 		F0679538164B187C00347CF2 /* ParametersKanaViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0679537164B187C00347CF2 /* ParametersKanaViewController~ipad.xib */; };
@@ -157,6 +158,9 @@
 		F061D98A166BDD2E007E7422 /* nekosensei_kana_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nekosensei_kana_logo@2x.png"; sourceTree = "<group>"; };
 		F061D98C166BE180007E7422 /* qcm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = qcm.png; path = ressources/qcm.png; sourceTree = "<group>"; };
 		F061D98D166BE180007E7422 /* shuffle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shuffle.png; path = ressources/shuffle.png; sourceTree = "<group>"; };
+		F061D990167150A0007E7422 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F061D992167150AC007E7422 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F061D994167150B5007E7422 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		F0679532164B10BE00347CF2 /* LessonRandomKana~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "LessonRandomKana~ipad.xib"; path = "ressources/LessonRandomKana~ipad.xib"; sourceTree = "<group>"; };
 		F0679535164B154200347CF2 /* LessonQCMKana~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "LessonQCMKana~ipad.xib"; path = "ressources/LessonQCMKana~ipad.xib"; sourceTree = "<group>"; };
 		F0679537164B187C00347CF2 /* ParametersKanaViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "ParametersKanaViewController~ipad.xib"; path = "ressources/ParametersKanaViewController~ipad.xib"; sourceTree = "<group>"; };
@@ -298,6 +302,9 @@
 		F060E964163C0A4B009C01E3 = {
 			isa = PBXGroup;
 			children = (
+				F061D994167150B5007E7422 /* Default-568h@2x.png */,
+				F061D992167150AC007E7422 /* Default@2x.png */,
+				F061D990167150A0007E7422 /* Default.png */,
 				F061D98A166BDD2E007E7422 /* nekosensei_kana_logo@2x.png */,
 				F061D988166BDD26007E7422 /* nekosensei_kana_logo.png */,
 				F0A64DA81659356F009752E8 /* AVFoundation.framework */,
@@ -543,6 +550,7 @@
 				F061D98B166BDD2E007E7422 /* nekosensei_kana_logo@2x.png in Resources */,
 				F061D98E166BE180007E7422 /* qcm.png in Resources */,
 				F061D98F166BE180007E7422 /* shuffle.png in Resources */,
+				F061D993167150AD007E7422 /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

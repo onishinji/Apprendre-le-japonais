@@ -58,9 +58,17 @@
 {
     [super viewDidLoad];
     
+    [self.kanaFlipView setMode:[[self params] objectForKey:@"mode"]];
     
     [[self.view viewWithTag:100] setHidden:TRUE];
     [[self.view viewWithTag:200] setHidden:TRUE];
+    
+    [self configureButton:_leftTopButton];
+    [self configureButton:_leftMiddleButton];
+    [self configureButton:_leftBottomButton];
+    [self configureButton:_rightTopButton];
+    [self configureButton:_rightMiddleButton];
+    [self configureButton:_rightBottomButton];
     
     [btnArray addObject:_leftTopButton];
     [btnArray addObject:_leftMiddleButton];
@@ -81,6 +89,13 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+- (void) configureButton:(UIButton *)btn
+{
+    CGFloat size = 0;
+    size = btn.titleLabel.font.pointSize;
+    [btn.titleLabel setFont:[UIFont fontWithName:@"EPSON ã≥â»èëëÃÇl" size:size]];
+}
+
 - (void) checkResponse:(id)sender
 {
     
@@ -88,7 +103,10 @@
     {
         UIButton * btn = (UIButton *)sender;
         
-        if([btn.titleLabel.text isEqualToString:currentKana.romanji])
+        if(
+           ([self isForRomanjiToJapan] && [btn.titleLabel.text isEqualToString:currentKana.romanji]) ||
+           ([self isForJapanToRomanji] && [btn.titleLabel.text isEqualToString:currentKana.japan])
+           )
         {
             currentScore++;
             currentKana.scoring = [NSNumber numberWithInt:[currentKana.scoring intValue] + 1];
@@ -96,8 +114,30 @@
         }
         else
         {
-         //   currentScore--;
-            [self displayFalseResponse:currentKana falseReponse:[[Computer sharedInstance] getHiraganaWithRomanji:btn.titleLabel.text]];
+            if([self isForHiragana])
+            {
+                if([self isForRomanjiToJapan])
+                {
+                    
+                    [self displayFalseResponse:currentKana falseReponse:[[Computer sharedInstance] getHiraganaWithRomanji:btn.titleLabel.text]];
+                }
+                else
+                {
+                    [self displayFalseResponse:currentKana falseReponse:[[Computer sharedInstance] getHiraganaWithJapan:btn.titleLabel.text]];
+                }
+            }
+            else
+            {
+                if([self isForRomanjiToJapan])
+                {
+                    
+                    [self displayFalseResponse:currentKana falseReponse:[[Computer sharedInstance] getKatakanaWithRomanji:btn.titleLabel.text]];
+                }
+                else
+                {
+                    [self displayFalseResponse:currentKana falseReponse:[[Computer sharedInstance] getKatakanaWithJapan:btn.titleLabel.text]];
+                }
+            }
             currentKana.scoring = [NSNumber numberWithInt:[currentKana.scoring intValue] - 1];
         }
         [[Computer sharedInstance] flush];
@@ -114,7 +154,7 @@
 {
     // switch type
     if([self isForHiragana])
-    { 
+    {
         currentKana = [[Computer sharedInstance] getRandomHiragana:knowsRomanji];
     }
     else
@@ -125,7 +165,15 @@
     int goodIndex = arc4random() % 6;
     
     UIButton * goodButton = [btnArray objectAtIndex:goodIndex];
-    [goodButton setTitle:currentKana.romanji forState:UIControlStateNormal];// = currentKana.romanji;
+    
+    if([self isForRomanjiToJapan])
+    {
+        [goodButton setTitle:currentKana.romanji forState:UIControlStateNormal];
+    }
+    else
+    {
+        [goodButton setTitle:currentKana.japan forState:UIControlStateNormal];
+    }
     
     // switch type
     NSMutableArray * mutableArray;
@@ -135,7 +183,7 @@
     }
     else
     {
-        mutableArray = [[Computer sharedInstance] getRandomHiraganaExcept:currentKana limit:6];
+        mutableArray = [[Computer sharedInstance] getRandomKatakanaExcept:currentKana limit:6];
     }
     
     int i = 0;
@@ -144,7 +192,16 @@
         if(goodIndex != i)
         {
             UIButton * falseButton = [btnArray objectAtIndex:i];
-            [falseButton setTitle:hir.romanji forState:UIControlStateNormal];
+            
+            
+            if([self isForRomanjiToJapan])
+            {
+                [falseButton setTitle:hir.romanji forState:UIControlStateNormal];
+            }
+            else
+            {
+                [falseButton setTitle:hir.japan forState:UIControlStateNormal];
+            }
         }
         
         i++;
@@ -187,7 +244,7 @@
         knowsRomanji = [[NSMutableArray alloc] init];
         
         
-         float percent = (0.0 + currentScore) / (0.0 + [[[Computer sharedInstance] getSelectedsHiragana] count]) * 100;
+        float percent = (0.0 + currentScore) / (0.0 + [[[Computer sharedInstance] getSelectedsHiragana] count]) * 100;
         // NSLog(@"%f %d  %d", percent, currentScore, [[[Computer sharedInstance] getSelectedsHiragana] count]);
         
         [_hiraganaFlipView displayEmpty];

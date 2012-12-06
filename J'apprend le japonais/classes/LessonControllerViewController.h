@@ -11,12 +11,17 @@
 
 @interface LessonControllerViewController : UIViewController
 {
-    NSNumber * currentKanaType;
+    NSNumber * currentKanaType; 
 }
 
 @property (nonatomic) NSNumber * currentKanaType;
+@property (strong, nonatomic) NSMutableDictionary * params;
 
 - (BOOL) isForHiragana;
 - (BOOL) isForKatakana;
+
+
+- (BOOL) isForRomanjiToJapan;
+- (BOOL) isForJapanToRomanji;
 
 @end

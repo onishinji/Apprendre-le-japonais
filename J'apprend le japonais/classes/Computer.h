@@ -29,7 +29,8 @@
 
 
 -(NSMutableArray *) getRandomHiraganaExcept:(Kana *)hiragana limit:(int)limit;
--(NSMutableArray *) getrandomKatakanaExcept:(Kana *)hiragana limit:(int)limit;
+-(NSMutableArray *) getRandomKatakanaExcept:(Kana *)hiragana limit:(int)limit;
+
 -(NSArray *) getSelectedsHiragana;
 -(NSArray *) getSelectedsKatakana;
 
@@ -38,7 +39,11 @@
 -(Kana *) getRandomHiragana:(NSArray *)knowRomanjis;
 
 -(Kana *) getKatakanaWithRomanji:(NSString *)romanji;
+-(Kana *) getKatakanaWithJapan:(NSString *)romanji;
 -(Kana *) getHiraganaWithRomanji:(NSString *)romanji;
+-(Kana *) getHiraganaWithJapan:(NSString *)romanji;
+
+
 -(Kana *) toggleSelectedHiragana:(Kana *)hiragana;
 
 

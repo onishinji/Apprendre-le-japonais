@@ -13,6 +13,18 @@
 @synthesize imgCentral = _imgCentral;
 @synthesize lblHiragana = _lblHiragana;
 @synthesize currentHiragana = _currentHiragana;
+@synthesize mode = _mode;
+
+
+- (BOOL) isForRomanjiToJapan
+{
+    return [self.mode isEqualToNumber:[NSNumber numberWithInt:MODE_ROMANJI_JAPAN]];
+}
+
+- (BOOL) isForJapanToRomanji
+{
+    return [self.mode isEqualToNumber:[NSNumber numberWithInt:MODE_JAPAN_ROMANJI]];
+}
 
 - (void) initialize{
     
@@ -49,13 +61,29 @@
 - (void) displayRomanji
 {
     _imgCentral.image = nil;
-    _lblHiragana.text = _currentHiragana.romanji;
+    
+    if([self isForRomanjiToJapan])
+    {
+        _lblHiragana.text = _currentHiragana.romanji;
+    }
+    else
+    {
+        _lblHiragana.text = _currentHiragana.japan;
+    }
 }
 
 - (void) displayJapan
 {
     _imgCentral.image = nil;
-    _lblHiragana.text = _currentHiragana.japan;
+    
+    if([self isForRomanjiToJapan])
+    {
+        _lblHiragana.text = _currentHiragana.japan;
+    }
+    else
+    {
+        _lblHiragana.text = _currentHiragana.romanji;
+    }
     
     
     [_lblHiragana setFont:[UIFont fontWithName:@"EPSON ã≥â»èëëÃÇl" size:105]];

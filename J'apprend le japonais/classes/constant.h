@@ -9,3 +9,5 @@
 
 #define TYPE_HIRAGANA  0
 #define TYPE_KATAKANA  1
+#define MODE_ROMANJI_JAPAN 0
+#define MODE_JAPAN_ROMANJI 1

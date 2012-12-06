@@ -88,6 +88,7 @@
             NSLog(@"Error: %@",[err localizedDescription]);
         }
         
+        // Decomment to reactive voice support
       //  [self.pocketsphinxController startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:dicPath languageModelIsJSGF:NO];
         
         [self.openEarsEventsObserver setDelegate:self];
@@ -159,6 +160,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self.kanaFlipView setMode:[[self params] objectForKey:@"mode"]];
+    
     [self displayNext];
     
     [_btnNext addTarget:self action:@selector(displayNext) forControlEvents:UIControlEventTouchUpInside];
@@ -199,7 +203,6 @@
         else
         {
             kana = [[Computer sharedInstance] getRandomKatakana:knowsRomanji];
-            
         }
     
         if(kana != nil)

@@ -44,6 +44,7 @@
     _currentController = [[NSClassFromString(_lesson.className) alloc] initWithNibName:_lesson.className bundle:nil];
     
     _currentController.currentKanaType = [[self parameters] objectForKey:@"kanaType"];
+    _currentController.params = [self parameters];
     
     UIScrollView *scroll = [[UIScrollView alloc] initWithFrame:CGRectMake(
                                                                           0,

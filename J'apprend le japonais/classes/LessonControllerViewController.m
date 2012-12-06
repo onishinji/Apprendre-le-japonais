@@ -14,6 +14,7 @@
 
 @implementation LessonControllerViewController
 
+@synthesize params = _params;
 @synthesize currentKanaType;
 
 - (BOOL) isForHiragana
@@ -24,6 +25,17 @@
 - (BOOL) isForKatakana
 {
     return [currentKanaType intValue] == TYPE_KATAKANA;
+}
+
+
+- (BOOL) isForRomanjiToJapan
+{
+    return [[self.params objectForKey:@"mode"] isEqualToNumber:[NSNumber numberWithInt:MODE_ROMANJI_JAPAN]];
+}
+
+- (BOOL) isForJapanToRomanji
+{
+    return [[self.params objectForKey:@"mode"] isEqualToNumber:[NSNumber numberWithInt:MODE_JAPAN_ROMANJI]];
 }
 
 - (void) viewDidLoad
