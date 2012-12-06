@@ -47,10 +47,10 @@
     switch (section) {
         case 0:
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle" icon:[UIImage imageNamed:@"memory.png"] className:@"LessonRandomKana" parameters:paramsHiragana]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle" icon:[UIImage imageNamed:@"shuffle.png"] className:@"LessonRandomKana" parameters:paramsHiragana]];
             
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM" icon:[UIImage imageNamed:@"qcm"] className:@"LessonQCMKana" parameters:paramsHiragana]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM" icon:[UIImage imageNamed:@"qcm.png"] className:@"LessonQCMKana" parameters:paramsHiragana]];
             
             [lessons addObject:[[Lesson alloc] initWithTitle:@"Parametres" icon:[UIImage imageNamed:@"parameters.png"] className:@"ParametersKanaViewController" parameters:paramsHiragana]];
 
@@ -59,10 +59,10 @@
             
         case 1:
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle" icon:[UIImage imageNamed:@"memory.png"] className:@"LessonRandomKana" parameters:paramsKatakana]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle" icon:[UIImage imageNamed:@"shuffle.png"] className:@"LessonRandomKana" parameters:paramsKatakana]];
             
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM" icon:[UIImage imageNamed:@"qcm"] className:@"LessonQCMKana" parameters:paramsKatakana]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM" icon:[UIImage imageNamed:@"qcm.png"] className:@"LessonQCMKana" parameters:paramsKatakana]];
             
             [lessons addObject:[[Lesson alloc] initWithTitle:@"Parametres" icon:[UIImage imageNamed:@"parameters.png"] className:@"ParametersKanaViewController" parameters:paramsKatakana]];
             

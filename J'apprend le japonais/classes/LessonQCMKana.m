@@ -77,7 +77,7 @@
     [_rightBottomButton addTarget:self action:@selector(checkResponse:) forControlEvents:UIControlEventTouchUpInside];
     [_rightMiddleButton addTarget:self action:@selector(checkResponse:) forControlEvents:UIControlEventTouchUpInside];
     
-    [self displayNextHiragana];
+    [self displayNext];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -105,12 +105,12 @@
     }
     
     
-    [self displayNextHiragana];
+    [self displayNext];
     
     
 }
 
--(void) displayNextHiragana
+-(void) displayNext
 {
     // switch type
     if([self isForHiragana])

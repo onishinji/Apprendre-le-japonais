@@ -11,7 +11,7 @@
 
 @interface LessonRandomKana ()
 
-- (void) displayNextHiragana;
+- (void) displayNext;
 
 @end
 
@@ -105,7 +105,7 @@
     
     if([hypothesis isEqualToString:@"NEXT"])
     {
-        [self displayNextHiragana];
+        [self displayNext];
     }
     
     if([hypothesis isEqualToString:@"SWITCH"])
@@ -159,14 +159,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self displayNextHiragana];
+    [self displayNext];
     
-    [_btnNext addTarget:self action:@selector(displayNextHiragana) forControlEvents:UIControlEventTouchUpInside];
-    [_btnPrev addTarget:self action:@selector(displayPrevHiragana) forControlEvents:UIControlEventTouchUpInside];
+    [_btnNext addTarget:self action:@selector(displayNext) forControlEvents:UIControlEventTouchUpInside];
+    [_btnPrev addTarget:self action:@selector(displayPrevious) forControlEvents:UIControlEventTouchUpInside];
     
 }
 
--(void) displayNextHiragana
+-(void) displayNext
 {
 
     currentPos++;
@@ -235,7 +235,7 @@
     }
     else
     {
-        [_kanaFlipView displayNewHiragana:kana];
+        [_kanaFlipView displayNext:kana];
     }
 
 }
@@ -246,7 +246,7 @@
     {
         currentPos--;
         currentPos--;
-        [self displayNextHiragana];
+        [self displayNext];
     }
     
 }

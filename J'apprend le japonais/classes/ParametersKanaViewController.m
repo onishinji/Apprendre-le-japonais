@@ -47,49 +47,47 @@
     for(int i = 0; i < [[resultsController sections] count]; i++)
     {
         
-        NSMutableArray * hiraganas = [[NSMutableArray alloc] init];
+        NSMutableArray * kanas = [[NSMutableArray alloc] init];
         
         id <NSFetchedResultsSectionInfo> info = [[resultsController sections] objectAtIndex:i];
         for(int j = 0; j < [info numberOfObjects]; j++)
         {
-            [hiraganas addObject:[[info objects] objectAtIndex:j]];
+            [kanas addObject:[[info objects] objectAtIndex:j]];
         }
         
         NSMutableDictionary * nbRow = [[NSMutableDictionary alloc] init];
-        for(Kana * h in hiraganas)
+        for(Kana * kana in kanas)
         {
-            [nbRow setObject:@"1" forKey:[h.row stringValue]];
+            [nbRow setObject:@"1" forKey:[kana.row stringValue]];
         }
         
         
-        NSMutableArray * sectionHiragana = [[NSMutableArray alloc] init];
+        NSMutableArray * sectionKana = [[NSMutableArray alloc] init];
         for (int row = 1; row <= [nbRow count]; row ++)
         {
             for(int col = 1; col <= 5; col++)
             {
-                Kana * thehiragana = nil;
+                Kana * kana = nil;
                 
-                for(Kana * hir in hiraganas)
+                for(Kana * hir in kanas)
                 {
                     
                     if([hir.col intValue] == col && [hir.row intValue] == row)
                     {
-                        thehiragana = hir;
+                        kana = hir;
                     }
                 }
-                if(thehiragana == nil) {
-                    [sectionHiragana addObject:@""];
+                if(kana == nil) {
+                    [sectionKana addObject:@""];
                 }
                 else
                 {
-                    [sectionHiragana addObject:thehiragana];
+                    [sectionKana addObject:kana];
                 }
             }
         }
         
-        NSLog(@"section%d  nb = %d", sectionId, [sectionHiragana count]);
-        
-        [allResult setObject:sectionHiragana forKey:[NSString stringWithFormat:@"section_%d", sectionId] ];
+        [allResult setObject:sectionKana forKey:[NSString stringWithFormat:@"section_%d", sectionId] ];
         sectionId++;
         
     }
@@ -128,10 +126,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    NSLog(@"Parameters  :/ viewDidLoad");
-    
-    // Do any additional setup after loading the view from its nib.
 }
 
 

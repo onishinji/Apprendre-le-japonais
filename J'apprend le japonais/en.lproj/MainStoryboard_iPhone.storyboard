@@ -11,35 +11,35 @@
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="lNY-bz-mFE">
                         <rect key="frame" x="0.0" y="64" width="568" height="256"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="4" id="hr8-3d-hHw">
-                            <size key="itemSize" width="228" height="71"/>
+                            <size key="itemSize" width="148" height="104"/>
                             <size key="headerReferenceSize" width="33" height="25"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Lesson" id="DnP-aJ-qA3" customClass="LessonCell">
-                                <rect key="frame" x="0.0" y="25" width="232" height="71"/>
+                                <rect key="frame" x="0.0" y="25" width="148" height="104"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="232" height="71"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="148" height="104"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="K9N-73-2Z1">
-                                            <rect key="frame" x="74" y="2" width="158" height="69"/>
+                                            <rect key="frame" x="11" y="72" width="127" height="30"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="parameters.png" id="5cx-3t-7lY">
-                                            <rect key="frame" x="6" y="2" width="60" height="69"/>
+                                            <rect key="frame" x="48" y="-1" width="60" height="69"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-                                <size key="customSize" width="232" height="71"/>
+                                <size key="customSize" width="148" height="104"/>
                                 <connections>
                                     <outlet property="icon" destination="5cx-3t-7lY" id="Rne-Ph-GPJ"/>
                                     <outlet property="title" destination="K9N-73-2Z1" id="HC9-TS-GhH"/>
@@ -129,7 +129,7 @@
         <class className="LessonContainerController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LessonContainerController.h"/>
         </class>
-        <class className="MainViewController" superclassName="PSUICollectionViewController">
+        <class className="MainViewController" superclassName="PSUICollectionViewController_">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MainViewController.h"/>
         </class>
         <class className="PSTCollectionReusableView" superclassName="UIView">
@@ -150,7 +150,7 @@
         <class className="PSUICollectionViewController_" superclassName="PSTCollectionViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PSUICollectionViewController_.h"/>
         </class>
-        <class className="SectionLessonCell" superclassName="PSUICollectionReusableView_">
+        <class className="SectionLessonCell" superclassName="PSUICollectionReusableView">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SectionLessonCell.h"/>
             <relationships>
                 <relationship kind="outlet" name="title" candidateClass="UILabel"/>
@@ -158,9 +158,6 @@
         </class>
         <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
-        </class>
-        <class className="UICollectionViewLayout" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

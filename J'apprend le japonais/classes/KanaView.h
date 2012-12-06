@@ -17,6 +17,7 @@
 
 @property (strong, nonatomic) IBOutlet UILabel * lblHiragana;
 @property (strong, nonatomic) IBOutlet UIImageView * imgCentral;
+@property (strong, nonatomic) NSNumber * fontSize;
 
 @property (strong, nonatomic) Kana * currentHiragana;
 

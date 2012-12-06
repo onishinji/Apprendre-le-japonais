@@ -16,6 +16,6 @@
 }
 
 
-- (void) displayNewHiragana:(Kana *)hiragana;
+- (void) displayNext:(Kana *)hiragana;
 - (void) switchToggleFace;
 @end

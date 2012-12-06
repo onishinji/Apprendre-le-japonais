@@ -50,6 +50,12 @@
 		F060E978163C0A4B009C01E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F060E977163C0A4B009C01E3 /* CoreGraphics.framework */; };
 		F060E97E163C0A4B009C01E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F060E97C163C0A4B009C01E3 /* InfoPlist.strings */; };
 		F060E9B4163D5BB3009C01E3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F060E9B3163D5BB3009C01E3 /* CoreData.framework */; };
+		F061D984166BDD05007E7422 /* nekoneko_applications_alt.png in Resources */ = {isa = PBXBuildFile; fileRef = F061D980166BDD05007E7422 /* nekoneko_applications_alt.png */; };
+		F061D985166BDD05007E7422 /* nekoneko_applications_alt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F061D981166BDD05007E7422 /* nekoneko_applications_alt@2x.png */; };
+		F061D989166BDD26007E7422 /* nekosensei_kana_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F061D988166BDD26007E7422 /* nekosensei_kana_logo.png */; };
+		F061D98B166BDD2E007E7422 /* nekosensei_kana_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F061D98A166BDD2E007E7422 /* nekosensei_kana_logo@2x.png */; };
+		F061D98E166BE180007E7422 /* qcm.png in Resources */ = {isa = PBXBuildFile; fileRef = F061D98C166BE180007E7422 /* qcm.png */; };
+		F061D98F166BE180007E7422 /* shuffle.png in Resources */ = {isa = PBXBuildFile; fileRef = F061D98D166BE180007E7422 /* shuffle.png */; };
 		F0679533164B10BE00347CF2 /* LessonRandomKana~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0679532164B10BE00347CF2 /* LessonRandomKana~ipad.xib */; };
 		F0679536164B154200347CF2 /* LessonQCMKana~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0679535164B154200347CF2 /* LessonQCMKana~ipad.xib */; };
 		F0679538164B187C00347CF2 /* ParametersKanaViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0679537164B187C00347CF2 /* ParametersKanaViewController~ipad.xib */; };
@@ -145,6 +151,12 @@
 		F060E98F163C0A4B009C01E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		F060E9B3163D5BB3009C01E3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		F060E9B6163D5C03009C01E3 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		F061D980166BDD05007E7422 /* nekoneko_applications_alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nekoneko_applications_alt.png; path = ressources/nekoneko_applications_alt.png; sourceTree = "<group>"; };
+		F061D981166BDD05007E7422 /* nekoneko_applications_alt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nekoneko_applications_alt@2x.png"; path = "ressources/nekoneko_applications_alt@2x.png"; sourceTree = "<group>"; };
+		F061D988166BDD26007E7422 /* nekosensei_kana_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nekosensei_kana_logo.png; sourceTree = "<group>"; };
+		F061D98A166BDD2E007E7422 /* nekosensei_kana_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nekosensei_kana_logo@2x.png"; sourceTree = "<group>"; };
+		F061D98C166BE180007E7422 /* qcm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = qcm.png; path = ressources/qcm.png; sourceTree = "<group>"; };
+		F061D98D166BE180007E7422 /* shuffle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shuffle.png; path = ressources/shuffle.png; sourceTree = "<group>"; };
 		F0679532164B10BE00347CF2 /* LessonRandomKana~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "LessonRandomKana~ipad.xib"; path = "ressources/LessonRandomKana~ipad.xib"; sourceTree = "<group>"; };
 		F0679535164B154200347CF2 /* LessonQCMKana~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "LessonQCMKana~ipad.xib"; path = "ressources/LessonQCMKana~ipad.xib"; sourceTree = "<group>"; };
 		F0679537164B187C00347CF2 /* ParametersKanaViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "ParametersKanaViewController~ipad.xib"; path = "ressources/ParametersKanaViewController~ipad.xib"; sourceTree = "<group>"; };
@@ -286,6 +298,8 @@
 		F060E964163C0A4B009C01E3 = {
 			isa = PBXGroup;
 			children = (
+				F061D98A166BDD2E007E7422 /* nekosensei_kana_logo@2x.png */,
+				F061D988166BDD26007E7422 /* nekosensei_kana_logo.png */,
 				F0A64DA81659356F009752E8 /* AVFoundation.framework */,
 				F0A64DA516593554009752E8 /* AudioToolbox.framework */,
 				F04C00B21642E33300EAF61D /* QuartzCore.framework */,
@@ -341,6 +355,10 @@
 		F060E999163C0C3C009C01E3 /* ressources */ = {
 			isa = PBXGroup;
 			children = (
+				F061D98C166BE180007E7422 /* qcm.png */,
+				F061D98D166BE180007E7422 /* shuffle.png */,
+				F061D980166BDD05007E7422 /* nekoneko_applications_alt.png */,
+				F061D981166BDD05007E7422 /* nekoneko_applications_alt@2x.png */,
 				F0400999165D569C0090AA18 /* circle-green.png */,
 				F040099A165D569C0090AA18 /* circle-red.png */,
 				F040097A165CBDDF0090AA18 /* epkyouka.ttf */,
@@ -519,6 +537,12 @@
 				F040097B165CBDDF0090AA18 /* epkyouka.ttf in Resources */,
 				F040099B165D569D0090AA18 /* circle-green.png in Resources */,
 				F040099C165D569D0090AA18 /* circle-red.png in Resources */,
+				F061D984166BDD05007E7422 /* nekoneko_applications_alt.png in Resources */,
+				F061D985166BDD05007E7422 /* nekoneko_applications_alt@2x.png in Resources */,
+				F061D989166BDD26007E7422 /* nekosensei_kana_logo.png in Resources */,
+				F061D98B166BDD2E007E7422 /* nekosensei_kana_logo@2x.png in Resources */,
+				F061D98E166BE180007E7422 /* qcm.png in Resources */,
+				F061D98F166BE180007E7422 /* shuffle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

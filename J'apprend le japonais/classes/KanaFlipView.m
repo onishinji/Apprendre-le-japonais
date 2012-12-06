@@ -31,7 +31,7 @@
     
 }
 
-- (void) displayNewHiragana:(Kana *)hiragana
+- (void) displayNext:(Kana *)hiragana
 {
     [self setCurrentHiragana:hiragana];
     
