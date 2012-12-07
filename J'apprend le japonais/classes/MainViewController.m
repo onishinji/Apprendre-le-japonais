@@ -53,13 +53,13 @@
     switch (section) {
         case 0:
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle J > R" icon:[UIImage imageNamed:@"shuffle.png"] className:@"LessonRandomKana" parameters:paramsHiragana]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle K > R" icon:[UIImage imageNamed:@"shuffle.png"] className:@"LessonRandomKana" parameters:paramsHiragana]];
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle R > J" icon:[UIImage imageNamed:@"shuffle.png"] className:@"LessonRandomKana" parameters:paramsHiraganaInvertMode]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle R > K" icon:[UIImage imageNamed:@"shuffle.png"] className:@"LessonRandomKana" parameters:paramsHiraganaInvertMode]];
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM J > R" icon:[UIImage imageNamed:@"qcm.png"] className:@"LessonQCMKana" parameters:paramsHiragana]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM K > R" icon:[UIImage imageNamed:@"qcm.png"] className:@"LessonQCMKana" parameters:paramsHiragana]];
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM R > J" icon:[UIImage imageNamed:@"qcm.png"] className:@"LessonQCMKana" parameters:paramsHiraganaInvertMode]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM R > K" icon:[UIImage imageNamed:@"qcm.png"] className:@"LessonQCMKana" parameters:paramsHiraganaInvertMode]];
             
             [lessons addObject:[[Lesson alloc] initWithTitle:@"Parametres" icon:[UIImage imageNamed:@"parameters.png"] className:@"ParametersKanaViewController" parameters:paramsHiragana]];
 
@@ -68,13 +68,13 @@
             
         case 1:
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle J > R" icon:[UIImage imageNamed:@"shuffle.png"] className:@"LessonRandomKana" parameters:paramsKatakana]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle K > R" icon:[UIImage imageNamed:@"shuffle.png"] className:@"LessonRandomKana" parameters:paramsKatakana]];
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle R > J" icon:[UIImage imageNamed:@"shuffle.png"] className:@"LessonRandomKana" parameters:paramsKatakanaInvertMode]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle R > K" icon:[UIImage imageNamed:@"shuffle.png"] className:@"LessonRandomKana" parameters:paramsKatakanaInvertMode]];
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM J > R" icon:[UIImage imageNamed:@"qcm.png"] className:@"LessonQCMKana" parameters:paramsKatakana]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM K > R" icon:[UIImage imageNamed:@"qcm.png"] className:@"LessonQCMKana" parameters:paramsKatakana]];
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM R > J" icon:[UIImage imageNamed:@"qcm.png"] className:@"LessonQCMKana" parameters:paramsKatakanaInvertMode]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM R > K" icon:[UIImage imageNamed:@"qcm.png"] className:@"LessonQCMKana" parameters:paramsKatakanaInvertMode]];
             
             [lessons addObject:[[Lesson alloc] initWithTitle:@"Parametres" icon:[UIImage imageNamed:@"parameters.png"] className:@"ParametersKanaViewController" parameters:paramsKatakana]];
             
