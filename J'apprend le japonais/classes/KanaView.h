@@ -13,6 +13,7 @@
 @interface KanaView : UIView
 {
     Kana * _hiragana;
+    CGFloat fontSize;
 }
 
 

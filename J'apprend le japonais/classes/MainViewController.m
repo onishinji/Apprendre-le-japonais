@@ -12,6 +12,7 @@
 #import "LessonContainerController.h"
 #import "SectionLessonCell.h"
 #import "constant.h"
+#import "UIColor+RGB.h"
 
 @interface MainViewController ()
 
@@ -23,14 +24,19 @@
 @synthesize lessons = _lessons;
 @synthesize managedObjectContext = _managedObjectContext;
 
+#pragma mark - Init Core
 - (void)viewDidLoad
 { 
     [super viewDidLoad];
     
     [self.collectionView registerClass:SectionLessonCell.class forCellWithReuseIdentifier:@"Section"];
-    
+   self.collectionView.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"home_bkg.png"]];
 	// Do any additional setup after loading the view, tyxpically from a nib.
+    
+    //[self.collectionView setBackgroundColor:[UIColor colorWithR:231 G:183 B:137 A:1]];
 }
+
+
 
 - (NSMutableArray *) lessonsForSection:(NSInteger) section
 {
@@ -53,30 +59,30 @@
     switch (section) {
         case 0:
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle K > R" icon:[UIImage imageNamed:@"shuffle.png"] className:@"LessonRandomKana" parameters:paramsHiragana]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle K > R" icon:[UIImage imageNamed:@"shuffle_icon.png"] className:@"LessonRandomKana" parameters:paramsHiragana]];
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle R > K" icon:[UIImage imageNamed:@"shuffle.png"] className:@"LessonRandomKana" parameters:paramsHiraganaInvertMode]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle R > K" icon:[UIImage imageNamed:@"shuffle_icon.png"] className:@"LessonRandomKana" parameters:paramsHiraganaInvertMode]];
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM K > R" icon:[UIImage imageNamed:@"qcm.png"] className:@"LessonQCMKana" parameters:paramsHiragana]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM K > R" icon:[UIImage imageNamed:@"qcm_icon.png"] className:@"LessonQCMKana" parameters:paramsHiragana]];
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM R > K" icon:[UIImage imageNamed:@"qcm.png"] className:@"LessonQCMKana" parameters:paramsHiraganaInvertMode]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM R > K" icon:[UIImage imageNamed:@"qcm_icon.png"] className:@"LessonQCMKana" parameters:paramsHiraganaInvertMode]];
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"Parametres" icon:[UIImage imageNamed:@"parameters.png"] className:@"ParametersKanaViewController" parameters:paramsHiragana]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"Parametres" icon:[UIImage imageNamed:@"params_icon.png"] className:@"ParametersKanaViewController" parameters:paramsHiragana]];
 
             
             break;
             
         case 1:
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle K > R" icon:[UIImage imageNamed:@"shuffle.png"] className:@"LessonRandomKana" parameters:paramsKatakana]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle K > R" icon:[UIImage imageNamed:@"shuffle_kata_icon.png"] className:@"LessonRandomKana" parameters:paramsKatakana]];
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle R > K" icon:[UIImage imageNamed:@"shuffle.png"] className:@"LessonRandomKana" parameters:paramsKatakanaInvertMode]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle R > K" icon:[UIImage imageNamed:@"shuffle_kata_icon.png"] className:@"LessonRandomKana" parameters:paramsKatakanaInvertMode]];
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM K > R" icon:[UIImage imageNamed:@"qcm.png"] className:@"LessonQCMKana" parameters:paramsKatakana]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM K > R" icon:[UIImage imageNamed:@"qcm_icon.png"] className:@"LessonQCMKana" parameters:paramsKatakana]];
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM R > K" icon:[UIImage imageNamed:@"qcm.png"] className:@"LessonQCMKana" parameters:paramsKatakanaInvertMode]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM R > K" icon:[UIImage imageNamed:@"qcm_icon.png"] className:@"LessonQCMKana" parameters:paramsKatakanaInvertMode]];
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"Parametres" icon:[UIImage imageNamed:@"parameters.png"] className:@"ParametersKanaViewController" parameters:paramsKatakana]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"Parametres" icon:[UIImage imageNamed:@"params_icon.png"] className:@"ParametersKanaViewController" parameters:paramsKatakana]];
             
         default:
             break;
@@ -85,6 +91,8 @@
     return lessons;
 }
 
+#pragma mark - Collection delegate
+
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
     return 2;
@@ -92,19 +100,17 @@
 
 - (PSTCollectionReusableView *)collectionView:(PSTCollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
 {
-        SectionLessonCell * test = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"Section" forIndexPath:indexPath];
+    SectionLessonCell * sectionCell = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"Section" forIndexPath:indexPath];
     if(indexPath.section == 0)
     {
-         test.title.text = @"ひらがな Hiragana";
+         sectionCell.title.text = @"ひらがな Hiragana";
     }
     else if(indexPath.section == 1)
     {
-        test.title.text = @"カタカナ Katakana";
+        sectionCell.title.text = @"カタカナ Katakana";
     }
     
-    test.backgroundColor = [UIColor whiteColor];
-    
-    return test;
+    return sectionCell;
     
 }
 
@@ -122,12 +128,17 @@
     myCell.title.text = lesson.title;
     myCell.icon.image = lesson.icon;
     
+    [myCell setHighlighted:FALSE];
+    [myCell configBackground];
+    
     return myCell;
 }
 
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
-{    
+{
+    [[collectionView cellForItemAtIndexPath:indexPath] setHighlighted:TRUE];
+    
     Lesson * lesson = [[self lessonsForSection:indexPath.section] objectAtIndex:indexPath.row];
     
     LessonContainerController *lessonController = [[LessonContainerController alloc] init];
@@ -136,13 +147,14 @@
     lessonController.parameters = lesson.parameters;
     
     [self.navigationController pushViewController:lessonController animated:YES];
+    
+    [[self.collectionView cellForItemAtIndexPath:indexPath] setHighlighted:FALSE];
 }
 
+#pragma mark - Go to the lesson
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    NSLog(@"segue me");
-    
     if([segue.identifier isEqualToString:@"RunLesson"]){
         LessonCell *cell = (LessonCell *)sender;
         NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
@@ -161,6 +173,7 @@
   //  [segue.destinationViewController setDetail:detail];
     
 }
+
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {

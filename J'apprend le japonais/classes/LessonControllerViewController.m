@@ -41,17 +41,8 @@
 - (void) viewDidLoad
 {
     [super viewDidLoad];
-        
-        
-        if([self isForKatakana])
-        {
-            NSLog(@"je load un katakana !");
-        }
-        
-        if([self isForHiragana])
-        {
-            NSLog(@"je load un hiragana !");
-        }
+    
+    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"home_bkg.png"]];
 }
 
 @end

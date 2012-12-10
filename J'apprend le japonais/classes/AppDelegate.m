@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "MainViewController.h"
 #import "Computer.h"
+#import "UIColor+RGB.h"
 
 @implementation AppDelegate
 

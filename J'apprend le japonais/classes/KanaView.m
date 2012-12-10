@@ -28,6 +28,10 @@
 
 - (void) initialize{
     
+    
+    _imgCentral.image = [UIImage imageNamed:@"boardcard.png"];
+    [_imgCentral setContentMode:UIViewContentModeScaleAspectFill];
+    [_imgCentral setClipsToBounds:YES];
 }
 
 - (id) initWithCoder:(NSCoder *)aCoder{
@@ -49,10 +53,6 @@
     _lblHiragana.text = @"";
     [self setCurrentHiragana:nil];
     
-    _imgCentral.image = [UIImage imageNamed:@"tired-konata.jpeg"];
-    [_imgCentral setContentMode:UIViewContentModeScaleAspectFill];
-    [_imgCentral setClipsToBounds:YES];
-    
     NSLog(@"%@", NSStringFromCGRect(_imgCentral.frame));
 }
 
@@ -60,33 +60,45 @@
 
 - (void) displayRomanji
 {
-    _imgCentral.image = nil;
+    
+    
+    fontSize = self.lblHiragana.font.pointSize;
+    //_imgCentral.image = nil;
     
     if([self isForRomanjiToJapan])
-    {
+    { 
+        [_lblHiragana setFont:[UIFont fontWithName:@"Arial" size:fontSize]];
+        
         _lblHiragana.text = _currentHiragana.romanji;
     }
     else
-    {
+    { 
+        [_lblHiragana setFont:[UIFont fontWithName:@"EPSON ã≥â»èëëÃÇl" size:fontSize]];
+        
         _lblHiragana.text = _currentHiragana.japan;
     }
 }
 
 - (void) displayJapan
 {
-    _imgCentral.image = nil;
+    
+    
+    fontSize = self.lblHiragana.font.pointSize;
+    //_imgCentral.image = nil;
     
     if([self isForRomanjiToJapan])
-    {
+    { 
+        [_lblHiragana setFont:[UIFont fontWithName:@"EPSON ã≥â»èëëÃÇl" size:fontSize]];
+        
         _lblHiragana.text = _currentHiragana.japan;
     }
     else
     {
+        [_lblHiragana setFont:[UIFont fontWithName:@"Arial" size:fontSize]];
+        
         _lblHiragana.text = _currentHiragana.romanji;
     }
     
-    
-    [_lblHiragana setFont:[UIFont fontWithName:@"EPSON ã≥â»èëëÃÇl" size:105]];
 }
 
 @end

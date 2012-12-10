@@ -12,5 +12,10 @@
 
 @property (strong, nonatomic) IBOutlet UILabel * title;
 @property (weak, nonatomic) IBOutlet UIImageView *icon;
+@property (strong, nonatomic) IBOutlet UIView * backgroundView;
+
+-(void) configBackground;
+
+-(void)roundView:(UIView *)view onCorner:(UIRectCorner)rectCorner radius:(float)radius;
 
 @end

@@ -13,54 +13,215 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="hr8-3d-hHw">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="ZKl-js-1Su">
                             <size key="itemSize" width="90" height="90"/>
-                            <size key="headerReferenceSize" width="33" height="25"/>
+                            <size key="headerReferenceSize" width="50" height="40"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="4" minY="0.0" maxX="3" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Lesson" id="DnP-aJ-qA3" customClass="LessonCell">
-                                <rect key="frame" x="0.0" y="25" width="90" height="88"/>
+                                <rect key="frame" x="4" y="40" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="90" height="88"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <view contentMode="scaleToFill" id="gyU-Gy-D7y" userLabel="background view">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="88"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </view>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="shuffle_icon.png" id="5cx-3t-7lY">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" id="K9N-73-2Z1">
                                             <rect key="frame" x="3" y="61" width="85" height="26"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="parameters.png" id="5cx-3t-7lY">
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="backgroundView" destination="gyU-Gy-D7y" id="CID-jC-2Tm"/>
+                                    <outlet property="icon" destination="5cx-3t-7lY" id="Rne-Ph-GPJ"/>
+                                    <outlet property="title" destination="K9N-73-2Z1" id="HC9-TS-GhH"/>
+                                </connections>
+                            </collectionViewCell>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Lesson2" id="pnY-WX-3E2" customClass="LessonCell">
+                                <rect key="frame" x="98.199996948242188" y="40" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view alpha="0.30000001192092896" contentMode="scaleToFill" id="Eu3-hh-35D" userLabel="background view">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="88"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" id="0fO-em-ZGR">
+                                            <rect key="frame" x="3" y="63" width="85" height="26"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="qcm.png" id="9ns-Nk-0oq">
                                             <rect key="frame" x="20" y="-1" width="60" height="69"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-                                <size key="customSize" width="90" height="88"/>
                                 <connections>
-                                    <outlet property="icon" destination="5cx-3t-7lY" id="Rne-Ph-GPJ"/>
-                                    <outlet property="title" destination="K9N-73-2Z1" id="HC9-TS-GhH"/>
+                                    <outlet property="backgroundView" destination="Eu3-hh-35D" id="cag-ON-KUU"/>
+                                    <outlet property="icon" destination="9ns-Nk-0oq" id="iAd-dK-L2F"/>
+                                    <outlet property="title" destination="0fO-em-ZGR" id="7sM-O9-RvF"/>
+                                </connections>
+                            </collectionViewCell>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Lesson3" id="pcg-94-YxN" customClass="LessonCell">
+                                <rect key="frame" x="192.39999389648438" y="40" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view alpha="0.30000001192092896" contentMode="scaleToFill" id="Qrl-gZ-jpr" userLabel="background view">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="88"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" id="f7W-CM-CuD">
+                                            <rect key="frame" x="3" y="63" width="85" height="26"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="parameters.png" id="dDh-N5-K6h">
+                                            <rect key="frame" x="20" y="-1" width="60" height="69"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="backgroundView" destination="Qrl-gZ-jpr" id="5WC-6n-262"/>
+                                    <outlet property="icon" destination="dDh-N5-K6h" id="EPM-2W-kNv"/>
+                                    <outlet property="title" destination="f7W-CM-CuD" id="eHn-cz-dup"/>
+                                </connections>
+                            </collectionViewCell>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Lesson4" id="qp0-TL-Zio" customClass="LessonCell">
+                                <rect key="frame" x="286.5999755859375" y="40" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view alpha="0.30000001192092896" contentMode="scaleToFill" id="pLL-i3-CbY" userLabel="background view">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="88"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" id="LZx-uN-Vg7">
+                                            <rect key="frame" x="3" y="63" width="85" height="26"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="parameters.png" id="pi7-jJ-Hxj">
+                                            <rect key="frame" x="20" y="-1" width="60" height="69"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="backgroundView" destination="pLL-i3-CbY" id="vvU-zV-Pch"/>
+                                    <outlet property="icon" destination="pi7-jJ-Hxj" id="61N-Vc-X0v"/>
+                                    <outlet property="title" destination="LZx-uN-Vg7" id="ZVO-yf-9CU"/>
+                                </connections>
+                            </collectionViewCell>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Lesson5" id="MnH-Gn-rzc" customClass="LessonCell">
+                                <rect key="frame" x="380.79998779296875" y="40" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view alpha="0.30000001192092896" contentMode="scaleToFill" id="MqW-KM-wMA" userLabel="background view">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="88"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" id="Ye2-Iq-ycf">
+                                            <rect key="frame" x="3" y="63" width="85" height="26"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="parameters.png" id="sJT-h7-X37">
+                                            <rect key="frame" x="20" y="-1" width="60" height="69"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="backgroundView" destination="MqW-KM-wMA" id="pQq-Gf-VqT"/>
+                                    <outlet property="icon" destination="sJT-h7-X37" id="xfD-b6-kHR"/>
+                                    <outlet property="title" destination="Ye2-Iq-ycf" id="K1I-kD-9yq"/>
+                                </connections>
+                            </collectionViewCell>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Lesson6" id="gAX-jc-htE" customClass="LessonCell">
+                                <rect key="frame" x="475" y="40" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view alpha="0.30000001192092896" contentMode="scaleToFill" id="ND0-6y-Ziu" userLabel="background view">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="88"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" id="RIE-ft-U6M">
+                                            <rect key="frame" x="3" y="63" width="85" height="26"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="parameters.png" id="fSX-oo-5eM">
+                                            <rect key="frame" x="20" y="-1" width="60" height="69"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="backgroundView" destination="ND0-6y-Ziu" id="ShF-Lu-0Mg"/>
+                                    <outlet property="icon" destination="fSX-oo-5eM" id="SxE-Pf-KTx"/>
+                                    <outlet property="title" destination="RIE-ft-U6M" id="DoS-BS-o5Z"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
-                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Section" id="OYm-Q0-i69" customClass="SectionLessonCell">
-                            <rect key="frame" x="0.0" y="0.0" width="568" height="25"/>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="Section" id="Nrh-Xr-ie9" customClass="SectionLessonCell">
+                            <rect key="frame" x="0.0" y="0.0" width="568" height="40"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
-                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7PB-dK-xUf">
-                                    <rect key="frame" x="3" y="0.0" width="320" height="24"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" red="1" green="0.0" blue="0.035351606610000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ひらがな Hiragana" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" id="p73-A7-vRP">
+                                    <rect key="frame" x="149" y="3" width="270" height="33"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.87965852353780316" green="0.8648014315536644" blue="0.78163352334803993" alpha="0.48999999999999999" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <outlet property="title" destination="7PB-dK-xUf" id="rmw-dt-nB6"/>
+                                <outlet property="title" destination="p73-A7-vRP" id="euE-Ky-JDd"/>
                             </connections>
                         </collectionReusableView>
                         <connections>
@@ -69,7 +230,9 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Neko Sensei" id="CdQ-z7-CHi">
-                        <barButtonItem key="backBarButtonItem" title="Menu" id="rze-eK-xWx"/>
+                        <barButtonItem key="backBarButtonItem" title="Menu" id="rze-eK-xWx">
+                            <color key="tintColor" red="1" green="0.0" blue="0.035351606610000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                 </collectionViewController>
@@ -117,11 +280,14 @@
     </scenes>
     <resources>
         <image name="parameters.png" width="128" height="128"/>
+        <image name="qcm.png" width="16" height="16"/>
+        <image name="shuffle_icon.png" width="90" height="90"/>
     </resources>
     <classes>
         <class className="LessonCell" superclassName="PSUICollectionViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LessonCell.h"/>
             <relationships>
+                <relationship kind="outlet" name="backgroundView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="icon" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="title" candidateClass="UILabel"/>
             </relationships>
@@ -135,22 +301,16 @@
         <class className="PSTCollectionReusableView" superclassName="UIView">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PSTCollectionReusableView.h"/>
         </class>
-        <class className="PSTCollectionViewCell" superclassName="PSTCollectionReusableView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PSTCollectionViewCell.h"/>
-        </class>
         <class className="PSTCollectionViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PSTCollectionViewController.h"/>
         </class>
         <class className="PSUICollectionReusableView_" superclassName="PSTCollectionReusableView">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PSUICollectionReusableView_.h"/>
         </class>
-        <class className="PSUICollectionViewCell_" superclassName="PSTCollectionViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PSUICollectionViewCell_.h"/>
-        </class>
         <class className="PSUICollectionViewController_" superclassName="PSTCollectionViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PSUICollectionViewController_.h"/>
         </class>
-        <class className="SectionLessonCell" superclassName="PSUICollectionReusableView">
+        <class className="SectionLessonCell" superclassName="PSUICollectionReusableView_">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SectionLessonCell.h"/>
             <relationships>
                 <relationship kind="outlet" name="title" candidateClass="UILabel"/>
@@ -158,9 +318,6 @@
         </class>
         <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
-        </class>
-        <class className="UICollectionViewLayout" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
