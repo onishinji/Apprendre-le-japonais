@@ -8,14 +8,20 @@
 
 #import <UIKit/UIKit.h>
 #import "constant.h"
+#import "HelpViewController.h"
 
 @interface LessonControllerViewController : UIViewController
 {
-    NSNumber * currentKanaType; 
+    NSNumber * currentKanaType;
+    BOOL openHelpAlready;
+    
+    
+    HelpViewController * helpVC;
 }
 
 @property (nonatomic) NSNumber * currentKanaType;
 @property (strong, nonatomic) NSMutableDictionary * params;
+@property (strong, nonatomic) UIViewController * parent;
 
 - (BOOL) isForHiragana;
 - (BOOL) isForKatakana;
@@ -23,5 +29,7 @@
 
 - (BOOL) isForRomanjiToJapan;
 - (BOOL) isForJapanToRomanji;
+
+- (void) openHelp:(UIBarButtonItem *)bar;
 
 @end

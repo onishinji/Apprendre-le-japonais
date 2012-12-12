@@ -61,11 +61,11 @@
             
             [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle K > R" icon:[UIImage imageNamed:@"shuffle_icon.png"] className:@"LessonRandomKana" parameters:paramsHiragana]];
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle R > K" icon:[UIImage imageNamed:@"shuffle_icon.png"] className:@"LessonRandomKana" parameters:paramsHiraganaInvertMode]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle R > K" icon:[UIImage imageNamed:@"shuffle_romanji_icon.png"] className:@"LessonRandomKana" parameters:paramsHiraganaInvertMode]];
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM K > R" icon:[UIImage imageNamed:@"qcm_icon.png"] className:@"LessonQCMKana" parameters:paramsHiragana]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM K > R" icon:[UIImage imageNamed:@"qcm_hiragana_icon.png"] className:@"LessonQCMKana" parameters:paramsHiragana]];
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM R > K" icon:[UIImage imageNamed:@"qcm_icon.png"] className:@"LessonQCMKana" parameters:paramsHiraganaInvertMode]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM R > K" icon:[UIImage imageNamed:@"qcm_romanji_icon.png"] className:@"LessonQCMKana" parameters:paramsHiraganaInvertMode]];
             
             [lessons addObject:[[Lesson alloc] initWithTitle:@"Parametres" icon:[UIImage imageNamed:@"params_icon.png"] className:@"ParametersKanaViewController" parameters:paramsHiragana]];
 
@@ -76,11 +76,11 @@
             
             [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle K > R" icon:[UIImage imageNamed:@"shuffle_kata_icon.png"] className:@"LessonRandomKana" parameters:paramsKatakana]];
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle R > K" icon:[UIImage imageNamed:@"shuffle_kata_icon.png"] className:@"LessonRandomKana" parameters:paramsKatakanaInvertMode]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle R > K" icon:[UIImage imageNamed:@"shuffle_romanji_icon.png"] className:@"LessonRandomKana" parameters:paramsKatakanaInvertMode]];
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM K > R" icon:[UIImage imageNamed:@"qcm_icon.png"] className:@"LessonQCMKana" parameters:paramsKatakana]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM K > R" icon:[UIImage imageNamed:@"qcm_katakana_icon.png"] className:@"LessonQCMKana" parameters:paramsKatakana]];
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM R > K" icon:[UIImage imageNamed:@"qcm_icon.png"] className:@"LessonQCMKana" parameters:paramsKatakanaInvertMode]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM R > K" icon:[UIImage imageNamed:@"qcm_romanji_icon.png"] className:@"LessonQCMKana" parameters:paramsKatakanaInvertMode]];
             
             [lessons addObject:[[Lesson alloc] initWithTitle:@"Parametres" icon:[UIImage imageNamed:@"params_icon.png"] className:@"ParametersKanaViewController" parameters:paramsKatakana]];
             
@@ -128,8 +128,12 @@
     myCell.title.text = lesson.title;
     myCell.icon.image = lesson.icon;
     
+    myCell.layer.borderWidth = 1;
+    myCell.layer.borderColor = [UIColor colorWithR:0 G:0 B:0 A:1].CGColor;
+    myCell.layer.cornerRadius = 5;
+    
     [myCell setHighlighted:FALSE];
-    [myCell configBackground];
+    //[myCell configBackground];
     
     return myCell;
 }

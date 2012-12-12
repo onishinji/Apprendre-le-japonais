@@ -16,6 +16,7 @@
 
 @synthesize params = _params;
 @synthesize currentKanaType;
+@synthesize parent = _parent;
 
 - (BOOL) isForHiragana
 {
@@ -42,7 +43,13 @@
 {
     [super viewDidLoad];
     
+    openHelpAlready = false;
     self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"home_bkg.png"]];
+}
+
+- (void) openHelp:(UIBarButtonItem *)bar
+{
+    
 }
 
 @end

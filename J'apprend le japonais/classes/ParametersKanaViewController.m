@@ -220,5 +220,21 @@
     }
 }
 
+- (void)openHelp:(UIBarButtonItem *)bar
+{
+    helpVC = [[HelpViewController alloc] initWithNibName:@"helpParameters" bundle:nil];
+    
+    if(openHelpAlready)
+    {
+        openHelpAlready = false;
+        [self.parent dismissOverViewControllerAnimated:YES];
+    }
+    else
+    {
+        openHelpAlready = true;
+        [self.parent presentOverViewController:helpVC animated:YES];
+    }
+}
+
 
 @end

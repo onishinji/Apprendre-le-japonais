@@ -10,6 +10,8 @@
 #import "Kana.h"
 #import "KanaFlipView.h"
 #import "LessonControllerViewController.h"
+#import "HelpViewController.h"
+#import "UIViewController+overView.h"
 
 @interface LessonQCMKana : LessonControllerViewController
 {

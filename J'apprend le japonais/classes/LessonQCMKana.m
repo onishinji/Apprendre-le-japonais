@@ -63,6 +63,7 @@
     [[self.view viewWithTag:100] setHidden:TRUE];
     [[self.view viewWithTag:200] setHidden:TRUE];
     
+    //
     [self configureButton:_leftTopButton];
     [self configureButton:_leftMiddleButton];
     [self configureButton:_leftBottomButton];
@@ -70,6 +71,7 @@
     [self configureButton:_rightMiddleButton];
     [self configureButton:_rightBottomButton];
     
+    //
     [btnArray addObject:_leftTopButton];
     [btnArray addObject:_leftMiddleButton];
     [btnArray addObject:_leftBottomButton];
@@ -78,6 +80,7 @@
     [btnArray addObject:_rightMiddleButton];
     [btnArray addObject:_rightBottomButton];
     
+    //
     [_leftTopButton addTarget:self action:@selector(checkResponse:) forControlEvents:UIControlEventTouchUpInside];
     [_leftBottomButton addTarget:self action:@selector(checkResponse:) forControlEvents:UIControlEventTouchUpInside];
     [_leftMiddleButton addTarget:self action:@selector(checkResponse:) forControlEvents:UIControlEventTouchUpInside];
@@ -288,6 +291,22 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)openHelp:(UIBarButtonItem *)bar
+{
+    helpVC = [[HelpViewController alloc] initWithNibName:@"helpQCM" bundle:nil];
+    
+    if(openHelpAlready)
+    {
+        openHelpAlready = false;
+        [self.parent dismissOverViewControllerAnimated:YES];
+    }
+    else
+    {
+        openHelpAlready = true;
+        [self.parent presentOverViewController:helpVC animated:YES];
+    }
 }
 
 - (void)viewDidUnload {

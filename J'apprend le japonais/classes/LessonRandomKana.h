@@ -15,6 +15,7 @@
 #import <OpenEars/LanguageModelGenerator.h>
 #import <OpenEars/PocketsphinxController.h>
 #import <OpenEars/OpenEarsEventsObserver.h>
+#import "HelpViewController.h"
 
 
 @interface LessonRandomKana : LessonControllerViewController <OpenEarsEventsObserverDelegate>
@@ -22,6 +23,7 @@
     NSMutableArray * knows;
     NSMutableArray * knowsRomanji;
     int currentPos;
+    
     LanguageModelGenerator *lmGenerator;
     FliteController *fliteController;
     PocketsphinxController *pocketsphinxController;

@@ -45,6 +45,7 @@
     
     _currentController.currentKanaType = [[self parameters] objectForKey:@"kanaType"];
     _currentController.params = [self parameters];
+    _currentController.parent = self;
     
     UIScrollView *scroll = [[UIScrollView alloc] initWithFrame:CGRectMake(
                                                                           0,
@@ -68,6 +69,9 @@
     [scroll addSubview:_currentController.view];
     
     [self.view addSubview:scroll];
+    
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:_currentController action:@selector(openHelp:)];
     
     
     // Do any additional setup after loading the view from its nib.
