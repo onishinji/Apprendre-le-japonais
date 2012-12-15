@@ -50,8 +50,6 @@
 		F04009781659365A0090AA18 /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04009691659365A0090AA18 /* Slt.framework */; };
 		F040097B165CBDDF0090AA18 /* epkyouka.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F040097A165CBDDF0090AA18 /* epkyouka.ttf */; };
 		F0400994165CC5050090AA18 /* KanaView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0400993165CC5050090AA18 /* KanaView.m */; };
-		F040099B165D569D0090AA18 /* circle-green.png in Resources */ = {isa = PBXBuildFile; fileRef = F0400999165D569C0090AA18 /* circle-green.png */; };
-		F040099C165D569D0090AA18 /* circle-red.png in Resources */ = {isa = PBXBuildFile; fileRef = F040099A165D569C0090AA18 /* circle-red.png */; };
 		F04009AE165D5FE10090AA18 /* LessonControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F04009AD165D5FE00090AA18 /* LessonControllerViewController.m */; };
 		F04009B0165D61480090AA18 /* LessonQCMKana.m in Sources */ = {isa = PBXBuildFile; fileRef = F04009AF165D61480090AA18 /* LessonQCMKana.m */; };
 		F04C00B31642E33300EAF61D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04C00B21642E33300EAF61D /* QuartzCore.framework */; };
@@ -68,8 +66,6 @@
 		F0679533164B10BE00347CF2 /* LessonRandomKana~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0679532164B10BE00347CF2 /* LessonRandomKana~ipad.xib */; };
 		F0679536164B154200347CF2 /* LessonQCMKana~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0679535164B154200347CF2 /* LessonQCMKana~ipad.xib */; };
 		F0679538164B187C00347CF2 /* ParametersKanaViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0679537164B187C00347CF2 /* ParametersKanaViewController~ipad.xib */; };
-		F073ADFF164312D800332D78 /* parameters.png in Resources */ = {isa = PBXBuildFile; fileRef = F073ADFE164312D800332D78 /* parameters.png */; };
-		F073AE021643153900332D78 /* memory.png in Resources */ = {isa = PBXBuildFile; fileRef = F073AE011643153900332D78 /* memory.png */; };
 		F073AE0516431ACB00332D78 /* SectionLessonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F073AE0416431ACA00332D78 /* SectionLessonCell.m */; };
 		F08686AE16791C08009C0C8B /* params_icon_over.png in Resources */ = {isa = PBXBuildFile; fileRef = F08686A216791C08009C0C8B /* params_icon_over.png */; };
 		F08686AF16791C08009C0C8B /* params_icon_over@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F08686A316791C08009C0C8B /* params_icon_over@2x.png */; };
@@ -94,11 +90,12 @@
 		F08686D216793454009C0C8B /* UIViewController+overView.m in Sources */ = {isa = PBXBuildFile; fileRef = F08686D116793454009C0C8B /* UIViewController+overView.m */; };
 		F08686D416793986009C0C8B /* helpRandom.xib in Resources */ = {isa = PBXBuildFile; fileRef = F08686D316793986009C0C8B /* helpRandom.xib */; };
 		F08686D616793F22009C0C8B /* helpParameters.xib in Resources */ = {isa = PBXBuildFile; fileRef = F08686D516793F22009C0C8B /* helpParameters.xib */; };
+		F08686D9167CBB1D009C0C8B /* UIView+Tags.m in Sources */ = {isa = PBXBuildFile; fileRef = F08686D8167CBB1C009C0C8B /* UIView+Tags.m */; };
+		F08686DC167CBFE0009C0C8B /* NSTimer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = F08686DB167CBFE0009C0C8B /* NSTimer+Blocks.m */; };
 		F0A64DA616593554009752E8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A64DA516593554009752E8 /* AudioToolbox.framework */; };
 		F0A64DA91659356F009752E8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A64DA81659356F009752E8 /* AVFoundation.framework */; };
 		F0A6F03E167500CB0054E7B6 /* params_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F0A6F03C167500CB0054E7B6 /* params_icon.png */; };
 		F0A6F03F167500CB0054E7B6 /* params_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0A6F03D167500CB0054E7B6 /* params_icon@2x.png */; };
-		F0A6F0411675034F0054E7B6 /* test.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F0A6F0401675034F0054E7B6 /* test.jpeg */; };
 		F0A6F044167505C70054E7B6 /* qcm_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F0A6F042167505C70054E7B6 /* qcm_icon.png */; };
 		F0A6F045167505C70054E7B6 /* qcm_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0A6F043167505C70054E7B6 /* qcm_icon@2x.png */; };
 		F0A6F04816750ABA0054E7B6 /* home_bkg.png in Resources */ = {isa = PBXBuildFile; fileRef = F0A6F04616750ABA0054E7B6 /* home_bkg.png */; };
@@ -190,8 +187,6 @@
 		F040097A165CBDDF0090AA18 /* epkyouka.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = epkyouka.ttf; path = ressources/epkyouka.ttf; sourceTree = "<group>"; };
 		F0400992165CC5050090AA18 /* KanaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KanaView.h; path = classes/KanaView.h; sourceTree = "<group>"; };
 		F0400993165CC5050090AA18 /* KanaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KanaView.m; path = classes/KanaView.m; sourceTree = "<group>"; };
-		F0400999165D569C0090AA18 /* circle-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "circle-green.png"; path = "ressources/circle-green.png"; sourceTree = "<group>"; };
-		F040099A165D569C0090AA18 /* circle-red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "circle-red.png"; path = "ressources/circle-red.png"; sourceTree = "<group>"; };
 		F04009A9165D5C9F0090AA18 /* constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = constant.h; path = classes/constant.h; sourceTree = "<group>"; };
 		F04009AC165D5FDF0090AA18 /* LessonControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LessonControllerViewController.h; path = classes/LessonControllerViewController.h; sourceTree = "<group>"; };
 		F04009AD165D5FE00090AA18 /* LessonControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LessonControllerViewController.m; path = classes/LessonControllerViewController.m; sourceTree = "<group>"; };
@@ -219,8 +214,6 @@
 		F0679532164B10BE00347CF2 /* LessonRandomKana~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "LessonRandomKana~ipad.xib"; path = "ressources/LessonRandomKana~ipad.xib"; sourceTree = "<group>"; };
 		F0679535164B154200347CF2 /* LessonQCMKana~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "LessonQCMKana~ipad.xib"; path = "ressources/LessonQCMKana~ipad.xib"; sourceTree = "<group>"; };
 		F0679537164B187C00347CF2 /* ParametersKanaViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "ParametersKanaViewController~ipad.xib"; path = "ressources/ParametersKanaViewController~ipad.xib"; sourceTree = "<group>"; };
-		F073ADFE164312D800332D78 /* parameters.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = parameters.png; sourceTree = "<group>"; };
-		F073AE011643153900332D78 /* memory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = memory.png; sourceTree = "<group>"; };
 		F073AE0316431ACA00332D78 /* SectionLessonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SectionLessonCell.h; path = Classes/SectionLessonCell.h; sourceTree = "<group>"; };
 		F073AE0416431ACA00332D78 /* SectionLessonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SectionLessonCell.m; path = Classes/SectionLessonCell.m; sourceTree = "<group>"; };
 		F08686A216791C08009C0C8B /* params_icon_over.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = params_icon_over.png; path = ressources/params_icon_over.png; sourceTree = "<group>"; };
@@ -248,11 +241,14 @@
 		F08686D116793454009C0C8B /* UIViewController+overView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+overView.m"; path = "classes/UIViewController+overView.m"; sourceTree = "<group>"; };
 		F08686D316793986009C0C8B /* helpRandom.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = helpRandom.xib; sourceTree = "<group>"; };
 		F08686D516793F22009C0C8B /* helpParameters.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = helpParameters.xib; sourceTree = "<group>"; };
+		F08686D7167CBB1C009C0C8B /* UIView+Tags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Tags.h"; path = "classes/UIView+Tags.h"; sourceTree = "<group>"; };
+		F08686D8167CBB1C009C0C8B /* UIView+Tags.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Tags.m"; path = "classes/UIView+Tags.m"; sourceTree = "<group>"; };
+		F08686DA167CBFDF009C0C8B /* NSTimer+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSTimer+Blocks.h"; path = "classes/NSTimer+Blocks.h"; sourceTree = "<group>"; };
+		F08686DB167CBFE0009C0C8B /* NSTimer+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSTimer+Blocks.m"; path = "classes/NSTimer+Blocks.m"; sourceTree = "<group>"; };
 		F0A64DA516593554009752E8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		F0A64DA81659356F009752E8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F0A6F03C167500CB0054E7B6 /* params_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = params_icon.png; path = ressources/params_icon.png; sourceTree = "<group>"; };
 		F0A6F03D167500CB0054E7B6 /* params_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "params_icon@2x.png"; path = "ressources/params_icon@2x.png"; sourceTree = "<group>"; };
-		F0A6F0401675034F0054E7B6 /* test.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = test.jpeg; path = ressources/test.jpeg; sourceTree = "<group>"; };
 		F0A6F042167505C70054E7B6 /* qcm_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = qcm_icon.png; path = ressources/qcm_icon.png; sourceTree = "<group>"; };
 		F0A6F043167505C70054E7B6 /* qcm_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "qcm_icon@2x.png"; path = "ressources/qcm_icon@2x.png"; sourceTree = "<group>"; };
 		F0A6F04616750ABA0054E7B6 /* home_bkg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home_bkg.png; path = ressources/home_bkg.png; sourceTree = "<group>"; };
@@ -320,10 +316,14 @@
 		F00D6F971674AF98001AF0B9 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				F08686DA167CBFDF009C0C8B /* NSTimer+Blocks.h */,
+				F08686DB167CBFE0009C0C8B /* NSTimer+Blocks.m */,
 				F00D6F991674AFB1001AF0B9 /* UIColor+RGB.h */,
 				F00D6F9A1674AFB1001AF0B9 /* UIColor+RGB.m */,
 				F08686D016793454009C0C8B /* UIViewController+overView.h */,
 				F08686D116793454009C0C8B /* UIViewController+overView.m */,
+				F08686D7167CBB1C009C0C8B /* UIView+Tags.h */,
+				F08686D8167CBB1C009C0C8B /* UIView+Tags.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -365,7 +365,6 @@
 				F0A6F04716750ABA0054E7B6 /* home_bkg@2x.png */,
 				F0A6F042167505C70054E7B6 /* qcm_icon.png */,
 				F0A6F043167505C70054E7B6 /* qcm_icon@2x.png */,
-				F0A6F0401675034F0054E7B6 /* test.jpeg */,
 				F0A6F03C167500CB0054E7B6 /* params_icon.png */,
 				F0A6F03D167500CB0054E7B6 /* params_icon@2x.png */,
 				F00D6FB21674DCE7001AF0B9 /* shuffle_kata_icon.png */,
@@ -378,11 +377,7 @@
 				F00D6FA41674D4D3001AF0B9 /* splashscreen@2x.png */,
 				F061D980166BDD05007E7422 /* nekoneko_applications_alt.png */,
 				F061D981166BDD05007E7422 /* nekoneko_applications_alt@2x.png */,
-				F0400999165D569C0090AA18 /* circle-green.png */,
-				F040099A165D569C0090AA18 /* circle-red.png */,
 				F02D13791646AAE90093EAD0 /* tired-konata.jpeg */,
-				F073AE011643153900332D78 /* memory.png */,
-				F073ADFE164312D800332D78 /* parameters.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -401,6 +396,7 @@
 		F00D6F9E1674B034001AF0B9 /* iphone */ = {
 			isa = PBXGroup;
 			children = (
+				F0CE948D163F2F95004F7E2B /* ParametersCell.xib */,
 				F02D13861647EA460093EAD0 /* LessonQCMKana.xib */,
 				F0CE948E163F2F95004F7E2B /* LessonRandomKana.xib */,
 				F0CE9491163F2F95004F7E2B /* ParametersKanaViewController.xib */,
@@ -556,7 +552,6 @@
 				F00D6F9D1674B02E001AF0B9 /* ipad */,
 				F00D6F9C1674B029001AF0B9 /* images */,
 				F040097A165CBDDF0090AA18 /* epkyouka.ttf */,
-				F0CE948D163F2F95004F7E2B /* ParametersCell.xib */,
 				F0CE948F163F2F95004F7E2B /* Model.xcdatamodeld */,
 			);
 			name = ressources;
@@ -695,8 +690,6 @@
 				F0CE9495163F2F95004F7E2B /* ParametersCell.xib in Resources */,
 				F0CE9496163F2F95004F7E2B /* LessonRandomKana.xib in Resources */,
 				F0CE9498163F2F95004F7E2B /* ParametersKanaViewController.xib in Resources */,
-				F073ADFF164312D800332D78 /* parameters.png in Resources */,
-				F073AE021643153900332D78 /* memory.png in Resources */,
 				F02D137A1646AAE90093EAD0 /* tired-konata.jpeg in Resources */,
 				F02D13871647EA460093EAD0 /* LessonQCMKana.xib in Resources */,
 				F0679533164B10BE00347CF2 /* LessonRandomKana~ipad.xib in Resources */,
@@ -716,8 +709,6 @@
 				F04009761659365A0090AA18 /* OpenEars2.gram in Resources */,
 				F04009771659365A0090AA18 /* OpenEarsCorpus.txt in Resources */,
 				F040097B165CBDDF0090AA18 /* epkyouka.ttf in Resources */,
-				F040099B165D569D0090AA18 /* circle-green.png in Resources */,
-				F040099C165D569D0090AA18 /* circle-red.png in Resources */,
 				F061D984166BDD05007E7422 /* nekoneko_applications_alt.png in Resources */,
 				F061D985166BDD05007E7422 /* nekoneko_applications_alt@2x.png in Resources */,
 				F061D989166BDD26007E7422 /* nekosensei_kana_logo.png in Resources */,
@@ -734,7 +725,6 @@
 				F00D6FB51674DCE7001AF0B9 /* shuffle_kata_icon@2x.png in Resources */,
 				F0A6F03E167500CB0054E7B6 /* params_icon.png in Resources */,
 				F0A6F03F167500CB0054E7B6 /* params_icon@2x.png in Resources */,
-				F0A6F0411675034F0054E7B6 /* test.jpeg in Resources */,
 				F0A6F044167505C70054E7B6 /* qcm_icon.png in Resources */,
 				F0A6F045167505C70054E7B6 /* qcm_icon@2x.png in Resources */,
 				F0A6F04816750ABA0054E7B6 /* home_bkg.png in Resources */,
@@ -812,6 +802,8 @@
 				F00D6F9B1674AFB1001AF0B9 /* UIColor+RGB.m in Sources */,
 				F08686BF16792898009C0C8B /* HelpViewController.m in Sources */,
 				F08686D216793454009C0C8B /* UIViewController+overView.m in Sources */,
+				F08686D9167CBB1D009C0C8B /* UIView+Tags.m in Sources */,
+				F08686DC167CBFE0009C0C8B /* NSTimer+Blocks.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

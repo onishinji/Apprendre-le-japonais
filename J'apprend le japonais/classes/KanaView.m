@@ -51,19 +51,14 @@
 - (void) displayEmpty
 {
     _lblHiragana.text = @"";
-    [self setCurrentHiragana:nil];
-    
-    NSLog(@"%@", NSStringFromCGRect(_imgCentral.frame));
+    [self setCurrentHiragana:nil]; 
 }
 
 
 
 - (void) displayRomanji
-{
-    
-    
-    fontSize = self.lblHiragana.font.pointSize;
-    //_imgCentral.image = nil;
+{ 
+    fontSize = self.lblHiragana.font.pointSize; 
     
     if([self isForRomanjiToJapan])
     { 
@@ -80,12 +75,8 @@
 }
 
 - (void) displayJapan
-{
-    
-    
-    fontSize = self.lblHiragana.font.pointSize;
-    //_imgCentral.image = nil;
-    
+{ 
+    fontSize = self.lblHiragana.font.pointSize; 
     if([self isForRomanjiToJapan])
     { 
         [_lblHiragana setFont:[UIFont fontWithName:@"EPSON ã≥â»èëëÃÇl" size:fontSize]];

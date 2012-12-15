@@ -167,7 +167,6 @@
     
     label.textColor = [UIColor blackColor];
     label.backgroundColor = [UIColor clearColor];
-    
     cell.backgroundColor = [UIColor clearColor];
     [cell addSubview:label];
     

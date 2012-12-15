@@ -12,12 +12,20 @@
 #import "LessonControllerViewController.h"
 #import "HelpViewController.h"
 #import "UIViewController+overView.h"
+#import "UIView+Tags.h"
+#import "NSTimer+Blocks.h"
 
 @interface LessonQCMKana : LessonControllerViewController
 {
     Kana * currentKana;
     
+    BOOL hasWrongAnswer;
+    
     int currentScore;
+    
+    UIColor * defaultLblColor;
+    
+    UITapGestureRecognizer * tapToNext;
     
     NSMutableArray * knows;
     NSMutableArray * knowsRomanji;
@@ -37,15 +45,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *rightBottomButton;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 
-
-@property (weak, nonatomic) IBOutlet UILabel *goodKanaPlain;
-@property (weak, nonatomic) IBOutlet UILabel *goodRomanjiPlain;
-
-@property (weak, nonatomic) IBOutlet UILabel *goodKana;
-@property (weak, nonatomic) IBOutlet UILabel *goodRomanji;
-
-@property (weak, nonatomic) IBOutlet UILabel *falseKana;
-@property (weak, nonatomic) IBOutlet UILabel *falseRomanji;
+@property (weak, nonatomic) IBOutlet UILabel * lblResponse;
 
 
 - (void) displayTrueResponse:(Kana *)kana;

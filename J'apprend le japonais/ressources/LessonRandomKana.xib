@@ -189,7 +189,6 @@
 								<reference key="IBUITextColor" ref="192211412"/>
 								<nil key="IBUIHighlightedColor"/>
 								<string key="IBUIShadowOffset">{0, 0}</string>
-								<int key="IBUIBaselineAdjustment">1</int>
 								<float key="IBUIMinimumFontSize">100</float>
 								<bool key="IBUIAdjustsLetterSpacingToFitWidth">YES</bool>
 								<int key="IBUITextAlignment">1</int>

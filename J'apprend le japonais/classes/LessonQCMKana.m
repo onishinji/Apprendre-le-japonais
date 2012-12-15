@@ -28,14 +28,7 @@
 
 @synthesize scoreLabel = _scoreLabel;
 
-@synthesize goodKana = _goodHiragana;
-@synthesize goodRomanji = _goodRomanji;
-
-@synthesize goodKanaPlain = _goodHiraganaPlain;
-@synthesize goodRomanjiPlain = _goodRomanjiPlain;
-
-@synthesize falseKana = _falseHiragana;
-@synthesize falseRomanji = _falseRomanji;
+@synthesize lblResponse = _lblResponse;
 
 @synthesize msg = _msg;
 
@@ -50,8 +43,24 @@
         currentScore = 0;
         btnArray = [[NSMutableArray alloc] init];
         
+        tapToNext = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(toTapNext:)];
+        tapToNext.numberOfTapsRequired = 1;
+        
+        hasWrongAnswer = FALSE;
+        
     }
     return self;
+}
+
+- (void)toTapNext:(UIGestureRecognizer *)gestureRecognizer
+{
+    [self displayNext];
+    [self displayWaitingMessage];
+}
+
+- (void) displayWaitingMessage
+{
+    [self displaySentenceOK:@"Neko sensei attend ta réponse"];
 }
 
 - (void)viewDidLoad
@@ -59,6 +68,10 @@
     [super viewDidLoad];
     
     [self.kanaFlipView setMode:[[self params] objectForKey:@"mode"]];
+    
+    defaultLblColor = self.kanaFlipView.lblHiragana.textColor;
+    
+    [self displayWaitingMessage];
     
     [[self.view viewWithTag:100] setHidden:TRUE];
     [[self.view viewWithTag:200] setHidden:TRUE];
@@ -71,7 +84,7 @@
     [self configureButton:_rightMiddleButton];
     [self configureButton:_rightBottomButton];
     
-    //
+    // add buttons
     [btnArray addObject:_leftTopButton];
     [btnArray addObject:_leftMiddleButton];
     [btnArray addObject:_leftBottomButton];
@@ -80,13 +93,24 @@
     [btnArray addObject:_rightMiddleButton];
     [btnArray addObject:_rightBottomButton];
     
-    //
+    // Configure buttons
     [_leftTopButton addTarget:self action:@selector(checkResponse:) forControlEvents:UIControlEventTouchUpInside];
     [_leftBottomButton addTarget:self action:@selector(checkResponse:) forControlEvents:UIControlEventTouchUpInside];
     [_leftMiddleButton addTarget:self action:@selector(checkResponse:) forControlEvents:UIControlEventTouchUpInside];
     [_rightTopButton addTarget:self action:@selector(checkResponse:) forControlEvents:UIControlEventTouchUpInside];
     [_rightBottomButton addTarget:self action:@selector(checkResponse:) forControlEvents:UIControlEventTouchUpInside];
     [_rightMiddleButton addTarget:self action:@selector(checkResponse:) forControlEvents:UIControlEventTouchUpInside];
+    
+    // set layer style
+    for (UIView * v in [[self.view viewWithTag:100] subViewsWithTag:10])
+    {
+        v.layer.cornerRadius = 10;
+    }
+    
+    for (UIView * v in [[self.view viewWithTag:200] subViewsWithTag:10])
+    {
+        v.layer.cornerRadius = 10;
+    }
     
     [self displayNext];
     // Do any additional setup after loading the view from its nib.
@@ -101,60 +125,68 @@
 
 - (void) checkResponse:(id)sender
 {
-    
-    if(currentKana != nil)
+    // don't check response if wrong is display
+    if(hasWrongAnswer == TRUE)
     {
-        UIButton * btn = (UIButton *)sender;
-        
-        if(
-           ([self isForRomanjiToJapan] && [btn.titleLabel.text isEqualToString:currentKana.romanji]) ||
-           ([self isForJapanToRomanji] && [btn.titleLabel.text isEqualToString:currentKana.japan])
-           )
+        [self displayNext];
+        [self displayWaitingMessage];
+    }
+    else
+    {
+        if(currentKana != nil)
         {
-            currentScore++;
-            currentKana.scoring = [NSNumber numberWithInt:[currentKana.scoring intValue] + 1];
-            [self displayTrueResponse:currentKana];
-        }
-        else
-        {
-            if([self isForHiragana])
+            UIButton * btn = (UIButton *)sender;
+            
+            if(
+               ([self isForRomanjiToJapan] && [btn.titleLabel.text isEqualToString:currentKana.romanji]) ||
+               ([self isForJapanToRomanji] && [btn.titleLabel.text isEqualToString:currentKana.japan])
+               )
             {
-                if([self isForRomanjiToJapan])
-                {
-                    
-                    [self displayFalseResponse:currentKana falseReponse:[[Computer sharedInstance] getHiraganaWithRomanji:btn.titleLabel.text]];
-                }
-                else
-                {
-                    [self displayFalseResponse:currentKana falseReponse:[[Computer sharedInstance] getHiraganaWithJapan:btn.titleLabel.text]];
-                }
+                currentScore++;
+                currentKana.scoring = [NSNumber numberWithInt:[currentKana.scoring intValue] + 1];
+                [self displayTrueResponse:currentKana];
             }
             else
             {
-                if([self isForRomanjiToJapan])
+                if([self isForHiragana])
                 {
-                    
-                    [self displayFalseResponse:currentKana falseReponse:[[Computer sharedInstance] getKatakanaWithRomanji:btn.titleLabel.text]];
+                    if([self isForRomanjiToJapan])
+                    {
+                        
+                        [self displayFalseResponse:currentKana falseReponse:[[Computer sharedInstance] getHiraganaWithRomanji:btn.titleLabel.text]];
+                    }
+                    else
+                    {
+                        [self displayFalseResponse:currentKana falseReponse:[[Computer sharedInstance] getHiraganaWithJapan:btn.titleLabel.text]];
+                    }
                 }
                 else
                 {
-                    [self displayFalseResponse:currentKana falseReponse:[[Computer sharedInstance] getKatakanaWithJapan:btn.titleLabel.text]];
+                    if([self isForRomanjiToJapan])
+                    {
+                        
+                        [self displayFalseResponse:currentKana falseReponse:[[Computer sharedInstance] getKatakanaWithRomanji:btn.titleLabel.text]];
+                    }
+                    else
+                    {
+                        [self displayFalseResponse:currentKana falseReponse:[[Computer sharedInstance] getKatakanaWithJapan:btn.titleLabel.text]];
+                    }
                 }
+                currentKana.scoring = [NSNumber numberWithInt:[currentKana.scoring intValue] - 1];
             }
-            currentKana.scoring = [NSNumber numberWithInt:[currentKana.scoring intValue] - 1];
+            [[Computer sharedInstance] flush]; 
         }
-        [[Computer sharedInstance] flush];
-        
     }
-    
-    
-    [self displayNext];
-    
-    
 }
 
 -(void) displayNext
 {
+    hasWrongAnswer = FALSE;
+    
+    [_hiraganaFlipView.lblHiragana setTextColor:defaultLblColor];
+    
+    [_hiraganaFlipView removeGestureRecognizer:tapToNext];
+    
     // switch type
     if([self isForHiragana])
     {
@@ -219,17 +251,19 @@
         
     }
     
-    // @todo switch type
     int nb = 0;
+    int nbSeleted = 0;
     
     if([self isForHiragana])
     {
-        nb = [[[Computer sharedInstance] getSelectedsHiragana] count] - [knows count];
+        nbSeleted =  [[[Computer sharedInstance] getSelectedsHiragana] count];
     }
     else
     {
-        nb = [[[Computer sharedInstance] getSelectedsKatakana] count] - [knows count];
+        nbSeleted =  [[[Computer sharedInstance] getSelectedsKatakana] count];
     }
+    
+    nb = nbSeleted - [knows count];
     
     if(nb == 0)
     {
@@ -237,8 +271,7 @@
     }
     else
     {
-        // @todo switch type
-        _msg.text = [NSString stringWithFormat:@"Encore %i kana(s) à deviner", nb ];
+        _msg.text = [NSString stringWithFormat:@"Encore %i kana(s) à deviner.", nb ];
     }
     
     if(currentKana == nil)
@@ -247,9 +280,7 @@
         knowsRomanji = [[NSMutableArray alloc] init];
         
         
-        float percent = (0.0 + currentScore) / (0.0 + [[[Computer sharedInstance] getSelectedsHiragana] count]) * 100;
-        // NSLog(@"%f %d  %d", percent, currentScore, [[[Computer sharedInstance] getSelectedsHiragana] count]);
-        
+        float percent = (0.0 + currentScore) / (0.0 + nbSeleted) * 100; 
         [_hiraganaFlipView displayEmpty];
         
         _msg.text = [NSString stringWithFormat:@"Fini ! ton scocre est de %2.f %% de réussite !", percent];
@@ -261,30 +292,75 @@
         [_hiraganaFlipView displayJapan];
     }
     
-    _scoreLabel.text = [NSString stringWithFormat:@"%d / %d réussi ", currentScore, [[[Computer sharedInstance] getSelectedsHiragana] count]];
+    float percent = (0.0 + currentScore) / (0.0 + nbSeleted) * 100;
+    _scoreLabel.text = [NSString stringWithFormat:@"%% de réussite: %2.f %%", percent];
     
 }
 
 - (void) displayTrueResponse:(Kana *)kana
 {
-    [[self.view viewWithTag:100] setHidden:FALSE];
-    [[self.view viewWithTag:200] setHidden:TRUE];
+    if(!hasWrongAnswer)
+    {
+        NSArray * sentences = [NSArray arrayWithObjects:
+                               @"Sugoi !",
+                               @"Bravo !",
+                               @"C'est bien, continue !",
+                               @"C'est exact.",
+                               @"Tout à fait !",
+                               @"Neko sensei est fier de toi !",
+                               @"Tu as raison.",
+                               @"Continue, tu es sur la bonne voie.",
+                               @"Tu m'impressiones",
+                               @"Fortiche !",
+                               @"Subarashii !"
+                               , nil];
+        
+        int randomIndex = arc4random() % [sentences count];
+        [self displaySentenceOK:[sentences objectAtIndex:randomIndex]];
+         
+    }
     
-    _goodHiraganaPlain.text = kana.japan;
-    _goodRomanjiPlain.text = kana.romanji;
+    [self displayNext];
+        
 }
 
 - (void) displayFalseResponse:(Kana *)trueResponse falseReponse:(Kana *)falseResponse
 {
-    [[self.view viewWithTag:100] setHidden:TRUE];
-    [[self.view viewWithTag:200] setHidden:FALSE];
+    NSArray * sentences = [NSArray arrayWithObjects:
+                           @"Non !",
+                           @"Oups ?",
+                           @"Tu devrais le savoir !",
+                           @"Qui veut aller loin ménage sa monture ...",
+                           @"Concentre toi un peu ..",
+                           @"Neko sensei n'est pas content de toi",
+                           @"As tu appris ?",
+                           @"Gomen, c'est pas ça ..",
+                           @"Un petit effort",
+                           @"Presque ..."
+                           , nil];
     
-    _goodHiragana.text = trueResponse.japan;
-    _goodRomanji.text = trueResponse.romanji;
+    int randomIndex = arc4random() % [sentences count]; 
+    [self displaySentenceKO:[sentences objectAtIndex:randomIndex]];
     
-    _falseHiragana.text = falseResponse.japan;
-    _falseRomanji.text = falseResponse.romanji;
+    hasWrongAnswer = TRUE;
+    [_hiraganaFlipView displayRomanji];
     
+    
+    [_hiraganaFlipView.lblHiragana setTextColor:[UIColor redColor]];
+    
+    [_hiraganaFlipView addGestureRecognizer:tapToNext];
+}
+
+- (void) displaySentenceOK:(NSString *) msg
+{
+    _lblResponse.textColor = [UIColor blackColor];
+    _lblResponse.text = msg;
+}
+
+- (void) displaySentenceKO:(NSString *) msg
+{
+    _lblResponse.textColor = [UIColor redColor];
+    _lblResponse.text = msg;
 }
 
 - (void)didReceiveMemoryWarning
