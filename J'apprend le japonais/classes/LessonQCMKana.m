@@ -292,8 +292,8 @@
         [_hiraganaFlipView displayJapan];
     }
     
-    float percent = (0.0 + currentScore) / (0.0 + nbSeleted) * 100;
-    _scoreLabel.text = [NSString stringWithFormat:@"%% de réussite: %2.f %%", percent];
+    float percent = (float)( (nbSeleted - (([knows count] -1) - currentScore)) / nbSeleted) * 100;
+    _scoreLabel.text = [NSString stringWithFormat:@"%2.f %% de réussite", percent];
     
 }
 

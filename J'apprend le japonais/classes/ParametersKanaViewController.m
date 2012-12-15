@@ -97,11 +97,11 @@
     _collectionViewLayout.sectionInset =  UIEdgeInsetsMake(0, 5, 0, 5);
     _collectionViewLayout.minimumInteritemSpacing = 3;
     _collectionViewLayout.minimumLineSpacing = 3;
-    _collectionViewLayout.headerReferenceSize = CGSizeMake(480, 30);
+    _collectionViewLayout.headerReferenceSize = CGSizeMake(260, 60);
     
     if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
     {
-        _collectionView = [[PSTCollectionView alloc] initWithFrame:CGRectMake(0, 35, 900, 670) collectionViewLayout:_collectionViewLayout];
+        _collectionView = [[PSTCollectionView alloc] initWithFrame:CGRectMake(0, 35, 960, 670) collectionViewLayout:_collectionViewLayout];
     }
     else
     {
@@ -146,7 +146,8 @@
     
     PSTCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PSTCollectionViewCell" forIndexPath:indexPath];
     
-    UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(15, 0, 480, 30)]; 
+    UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(20, 12, 240, 35)];
+    label.textAlignment = NSTextAlignmentCenter;
     
     switch (indexPath.section) {
         case 0:
@@ -167,6 +168,10 @@
     
     label.textColor = [UIColor blackColor];
     label.backgroundColor = [UIColor clearColor];
+    UIImageView * img = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title_scroll.png"]];
+    img.frame = CGRectMake(20, 10, 240, 40);
+    [cell addSubview:img];
+    
     cell.backgroundColor = [UIColor clearColor];
     [cell addSubview:label];
     
