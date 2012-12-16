@@ -44,10 +44,16 @@
     [super viewDidLoad];
     
     openHelpAlready = false;
-    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"home_bkg.png"]];
 }
 
+// to be override
 - (void) openHelp:(UIBarButtonItem *)bar
+{
+    
+}
+
+// to be override, init controller
+- (void) activeController
 {
     
 }

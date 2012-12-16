@@ -323,16 +323,17 @@ static Computer *sharedObject;
     return aFetchedResultsController;
 }
 
--(Kana *) toggleSelectedHiragana:(Kana *)hiragana
+-(Kana *) toggleSelectedKana:(Kana *)hiragana withFlush:(BOOL)flush
 {
-    NSLog(@"%@", hiragana.isSelected);
-    
     bool b = [hiragana.isSelected boolValue];
     b = !b;
     
     hiragana.isSelected = [NSNumber numberWithBool:b];
     
-    [self flush];
+    if(flush)
+    {
+        [self flush];
+    }
     
     return hiragana;
 }

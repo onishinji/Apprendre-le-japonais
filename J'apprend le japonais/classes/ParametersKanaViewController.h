@@ -13,6 +13,7 @@
 {
     
     NSMutableDictionary * allResult;
+    NSMutableArray * allKanas;
 
     PSTCollectionViewFlowLayout * _collectionViewLayout;
     PSTCollectionView * _collectionView;

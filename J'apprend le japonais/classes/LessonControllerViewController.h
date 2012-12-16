@@ -30,6 +30,7 @@
 - (BOOL) isForRomanjiToJapan;
 - (BOOL) isForJapanToRomanji;
 
+- (void) activeController;
 - (void) openHelp:(UIBarButtonItem *)bar;
 
 @end

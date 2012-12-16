@@ -67,7 +67,7 @@
             
             [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM R > K" icon:[UIImage imageNamed:@"qcm_romanji_icon.png"] className:@"LessonQCMKana" parameters:paramsHiraganaInvertMode]];
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"Parametres" icon:[UIImage imageNamed:@"params_icon.png"] className:@"ParametersKanaViewController" parameters:paramsHiragana]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"Paramètres" icon:[UIImage imageNamed:@"params_icon.png"] className:@"ParametersKanaViewController" parameters:paramsHiragana]];
 
             
             break;

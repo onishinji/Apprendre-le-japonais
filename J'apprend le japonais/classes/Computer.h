@@ -44,7 +44,7 @@
 -(Kana *) getHiraganaWithJapan:(NSString *)romanji;
 
 
--(Kana *) toggleSelectedHiragana:(Kana *)hiragana;
+-(Kana *) toggleSelectedKana:(Kana *)hiragana withFlush:(BOOL)flush;
 
 
 -(void)flush;

@@ -22,6 +22,69 @@
     if (self) {
         // Custom initialization
         
+        NSFetchedResultsController * resultsController;
+        if([self isForHiragana])
+        {
+            resultsController = [[Computer sharedInstance] getHiraganaPerSections];
+            
+        }
+        else
+        {
+            resultsController = [[Computer sharedInstance] getKatakanaPerSections];
+        }
+        
+        allResult = [[NSMutableDictionary  alloc] init];
+        allKanas = [[NSMutableArray alloc] init];
+        int sectionId = 0;
+        for(int i = 0; i < [[resultsController sections] count]; i++)
+        {
+            
+            NSMutableArray * kanas = [[NSMutableArray alloc] init];
+            
+            id <NSFetchedResultsSectionInfo> info = [[resultsController sections] objectAtIndex:i];
+            for(int j = 0; j < [info numberOfObjects]; j++)
+            {
+                [kanas addObject:[[info objects] objectAtIndex:j]];
+            }
+            
+            NSMutableDictionary * nbRow = [[NSMutableDictionary alloc] init];
+            for(Kana * kana in kanas)
+            {
+                [nbRow setObject:@"1" forKey:[kana.row stringValue]];
+            }
+            
+            
+            NSMutableArray * sectionKana = [[NSMutableArray alloc] init];
+            for (int row = 1; row <= [nbRow count]; row ++)
+            {
+                for(int col = 1; col <= 5; col++)
+                {
+                    Kana * kana = nil;
+                    
+                    for(Kana * hir in kanas)
+                    {
+                        [allKanas addObject:hir];
+                        
+                        if([hir.col intValue] == col && [hir.row intValue] == row)
+                        {
+                            kana = hir;
+                        }
+                    }
+                    if(kana == nil) {
+                        [sectionKana addObject:@""];
+                    }
+                    else
+                    {
+                        [sectionKana addObject:kana];
+                    }
+                }
+            }
+            
+            [allResult setObject:sectionKana forKey:[NSString stringWithFormat:@"section_%d", sectionId] ];
+            sectionId++;
+            
+        }
+
     }
     
     return self;
@@ -30,68 +93,7 @@
 - (void)loadView {
     [super loadView];
     
-    
-    NSFetchedResultsController * resultsController;
-    if([self isForHiragana])
-    {
-        resultsController = [[Computer sharedInstance] getHiraganaPerSections];
         
-    }
-    else
-    {
-        resultsController = [[Computer sharedInstance] getKatakanaPerSections];
-    }
-    
-    allResult = [[NSMutableDictionary  alloc] init];
-    int sectionId = 0;
-    for(int i = 0; i < [[resultsController sections] count]; i++)
-    {
-        
-        NSMutableArray * kanas = [[NSMutableArray alloc] init];
-        
-        id <NSFetchedResultsSectionInfo> info = [[resultsController sections] objectAtIndex:i];
-        for(int j = 0; j < [info numberOfObjects]; j++)
-        {
-            [kanas addObject:[[info objects] objectAtIndex:j]];
-        }
-        
-        NSMutableDictionary * nbRow = [[NSMutableDictionary alloc] init];
-        for(Kana * kana in kanas)
-        {
-            [nbRow setObject:@"1" forKey:[kana.row stringValue]];
-        }
-        
-        
-        NSMutableArray * sectionKana = [[NSMutableArray alloc] init];
-        for (int row = 1; row <= [nbRow count]; row ++)
-        {
-            for(int col = 1; col <= 5; col++)
-            {
-                Kana * kana = nil;
-                
-                for(Kana * hir in kanas)
-                {
-                    
-                    if([hir.col intValue] == col && [hir.row intValue] == row)
-                    {
-                        kana = hir;
-                    }
-                }
-                if(kana == nil) {
-                    [sectionKana addObject:@""];
-                }
-                else
-                {
-                    [sectionKana addObject:kana];
-                }
-            }
-        }
-        
-        [allResult setObject:sectionKana forKey:[NSString stringWithFormat:@"section_%d", sectionId] ];
-        sectionId++;
-        
-    }
-    
     _collectionViewLayout = [[PSTCollectionViewFlowLayout alloc] init];
     _collectionViewLayout.itemSize = CGSizeMake(90, 90.0f);
     _collectionViewLayout.sectionInset =  UIEdgeInsetsMake(0, 5, 0, 5);
@@ -121,6 +123,7 @@
     
     [_collectionView registerClass:PSTCollectionViewCell.class forCellWithReuseIdentifier:@"PSTCollectionViewCell"];  
     [_collectionView registerClass:ParametersCell.class forCellWithReuseIdentifier:@"ParametersCell"];
+    
 }
 
 - (void)viewDidLoad
@@ -128,6 +131,24 @@
     [super viewDidLoad];
 }
 
+- (void) activeController
+{   
+    self.parent.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:
+                                                                    [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:self action:@selector(openHelp:)],
+                                                                    [[UIBarButtonItem alloc] initWithTitle:@"Intervertir les états" style:UIBarButtonItemStyleBordered target:self action:@selector(toogleItems:)]
+                                                                    , nil];
+}
+
+- (void) toogleItems:(UIBarButtonItem *)bar
+{
+    for(Kana * hir in allKanas)
+    {
+        [[Computer sharedInstance] toggleSelectedKana:hir withFlush:FALSE];
+    }
+    
+    [[Computer sharedInstance] flush];
+    [_collectionView reloadData];
+}
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
@@ -215,7 +236,7 @@
     if([objetInArray isKindOfClass:[Kana class]])
     {
         Kana * hir = objetInArray;
-        [[Computer sharedInstance] toggleSelectedHiragana:hir];
+        [[Computer sharedInstance] toggleSelectedKana:hir withFlush:TRUE];
         
         
         [collectionView reloadItemsAtIndexPaths:[NSArray arrayWithObject:indexPath]];

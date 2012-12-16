@@ -283,6 +283,8 @@
         float percent = (0.0 + currentScore) / (0.0 + nbSeleted) * 100; 
         [_hiraganaFlipView displayEmpty];
         
+        if(isnan(percent)) percent = 100;
+        
         _msg.text = [NSString stringWithFormat:@"Fini ! ton scocre est de %2.f %% de réussite !", percent];
         _scoreLabel.hidden = TRUE;
         for(UIButton * btn in btnArray)

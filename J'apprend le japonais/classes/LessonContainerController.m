@@ -41,7 +41,11 @@
     self.navigationItem.backBarButtonItem.title = @"Menu";
     self.view.backgroundColor = [UIColor redColor];
     
+    
     _currentController = [[NSClassFromString(_lesson.className) alloc] initWithNibName:_lesson.className bundle:nil];
+    
+    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"home_bkg.png"]];
+    _currentController.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"home_bkg.png"]];
     
     _currentController.currentKanaType = [[self parameters] objectForKey:@"kanaType"];
     _currentController.params = [self parameters];
@@ -66,6 +70,7 @@
     scroll.bounces = FALSE;
     scroll.contentSize = CGSizeMake(_currentController.view.frame.size.width, _currentController.view.frame.size.height);
     
+    
     [scroll addSubview:_currentController.view];
     
     [self.view addSubview:scroll];
@@ -73,6 +78,7 @@
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:_currentController action:@selector(openHelp:)];
     
+    [_currentController activeController];
     
     // Do any additional setup after loading the view from its nib.
 }
