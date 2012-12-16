@@ -7,8 +7,8 @@
 //
 
 #import "LessonContainerController.h"
-#import "LessonRandomKana.h"
-#import "LessonQCMKana.h"
+#import "LessonRandomKanaController.h"
+#import "LessonQCMKanaController.h"
 
 @interface LessonContainerController ()
 

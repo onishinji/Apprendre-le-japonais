@@ -6,15 +6,15 @@
 //  Copyright (c) 2012 Guillaume chave. All rights reserved.
 //
 
-#import "LessonQCMKana.h"
+#import "LessonQCMKanaController.h"
 #import "Computer.h"
 
-@interface LessonQCMKana ()
+@interface LessonQCMKanaController ()
 
 @end
 
 
-@implementation LessonQCMKana
+@implementation LessonQCMKanaController
 
 @synthesize leftBottomButton = _leftBottomButton;
 @synthesize leftMiddleButton = _leftMiddleButton;

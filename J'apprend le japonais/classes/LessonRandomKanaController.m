@@ -6,16 +6,16 @@
 //  Copyright (c) 2012 Guillaume chave. All rights reserved.
 //
 
-#import "LessonRandomKana.h"
+#import "LessonRandomKanaController.h"
 #import "Computer.h"
 
-@interface LessonRandomKana ()
+@interface LessonRandomKanaController ()
 
 - (void) displayNext;
 
 @end
 
-@implementation LessonRandomKana
+@implementation LessonRandomKanaController
 
 @synthesize btnNext = _btnNext;
 @synthesize btnPrev = _btnPrev;
