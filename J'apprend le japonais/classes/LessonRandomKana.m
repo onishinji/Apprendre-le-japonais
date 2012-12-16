@@ -224,7 +224,7 @@
     else
     {
         // @todo switch type
-        _msg.text = [NSString stringWithFormat:@"Encore %i hiragana(s) à deviner", nb ];
+        _msg.text = [NSString stringWithFormat:@"Encore %i kana à deviner", nb ];
     }
     
     if(currentPos >= nbKanaLesson)

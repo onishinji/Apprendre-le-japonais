@@ -51,13 +51,13 @@
 
 - (void) disabled
 {
-    int r = 149;
-    int g = 149;
-    int b = 149;
+    int r = 100;
+    int g = 100;
+    int b = 100;
     
     _title.textColor = [UIColor colorWithR:r G:g B:b A:1];
     _subTitle.textColor = [UIColor colorWithR:r G:g B:b A:1];
-    self.backgroundColor = [UIColor colorWithR:255 G:255 B:255 A:0.5];
+    self.backgroundColor = [UIColor colorWithR:255 G:255 B:255 A:0.3];
     [_circle setImage:[UIImage imageNamed:@"circle-red"]];
 }
 

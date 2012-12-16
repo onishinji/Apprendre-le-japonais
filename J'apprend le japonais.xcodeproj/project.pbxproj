@@ -33,6 +33,18 @@
 		F02D137C1646AFFA0093EAD0 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F060E98B163C0A4B009C01E3 /* MainStoryboard_iPhone.storyboard */; };
 		F02D137D1646AFFA0093EAD0 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F060E98E163C0A4B009C01E3 /* MainStoryboard_iPad.storyboard */; };
 		F02D13871647EA460093EAD0 /* LessonQCMKana.xib in Resources */ = {isa = PBXBuildFile; fileRef = F02D13861647EA460093EAD0 /* LessonQCMKana.xib */; };
+		F03603BA167DDE0A0003E2D3 /* aide_shuffle.png in Resources */ = {isa = PBXBuildFile; fileRef = F03603B8167DDE0A0003E2D3 /* aide_shuffle.png */; };
+		F03603BB167DDE0A0003E2D3 /* aide_shuffle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F03603B9167DDE0A0003E2D3 /* aide_shuffle@2x.png */; };
+		F03603BE167DE51F0003E2D3 /* aide_qcm.png in Resources */ = {isa = PBXBuildFile; fileRef = F03603BC167DE51F0003E2D3 /* aide_qcm.png */; };
+		F03603BF167DE51F0003E2D3 /* aide_qcm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F03603BD167DE51F0003E2D3 /* aide_qcm@2x.png */; };
+		F03603C6167DE6640003E2D3 /* helpParameters.xib in Resources */ = {isa = PBXBuildFile; fileRef = F03603C0167DE6640003E2D3 /* helpParameters.xib */; };
+		F03603C7167DE6640003E2D3 /* helpParameters~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F03603C1167DE6640003E2D3 /* helpParameters~ipad.xib */; };
+		F03603C8167DE6640003E2D3 /* helpQCM.xib in Resources */ = {isa = PBXBuildFile; fileRef = F03603C2167DE6640003E2D3 /* helpQCM.xib */; };
+		F03603C9167DE6640003E2D3 /* helpQCM~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F03603C3167DE6640003E2D3 /* helpQCM~ipad.xib */; };
+		F03603CA167DE6640003E2D3 /* helpRandom.xib in Resources */ = {isa = PBXBuildFile; fileRef = F03603C4167DE6640003E2D3 /* helpRandom.xib */; };
+		F03603CB167DE6640003E2D3 /* helpRandom~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F03603C5167DE6640003E2D3 /* helpRandom~ipad.xib */; };
+		F03603CE167DE7460003E2D3 /* aide_parametres.png in Resources */ = {isa = PBXBuildFile; fileRef = F03603CC167DE7460003E2D3 /* aide_parametres.png */; };
+		F03603CF167DE7460003E2D3 /* aide_parametres@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F03603CD167DE7460003E2D3 /* aide_parametres@2x.png */; };
 		F040096A1659365A0090AA18 /* cmu07a.dic in Resources */ = {isa = PBXBuildFile; fileRef = F040095A1659365A0090AA18 /* cmu07a.dic */; };
 		F040096B1659365A0090AA18 /* feat.params in Resources */ = {isa = PBXBuildFile; fileRef = F040095C1659365A0090AA18 /* feat.params */; };
 		F040096C1659365A0090AA18 /* mdef in Resources */ = {isa = PBXBuildFile; fileRef = F040095D1659365A0090AA18 /* mdef */; };
@@ -77,7 +89,6 @@
 		F08686B716791C08009C0C8B /* shuffle_romanji_icon_over@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F08686AB16791C08009C0C8B /* shuffle_romanji_icon_over@2x.png */; };
 		F08686B816791C08009C0C8B /* shuffle_romanji_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F08686AC16791C08009C0C8B /* shuffle_romanji_icon.png */; };
 		F08686B916791C08009C0C8B /* shuffle_romanji_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F08686AD16791C08009C0C8B /* shuffle_romanji_icon@2x.png */; };
-		F08686BC16792696009C0C8B /* helpQCM.xib in Resources */ = {isa = PBXBuildFile; fileRef = F08686BB16792696009C0C8B /* helpQCM.xib */; };
 		F08686BF16792898009C0C8B /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F08686BE16792898009C0C8B /* HelpViewController.m */; };
 		F08686C21679315F009C0C8B /* title_scroll.png in Resources */ = {isa = PBXBuildFile; fileRef = F08686C01679315F009C0C8B /* title_scroll.png */; };
 		F08686C31679315F009C0C8B /* title_scroll@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F08686C11679315F009C0C8B /* title_scroll@2x.png */; };
@@ -88,8 +99,6 @@
 		F08686CE167932B5009C0C8B /* qcm_romanji_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F08686C8167932B5009C0C8B /* qcm_romanji_icon.png */; };
 		F08686CF167932B5009C0C8B /* qcm_romanji_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F08686C9167932B5009C0C8B /* qcm_romanji_icon@2x.png */; };
 		F08686D216793454009C0C8B /* UIViewController+overView.m in Sources */ = {isa = PBXBuildFile; fileRef = F08686D116793454009C0C8B /* UIViewController+overView.m */; };
-		F08686D416793986009C0C8B /* helpRandom.xib in Resources */ = {isa = PBXBuildFile; fileRef = F08686D316793986009C0C8B /* helpRandom.xib */; };
-		F08686D616793F22009C0C8B /* helpParameters.xib in Resources */ = {isa = PBXBuildFile; fileRef = F08686D516793F22009C0C8B /* helpParameters.xib */; };
 		F08686D9167CBB1D009C0C8B /* UIView+Tags.m in Sources */ = {isa = PBXBuildFile; fileRef = F08686D8167CBB1C009C0C8B /* UIView+Tags.m */; };
 		F08686DC167CBFE0009C0C8B /* NSTimer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = F08686DB167CBFE0009C0C8B /* NSTimer+Blocks.m */; };
 		F0A64DA616593554009752E8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A64DA516593554009752E8 /* AudioToolbox.framework */; };
@@ -169,6 +178,18 @@
 		F02D13811647EA240093EAD0 /* LessonQCMKana.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LessonQCMKana.h; path = classes/LessonQCMKana.h; sourceTree = "<group>"; };
 		F02D13861647EA460093EAD0 /* LessonQCMKana.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LessonQCMKana.xib; path = ressources/LessonQCMKana.xib; sourceTree = "<group>"; };
 		F02D138D164837750093EAD0 /* NSMutableArray+Shuffling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+Shuffling.h"; path = "classes/NSMutableArray+Shuffling.h"; sourceTree = "<group>"; };
+		F03603B8167DDE0A0003E2D3 /* aide_shuffle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = aide_shuffle.png; path = ressources/aide_shuffle.png; sourceTree = "<group>"; };
+		F03603B9167DDE0A0003E2D3 /* aide_shuffle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "aide_shuffle@2x.png"; path = "ressources/aide_shuffle@2x.png"; sourceTree = "<group>"; };
+		F03603BC167DE51F0003E2D3 /* aide_qcm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = aide_qcm.png; path = ressources/aide_qcm.png; sourceTree = "<group>"; };
+		F03603BD167DE51F0003E2D3 /* aide_qcm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "aide_qcm@2x.png"; path = "ressources/aide_qcm@2x.png"; sourceTree = "<group>"; };
+		F03603C0167DE6640003E2D3 /* helpParameters.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = helpParameters.xib; path = ressources/helpParameters.xib; sourceTree = "<group>"; };
+		F03603C1167DE6640003E2D3 /* helpParameters~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "helpParameters~ipad.xib"; path = "ressources/helpParameters~ipad.xib"; sourceTree = "<group>"; };
+		F03603C2167DE6640003E2D3 /* helpQCM.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = helpQCM.xib; path = ressources/helpQCM.xib; sourceTree = "<group>"; };
+		F03603C3167DE6640003E2D3 /* helpQCM~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "helpQCM~ipad.xib"; path = "ressources/helpQCM~ipad.xib"; sourceTree = "<group>"; };
+		F03603C4167DE6640003E2D3 /* helpRandom.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = helpRandom.xib; path = ressources/helpRandom.xib; sourceTree = "<group>"; };
+		F03603C5167DE6640003E2D3 /* helpRandom~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "helpRandom~ipad.xib"; path = "ressources/helpRandom~ipad.xib"; sourceTree = "<group>"; };
+		F03603CC167DE7460003E2D3 /* aide_parametres.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = aide_parametres.png; path = ressources/aide_parametres.png; sourceTree = "<group>"; };
+		F03603CD167DE7460003E2D3 /* aide_parametres@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "aide_parametres@2x.png"; path = "ressources/aide_parametres@2x.png"; sourceTree = "<group>"; };
 		F040095A1659365A0090AA18 /* cmu07a.dic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cmu07a.dic; sourceTree = "<group>"; };
 		F040095C1659365A0090AA18 /* feat.params */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = feat.params; sourceTree = "<group>"; };
 		F040095D1659365A0090AA18 /* mdef */ = {isa = PBXFileReference; lastKnownFileType = file; path = mdef; sourceTree = "<group>"; };
@@ -226,7 +247,6 @@
 		F08686AB16791C08009C0C8B /* shuffle_romanji_icon_over@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "shuffle_romanji_icon_over@2x.png"; path = "ressources/shuffle_romanji_icon_over@2x.png"; sourceTree = "<group>"; };
 		F08686AC16791C08009C0C8B /* shuffle_romanji_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shuffle_romanji_icon.png; path = ressources/shuffle_romanji_icon.png; sourceTree = "<group>"; };
 		F08686AD16791C08009C0C8B /* shuffle_romanji_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "shuffle_romanji_icon@2x.png"; path = "ressources/shuffle_romanji_icon@2x.png"; sourceTree = "<group>"; };
-		F08686BB16792696009C0C8B /* helpQCM.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = helpQCM.xib; sourceTree = "<group>"; };
 		F08686BD16792898009C0C8B /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HelpViewController.h; path = classes/HelpViewController.h; sourceTree = "<group>"; };
 		F08686BE16792898009C0C8B /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HelpViewController.m; path = classes/HelpViewController.m; sourceTree = "<group>"; };
 		F08686C01679315F009C0C8B /* title_scroll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = title_scroll.png; path = ressources/title_scroll.png; sourceTree = "<group>"; };
@@ -239,8 +259,6 @@
 		F08686C9167932B5009C0C8B /* qcm_romanji_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "qcm_romanji_icon@2x.png"; path = "ressources/qcm_romanji_icon@2x.png"; sourceTree = "<group>"; };
 		F08686D016793454009C0C8B /* UIViewController+overView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+overView.h"; path = "classes/UIViewController+overView.h"; sourceTree = "<group>"; };
 		F08686D116793454009C0C8B /* UIViewController+overView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+overView.m"; path = "classes/UIViewController+overView.m"; sourceTree = "<group>"; };
-		F08686D316793986009C0C8B /* helpRandom.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = helpRandom.xib; sourceTree = "<group>"; };
-		F08686D516793F22009C0C8B /* helpParameters.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = helpParameters.xib; sourceTree = "<group>"; };
 		F08686D7167CBB1C009C0C8B /* UIView+Tags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Tags.h"; path = "classes/UIView+Tags.h"; sourceTree = "<group>"; };
 		F08686D8167CBB1C009C0C8B /* UIView+Tags.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Tags.m"; path = "classes/UIView+Tags.m"; sourceTree = "<group>"; };
 		F08686DA167CBFDF009C0C8B /* NSTimer+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSTimer+Blocks.h"; path = "classes/NSTimer+Blocks.h"; sourceTree = "<group>"; };
@@ -331,6 +349,12 @@
 		F00D6F9C1674B029001AF0B9 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				F03603CC167DE7460003E2D3 /* aide_parametres.png */,
+				F03603CD167DE7460003E2D3 /* aide_parametres@2x.png */,
+				F03603BC167DE51F0003E2D3 /* aide_qcm.png */,
+				F03603BD167DE51F0003E2D3 /* aide_qcm@2x.png */,
+				F03603B8167DDE0A0003E2D3 /* aide_shuffle.png */,
+				F03603B9167DDE0A0003E2D3 /* aide_shuffle@2x.png */,
 				F08686C4167932B5009C0C8B /* qcm_hiragana_icon.png */,
 				F08686C5167932B5009C0C8B /* qcm_hiragana_icon@2x.png */,
 				F08686C6167932B5009C0C8B /* qcm_katakana_icon.png */,
@@ -385,6 +409,9 @@
 		F00D6F9D1674B02E001AF0B9 /* ipad */ = {
 			isa = PBXGroup;
 			children = (
+				F03603C1167DE6640003E2D3 /* helpParameters~ipad.xib */,
+				F03603C3167DE6640003E2D3 /* helpQCM~ipad.xib */,
+				F03603C5167DE6640003E2D3 /* helpRandom~ipad.xib */,
 				F0679535164B154200347CF2 /* LessonQCMKana~ipad.xib */,
 				F0679532164B10BE00347CF2 /* LessonRandomKana~ipad.xib */,
 				F0679537164B187C00347CF2 /* ParametersKanaViewController~ipad.xib */,
@@ -401,9 +428,9 @@
 				F0CE948E163F2F95004F7E2B /* LessonRandomKana.xib */,
 				F0CE9491163F2F95004F7E2B /* ParametersKanaViewController.xib */,
 				F060E98B163C0A4B009C01E3 /* MainStoryboard_iPhone.storyboard */,
-				F08686BB16792696009C0C8B /* helpQCM.xib */,
-				F08686D316793986009C0C8B /* helpRandom.xib */,
-				F08686D516793F22009C0C8B /* helpParameters.xib */,
+				F03603C0167DE6640003E2D3 /* helpParameters.xib */,
+				F03603C2167DE6640003E2D3 /* helpQCM.xib */,
+				F03603C4167DE6640003E2D3 /* helpRandom.xib */,
 			);
 			name = iphone;
 			sourceTree = "<group>";
@@ -751,7 +778,6 @@
 				F08686B716791C08009C0C8B /* shuffle_romanji_icon_over@2x.png in Resources */,
 				F08686B816791C08009C0C8B /* shuffle_romanji_icon.png in Resources */,
 				F08686B916791C08009C0C8B /* shuffle_romanji_icon@2x.png in Resources */,
-				F08686BC16792696009C0C8B /* helpQCM.xib in Resources */,
 				F08686C21679315F009C0C8B /* title_scroll.png in Resources */,
 				F08686C31679315F009C0C8B /* title_scroll@2x.png in Resources */,
 				F08686CA167932B5009C0C8B /* qcm_hiragana_icon.png in Resources */,
@@ -760,8 +786,18 @@
 				F08686CD167932B5009C0C8B /* qcm_katakana_icon@2x.png in Resources */,
 				F08686CE167932B5009C0C8B /* qcm_romanji_icon.png in Resources */,
 				F08686CF167932B5009C0C8B /* qcm_romanji_icon@2x.png in Resources */,
-				F08686D416793986009C0C8B /* helpRandom.xib in Resources */,
-				F08686D616793F22009C0C8B /* helpParameters.xib in Resources */,
+				F03603BA167DDE0A0003E2D3 /* aide_shuffle.png in Resources */,
+				F03603BB167DDE0A0003E2D3 /* aide_shuffle@2x.png in Resources */,
+				F03603BE167DE51F0003E2D3 /* aide_qcm.png in Resources */,
+				F03603BF167DE51F0003E2D3 /* aide_qcm@2x.png in Resources */,
+				F03603C6167DE6640003E2D3 /* helpParameters.xib in Resources */,
+				F03603C7167DE6640003E2D3 /* helpParameters~ipad.xib in Resources */,
+				F03603C8167DE6640003E2D3 /* helpQCM.xib in Resources */,
+				F03603C9167DE6640003E2D3 /* helpQCM~ipad.xib in Resources */,
+				F03603CA167DE6640003E2D3 /* helpRandom.xib in Resources */,
+				F03603CB167DE6640003E2D3 /* helpRandom~ipad.xib in Resources */,
+				F03603CE167DE7460003E2D3 /* aide_parametres.png in Resources */,
+				F03603CF167DE7460003E2D3 /* aide_parametres@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -903,7 +939,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "466929EA-DB48-444E-A58D-B900CFE1FF17";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -922,7 +958,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "466929EA-DB48-444E-A58D-B900CFE1FF17";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

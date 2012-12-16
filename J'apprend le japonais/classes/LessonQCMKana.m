@@ -54,8 +54,8 @@
 
 - (void)toTapNext:(UIGestureRecognizer *)gestureRecognizer
 {
-    [self displayNext];
     [self displayWaitingMessage];
+    [self displayNext];
 }
 
 - (void) displayWaitingMessage
@@ -128,8 +128,8 @@
     // don't check response if wrong is display
     if(hasWrongAnswer == TRUE)
     {
-        [self displayNext];
         [self displayWaitingMessage];
+        [self displayNext];
     }
     else
     {
@@ -271,7 +271,7 @@
     }
     else
     {
-        _msg.text = [NSString stringWithFormat:@"Encore %i kana(s) à deviner.", nb ];
+        _msg.text = [NSString stringWithFormat:@"Encore %i kana à deviner", nb ];
     }
     
     if(currentKana == nil)
@@ -284,6 +284,38 @@
         [_hiraganaFlipView displayEmpty];
         
         _msg.text = [NSString stringWithFormat:@"Fini ! ton scocre est de %2.f %% de réussite !", percent];
+        _scoreLabel.hidden = TRUE;
+        for(UIButton * btn in btnArray)
+        {
+            btn.enabled = FALSE;
+            btn.titleLabel.text = @"";
+        }
+         
+        if(percent == 100.0)
+        {
+            [self displaySentenceOK:@"Neko Sensei t'offre un poisson !"];
+        }
+        else if(percent >= 90.0)
+        {
+            [self displaySentenceOK:@"Neko Sensei te félicite !"];
+        }
+        else if(percent >= 70.0)
+        {
+            [self displaySentenceOK:@"Neko Sensei se dit que tu es sur la bonne voie !"];
+        }
+        else if(percent >= 50.0)
+        {
+            [self displaySentenceOK:@"Neko Sensei t'encourage à continuer tes efforts !"];
+        }
+        else if(percent >= 25.0)
+        {
+            [self displaySentenceKO:@"Neko Sensei pense que tu ne dois pas te décourager."];
+        }
+        else if(percent >= 0.0)
+        {
+            [self displaySentenceKO:@"Neko Sensei pense que tu as beaucoup à apprendre."];
+        }
+        
         currentScore = 0;
         
     }
@@ -292,7 +324,7 @@
         [_hiraganaFlipView displayJapan];
     }
     
-    float percent = (float)( (nbSeleted - (([knows count] -1) - currentScore)) / nbSeleted) * 100;
+    float percent = (float)( ((float)nbSeleted - ((float)([knows count] -1) - (float)currentScore)) / (float)nbSeleted) * 100;
     _scoreLabel.text = [NSString stringWithFormat:@"%2.f %% de réussite", percent];
     
 }
