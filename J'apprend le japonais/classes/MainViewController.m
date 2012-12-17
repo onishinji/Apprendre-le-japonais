@@ -138,6 +138,7 @@
     return myCell;
 }
 
+#pragma mark - Go to the lesson
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -154,30 +155,6 @@
     
     [[self.collectionView cellForItemAtIndexPath:indexPath] setHighlighted:FALSE];
 }
-
-#pragma mark - Go to the lesson
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if([segue.identifier isEqualToString:@"RunLesson"]){
-        LessonCell *cell = (LessonCell *)sender;
-        NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
-        
-        Lesson * lesson = [[self lessonsForSection:indexPath.section] objectAtIndex:indexPath.row];
-        
-        LessonContainerController *lessonController = (LessonContainerController *)[segue destinationViewController];
-        lessonController.managedObjectContext = _managedObjectContext;
-        lessonController.lesson =  lesson;
-        
- 
-    }
-    // Assume self.view is the table view
-    //NSIndexPath *path = [self.tableView indexPathForSelectedRow];
-    //DetailObject *detail = [self detailForIndexPath:path];
-  //  [segue.destinationViewController setDetail:detail];
-    
-}
-
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
