@@ -160,7 +160,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+}
+
+- (void) activeController
+{
     [self.kanaFlipView setMode:[[self params] objectForKey:@"mode"]];
     
     [self displayNext];

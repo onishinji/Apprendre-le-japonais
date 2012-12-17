@@ -67,6 +67,11 @@
 {
     [super viewDidLoad];
     
+    
+}
+
+- (void) activeController
+{
     [self.kanaFlipView setMode:[[self params] objectForKey:@"mode"]];
     
     defaultLblColor = self.kanaFlipView.lblHiragana.textColor;
