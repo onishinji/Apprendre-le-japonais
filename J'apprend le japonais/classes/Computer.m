@@ -468,7 +468,19 @@ static Computer *sharedObject;
 
 -(void) flush
 {
-    NSLog(@"Flush it");
+    if([self hasGrantedToVocabulary])
+    {
+        if(![[NSUserDefaults standardUserDefaults] objectForKey:@"is_granted"])
+        {
+            [[[UIAlertView alloc] initWithTitle:@"Merci" message:@"Vous avez activé le mode beta, relancer l'application." delegate:nil cancelButtonTitle:@"Fermer" otherButtonTitles:nil, nil] show];
+        
+            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"is_granted"];
+        }
+    }
+    else
+    {
+       // [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"is_granted"];
+    }
     
     NSError *error = nil;
     if (![_managedObjectContext save: &error]) {
@@ -476,6 +488,36 @@ static Computer *sharedObject;
               ([error localizedDescription] != nil) ? [error localizedDescription]: @"Unknown Error");
     }
     
+}
+
+- (BOOL) hasGrantedToVocabulary
+{
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Kana" inManagedObjectContext:_managedObjectContext];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    
+    NSArray * knowRomanjis = [NSArray arrayWithObjects:@"ya", @"ma", @"gu", @"chi", nil];
+    
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"romanji in %@ AND isSelected = 1 and type = 0", knowRomanjis];
+    [request setPredicate:predicate];
+    
+    NSSortDescriptor *sort = [[NSSortDescriptor alloc] initWithKey:@"romanji" ascending:NO];
+    [request setSortDescriptors:[NSArray arrayWithObject:sort]];
+    
+    NSError *error = nil;
+    NSArray *array = [_managedObjectContext executeFetchRequest:request error:&error];
+    if (array == nil)
+    {
+        NSLog(@"Error while retriving\n%@",
+              ([error localizedDescription] != nil) ? [error localizedDescription]: @"Unknown Error");
+    }
+    
+    BOOL hasYamaGuchi = [array count] == 4;
+
+        BOOL hasOnlyTrueKana = [[self getSelectedsHiragana] count] == 4;
+
+    return hasYamaGuchi && hasOnlyTrueKana;
+
 }
 
 @end

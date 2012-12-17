@@ -17,6 +17,7 @@
 @synthesize sampleUsageJapan = _sampleUsageJapan;
 @synthesize sampleUsageRomanji = _sampleUsageRomanji;
 @synthesize sampleUsageTraduction = _sampleUsageTraduction;
+@synthesize url = _url;
 
 
 @end

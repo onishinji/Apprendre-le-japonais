@@ -46,6 +46,8 @@
 
 -(Kana *) toggleSelectedKana:(Kana *)hiragana withFlush:(BOOL)flush;
 
+- (BOOL) hasGrantedToVocabulary;
+
 
 -(void)flush;
 

@@ -13,8 +13,11 @@
 @interface VocabularyViewController : LessonControllerViewController
 {
     NSMutableArray * results;
+    NSString * idSpreadsheet;
 }
 
 @property (nonatomic, strong) IBOutlet UITableView * tableView;
+@property (nonatomic, strong) NSURL * url; 
+@property (nonatomic, strong) NSString * mode;
 
 @end

@@ -20,5 +20,6 @@
 @property (nonatomic, strong) NSString * sampleUsageRomanji;
 @property (nonatomic, strong) NSString * sampleUsageJapan;
 @property (nonatomic, strong) NSString * sampleUsageTraduction;
+@property (nonatomic, strong) NSURL * url;
 
 @end

@@ -14,6 +14,7 @@
 #import "constant.h"
 #import "UIColor+RGB.h"
 #import "GData.h"
+#import "Computer.h"
 
 @interface MainViewController ()
 
@@ -37,6 +38,11 @@
     //[self.collectionView setBackgroundColor:[UIColor colorWithR:231 G:183 B:137 A:1]];
 }
 
+
+- (BOOL) hasGrantedToVocabulary
+{
+    return [[NSUserDefaults standardUserDefaults] objectForKey:@"is_granted"];
+}
 
 
 - (NSMutableArray *) lessonsForSection:(NSInteger) section
@@ -101,7 +107,14 @@
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-    return 3;
+    if([self hasGrantedToVocabulary])
+    {
+        return 3;
+    }
+    else
+    {
+        return 2;
+    }
 }
 
 - (PSTCollectionReusableView *)collectionView:(PSTCollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath

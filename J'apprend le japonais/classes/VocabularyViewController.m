@@ -8,7 +8,7 @@
 
 #import "VocabularyViewController.h"
 #import "GData.h"
-#import "GDataSpreadsheet.h"  
+#import "GDataSpreadsheet.h"
 #import "VocabularyItem.h"
 #import "UIColor+RGB.h"
 
@@ -20,36 +20,49 @@
 @implementation VocabularyViewController
 
 @synthesize tableView = _tableView;
+@synthesize url = _url;
 
-- (void)viewDidLoad
+- (void) activeController
 {
-    [super viewDidLoad];
     
-   // NSURL * url = [NSURL URLWithString:@"docs.google.com/spreadsheet/ccc?key=0AqdL0GlDYDmQdGVLRXVkZklUSjA1NGtsWmJZYTFkRWc#gid=0"];
+    NSString * baseUrl = @"https://spreadsheets.google.com/feeds/worksheets/%@/public/basic";
+    idSpreadsheet = @"0AhFKp-lXqsT9dDRpc1ZUeDRJa01XQW9iZEhRRl9Bc1E";
     
+    self.url = [NSURL URLWithString:[NSString stringWithFormat:baseUrl, idSpreadsheet]];
     
-    NSString * baseUrl = @"http://spreadsheets.google.com/feeds/cells/%@/1/public/values";
-    NSString * idSpreadsheet = @"0AqdL0GlDYDmQdGVLRXVkZklUSjA1NGtsWmJZYTFkRWc";
+    self.mode = @"list";
     
+    [self runDownload];
+    self.parent.title = @"Leçons disponibles";
     
-    NSURL * url = [NSURL URLWithString:[NSString stringWithFormat:baseUrl, idSpreadsheet]];
+    self.parent.navigationItem.rightBarButtonItem = nil;
+}
+
+- (void) activeDetail
+{
+    self.title = @"Contenu de la leçon";
+    
+}
+
+- (void) runDownload
+{
+    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"home_bkg.png"]];
     
     results = [[NSMutableArray alloc] init];
     
-        
     GDataServiceGoogleSpreadsheet * service = [[GDataServiceGoogleSpreadsheet alloc] init];
-     
-    [service fetchFeedWithURL:url delegate:self didFinishSelector:@selector(ticket:finishedWithFeed:error:)];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [service setShouldCacheResponseData:YES];
+    
+    [service fetchFeedWithURL:self.url delegate:self didFinishSelector:@selector(ticket:finishedWithFeed:error:)];
+    
+}
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
 }
 
 - (void)ticket:(GDataServiceTicket *)ticket
-finishedWithFeed:(GDataFeedCalendar *)feed
+finishedWithFeed:(id)feed
          error:(NSError *)error {
     
     if (error == nil) {
@@ -57,58 +70,86 @@ finishedWithFeed:(GDataFeedCalendar *)feed
         NSArray *entries = [feed entries];
         if ([entries count] > 0) {
             
-            int currentRow = 1;
-            
             VocabularyItem * currentItem = [[VocabularyItem alloc] init];
             
-            for(GDataEntrySpreadsheetCell * entry in entries)
+            if([self.mode isEqualToString:@"list"])
             {
-                NSString * title = entry.title.contentStringValue;
-                NSString * content = entry.content.contentStringValue;
+                NSURL * currentUrl;
                 
-                GDataSpreadsheetCell *cell = [entry cell];
                 
-                NSLog(@"row: %i cell: %i %@ %@", [cell row], [cell column], title, content);
                 
-                switch (cell.column) {
-                    case 2:
-                        [currentItem setTraduction:content];
-                        break;
+                for(GDataEntryWorksheet * entry in entries)
+                { 
+                    NSString * title = entry.title.contentStringValue;
+                    
+                    currentItem.romanji = title;
+                    
+                    if(![entry.listFeedURL isEqual:currentUrl])
+                    {
+                        currentUrl = entry.listFeedURL;
                         
-                    case 3:
-                        [currentItem setRomanji:content];
-                        break;
+                        currentItem.url = [NSURL URLWithString:[[entry.cellsLink.URL absoluteString] stringByReplacingOccurrencesOfString:@"/basic" withString:@"/values"]];
                         
-                    case 4:
-                        [currentItem setKana:content];
-                        break;
-                        
-                    case 5:
-                        [currentItem setKanji:content];
-                        break;
-                        
-                    case 6:
-                        [currentItem setSampleUsageRomanji:content];
-                        break;
-                    case 7:
-                        [currentItem setSampleUsageJapan:content];
-                        break; 
-                    case 8:
-                        [currentItem setSampleUsageTraduction:content];
-                        break;
-                        
-                    default:
-                        break;
+                        [results addObject:currentItem];
+                        currentItem = [[VocabularyItem alloc] init]; 
+                    }
                 }
                 
-                if(currentRow != (int)cell.row)
-                {
-                    [results addObject:currentItem];
-                    currentItem = [[VocabularyItem alloc] init];
-                    currentRow = cell.row;
-                }
             }
-            [results addObject:currentItem];
+            else
+            {
+                int currentRow = 1;
+                
+                for(GDataEntrySpreadsheetCell * entry in entries)
+                {
+                    NSString * title = entry.title.contentStringValue;
+                    NSString * content = entry.content.contentStringValue;
+                    
+                    GDataSpreadsheetCell *cell = [entry cell];
+                     
+                    switch (cell.column) {
+                        case 1:
+                            [currentItem setTraduction:content];
+                            break;
+                            
+                        case 2:
+                            [currentItem setRomanji:content];
+                            break;
+                            
+                        case 3:
+                            [currentItem setKana:content];
+                            break;
+                            
+                        case 4:
+                            [currentItem setKanji:content];
+                            break;
+                            
+                        case 5:
+                            [currentItem setSampleUsageRomanji:content];
+                            break;
+                        case 6:
+                            [currentItem setSampleUsageJapan:content];
+                            break;
+                        case 7:
+                            [currentItem setSampleUsageTraduction:content];
+                            break;
+                            
+                        default:
+                            break;
+                    }
+                    
+                    if(currentRow != (int)cell.row)
+                    {
+                        NSLog(@"row: %i", cell.row);
+                        [results addObject:currentItem];
+                        currentItem = [[VocabularyItem alloc] init];
+                        currentRow = cell.row;
+                    }
+                }
+                
+                [results addObject:currentItem]; 
+                
+            }
             
             [self.tableView reloadData];
             
@@ -167,59 +208,34 @@ finishedWithFeed:(GDataFeedCalendar *)feed
     return cell;
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Navigation logic may go here. Create and push another view controller.
     
-     VocabularyDetailViewController *detailViewController = [[VocabularyDetailViewController alloc] initWithNibName:@"VocabularyDetailViewController" bundle:nil];
-    
     VocabularyItem * item = [results objectAtIndex:indexPath.row];
     
-    detailViewController.currentItem = item;
+    if([self.mode isEqualToString:@"list"])
+    {
+        VocabularyViewController * subListController = [[VocabularyViewController alloc] initWithNibName:@"VocabularyViewController" bundle:nil];
+        subListController.mode = @"detail";
+        subListController.url = item.url;
+        [subListController activeDetail];
+        [subListController runDownload];
+        [self.parent.navigationController pushViewController:subListController animated:YES];
+        
+    }
+    else
+    {
+        
+        VocabularyDetailViewController *detailViewController = [[VocabularyDetailViewController alloc] initWithNibName:@"VocabularyDetailViewController" bundle:nil];
+        
+        detailViewController.currentItem = item;
+        
+        [self.navigationController pushViewController:detailViewController animated:YES];
+    }
     
-     [self.parent.navigationController pushViewController:detailViewController animated:YES];
-     
 }
 
 @end

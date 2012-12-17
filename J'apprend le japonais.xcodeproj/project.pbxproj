@@ -121,6 +121,8 @@
 		F0A6F05F1675169D0054E7B6 /* btn_qcm_over@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0A6F05B1675169C0054E7B6 /* btn_qcm_over@2x.png */; };
 		F0A6F0601675169D0054E7B6 /* btn_qcm.png in Resources */ = {isa = PBXBuildFile; fileRef = F0A6F05C1675169D0054E7B6 /* btn_qcm.png */; };
 		F0A6F0611675169D0054E7B6 /* btn_qcm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0A6F05D1675169D0054E7B6 /* btn_qcm@2x.png */; };
+		F0BDD56D167FB0E100F8A782 /* nekosensei_kana_57.png in Resources */ = {isa = PBXBuildFile; fileRef = F0BDD56C167FB0E100F8A782 /* nekosensei_kana_57.png */; };
+		F0BDD56F167FB0EF00F8A782 /* nekosensei_kana_114.png in Resources */ = {isa = PBXBuildFile; fileRef = F0BDD56E167FB0EE00F8A782 /* nekosensei_kana_114.png */; };
 		F0CE9495163F2F95004F7E2B /* ParametersCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0CE948D163F2F95004F7E2B /* ParametersCell.xib */; };
 		F0CE9496163F2F95004F7E2B /* LessonRandomKanaController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0CE948E163F2F95004F7E2B /* LessonRandomKanaController.xib */; };
 		F0CE9498163F2F95004F7E2B /* ParametersKanaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0CE9491163F2F95004F7E2B /* ParametersKanaViewController.xib */; };
@@ -336,6 +338,8 @@
 		F0A6F05B1675169C0054E7B6 /* btn_qcm_over@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_qcm_over@2x.png"; path = "ressources/btn_qcm_over@2x.png"; sourceTree = "<group>"; };
 		F0A6F05C1675169D0054E7B6 /* btn_qcm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_qcm.png; path = ressources/btn_qcm.png; sourceTree = "<group>"; };
 		F0A6F05D1675169D0054E7B6 /* btn_qcm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_qcm@2x.png"; path = "ressources/btn_qcm@2x.png"; sourceTree = "<group>"; };
+		F0BDD56C167FB0E100F8A782 /* nekosensei_kana_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nekosensei_kana_57.png; sourceTree = "<group>"; };
+		F0BDD56E167FB0EE00F8A782 /* nekosensei_kana_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nekosensei_kana_114.png; sourceTree = "<group>"; };
 		F0CE9469163F2F87004F7E2B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = classes/AppDelegate.h; sourceTree = "<group>"; };
 		F0CE946A163F2F87004F7E2B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = classes/AppDelegate.m; sourceTree = "<group>"; };
 		F0CE948D163F2F95004F7E2B /* ParametersCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ParametersCell.xib; path = ressources/ParametersCell.xib; sourceTree = "<group>"; };
@@ -903,6 +907,8 @@
 		F060E964163C0A4B009C01E3 = {
 			isa = PBXGroup;
 			children = (
+				F0BDD56E167FB0EE00F8A782 /* nekosensei_kana_114.png */,
+				F0BDD56C167FB0E100F8A782 /* nekosensei_kana_57.png */,
 				F0E6D02E167E1617006DE22B /* Headers */,
 				F0E2375D167E127D0051DC7E /* Security.framework */,
 				F0E2375B167E12750051DC7E /* SystemConfiguration.framework */,
@@ -1578,6 +1584,8 @@
 				F03603CF167DE7460003E2D3 /* aide_parametres@2x.png in Resources */,
 				F0E6D172167E1944006DE22B /* VocabularyViewController.xib in Resources */,
 				F0E6D17F167E7AF8006DE22B /* VocabularyDetailViewController.xib in Resources */,
+				F0BDD56D167FB0E100F8A782 /* nekosensei_kana_57.png in Resources */,
+				F0BDD56F167FB0EF00F8A782 /* nekosensei_kana_114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1728,7 +1736,7 @@
 				GCC_PREFIX_HEADER = "J'apprend le japonais/J'apprend le japonais-Prefix.pch";
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "J'apprend le japonais/J'apprend le japonais-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				New_Setting = "";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1754,7 +1762,7 @@
 				GCC_PREFIX_HEADER = "J'apprend le japonais/J'apprend le japonais-Prefix.pch";
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "J'apprend le japonais/J'apprend le japonais-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				New_Setting = "";
 				OTHER_LDFLAGS = (
 					"-ObjC",

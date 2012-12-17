@@ -38,6 +38,8 @@
     self.kanji.text = self.currentItem.kanji;
     self.traduction.text = self.currentItem.traduction;
 	// Do any additional setup after loading the view.
+    
+    self.title = @"Détails";
 }
 
 - (void)didReceiveMemoryWarning

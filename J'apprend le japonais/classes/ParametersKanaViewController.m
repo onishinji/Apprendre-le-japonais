@@ -133,10 +133,12 @@
 
 - (void) activeController
 {   
-    self.parent.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:
+  /*
+   self.parent.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:
                                                                     [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:self action:@selector(openHelp:)],
-                                                                    [[UIBarButtonItem alloc] initWithTitle:@"Intervertir les états" style:UIBarButtonItemStyleBordered target:self action:@selector(toogleItems:)]
-                                                                    , nil];
+                                                                    [[UIBarButtonItem alloc] initWithTitle:@"Off" style:UIBarButtonItemStyleBordered target:self action:@selector(toogleItems:)]
+                                                     ,[[UIBarButtonItem alloc] initWithTitle:@"On" style:UIBarButtonItemStyleBordered target:self action:@selector(toogleItems:)]
+                                                     , nil];*/
 }
 
 - (void) toogleItems:(UIBarButtonItem *)bar
@@ -206,6 +208,7 @@
     
     id objetInArray = [[allResult objectForKey:[NSString stringWithFormat:@"section_%d",indexPath.section ]] objectAtIndex:indexPath.row];
     
+    [cell disabled];
     if([objetInArray isKindOfClass:[Kana class]])
     {
         Kana * hir = objetInArray;

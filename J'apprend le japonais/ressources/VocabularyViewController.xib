@@ -12,7 +12,6 @@
 		</object>
 		<array key="IBDocument.IntegratedClassDependencies">
 			<string>IBProxyObject</string>
-			<string>IBUILabel</string>
 			<string>IBUITableView</string>
 			<string>IBUIView</string>
 		</array>
@@ -39,7 +38,7 @@
 					<object class="IBUIView" id="852838750">
 						<reference key="NSNextResponder" ref="769277134"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{0, 26}, {480, 294}}</string>
+						<string key="NSFrameSize">{480, 320}</string>
 						<reference key="NSSuperview" ref="769277134"/>
 						<reference key="NSWindow"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -49,42 +48,10 @@
 						</object>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
-					<object class="IBUILabel" id="544621911">
-						<reference key="NSNextResponder" ref="769277134"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{104, 0}, {55, 21}}</string>
-						<reference key="NSSuperview" ref="769277134"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="1018867392"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClipsSubviews">YES</bool>
-						<int key="IBUIContentMode">7</int>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<string key="IBUIText">coucou</string>
-						<object class="NSColor" key="IBUITextColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MCAwIDAAA</bytes>
-							<string key="IBUIColorCocoaTouchKeyPath">darkTextColor</string>
-						</object>
-						<nil key="IBUIHighlightedColor"/>
-						<int key="IBUIBaselineAdjustment">0</int>
-						<object class="IBUIFontDescription" key="IBUIFontDescription">
-							<int key="type">1</int>
-							<double key="pointSize">17</double>
-						</object>
-						<object class="NSFont" key="IBUIFont">
-							<string key="NSName">Helvetica</string>
-							<double key="NSSize">17</double>
-							<int key="NSfFlags">16</int>
-						</object>
-						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
-					</object>
 					<object class="IBUITableView" id="1018867392">
 						<reference key="NSNextResponder" ref="769277134"/>
 						<int key="NSvFlags">274</int>
-						<string key="NSFrame">{{0, 26}, {480, 238}}</string>
+						<string key="NSFrameSize">{480, 264}</string>
 						<reference key="NSSuperview" ref="769277134"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="852838750"/>
@@ -112,7 +79,7 @@
 				<string key="NSFrame">{{0, 44}, {480, 276}}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="544621911"/>
+				<reference key="NSNextKeyView"/>
 				<string key="NSReuseIdentifierKey">_NS:9</string>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
@@ -203,16 +170,10 @@
 						<int key="objectID">8</int>
 						<reference key="object" ref="769277134"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="544621911"/>
 							<reference ref="1018867392"/>
 							<reference ref="852838750"/>
 						</array>
 						<reference key="parent" ref="0"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">10</int>
-						<reference key="object" ref="544621911"/>
-						<reference key="parent" ref="769277134"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">15</int>
@@ -232,7 +193,6 @@
 				<string key="-1.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="-2.CustomClassName">UIResponder</string>
 				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="10.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="15.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="27.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="8.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
