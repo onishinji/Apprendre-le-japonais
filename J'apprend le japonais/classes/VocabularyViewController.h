@@ -20,4 +20,6 @@
 @property (nonatomic, strong) NSURL * url; 
 @property (nonatomic, strong) NSString * mode;
 
+- (id)kownUrl:(NSString *)url;
+
 @end

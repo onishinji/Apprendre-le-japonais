@@ -12,7 +12,9 @@
 #import "VocabularyItem.h"
 #import "UIColor+RGB.h"
 #import "Computer.h"
+#import "UIScrollView+SVPullToRefresh.h"
 
+static NSMutableDictionary * myDicData;
 
 @interface VocabularyViewController ()
 
@@ -33,7 +35,7 @@
     
     self.mode = @"list";
     
-    [self runDownload];
+    [self runDownload:FALSE];
     self.parent.title = @"Leçons disponibles";
     
     self.parent.navigationItem.rightBarButtonItem = nil;
@@ -42,10 +44,13 @@
 - (void) activeDetail
 {
     self.title = @"Contenu de la leçon";
+    [self runDownload:FALSE];
 }
 
-- (void) runDownload
+- (void) runDownload:(BOOL)removeCache
 {
+    [self.tableView.pullToRefreshView startAnimating];
+    
     self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"home_bkg.png"]];
     
     results = [[NSMutableArray alloc] init];
@@ -59,37 +64,69 @@
         [service setServiceShouldFollowNextLinks:YES];
         
     }
-    [service fetchFeedWithURL:self.url delegate:self didFinishSelector:@selector(ticket:finishedWithFeed:error:)];
     
-    UIActivityIndicatorView * ac = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-    ac.frame = CGRectMake(0, 0, 30, 30);
-    [ac startAnimating];
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 30)];
+    if(removeCache)
+    {
+        [myDicData setObject:@"waza" forKey:self.url.absoluteString];
+    }
     
-    UILabel * lbl = [[UILabel alloc] initWithFrame:CGRectMake(30, -3, 320, 35)];
-    lbl.text = @"Récupération des données en cours ...";
-    lbl.backgroundColor = [UIColor clearColor];
-    
-    [view addSubview:lbl];
-    [view addSubview:ac];
-    
-    view.layer.borderWidth = 1;
-    view.layer.borderColor = [UIColor blackColor].CGColor;
-    
-    self.tableView.tableHeaderView = view;
-    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+    if([[self kownUrl:self.url.absoluteString] isEqualToString:@"alreayKnow"])
+    {
+        [self ticket:nil finishedWithFeed:[myDicData objectForKey:self.url.absoluteString] error:nil];
+    }
+    else
+    {
+        [service fetchFeedWithURL:self.url delegate:self didFinishSelector:@selector(ticket:finishedWithFeed:error:)];
+   
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+    }
     
 }
+
+- (id)kownUrl:(NSString *)url
+{
+    if(myDicData == nil)
+    {
+        myDicData = [[NSMutableDictionary alloc] init];
+    }
+    
+    id laclasse = [[myDicData objectForKey:url] class];
+    NSLog(@"%@", laclasse);
+    
+    if([laclasse isSubclassOfClass:[GDataFeedWorksheet class]] || [laclasse isSubclassOfClass:[GDataFeedSpreadsheetCell class]])
+    {
+        return @"alreayKnow";
+    }
+    else
+    {
+        return @"ko";
+    }
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self.tableView addPullToRefreshWithActionHandler:^{
+        [self runDownload:TRUE];
+        NSLog(@"coucou");
+        // prepend data to dataSource, insert cells at top of table view
+        // call [tableView.pullToRefreshView stopAnimating] when done
+    }];
 }
 
 - (void)ticket:(GDataServiceTicket *)ticket
 finishedWithFeed:(id)feed
          error:(NSError *)error {
     
-    self.tableView.tableHeaderView = nil;
+    if(ticket != nil)
+    {
+        [myDicData setObject:feed forKey:self.url.absoluteString];
+    }
+    
+    [self.tableView.pullToRefreshView stopAnimating];
+    
+    //self.tableView.tableHeaderView = nil;
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     if (error == nil) {
         
@@ -215,6 +252,9 @@ finishedWithFeed:(id)feed
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
+    if([results count] > 0)
+    {
+    
     VocabularyItem * item = [results objectAtIndex:indexPath.row];
     cell.textLabel.text = item.romanji;
     cell.detailTextLabel.text = item.traduction;
@@ -230,6 +270,7 @@ finishedWithFeed:(id)feed
     
     [cell setSelectionStyle:UITableViewCellSelectionStyleGray];
     [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
+    }
     
     return cell;
 }
@@ -248,7 +289,7 @@ finishedWithFeed:(id)feed
         subListController.mode = @"detail";
         subListController.url = item.url;
         [subListController activeDetail];
-        [subListController runDownload];
+        [subListController runDownload:FALSE];
         [self.parent.navigationController pushViewController:subListController animated:YES];
         
     }

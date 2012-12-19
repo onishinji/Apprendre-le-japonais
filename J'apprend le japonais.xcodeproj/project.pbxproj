@@ -102,6 +102,8 @@
 		F08686D9167CBB1D009C0C8B /* UIView+Tags.m in Sources */ = {isa = PBXBuildFile; fileRef = F08686D8167CBB1C009C0C8B /* UIView+Tags.m */; };
 		F08686DC167CBFE0009C0C8B /* NSTimer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = F08686DB167CBFE0009C0C8B /* NSTimer+Blocks.m */; };
 		F09E45BE167FC4D800909F57 /* libGDataTouchStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F09E45B6167FC4BF00909F57 /* libGDataTouchStaticLib.a */; };
+		F09E470E16827BF000909F57 /* UIScrollView+SVInfiniteScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = F09E470B16827BF000909F57 /* UIScrollView+SVInfiniteScrolling.m */; };
+		F09E470F16827BF000909F57 /* UIScrollView+SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = F09E470D16827BF000909F57 /* UIScrollView+SVPullToRefresh.m */; };
 		F0A64DA616593554009752E8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A64DA516593554009752E8 /* AudioToolbox.framework */; };
 		F0A64DA91659356F009752E8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A64DA81659356F009752E8 /* AVFoundation.framework */; };
 		F0A6F03E167500CB0054E7B6 /* params_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F0A6F03C167500CB0054E7B6 /* params_icon.png */; };
@@ -636,6 +638,11 @@
 		F09E46FC167FC59500909F57 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
 		F09E46FD167FC59500909F57 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
 		F09E46FE167FC59500909F57 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		F09E470916827BF000909F57 /* SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVPullToRefresh.h; path = classes/SVPullToRefresh.h; sourceTree = "<group>"; };
+		F09E470A16827BF000909F57 /* UIScrollView+SVInfiniteScrolling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+SVInfiniteScrolling.h"; path = "classes/UIScrollView+SVInfiniteScrolling.h"; sourceTree = "<group>"; };
+		F09E470B16827BF000909F57 /* UIScrollView+SVInfiniteScrolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+SVInfiniteScrolling.m"; path = "classes/UIScrollView+SVInfiniteScrolling.m"; sourceTree = "<group>"; };
+		F09E470C16827BF000909F57 /* UIScrollView+SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+SVPullToRefresh.h"; path = "classes/UIScrollView+SVPullToRefresh.h"; sourceTree = "<group>"; };
+		F09E470D16827BF000909F57 /* UIScrollView+SVPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+SVPullToRefresh.m"; path = "classes/UIScrollView+SVPullToRefresh.m"; sourceTree = "<group>"; };
 		F0A64DA516593554009752E8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		F0A64DA81659356F009752E8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F0A6F03C167500CB0054E7B6 /* params_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = params_icon.png; path = ressources/params_icon.png; sourceTree = "<group>"; };
@@ -896,6 +903,7 @@
 		F04C008E1642E19300EAF61D /* vendors */ = {
 			isa = PBXGroup;
 			children = (
+				F09E46FF1682785700909F57 /* pullToRefresh */,
 				F00D6F971674AF98001AF0B9 /* Categories */,
 				F04009591659365A0090AA18 /* Framework */,
 				F02D13891648370F0093EAD0 /* categories */,
@@ -1317,6 +1325,18 @@
 			path = "../../../../Library/Developer/Xcode/DerivedData/J'apprend_le_japonais-hbldlgdwnbhiazaufpfeoychqnzb/Build/Products/Release-iphonesimulator/Headers";
 			sourceTree = "<group>";
 		};
+		F09E46FF1682785700909F57 /* pullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				F09E470916827BF000909F57 /* SVPullToRefresh.h */,
+				F09E470A16827BF000909F57 /* UIScrollView+SVInfiniteScrolling.h */,
+				F09E470B16827BF000909F57 /* UIScrollView+SVInfiniteScrolling.m */,
+				F09E470C16827BF000909F57 /* UIScrollView+SVPullToRefresh.h */,
+				F09E470D16827BF000909F57 /* UIScrollView+SVPullToRefresh.m */,
+			);
+			name = pullToRefresh;
+			sourceTree = "<group>";
+		};
 		F0CE9468163F2F73004F7E2B /* classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -1631,6 +1651,8 @@
 				F0E6D16F167E190A006DE22B /* VocabularyViewController.m in Sources */,
 				F0E6D17A167E5F98006DE22B /* VocabularyItem.m in Sources */,
 				F0E6D17D167E7AC5006DE22B /* VocabularyDetailViewController.m in Sources */,
+				F09E470E16827BF000909F57 /* UIScrollView+SVInfiniteScrolling.m in Sources */,
+				F09E470F16827BF000909F57 /* UIScrollView+SVPullToRefresh.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1681,6 +1703,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1696,6 +1719,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1710,6 +1734,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1718,6 +1743,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
