@@ -20,71 +20,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
         
-        NSFetchedResultsController * resultsController;
-        if([self isForHiragana])
-        {
-            resultsController = [[Computer sharedInstance] getHiraganaPerSections];
-            
-        }
-        else
-        {
-            resultsController = [[Computer sharedInstance] getKatakanaPerSections];
-        }
-        
-        allResult = [[NSMutableDictionary  alloc] init];
-        allKanas = [[NSMutableArray alloc] init];
-        int sectionId = 0;
-        for(int i = 0; i < [[resultsController sections] count]; i++)
-        {
-            
-            NSMutableArray * kanas = [[NSMutableArray alloc] init];
-            
-            id <NSFetchedResultsSectionInfo> info = [[resultsController sections] objectAtIndex:i];
-            for(int j = 0; j < [info numberOfObjects]; j++)
-            {
-                [kanas addObject:[[info objects] objectAtIndex:j]];
-            }
-            
-            NSMutableDictionary * nbRow = [[NSMutableDictionary alloc] init];
-            for(Kana * kana in kanas)
-            {
-                [nbRow setObject:@"1" forKey:[kana.row stringValue]];
-            }
-            
-            
-            NSMutableArray * sectionKana = [[NSMutableArray alloc] init];
-            for (int row = 1; row <= [nbRow count]; row ++)
-            {
-                for(int col = 1; col <= 5; col++)
-                {
-                    Kana * kana = nil;
-                    
-                    for(Kana * hir in kanas)
-                    {
-                        [allKanas addObject:hir];
-                        
-                        if([hir.col intValue] == col && [hir.row intValue] == row)
-                        {
-                            kana = hir;
-                        }
-                    }
-                    if(kana == nil) {
-                        [sectionKana addObject:@""];
-                    }
-                    else
-                    {
-                        [sectionKana addObject:kana];
-                    }
-                }
-            }
-            
-            [allResult setObject:sectionKana forKey:[NSString stringWithFormat:@"section_%d", sectionId] ];
-            sectionId++;
-            
-        }
-
     }
     
     return self;
@@ -108,7 +44,6 @@
     else
     {
         _collectionView = [[PSTCollectionView alloc] initWithFrame:CGRectMake(0, 35, 480, 230) collectionViewLayout:_collectionViewLayout];
-        
     }
     
     
@@ -132,13 +67,70 @@
 }
 
 - (void) activeController
-{   
-  /*
-   self.parent.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:
-                                                                    [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:self action:@selector(openHelp:)],
-                                                                    [[UIBarButtonItem alloc] initWithTitle:@"Off" style:UIBarButtonItemStyleBordered target:self action:@selector(toogleItems:)]
-                                                     ,[[UIBarButtonItem alloc] initWithTitle:@"On" style:UIBarButtonItemStyleBordered target:self action:@selector(toogleItems:)]
-                                                     , nil];*/
+{
+    // Custom initialization
+    
+    NSFetchedResultsController * resultsController;
+    if([self isForHiragana])
+    {
+        resultsController = [[Computer sharedInstance] getHiraganaPerSections];
+    }
+    else
+    {
+        resultsController = [[Computer sharedInstance] getKatakanaPerSections];
+    }
+    
+    allResult = [[NSMutableDictionary  alloc] init];
+    allKanas = [[NSMutableArray alloc] init];
+    int sectionId = 0;
+    for(int i = 0; i < [[resultsController sections] count]; i++)
+    {
+        
+        NSMutableArray * kanas = [[NSMutableArray alloc] init];
+        
+        id <NSFetchedResultsSectionInfo> info = [[resultsController sections] objectAtIndex:i];
+        for(int j = 0; j < [info numberOfObjects]; j++)
+        {
+            [kanas addObject:[[info objects] objectAtIndex:j]];
+        }
+        
+        NSMutableDictionary * nbRow = [[NSMutableDictionary alloc] init];
+        for(Kana * kana in kanas)
+        {
+            [nbRow setObject:@"1" forKey:[kana.row stringValue]];
+        }
+        
+        
+        NSMutableArray * sectionKana = [[NSMutableArray alloc] init];
+        for (int row = 1; row <= [nbRow count]; row ++)
+        {
+            for(int col = 1; col <= 5; col++)
+            {
+                Kana * kana = nil;
+                
+                for(Kana * hir in kanas)
+                {
+                    [allKanas addObject:hir];
+                    
+                    if([hir.col intValue] == col && [hir.row intValue] == row)
+                    {
+                        kana = hir;
+                    }
+                }
+                if(kana == nil) {
+                    [sectionKana addObject:@""];
+                }
+                else
+                {
+                    [sectionKana addObject:kana];
+                }
+            }
+        }
+        
+        [allResult setObject:sectionKana forKey:[NSString stringWithFormat:@"section_%d", sectionId] ];
+        sectionId++;
+        
+    }
 }
 
 - (void) toogleItems:(UIBarButtonItem *)bar
@@ -220,7 +212,6 @@
         
         if([hir.isSelected boolValue])
         {
-            
             [cell enabled];
         }
     }

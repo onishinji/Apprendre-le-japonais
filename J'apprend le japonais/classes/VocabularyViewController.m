@@ -11,6 +11,7 @@
 #import "GDataSpreadsheet.h"
 #import "VocabularyItem.h"
 #import "UIColor+RGB.h"
+#import "Computer.h"
 
 
 @interface VocabularyViewController ()
@@ -41,7 +42,6 @@
 - (void) activeDetail
 {
     self.title = @"Contenu de la leçon";
-    
 }
 
 - (void) runDownload
@@ -50,10 +50,34 @@
     
     results = [[NSMutableArray alloc] init];
     
-    GDataServiceGoogleSpreadsheet * service = [[GDataServiceGoogleSpreadsheet alloc] init];
-    [service setShouldCacheResponseData:YES];
+    static GDataServiceGoogleSpreadsheet* service = nil;
     
+    if (!service) {
+        service = [[GDataServiceGoogleSpreadsheet alloc] init];
+        
+        [service setShouldCacheResponseData:YES];
+        [service setServiceShouldFollowNextLinks:YES];
+        
+    }
     [service fetchFeedWithURL:self.url delegate:self didFinishSelector:@selector(ticket:finishedWithFeed:error:)];
+    
+    UIActivityIndicatorView * ac = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    ac.frame = CGRectMake(0, 0, 30, 30);
+    [ac startAnimating];
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 30)];
+    
+    UILabel * lbl = [[UILabel alloc] initWithFrame:CGRectMake(30, -3, 320, 35)];
+    lbl.text = @"Récupération des données en cours ...";
+    lbl.backgroundColor = [UIColor clearColor];
+    
+    [view addSubview:lbl];
+    [view addSubview:ac];
+    
+    view.layer.borderWidth = 1;
+    view.layer.borderColor = [UIColor blackColor].CGColor;
+    
+    self.tableView.tableHeaderView = view;
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     
 }
 - (void)viewDidLoad
@@ -65,6 +89,8 @@
 finishedWithFeed:(id)feed
          error:(NSError *)error {
     
+    self.tableView.tableHeaderView = nil;
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     if (error == nil) {
         
         NSArray *entries = [feed entries];
