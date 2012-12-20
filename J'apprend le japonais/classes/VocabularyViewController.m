@@ -13,6 +13,7 @@
 #import "UIColor+RGB.h"
 #import "Computer.h"
 #import "UIScrollView+SVPullToRefresh.h"
+#import "NSObject+Blocks.h"
 
 static NSMutableDictionary * myDicData;
 
@@ -124,7 +125,9 @@ finishedWithFeed:(id)feed
         [myDicData setObject:feed forKey:self.url.absoluteString];
     }
     
-    [self.tableView.pullToRefreshView stopAnimating];
+    [self performBlock:^{
+        [self.tableView.pullToRefreshView stopAnimating];
+    } afterDelay:0.3];
     
     //self.tableView.tableHeaderView = nil;
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
