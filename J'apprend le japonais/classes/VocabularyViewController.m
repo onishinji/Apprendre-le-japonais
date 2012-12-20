@@ -50,7 +50,6 @@ static NSMutableDictionary * myDicData;
 
 - (void) runDownload:(BOOL)removeCache
 {
-    [self.tableView.pullToRefreshView startAnimating];
     
     self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"home_bkg.png"]];
     
@@ -77,6 +76,7 @@ static NSMutableDictionary * myDicData;
     }
     else
     {
+        [self.tableView.pullToRefreshView startAnimating];
         [service fetchFeedWithURL:self.url delegate:self didFinishSelector:@selector(ticket:finishedWithFeed:error:)];
    
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
