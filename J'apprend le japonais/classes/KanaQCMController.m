@@ -6,15 +6,15 @@
 //  Copyright (c) 2012 Guillaume chave. All rights reserved.
 //
 
-#import "LessonQCMKanaController.h"
+#import "KanaQCMController.h"
 #import "Computer.h"
 
-@interface LessonQCMKanaController ()
+@interface KanaQCMController ()
 
 @end
 
 
-@implementation LessonQCMKanaController
+@implementation KanaQCMController
 
 @synthesize leftBottomButton = _leftBottomButton;
 @synthesize leftMiddleButton = _leftMiddleButton;
@@ -24,33 +24,14 @@
 @synthesize rightMiddleButton = _rightMiddleButton;
 @synthesize rightTopButton = _rightTopButton;
 
-@synthesize kanaFlipView = _hiraganaFlipView;
+@synthesize kanaView = _hiraganaFlipView;
 
 @synthesize scoreLabel = _scoreLabel;
 
 @synthesize lblResponse = _lblResponse;
 
 @synthesize msg = _msg;
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-        
-        knows = [[NSMutableArray alloc] init];
-        knowsRomanji = [[NSMutableArray alloc] init];
-        currentScore = 0;
-        btnArray = [[NSMutableArray alloc] init];
-        
-        tapToNext = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(toTapNext:)];
-        tapToNext.numberOfTapsRequired = 1;
-        
-        hasWrongAnswer = FALSE;
-        
-    }
-    return self;
-}
+ 
 
 - (void)toTapNext:(UIGestureRecognizer *)gestureRecognizer
 {
@@ -63,23 +44,14 @@
     [self displaySentenceOK:@"Neko sensei attend ta réponse"];
 }
 
-- (void)viewDidLoad
+- (void) viewDidLoad
 {
     [super viewDidLoad];
+    [self.kanaView setMode:self.currentMode];
     
-    
-}
-
-- (void) activeController
-{
-    [self.kanaFlipView setMode:[[self params] objectForKey:@"mode"]];
-    
-    defaultLblColor = self.kanaFlipView.lblHiragana.textColor;
+    defaultLblColor = self.kanaView.lblHiragana.textColor;
     
     [self displayWaitingMessage];
-    
-    [[self.view viewWithTag:100] setHidden:TRUE];
-    [[self.view viewWithTag:200] setHidden:TRUE];
     
     //
     [self configureButton:_leftTopButton];
@@ -105,20 +77,24 @@
     [_rightTopButton addTarget:self action:@selector(checkResponse:) forControlEvents:UIControlEventTouchUpInside];
     [_rightBottomButton addTarget:self action:@selector(checkResponse:) forControlEvents:UIControlEventTouchUpInside];
     [_rightMiddleButton addTarget:self action:@selector(checkResponse:) forControlEvents:UIControlEventTouchUpInside];
-    
-    // set layer style
-    for (UIView * v in [[self.view viewWithTag:100] subViewsWithTag:10])
-    {
-        v.layer.cornerRadius = 10;
-    }
-    
-    for (UIView * v in [[self.view viewWithTag:200] subViewsWithTag:10])
-    {
-        v.layer.cornerRadius = 10;
-    }
+     
     
     [self displayNext];
-    // Do any additional setup after loading the view from its nib.
+}
+
+- (void) activeController
+{
+    
+    knows = [[NSMutableArray alloc] init];
+    knowsRomanji = [[NSMutableArray alloc] init];
+    currentScore = 0;
+    btnArray = [[NSMutableArray alloc] init];
+    
+    tapToNext = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(toTapNext:)];
+    tapToNext.numberOfTapsRequired = 1;
+    
+    hasWrongAnswer = FALSE;
+    
 }
 
 - (void) configureButton:(UIButton *)btn
@@ -192,6 +168,7 @@
     
     [_hiraganaFlipView removeGestureRecognizer:tapToNext];
     
+    NSLog(@"displayNext %@, %@", self.currentKanaType, self.currentMode);
     // switch type
     if([self isForHiragana])
     {
@@ -415,17 +392,17 @@
     if(openHelpAlready)
     {
         openHelpAlready = false;
-        [self.parent dismissOverViewControllerAnimated:YES];
+        [self dismissOverViewControllerAnimated:YES];
     }
     else
     {
         openHelpAlready = true;
-        [self.parent presentOverViewController:helpVC animated:YES];
+        [self presentOverViewController:helpVC animated:YES];
     }
 }
 
 - (void)viewDidUnload {
-    [self setKanaFlipView:nil];
+    [self setKanaView:nil];
     [self setLeftTopButton:nil];
     [self setLeftMiddleButton:nil];
     [self setLeftBottomButton:nil];

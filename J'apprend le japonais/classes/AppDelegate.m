@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "MainViewController.h"
+#import "HomeViewController.h"
 #import "Computer.h"
 #import "UIColor+RGB.h"
 
@@ -63,7 +63,7 @@
     NSManagedObjectContext *context = [self managedObjectContext];
     
     UINavigationController *rootViewController = (UINavigationController *)self.window.rootViewController;
-    MainViewController * main = (MainViewController *)[[rootViewController viewControllers] objectAtIndex:0];
+    HomeViewController * main = (HomeViewController *)[[rootViewController viewControllers] objectAtIndex:0];
     main.managedObjectContext = context;
     
     [[Computer sharedInstance] setManagedObjectContext:context];

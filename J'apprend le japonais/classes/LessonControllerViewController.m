@@ -13,30 +13,28 @@
 @end
 
 @implementation LessonControllerViewController
-
-@synthesize params = _params;
-@synthesize currentKanaType;
-@synthesize parent = _parent;
+ 
+@synthesize currentKanaType; 
 
 - (BOOL) isForHiragana
 {
-    return [currentKanaType intValue] == TYPE_HIRAGANA;
+    return [self.currentKanaType intValue] == TYPE_HIRAGANA;
 }
 
 - (BOOL) isForKatakana
 {
-    return [currentKanaType intValue] == TYPE_KATAKANA;
+    return [self.currentKanaType intValue] == TYPE_KATAKANA;
 }
 
 
 - (BOOL) isForRomanjiToJapan
 {
-    return [[self.params objectForKey:@"mode"] isEqualToNumber:[NSNumber numberWithInt:MODE_ROMANJI_JAPAN]];
+    return [self.currentMode intValue] == MODE_ROMANJI_JAPAN;
 }
 
 - (BOOL) isForJapanToRomanji
 {
-    return [[self.params objectForKey:@"mode"] isEqualToNumber:[NSNumber numberWithInt:MODE_JAPAN_ROMANJI]];
+    return [self.currentMode intValue] == MODE_JAPAN_ROMANJI;
 }
 
 - (void) viewDidLoad

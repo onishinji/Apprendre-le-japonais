@@ -15,7 +15,7 @@
 #import "UIView+Tags.h"
 #import "NSTimer+Blocks.h"
 
-@interface LessonQCMKanaController : LessonControllerViewController
+@interface KanaQCMController : LessonControllerViewController
 {
     Kana * currentKana;
     
@@ -35,7 +35,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *msg;
 
-@property (weak, nonatomic) IBOutlet KanaFlipView *kanaFlipView;
+@property (weak, nonatomic) IBOutlet KanaView *kanaView;
 
 @property (weak, nonatomic) IBOutlet UIButton *leftTopButton;
 @property (weak, nonatomic) IBOutlet UIButton *leftMiddleButton;

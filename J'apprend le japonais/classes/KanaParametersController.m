@@ -6,30 +6,19 @@
 //  Copyright (c) 2012 Guillaume chave. All rights reserved.
 //
 
-#import "ParametersKanaViewController.h"
+#import "KanaParametersController.h"
 #import "Computer.h"
 #import "ParametersCell.h"
 
-@interface ParametersKanaViewController ()
+@interface KanaParametersController ()
 
 @end
 
-@implementation ParametersKanaViewController
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        
-    }
-    
-    return self;
-}
+@implementation KanaParametersController
 
 - (void)loadView {
     [super loadView];
     
-        
     _collectionViewLayout = [[PSTCollectionViewFlowLayout alloc] init];
     _collectionViewLayout.itemSize = CGSizeMake(90, 90.0f);
     _collectionViewLayout.sectionInset =  UIEdgeInsetsMake(0, 5, 0, 5);
@@ -37,15 +26,7 @@
     _collectionViewLayout.minimumLineSpacing = 3;
     _collectionViewLayout.headerReferenceSize = CGSizeMake(260, 60);
     
-    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
-    {
-        _collectionView = [[PSTCollectionView alloc] initWithFrame:CGRectMake(0, 35, 960, 670) collectionViewLayout:_collectionViewLayout];
-    }
-    else
-    {
-        _collectionView = [[PSTCollectionView alloc] initWithFrame:CGRectMake(0, 35, 480, 230) collectionViewLayout:_collectionViewLayout];
-    }
-    
+    _collectionView = [[PSTCollectionView alloc] initWithFrame:CGRectMake(0, 35, self.view.frame.size.width, self.view.frame.size.height - 35) collectionViewLayout:_collectionViewLayout];
     
     _collectionView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     _collectionView.backgroundColor = [UIColor clearColor];
@@ -53,17 +34,20 @@
     _collectionView.dataSource = self;
     _collectionView.alwaysBounceVertical = YES;
     
-        
+    
     [self.view addSubview:_collectionView];
     
-    [_collectionView registerClass:PSTCollectionViewCell.class forCellWithReuseIdentifier:@"PSTCollectionViewCell"];  
+    [_collectionView registerClass:PSTCollectionViewCell.class forCellWithReuseIdentifier:@"PSTCollectionViewCell"];
     [_collectionView registerClass:ParametersCell.class forCellWithReuseIdentifier:@"ParametersCell"];
     
+
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+  
 }
 
 - (void) activeController
@@ -246,12 +230,12 @@
     if(openHelpAlready)
     {
         openHelpAlready = false;
-        [self.parent dismissOverViewControllerAnimated:YES];
+        [self dismissOverViewControllerAnimated:YES];
     }
     else
     {
         openHelpAlready = true;
-        [self.parent presentOverViewController:helpVC animated:YES];
+        [self presentOverViewController:helpVC animated:YES];
     }
 }
 

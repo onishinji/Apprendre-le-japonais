@@ -13,6 +13,7 @@
 @interface LessonControllerViewController : UIViewController
 {
     NSNumber * currentKanaType;
+    NSNumber * currentMode;
     BOOL openHelpAlready;
     
     
@@ -20,8 +21,7 @@
 }
 
 @property (nonatomic) NSNumber * currentKanaType;
-@property (strong, nonatomic) NSMutableDictionary * params;
-@property (strong, nonatomic) UIViewController * parent;
+@property (nonatomic) NSNumber * currentMode;
 
 - (BOOL) isForHiragana;
 - (BOOL) isForKatakana;

@@ -37,15 +37,29 @@ static NSMutableDictionary * myDicData;
     self.mode = @"list";
     
     [self runDownload:FALSE];
-    self.parent.title = @"Leçons disponibles";
+    self.title = @"Leçons disponibles";
     
-    self.parent.navigationItem.rightBarButtonItem = nil;
+    self.navigationItem.rightBarButtonItem = nil;
+    
+    
+    [self.tableView addPullToRefreshWithActionHandler:^{
+        [self runDownload:TRUE];
+        NSLog(@"coucou");
+        // prepend data to dataSource, insert cells at top of table view
+        // call [tableView.pullToRefreshView stopAnimating] when done
+    }];
 }
 
 - (void) activeDetail
 {
     self.title = @"Contenu de la leçon";
-    [self runDownload:FALSE];
+    
+    [self.tableView addPullToRefreshWithActionHandler:^{
+        [self runDownload:TRUE];
+        NSLog(@"coucou");
+        // prepend data to dataSource, insert cells at top of table view
+        // call [tableView.pullToRefreshView stopAnimating] when done
+    }];
 }
 
 - (void) runDownload:(BOOL)removeCache
@@ -78,7 +92,7 @@ static NSMutableDictionary * myDicData;
     {
         [self.tableView.pullToRefreshView startAnimating];
         [service fetchFeedWithURL:self.url delegate:self didFinishSelector:@selector(ticket:finishedWithFeed:error:)];
-   
+        
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     }
     
@@ -108,12 +122,6 @@ static NSMutableDictionary * myDicData;
 {
     [super viewDidLoad];
     
-    [self.tableView addPullToRefreshWithActionHandler:^{
-        [self runDownload:TRUE];
-        NSLog(@"coucou");
-        // prepend data to dataSource, insert cells at top of table view
-        // call [tableView.pullToRefreshView stopAnimating] when done
-    }];
 }
 
 - (void)ticket:(GDataServiceTicket *)ticket
@@ -145,7 +153,7 @@ finishedWithFeed:(id)feed
                 
                 
                 for(GDataEntryWorksheet * entry in entries)
-                { 
+                {
                     NSString * title = entry.title.contentStringValue;
                     
                     currentItem.romanji = title;
@@ -157,7 +165,7 @@ finishedWithFeed:(id)feed
                         currentItem.url = [NSURL URLWithString:[[entry.cellsLink.URL absoluteString] stringByReplacingOccurrencesOfString:@"/basic" withString:@"/values"]];
                         
                         [results addObject:currentItem];
-                        currentItem = [[VocabularyItem alloc] init]; 
+                        currentItem = [[VocabularyItem alloc] init];
                     }
                 }
                 
@@ -172,7 +180,7 @@ finishedWithFeed:(id)feed
                     NSString * content = entry.content.contentStringValue;
                     
                     GDataSpreadsheetCell *cell = [entry cell];
-                     
+                    
                     switch (cell.column) {
                         case 1:
                             [currentItem setTraduction:content];
@@ -213,7 +221,7 @@ finishedWithFeed:(id)feed
                     }
                 }
                 
-                [results addObject:currentItem]; 
+                [results addObject:currentItem];
                 
             }
             
@@ -257,22 +265,22 @@ finishedWithFeed:(id)feed
     
     if([results count] > 0)
     {
-    
-    VocabularyItem * item = [results objectAtIndex:indexPath.row];
-    cell.textLabel.text = item.romanji;
-    cell.detailTextLabel.text = item.traduction;
-    cell.detailTextLabel.textColor = [UIColor colorWithR:0 G:0 B:0 A:0.9];
-    
-    cell.backgroundColor = [UIColor clearColor];
-    cell.textLabel.backgroundColor = [UIColor clearColor];
-    cell.detailTextLabel.backgroundColor = [UIColor clearColor];
-    
-    cell.backgroundView.hidden = TRUE;
-    cell.backgroundView.backgroundColor = [UIColor clearColor];
-    // Configure the cell...
-    
-    [cell setSelectionStyle:UITableViewCellSelectionStyleGray];
-    [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
+        
+        VocabularyItem * item = [results objectAtIndex:indexPath.row];
+        cell.textLabel.text = item.romanji;
+        cell.detailTextLabel.text = item.traduction;
+        cell.detailTextLabel.textColor = [UIColor colorWithR:0 G:0 B:0 A:0.9];
+        
+        cell.backgroundColor = [UIColor clearColor];
+        cell.textLabel.backgroundColor = [UIColor clearColor];
+        cell.detailTextLabel.backgroundColor = [UIColor clearColor];
+        
+        cell.backgroundView.hidden = TRUE;
+        cell.backgroundView.backgroundColor = [UIColor clearColor];
+        // Configure the cell...
+        
+        [cell setSelectionStyle:UITableViewCellSelectionStyleGray];
+        [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
     }
     
     return cell;
@@ -293,7 +301,7 @@ finishedWithFeed:(id)feed
         subListController.url = item.url;
         [subListController activeDetail];
         [subListController runDownload:FALSE];
-        [self.parent.navigationController pushViewController:subListController animated:YES];
+        [self.navigationController pushViewController:subListController animated:YES];
         
     }
     else

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "LessonControllerViewController.h"
 
-@interface ParametersKanaViewController : LessonControllerViewController <PSTCollectionViewDataSource, PSTCollectionViewDelegateFlowLayout, NSFetchedResultsControllerDelegate>
+@interface KanaParametersController : LessonControllerViewController <PSTCollectionViewDataSource, PSTCollectionViewDelegateFlowLayout, NSFetchedResultsControllerDelegate>
 {
     
     NSMutableDictionary * allResult;

@@ -28,21 +28,19 @@
 		F00EEA671643293B006D21DA /* PSTGridLayoutItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F00EEA5A1643293B006D21DA /* PSTGridLayoutItem.m */; };
 		F00EEA681643293B006D21DA /* PSTGridLayoutRow.m in Sources */ = {isa = PBXBuildFile; fileRef = F00EEA5C1643293B006D21DA /* PSTGridLayoutRow.m */; };
 		F00EEA691643293B006D21DA /* PSTGridLayoutSection.m in Sources */ = {isa = PBXBuildFile; fileRef = F00EEA5E1643293B006D21DA /* PSTGridLayoutSection.m */; };
+		F0283AAB1685068B007F3B0F /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0283AAA1685068B007F3B0F /* HomeViewController.m */; };
+		F0283AAF16850995007F3B0F /* HomeKanaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0283AAE16850995007F3B0F /* HomeKanaViewController.m */; };
 		F02D137A1646AAE90093EAD0 /* tired-konata.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F02D13791646AAE90093EAD0 /* tired-konata.jpeg */; };
 		F02D137B1646AFDC0093EAD0 /* Model.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = F0CE948F163F2F95004F7E2B /* Model.xcdatamodeld */; };
 		F02D137C1646AFFA0093EAD0 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F060E98B163C0A4B009C01E3 /* MainStoryboard_iPhone.storyboard */; };
 		F02D137D1646AFFA0093EAD0 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F060E98E163C0A4B009C01E3 /* MainStoryboard_iPad.storyboard */; };
-		F02D13871647EA460093EAD0 /* LessonQCMKanaController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F02D13861647EA460093EAD0 /* LessonQCMKanaController.xib */; };
 		F03603BA167DDE0A0003E2D3 /* aide_shuffle.png in Resources */ = {isa = PBXBuildFile; fileRef = F03603B8167DDE0A0003E2D3 /* aide_shuffle.png */; };
 		F03603BB167DDE0A0003E2D3 /* aide_shuffle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F03603B9167DDE0A0003E2D3 /* aide_shuffle@2x.png */; };
 		F03603BE167DE51F0003E2D3 /* aide_qcm.png in Resources */ = {isa = PBXBuildFile; fileRef = F03603BC167DE51F0003E2D3 /* aide_qcm.png */; };
 		F03603BF167DE51F0003E2D3 /* aide_qcm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F03603BD167DE51F0003E2D3 /* aide_qcm@2x.png */; };
 		F03603C6167DE6640003E2D3 /* helpParameters.xib in Resources */ = {isa = PBXBuildFile; fileRef = F03603C0167DE6640003E2D3 /* helpParameters.xib */; };
-		F03603C7167DE6640003E2D3 /* helpParameters~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F03603C1167DE6640003E2D3 /* helpParameters~ipad.xib */; };
 		F03603C8167DE6640003E2D3 /* helpQCM.xib in Resources */ = {isa = PBXBuildFile; fileRef = F03603C2167DE6640003E2D3 /* helpQCM.xib */; };
-		F03603C9167DE6640003E2D3 /* helpQCM~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F03603C3167DE6640003E2D3 /* helpQCM~ipad.xib */; };
 		F03603CA167DE6640003E2D3 /* helpRandom.xib in Resources */ = {isa = PBXBuildFile; fileRef = F03603C4167DE6640003E2D3 /* helpRandom.xib */; };
-		F03603CB167DE6640003E2D3 /* helpRandom~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F03603C5167DE6640003E2D3 /* helpRandom~ipad.xib */; };
 		F03603CE167DE7460003E2D3 /* aide_parametres.png in Resources */ = {isa = PBXBuildFile; fileRef = F03603CC167DE7460003E2D3 /* aide_parametres.png */; };
 		F03603CF167DE7460003E2D3 /* aide_parametres@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F03603CD167DE7460003E2D3 /* aide_parametres@2x.png */; };
 		F040096A1659365A0090AA18 /* cmu07a.dic in Resources */ = {isa = PBXBuildFile; fileRef = F040095A1659365A0090AA18 /* cmu07a.dic */; };
@@ -63,7 +61,7 @@
 		F040097B165CBDDF0090AA18 /* epkyouka.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F040097A165CBDDF0090AA18 /* epkyouka.ttf */; };
 		F0400994165CC5050090AA18 /* KanaView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0400993165CC5050090AA18 /* KanaView.m */; };
 		F04009AE165D5FE10090AA18 /* LessonControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F04009AD165D5FE00090AA18 /* LessonControllerViewController.m */; };
-		F04009B0165D61480090AA18 /* LessonQCMKanaController.m in Sources */ = {isa = PBXBuildFile; fileRef = F04009AF165D61480090AA18 /* LessonQCMKanaController.m */; };
+		F04009B0165D61480090AA18 /* KanaQCMController.m in Sources */ = {isa = PBXBuildFile; fileRef = F04009AF165D61480090AA18 /* KanaQCMController.m */; };
 		F04C00B31642E33300EAF61D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04C00B21642E33300EAF61D /* QuartzCore.framework */; };
 		F060E974163C0A4B009C01E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F060E973163C0A4B009C01E3 /* UIKit.framework */; };
 		F060E976163C0A4B009C01E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F060E975163C0A4B009C01E3 /* Foundation.framework */; };
@@ -75,9 +73,6 @@
 		F061D989166BDD26007E7422 /* nekosensei_kana_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F061D988166BDD26007E7422 /* nekosensei_kana_logo.png */; };
 		F061D98B166BDD2E007E7422 /* nekosensei_kana_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F061D98A166BDD2E007E7422 /* nekosensei_kana_logo@2x.png */; };
 		F061D993167150AD007E7422 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F061D992167150AC007E7422 /* Default@2x.png */; };
-		F0679533164B10BE00347CF2 /* LessonRandomKanaController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0679532164B10BE00347CF2 /* LessonRandomKanaController~ipad.xib */; };
-		F0679536164B154200347CF2 /* LessonQCMKanaController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0679535164B154200347CF2 /* LessonQCMKanaController~ipad.xib */; };
-		F0679538164B187C00347CF2 /* ParametersKanaViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0679537164B187C00347CF2 /* ParametersKanaViewController~ipad.xib */; };
 		F073AE0516431ACB00332D78 /* SectionLessonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F073AE0416431ACA00332D78 /* SectionLessonCell.m */; };
 		F08686AE16791C08009C0C8B /* params_icon_over.png in Resources */ = {isa = PBXBuildFile; fileRef = F08686A216791C08009C0C8B /* params_icon_over.png */; };
 		F08686AF16791C08009C0C8B /* params_icon_over@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F08686A316791C08009C0C8B /* params_icon_over@2x.png */; };
@@ -127,22 +122,16 @@
 		F0BDD56D167FB0E100F8A782 /* nekosensei_kana_57.png in Resources */ = {isa = PBXBuildFile; fileRef = F0BDD56C167FB0E100F8A782 /* nekosensei_kana_57.png */; };
 		F0BDD56F167FB0EF00F8A782 /* nekosensei_kana_114.png in Resources */ = {isa = PBXBuildFile; fileRef = F0BDD56E167FB0EE00F8A782 /* nekosensei_kana_114.png */; };
 		F0CE9495163F2F95004F7E2B /* ParametersCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0CE948D163F2F95004F7E2B /* ParametersCell.xib */; };
-		F0CE9496163F2F95004F7E2B /* LessonRandomKanaController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0CE948E163F2F95004F7E2B /* LessonRandomKanaController.xib */; };
-		F0CE9498163F2F95004F7E2B /* ParametersKanaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0CE9491163F2F95004F7E2B /* ParametersKanaViewController.xib */; };
 		F0CE94BE164082DC004F7E2B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CE946A163F2F87004F7E2B /* AppDelegate.m */; };
 		F0CE94C916408483004F7E2B /* AppDelegate.m in Resources */ = {isa = PBXBuildFile; fileRef = F0CE946A163F2F87004F7E2B /* AppDelegate.m */; };
 		F0CE94DF164084B9004F7E2B /* Computer.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CE94CC164084B9004F7E2B /* Computer.m */; };
 		F0CE94E0164084B9004F7E2B /* Kana.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CE94CE164084B9004F7E2B /* Kana.m */; };
 		F0CE94E1164084B9004F7E2B /* KanaFlipView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CE94D0164084B9004F7E2B /* KanaFlipView.m */; };
 		F0CE94E2164084B9004F7E2B /* ParametersCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CE94D2164084B9004F7E2B /* ParametersCell.m */; };
-		F0CE94E3164084B9004F7E2B /* Lesson.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CE94D4164084B9004F7E2B /* Lesson.m */; };
 		F0CE94E4164084B9004F7E2B /* LessonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CE94D6164084B9004F7E2B /* LessonCell.m */; };
-		F0CE94E5164084B9004F7E2B /* LessonContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CE94D8164084B9004F7E2B /* LessonContainerController.m */; };
-		F0CE94E6164084B9004F7E2B /* LessonRandomKanaController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CE94DA164084B9004F7E2B /* LessonRandomKanaController.m */; };
-		F0CE94E8164084B9004F7E2B /* ParametersKanaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CE94DE164084B9004F7E2B /* ParametersKanaViewController.m */; };
+		F0CE94E6164084B9004F7E2B /* KanaRandomController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CE94DA164084B9004F7E2B /* KanaRandomController.m */; };
+		F0CE94E8164084B9004F7E2B /* KanaParametersController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CE94DE164084B9004F7E2B /* KanaParametersController.m */; };
 		F0CE94E91640850B004F7E2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F060E97F163C0A4B009C01E3 /* main.m */; };
-		F0CE94EC164085B4004F7E2B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CE94DC164084B9004F7E2B /* MainViewController.m */; };
-		F0CE94ED16408771004F7E2B /* MainViewController.m in Resources */ = {isa = PBXBuildFile; fileRef = F0CE94DC164084B9004F7E2B /* MainViewController.m */; };
 		F0E2375C167E12760051DC7E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E2375B167E12750051DC7E /* SystemConfiguration.framework */; };
 		F0E2375E167E127D0051DC7E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E2375D167E127D0051DC7E /* Security.framework */; };
 		F0E6D16F167E190A006DE22B /* VocabularyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E6D16D167E190A006DE22B /* VocabularyViewController.m */; };
@@ -232,20 +221,20 @@
 		F00EEA5C1643293B006D21DA /* PSTGridLayoutRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSTGridLayoutRow.m; path = vendors/PSTCollectionView/PSTGridLayoutRow.m; sourceTree = "<group>"; };
 		F00EEA5D1643293B006D21DA /* PSTGridLayoutSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSTGridLayoutSection.h; path = vendors/PSTCollectionView/PSTGridLayoutSection.h; sourceTree = "<group>"; };
 		F00EEA5E1643293B006D21DA /* PSTGridLayoutSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSTGridLayoutSection.m; path = vendors/PSTCollectionView/PSTGridLayoutSection.m; sourceTree = "<group>"; };
+		F0283AA91685068B007F3B0F /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = classes/HomeViewController.h; sourceTree = "<group>"; };
+		F0283AAA1685068B007F3B0F /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = classes/HomeViewController.m; sourceTree = "<group>"; };
+		F0283AAD16850995007F3B0F /* HomeKanaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeKanaViewController.h; path = classes/HomeKanaViewController.h; sourceTree = "<group>"; };
+		F0283AAE16850995007F3B0F /* HomeKanaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeKanaViewController.m; path = classes/HomeKanaViewController.m; sourceTree = "<group>"; };
 		F02D13791646AAE90093EAD0 /* tired-konata.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tired-konata.jpeg"; sourceTree = "<group>"; };
-		F02D13811647EA240093EAD0 /* LessonQCMKanaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LessonQCMKanaController.h; path = classes/LessonQCMKanaController.h; sourceTree = "<group>"; };
-		F02D13861647EA460093EAD0 /* LessonQCMKanaController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LessonQCMKanaController.xib; path = ressources/LessonQCMKanaController.xib; sourceTree = "<group>"; };
+		F02D13811647EA240093EAD0 /* KanaQCMController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KanaQCMController.h; path = classes/KanaQCMController.h; sourceTree = "<group>"; };
 		F02D138D164837750093EAD0 /* NSMutableArray+Shuffling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+Shuffling.h"; path = "classes/NSMutableArray+Shuffling.h"; sourceTree = "<group>"; };
 		F03603B8167DDE0A0003E2D3 /* aide_shuffle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = aide_shuffle.png; path = ressources/aide_shuffle.png; sourceTree = "<group>"; };
 		F03603B9167DDE0A0003E2D3 /* aide_shuffle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "aide_shuffle@2x.png"; path = "ressources/aide_shuffle@2x.png"; sourceTree = "<group>"; };
 		F03603BC167DE51F0003E2D3 /* aide_qcm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = aide_qcm.png; path = ressources/aide_qcm.png; sourceTree = "<group>"; };
 		F03603BD167DE51F0003E2D3 /* aide_qcm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "aide_qcm@2x.png"; path = "ressources/aide_qcm@2x.png"; sourceTree = "<group>"; };
 		F03603C0167DE6640003E2D3 /* helpParameters.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = helpParameters.xib; path = ressources/helpParameters.xib; sourceTree = "<group>"; };
-		F03603C1167DE6640003E2D3 /* helpParameters~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "helpParameters~ipad.xib"; path = "ressources/helpParameters~ipad.xib"; sourceTree = "<group>"; };
 		F03603C2167DE6640003E2D3 /* helpQCM.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = helpQCM.xib; path = ressources/helpQCM.xib; sourceTree = "<group>"; };
-		F03603C3167DE6640003E2D3 /* helpQCM~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "helpQCM~ipad.xib"; path = "ressources/helpQCM~ipad.xib"; sourceTree = "<group>"; };
 		F03603C4167DE6640003E2D3 /* helpRandom.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = helpRandom.xib; path = ressources/helpRandom.xib; sourceTree = "<group>"; };
-		F03603C5167DE6640003E2D3 /* helpRandom~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "helpRandom~ipad.xib"; path = "ressources/helpRandom~ipad.xib"; sourceTree = "<group>"; };
 		F03603CC167DE7460003E2D3 /* aide_parametres.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = aide_parametres.png; path = ressources/aide_parametres.png; sourceTree = "<group>"; };
 		F03603CD167DE7460003E2D3 /* aide_parametres@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "aide_parametres@2x.png"; path = "ressources/aide_parametres@2x.png"; sourceTree = "<group>"; };
 		F040095A1659365A0090AA18 /* cmu07a.dic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cmu07a.dic; sourceTree = "<group>"; };
@@ -269,7 +258,7 @@
 		F04009A9165D5C9F0090AA18 /* constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = constant.h; path = classes/constant.h; sourceTree = "<group>"; };
 		F04009AC165D5FDF0090AA18 /* LessonControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LessonControllerViewController.h; path = classes/LessonControllerViewController.h; sourceTree = "<group>"; };
 		F04009AD165D5FE00090AA18 /* LessonControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LessonControllerViewController.m; path = classes/LessonControllerViewController.m; sourceTree = "<group>"; };
-		F04009AF165D61480090AA18 /* LessonQCMKanaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LessonQCMKanaController.m; path = classes/LessonQCMKanaController.m; sourceTree = "<group>"; };
+		F04009AF165D61480090AA18 /* KanaQCMController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KanaQCMController.m; path = classes/KanaQCMController.m; sourceTree = "<group>"; };
 		F04C00B21642E33300EAF61D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F060E96F163C0A4B009C01E3 /* J'apprend le japonais.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "J'apprend le japonais.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F060E973163C0A4B009C01E3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -285,14 +274,11 @@
 		F060E9B6163D5C03009C01E3 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		F061D980166BDD05007E7422 /* nekoneko_applications_alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nekoneko_applications_alt.png; path = ressources/nekoneko_applications_alt.png; sourceTree = "<group>"; };
 		F061D981166BDD05007E7422 /* nekoneko_applications_alt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nekoneko_applications_alt@2x.png"; path = "ressources/nekoneko_applications_alt@2x.png"; sourceTree = "<group>"; };
-		F061D988166BDD26007E7422 /* nekosensei_kana_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nekosensei_kana_logo.png; sourceTree = "<group>"; };
-		F061D98A166BDD2E007E7422 /* nekosensei_kana_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nekosensei_kana_logo@2x.png"; sourceTree = "<group>"; };
-		F061D990167150A0007E7422 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		F061D992167150AC007E7422 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		F061D994167150B5007E7422 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		F0679532164B10BE00347CF2 /* LessonRandomKanaController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "LessonRandomKanaController~ipad.xib"; path = "ressources/LessonRandomKanaController~ipad.xib"; sourceTree = "<group>"; };
-		F0679535164B154200347CF2 /* LessonQCMKanaController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "LessonQCMKanaController~ipad.xib"; path = "ressources/LessonQCMKanaController~ipad.xib"; sourceTree = "<group>"; };
-		F0679537164B187C00347CF2 /* ParametersKanaViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "ParametersKanaViewController~ipad.xib"; path = "ressources/ParametersKanaViewController~ipad.xib"; sourceTree = "<group>"; };
+		F061D988166BDD26007E7422 /* nekosensei_kana_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nekosensei_kana_logo.png; path = ../nekosensei_kana_logo.png; sourceTree = "<group>"; };
+		F061D98A166BDD2E007E7422 /* nekosensei_kana_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nekosensei_kana_logo@2x.png"; path = "../nekosensei_kana_logo@2x.png"; sourceTree = "<group>"; };
+		F061D990167150A0007E7422 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		F061D992167150AC007E7422 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		F061D994167150B5007E7422 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		F073AE0316431ACA00332D78 /* SectionLessonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SectionLessonCell.h; path = Classes/SectionLessonCell.h; sourceTree = "<group>"; };
 		F073AE0416431ACA00332D78 /* SectionLessonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SectionLessonCell.m; path = Classes/SectionLessonCell.m; sourceTree = "<group>"; };
 		F08686A216791C08009C0C8B /* params_icon_over.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = params_icon_over.png; path = ressources/params_icon_over.png; sourceTree = "<group>"; };
@@ -664,14 +650,12 @@
 		F0A6F05B1675169C0054E7B6 /* btn_qcm_over@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_qcm_over@2x.png"; path = "ressources/btn_qcm_over@2x.png"; sourceTree = "<group>"; };
 		F0A6F05C1675169D0054E7B6 /* btn_qcm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_qcm.png; path = ressources/btn_qcm.png; sourceTree = "<group>"; };
 		F0A6F05D1675169D0054E7B6 /* btn_qcm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_qcm@2x.png"; path = "ressources/btn_qcm@2x.png"; sourceTree = "<group>"; };
-		F0BDD56C167FB0E100F8A782 /* nekosensei_kana_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nekosensei_kana_57.png; sourceTree = "<group>"; };
-		F0BDD56E167FB0EE00F8A782 /* nekosensei_kana_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nekosensei_kana_114.png; sourceTree = "<group>"; };
+		F0BDD56C167FB0E100F8A782 /* nekosensei_kana_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nekosensei_kana_57.png; path = ../nekosensei_kana_57.png; sourceTree = "<group>"; };
+		F0BDD56E167FB0EE00F8A782 /* nekosensei_kana_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nekosensei_kana_114.png; path = ../nekosensei_kana_114.png; sourceTree = "<group>"; };
 		F0CE9469163F2F87004F7E2B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = classes/AppDelegate.h; sourceTree = "<group>"; };
 		F0CE946A163F2F87004F7E2B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = classes/AppDelegate.m; sourceTree = "<group>"; };
 		F0CE948D163F2F95004F7E2B /* ParametersCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ParametersCell.xib; path = ressources/ParametersCell.xib; sourceTree = "<group>"; };
-		F0CE948E163F2F95004F7E2B /* LessonRandomKanaController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LessonRandomKanaController.xib; path = ressources/LessonRandomKanaController.xib; sourceTree = "<group>"; };
 		F0CE9490163F2F95004F7E2B /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		F0CE9491163F2F95004F7E2B /* ParametersKanaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ParametersKanaViewController.xib; path = ressources/ParametersKanaViewController.xib; sourceTree = "<group>"; };
 		F0CE94CB164084A9004F7E2B /* Computer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Computer.h; path = classes/Computer.h; sourceTree = "<group>"; };
 		F0CE94CC164084B9004F7E2B /* Computer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Computer.m; path = classes/Computer.m; sourceTree = "<group>"; };
 		F0CE94CD164084B9004F7E2B /* Kana.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Kana.h; path = classes/Kana.h; sourceTree = "<group>"; };
@@ -680,18 +664,12 @@
 		F0CE94D0164084B9004F7E2B /* KanaFlipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KanaFlipView.m; path = classes/KanaFlipView.m; sourceTree = "<group>"; };
 		F0CE94D1164084B9004F7E2B /* ParametersCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParametersCell.h; path = classes/ParametersCell.h; sourceTree = "<group>"; };
 		F0CE94D2164084B9004F7E2B /* ParametersCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParametersCell.m; path = classes/ParametersCell.m; sourceTree = "<group>"; };
-		F0CE94D3164084B9004F7E2B /* Lesson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Lesson.h; path = classes/Lesson.h; sourceTree = "<group>"; };
-		F0CE94D4164084B9004F7E2B /* Lesson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Lesson.m; path = classes/Lesson.m; sourceTree = "<group>"; };
 		F0CE94D5164084B9004F7E2B /* LessonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LessonCell.h; path = classes/LessonCell.h; sourceTree = "<group>"; };
 		F0CE94D6164084B9004F7E2B /* LessonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LessonCell.m; path = classes/LessonCell.m; sourceTree = "<group>"; };
-		F0CE94D7164084B9004F7E2B /* LessonContainerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LessonContainerController.h; path = classes/LessonContainerController.h; sourceTree = "<group>"; };
-		F0CE94D8164084B9004F7E2B /* LessonContainerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LessonContainerController.m; path = classes/LessonContainerController.m; sourceTree = "<group>"; };
-		F0CE94D9164084B9004F7E2B /* LessonRandomKanaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LessonRandomKanaController.h; path = classes/LessonRandomKanaController.h; sourceTree = "<group>"; };
-		F0CE94DA164084B9004F7E2B /* LessonRandomKanaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LessonRandomKanaController.m; path = classes/LessonRandomKanaController.m; sourceTree = "<group>"; };
-		F0CE94DB164084B9004F7E2B /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = classes/MainViewController.h; sourceTree = "<group>"; };
-		F0CE94DC164084B9004F7E2B /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = classes/MainViewController.m; sourceTree = "<group>"; };
-		F0CE94DD164084B9004F7E2B /* ParametersKanaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParametersKanaViewController.h; path = classes/ParametersKanaViewController.h; sourceTree = "<group>"; };
-		F0CE94DE164084B9004F7E2B /* ParametersKanaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParametersKanaViewController.m; path = classes/ParametersKanaViewController.m; sourceTree = "<group>"; };
+		F0CE94D9164084B9004F7E2B /* KanaRandomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KanaRandomController.h; path = classes/KanaRandomController.h; sourceTree = "<group>"; };
+		F0CE94DA164084B9004F7E2B /* KanaRandomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KanaRandomController.m; path = classes/KanaRandomController.m; sourceTree = "<group>"; };
+		F0CE94DD164084B9004F7E2B /* KanaParametersController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KanaParametersController.h; path = classes/KanaParametersController.h; sourceTree = "<group>"; };
+		F0CE94DE164084B9004F7E2B /* KanaParametersController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KanaParametersController.m; path = classes/KanaParametersController.m; sourceTree = "<group>"; };
 		F0E2375B167E12750051DC7E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F0E2375D167E127D0051DC7E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		F0E6D16C167E190A006DE22B /* VocabularyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VocabularyViewController.h; path = classes/VocabularyViewController.h; sourceTree = "<group>"; };
@@ -749,6 +727,13 @@
 		F00D6F9C1674B029001AF0B9 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				F0BDD56E167FB0EE00F8A782 /* nekosensei_kana_114.png */,
+				F0BDD56C167FB0E100F8A782 /* nekosensei_kana_57.png */,
+				F061D994167150B5007E7422 /* Default-568h@2x.png */,
+				F061D992167150AC007E7422 /* Default@2x.png */,
+				F061D990167150A0007E7422 /* Default.png */,
+				F061D98A166BDD2E007E7422 /* nekosensei_kana_logo@2x.png */,
+				F061D988166BDD26007E7422 /* nekosensei_kana_logo.png */,
 				F03603CC167DE7460003E2D3 /* aide_parametres.png */,
 				F03603CD167DE7460003E2D3 /* aide_parametres@2x.png */,
 				F03603BC167DE51F0003E2D3 /* aide_qcm.png */,
@@ -809,13 +794,6 @@
 		F00D6F9D1674B02E001AF0B9 /* ipad */ = {
 			isa = PBXGroup;
 			children = (
-				F03603C1167DE6640003E2D3 /* helpParameters~ipad.xib */,
-				F03603C3167DE6640003E2D3 /* helpQCM~ipad.xib */,
-				F03603C5167DE6640003E2D3 /* helpRandom~ipad.xib */,
-				F0679535164B154200347CF2 /* LessonQCMKanaController~ipad.xib */,
-				F0679532164B10BE00347CF2 /* LessonRandomKanaController~ipad.xib */,
-				F0679537164B187C00347CF2 /* ParametersKanaViewController~ipad.xib */,
-				F060E98E163C0A4B009C01E3 /* MainStoryboard_iPad.storyboard */,
 			);
 			name = ipad;
 			sourceTree = "<group>";
@@ -826,15 +804,33 @@
 				F0E6D171167E1944006DE22B /* VocabularyViewController.xib */,
 				F0E6D17E167E7AF8006DE22B /* VocabularyDetailViewController.xib */,
 				F0CE948D163F2F95004F7E2B /* ParametersCell.xib */,
-				F02D13861647EA460093EAD0 /* LessonQCMKanaController.xib */,
-				F0CE948E163F2F95004F7E2B /* LessonRandomKanaController.xib */,
-				F0CE9491163F2F95004F7E2B /* ParametersKanaViewController.xib */,
-				F060E98B163C0A4B009C01E3 /* MainStoryboard_iPhone.storyboard */,
 				F03603C0167DE6640003E2D3 /* helpParameters.xib */,
 				F03603C2167DE6640003E2D3 /* helpQCM.xib */,
 				F03603C4167DE6640003E2D3 /* helpRandom.xib */,
 			);
 			name = iphone;
+			sourceTree = "<group>";
+		};
+		F0283A941684FA21007F3B0F /* views */ = {
+			isa = PBXGroup;
+			children = (
+				F060E98E163C0A4B009C01E3 /* MainStoryboard_iPad.storyboard */,
+				F060E98B163C0A4B009C01E3 /* MainStoryboard_iPhone.storyboard */,
+				F00D6F9D1674B02E001AF0B9 /* ipad */,
+				F00D6F9E1674B034001AF0B9 /* iphone */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		F0283AAC16850914007F3B0F /* old */ = {
+			isa = PBXGroup;
+			children = (
+				F04009AC165D5FDF0090AA18 /* LessonControllerViewController.h */,
+				F04009AD165D5FE00090AA18 /* LessonControllerViewController.m */,
+				F08686BD16792898009C0C8B /* HelpViewController.h */,
+				F08686BE16792898009C0C8B /* HelpViewController.m */,
+			);
+			name = old;
 			sourceTree = "<group>";
 		};
 		F02D1388164836EC0093EAD0 /* PSTCollectionView */ = {
@@ -905,32 +901,23 @@
 			path = hub4wsj_sc_8k;
 			sourceTree = "<group>";
 		};
-		F04C008E1642E19300EAF61D /* vendors */ = {
+		F04C008E1642E19300EAF61D /* librairies */ = {
 			isa = PBXGroup;
 			children = (
+				F09E45C1167FC59400909F57 /* Headers */,
 				F09E46FF1682785700909F57 /* pullToRefresh */,
 				F00D6F971674AF98001AF0B9 /* Categories */,
 				F04009591659365A0090AA18 /* Framework */,
 				F02D13891648370F0093EAD0 /* categories */,
 				F02D1388164836EC0093EAD0 /* PSTCollectionView */,
 			);
-			name = vendors;
+			name = librairies;
 			sourceTree = "<group>";
 		};
 		F060E964163C0A4B009C01E3 = {
 			isa = PBXGroup;
 			children = (
 				F09E45A7167FC4BE00909F57 /* GData.xcodeproj */,
-				F0BDD56E167FB0EE00F8A782 /* nekosensei_kana_114.png */,
-				F09E45C1167FC59400909F57 /* Headers */,
-				F0BDD56C167FB0E100F8A782 /* nekosensei_kana_57.png */,
-				F0E2375D167E127D0051DC7E /* Security.framework */,
-				F0E2375B167E12750051DC7E /* SystemConfiguration.framework */,
-				F061D994167150B5007E7422 /* Default-568h@2x.png */,
-				F061D992167150AC007E7422 /* Default@2x.png */,
-				F061D990167150A0007E7422 /* Default.png */,
-				F061D98A166BDD2E007E7422 /* nekosensei_kana_logo@2x.png */,
-				F061D988166BDD26007E7422 /* nekosensei_kana_logo.png */,
 				F060E979163C0A4B009C01E3 /* J'apprend le japonais */,
 				F060E972163C0A4B009C01E3 /* Frameworks */,
 				F060E970163C0A4B009C01E3 /* Products */,
@@ -948,6 +935,8 @@
 		F060E972163C0A4B009C01E3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F0E2375D167E127D0051DC7E /* Security.framework */,
+				F0E2375B167E12750051DC7E /* SystemConfiguration.framework */,
 				F0A64DA81659356F009752E8 /* AVFoundation.framework */,
 				F0A64DA516593554009752E8 /* AudioToolbox.framework */,
 				F04C00B21642E33300EAF61D /* QuartzCore.framework */,
@@ -964,6 +953,7 @@
 			children = (
 				F0CE9468163F2F73004F7E2B /* classes */,
 				F060E999163C0C3C009C01E3 /* ressources */,
+				F0283A941684FA21007F3B0F /* views */,
 				F060E97A163C0A4B009C01E3 /* Supporting Files */,
 				F060E9B5163D5C03009C01E3 /* Model.xcdatamodeld */,
 			);
@@ -984,8 +974,6 @@
 		F060E999163C0C3C009C01E3 /* ressources */ = {
 			isa = PBXGroup;
 			children = (
-				F00D6F9E1674B034001AF0B9 /* iphone */,
-				F00D6F9D1674B02E001AF0B9 /* ipad */,
 				F00D6F9C1674B029001AF0B9 /* images */,
 				F040097A165CBDDF0090AA18 /* epkyouka.ttf */,
 				F0CE948F163F2F95004F7E2B /* Model.xcdatamodeld */,
@@ -1327,7 +1315,7 @@
 				F09E46FE167FC59500909F57 /* SBJsonWriter.h */,
 			);
 			name = Headers;
-			path = "../../../../Library/Developer/Xcode/DerivedData/J'apprend_le_japonais-hbldlgdwnbhiazaufpfeoychqnzb/Build/Products/Release-iphonesimulator/Headers";
+			path = "../../../../../Library/Developer/Xcode/DerivedData/J'apprend_le_japonais-hbldlgdwnbhiazaufpfeoychqnzb/Build/Products/Release-iphonesimulator/Headers";
 			sourceTree = "<group>";
 		};
 		F09E46FF1682785700909F57 /* pullToRefresh */ = {
@@ -1345,7 +1333,7 @@
 		F0CE9468163F2F73004F7E2B /* classes */ = {
 			isa = PBXGroup;
 			children = (
-				F04C008E1642E19300EAF61D /* vendors */,
+				F04C008E1642E19300EAF61D /* librairies */,
 				F0CE949B163F2FD2004F7E2B /* controllers */,
 				F0CE949C163F2FE6004F7E2B /* views */,
 				F0CE949A163F2FBA004F7E2B /* model */,
@@ -1371,8 +1359,6 @@
 				F0CE94CC164084B9004F7E2B /* Computer.m */,
 				F0CE94CD164084B9004F7E2B /* Kana.h */,
 				F0CE94CE164084B9004F7E2B /* Kana.m */,
-				F0CE94D3164084B9004F7E2B /* Lesson.h */,
-				F0CE94D4164084B9004F7E2B /* Lesson.m */,
 				F0E6D178167E5F98006DE22B /* VocabularyItem.h */,
 				F0E6D179167E5F98006DE22B /* VocabularyItem.m */,
 			);
@@ -1382,20 +1368,17 @@
 		F0CE949B163F2FD2004F7E2B /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F0CE94D7164084B9004F7E2B /* LessonContainerController.h */,
-				F0CE94D8164084B9004F7E2B /* LessonContainerController.m */,
-				F0CE94DB164084B9004F7E2B /* MainViewController.h */,
-				F0CE94DC164084B9004F7E2B /* MainViewController.m */,
-				F0CE94DD164084B9004F7E2B /* ParametersKanaViewController.h */,
-				F0CE94DE164084B9004F7E2B /* ParametersKanaViewController.m */,
-				F0CE94D9164084B9004F7E2B /* LessonRandomKanaController.h */,
-				F0CE94DA164084B9004F7E2B /* LessonRandomKanaController.m */,
-				F02D13811647EA240093EAD0 /* LessonQCMKanaController.h */,
-				F04009AF165D61480090AA18 /* LessonQCMKanaController.m */,
-				F04009AC165D5FDF0090AA18 /* LessonControllerViewController.h */,
-				F04009AD165D5FE00090AA18 /* LessonControllerViewController.m */,
-				F08686BD16792898009C0C8B /* HelpViewController.h */,
-				F08686BE16792898009C0C8B /* HelpViewController.m */,
+				F0283AAC16850914007F3B0F /* old */,
+				F0283AA91685068B007F3B0F /* HomeViewController.h */,
+				F0283AAA1685068B007F3B0F /* HomeViewController.m */,
+				F0283AAD16850995007F3B0F /* HomeKanaViewController.h */,
+				F0283AAE16850995007F3B0F /* HomeKanaViewController.m */,
+				F02D13811647EA240093EAD0 /* KanaQCMController.h */,
+				F04009AF165D61480090AA18 /* KanaQCMController.m */,
+				F0CE94D9164084B9004F7E2B /* KanaRandomController.h */,
+				F0CE94DA164084B9004F7E2B /* KanaRandomController.m */,
+				F0CE94DD164084B9004F7E2B /* KanaParametersController.h */,
+				F0CE94DE164084B9004F7E2B /* KanaParametersController.m */,
 				F0E6D16C167E190A006DE22B /* VocabularyViewController.h */,
 				F0E6D16D167E190A006DE22B /* VocabularyViewController.m */,
 				F0E6D17B167E7AC5006DE22B /* VocabularyDetailViewController.h */,
@@ -1520,17 +1503,10 @@
 				F02D137C1646AFFA0093EAD0 /* MainStoryboard_iPhone.storyboard in Resources */,
 				F02D137D1646AFFA0093EAD0 /* MainStoryboard_iPad.storyboard in Resources */,
 				F02D137B1646AFDC0093EAD0 /* Model.xcdatamodeld in Resources */,
-				F0CE94ED16408771004F7E2B /* MainViewController.m in Resources */,
 				F0CE94C916408483004F7E2B /* AppDelegate.m in Resources */,
 				F060E97E163C0A4B009C01E3 /* InfoPlist.strings in Resources */,
 				F0CE9495163F2F95004F7E2B /* ParametersCell.xib in Resources */,
-				F0CE9496163F2F95004F7E2B /* LessonRandomKanaController.xib in Resources */,
-				F0CE9498163F2F95004F7E2B /* ParametersKanaViewController.xib in Resources */,
 				F02D137A1646AAE90093EAD0 /* tired-konata.jpeg in Resources */,
-				F02D13871647EA460093EAD0 /* LessonQCMKanaController.xib in Resources */,
-				F0679533164B10BE00347CF2 /* LessonRandomKanaController~ipad.xib in Resources */,
-				F0679536164B154200347CF2 /* LessonQCMKanaController~ipad.xib in Resources */,
-				F0679538164B187C00347CF2 /* ParametersKanaViewController~ipad.xib in Resources */,
 				F040096A1659365A0090AA18 /* cmu07a.dic in Resources */,
 				F040096B1659365A0090AA18 /* feat.params in Resources */,
 				F040096C1659365A0090AA18 /* mdef in Resources */,
@@ -1600,11 +1576,8 @@
 				F03603BE167DE51F0003E2D3 /* aide_qcm.png in Resources */,
 				F03603BF167DE51F0003E2D3 /* aide_qcm@2x.png in Resources */,
 				F03603C6167DE6640003E2D3 /* helpParameters.xib in Resources */,
-				F03603C7167DE6640003E2D3 /* helpParameters~ipad.xib in Resources */,
 				F03603C8167DE6640003E2D3 /* helpQCM.xib in Resources */,
-				F03603C9167DE6640003E2D3 /* helpQCM~ipad.xib in Resources */,
 				F03603CA167DE6640003E2D3 /* helpRandom.xib in Resources */,
-				F03603CB167DE6640003E2D3 /* helpRandom~ipad.xib in Resources */,
 				F03603CE167DE7460003E2D3 /* aide_parametres.png in Resources */,
 				F03603CF167DE7460003E2D3 /* aide_parametres@2x.png in Resources */,
 				F0E6D172167E1944006DE22B /* VocabularyViewController.xib in Resources */,
@@ -1627,12 +1600,9 @@
 				F0CE94E0164084B9004F7E2B /* Kana.m in Sources */,
 				F0CE94E1164084B9004F7E2B /* KanaFlipView.m in Sources */,
 				F0CE94E2164084B9004F7E2B /* ParametersCell.m in Sources */,
-				F0CE94E3164084B9004F7E2B /* Lesson.m in Sources */,
 				F0CE94E4164084B9004F7E2B /* LessonCell.m in Sources */,
-				F0CE94E5164084B9004F7E2B /* LessonContainerController.m in Sources */,
-				F0CE94E6164084B9004F7E2B /* LessonRandomKanaController.m in Sources */,
-				F0CE94E8164084B9004F7E2B /* ParametersKanaViewController.m in Sources */,
-				F0CE94EC164085B4004F7E2B /* MainViewController.m in Sources */,
+				F0CE94E6164084B9004F7E2B /* KanaRandomController.m in Sources */,
+				F0CE94E8164084B9004F7E2B /* KanaParametersController.m in Sources */,
 				F073AE0516431ACB00332D78 /* SectionLessonCell.m in Sources */,
 				F00EEA5F1643293B006D21DA /* PSTCollectionView.m in Sources */,
 				F00EEA601643293B006D21DA /* PSTCollectionViewCell.m in Sources */,
@@ -1647,7 +1617,7 @@
 				F00EEA691643293B006D21DA /* PSTGridLayoutSection.m in Sources */,
 				F0400994165CC5050090AA18 /* KanaView.m in Sources */,
 				F04009AE165D5FE10090AA18 /* LessonControllerViewController.m in Sources */,
-				F04009B0165D61480090AA18 /* LessonQCMKanaController.m in Sources */,
+				F04009B0165D61480090AA18 /* KanaQCMController.m in Sources */,
 				F00D6F9B1674AFB1001AF0B9 /* UIColor+RGB.m in Sources */,
 				F08686BF16792898009C0C8B /* HelpViewController.m in Sources */,
 				F08686D216793454009C0C8B /* UIViewController+overView.m in Sources */,
@@ -1659,6 +1629,8 @@
 				F09E470E16827BF000909F57 /* UIScrollView+SVInfiniteScrolling.m in Sources */,
 				F09E470F16827BF000909F57 /* UIScrollView+SVPullToRefresh.m in Sources */,
 				F0EF2BA81683BAA90007119D /* NSObject+Blocks.m in Sources */,
+				F0283AAB1685068B007F3B0F /* HomeViewController.m in Sources */,
+				F0283AAF16850995007F3B0F /* HomeKanaViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
