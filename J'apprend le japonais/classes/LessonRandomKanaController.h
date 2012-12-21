@@ -18,7 +18,7 @@
 #import "HelpViewController.h"
 
 
-@interface LessonRandomKana : LessonControllerViewController <OpenEarsEventsObserverDelegate>
+@interface LessonRandomKanaController : LessonControllerViewController <OpenEarsEventsObserverDelegate>
 {
     NSMutableArray * knows;
     NSMutableArray * knowsRomanji;

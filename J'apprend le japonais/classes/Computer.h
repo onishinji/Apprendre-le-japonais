@@ -9,10 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "Kana.h"
 #import "NSMutableArray+Shuffling.h"
+#import "GData.h"
 
 @interface Computer : NSObject
 {
-    
+    GDataServiceGoogleSpreadsheet * service;
 }
 
 
@@ -46,6 +47,7 @@
 
 -(Kana *) toggleSelectedKana:(Kana *)hiragana withFlush:(BOOL)flush;
 
+- (BOOL) hasGrantedToVocabulary;
 
 -(void)flush;
 

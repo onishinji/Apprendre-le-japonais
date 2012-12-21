@@ -13,6 +13,8 @@
 #import "SectionLessonCell.h"
 #import "constant.h"
 #import "UIColor+RGB.h"
+#import "GData.h"
+#import "Computer.h"
 
 @interface MainViewController ()
 
@@ -37,6 +39,11 @@
 }
 
 
+- (BOOL) hasGrantedToVocabulary
+{
+    return [[NSUserDefaults standardUserDefaults] objectForKey:@"is_granted"];
+}
+
 
 - (NSMutableArray *) lessonsForSection:(NSInteger) section
 {
@@ -59,13 +66,13 @@
     switch (section) {
         case 0:
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle K > R" icon:[UIImage imageNamed:@"shuffle_icon.png"] className:@"LessonRandomKana" parameters:paramsHiragana]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle K > R" icon:[UIImage imageNamed:@"shuffle_icon.png"] className:@"LessonRandomKanaController" parameters:paramsHiragana]];
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle R > K" icon:[UIImage imageNamed:@"shuffle_romanji_icon.png"] className:@"LessonRandomKana" parameters:paramsHiraganaInvertMode]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle R > K" icon:[UIImage imageNamed:@"shuffle_romanji_icon.png"] className:@"LessonRandomKanaController" parameters:paramsHiraganaInvertMode]];
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM K > R" icon:[UIImage imageNamed:@"qcm_hiragana_icon.png"] className:@"LessonQCMKana" parameters:paramsHiragana]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM K > R" icon:[UIImage imageNamed:@"qcm_hiragana_icon.png"] className:@"LessonQCMKanaController" parameters:paramsHiragana]];
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM R > K" icon:[UIImage imageNamed:@"qcm_romanji_icon.png"] className:@"LessonQCMKana" parameters:paramsHiraganaInvertMode]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM R > K" icon:[UIImage imageNamed:@"qcm_romanji_icon.png"] className:@"LessonQCMKanaController" parameters:paramsHiraganaInvertMode]];
             
             [lessons addObject:[[Lesson alloc] initWithTitle:@"Paramètres" icon:[UIImage imageNamed:@"params_icon.png"] className:@"ParametersKanaViewController" parameters:paramsHiragana]];
 
@@ -74,16 +81,21 @@
             
         case 1:
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle K > R" icon:[UIImage imageNamed:@"shuffle_kata_icon.png"] className:@"LessonRandomKana" parameters:paramsKatakana]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle K > R" icon:[UIImage imageNamed:@"shuffle_kata_icon.png"] className:@"LessonRandomKanaController" parameters:paramsKatakana]];
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle R > K" icon:[UIImage imageNamed:@"shuffle_romanji_icon.png"] className:@"LessonRandomKana" parameters:paramsKatakanaInvertMode]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"Shuffle R > K" icon:[UIImage imageNamed:@"shuffle_romanji_icon.png"] className:@"LessonRandomKanaController" parameters:paramsKatakanaInvertMode]];
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM K > R" icon:[UIImage imageNamed:@"qcm_katakana_icon.png"] className:@"LessonQCMKana" parameters:paramsKatakana]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM K > R" icon:[UIImage imageNamed:@"qcm_katakana_icon.png"] className:@"LessonQCMKanaController" parameters:paramsKatakana]];
             
-            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM R > K" icon:[UIImage imageNamed:@"qcm_romanji_icon.png"] className:@"LessonQCMKana" parameters:paramsKatakanaInvertMode]];
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"QCM R > K" icon:[UIImage imageNamed:@"qcm_romanji_icon.png"] className:@"LessonQCMKanaController" parameters:paramsKatakanaInvertMode]];
             
             [lessons addObject:[[Lesson alloc] initWithTitle:@"Parametres" icon:[UIImage imageNamed:@"params_icon.png"] className:@"ParametersKanaViewController" parameters:paramsKatakana]];
+            break;
+        case 2:
             
+            [lessons addObject:[[Lesson alloc] initWithTitle:@"Vocabulaire" icon:[UIImage imageNamed:@"XXX.png"] className:@"VocabularyViewController" parameters:paramsKatakana]];
+            
+            break;
         default:
             break;
     }
@@ -95,7 +107,14 @@
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-    return 2;
+    if([self hasGrantedToVocabulary])
+    {
+        return 3;
+    }
+    else
+    {
+        return 2;
+    }
 }
 
 - (PSTCollectionReusableView *)collectionView:(PSTCollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
@@ -108,6 +127,10 @@
     else if(indexPath.section == 1)
     {
         sectionCell.title.text = @"カタカナ Katakana";
+    }
+    else if(indexPath.section == 2)
+    {
+        sectionCell.title.text = @"Pour les vrais";
     }
     
     return sectionCell;

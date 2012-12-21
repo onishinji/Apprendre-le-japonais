@@ -15,7 +15,7 @@
 #import "UIView+Tags.h"
 #import "NSTimer+Blocks.h"
 
-@interface LessonQCMKana : LessonControllerViewController
+@interface LessonQCMKanaController : LessonControllerViewController
 {
     Kana * currentKana;
     

@@ -6,16 +6,16 @@
 //  Copyright (c) 2012 Guillaume chave. All rights reserved.
 //
 
-#import "LessonRandomKana.h"
+#import "LessonRandomKanaController.h"
 #import "Computer.h"
 
-@interface LessonRandomKana ()
+@interface LessonRandomKanaController ()
 
 - (void) displayNext;
 
 @end
 
-@implementation LessonRandomKana
+@implementation LessonRandomKanaController
 
 @synthesize btnNext = _btnNext;
 @synthesize btnPrev = _btnPrev;
@@ -217,8 +217,16 @@
         }
     }
     
-    // @todo switch type
-    int nb = [[[Computer sharedInstance] getSelectedsHiragana] count] - currentPos - 1;
+    //
+    int nb = 0;
+    if([self isForHiragana])
+    {
+         nb = [[[Computer sharedInstance] getSelectedsHiragana] count] - currentPos - 1;
+    }
+    else
+    {
+        nb = [[[Computer sharedInstance] getSelectedsKatakana] count] - currentPos - 1;
+    }
     
     if(nb == 0)
     {
@@ -226,7 +234,6 @@
     }
     else
     {
-        // @todo switch type
         _msg.text = [NSString stringWithFormat:@"Encore %i kana à deviner", nb ];
     }
     
