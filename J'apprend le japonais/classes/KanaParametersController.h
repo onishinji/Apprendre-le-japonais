@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LessonControllerViewController.h"
+#import "ExerciseController.h"
 
-@interface KanaParametersController : LessonControllerViewController <PSTCollectionViewDataSource, PSTCollectionViewDelegateFlowLayout, NSFetchedResultsControllerDelegate>
+@interface KanaParametersController : ExerciseController <PSTCollectionViewDataSource, PSTCollectionViewDelegateFlowLayout, NSFetchedResultsControllerDelegate>
 {
     
     NSMutableDictionary * allResult;

@@ -1,0 +1,194 @@
+﻿<body>
+<title>Conditionnel （と、なら、ば、たら）</title>
+<h1>Conditionals</h1>
+<h2 id="part1">Comment dire 'si' en japonais</h2>
+Toute cette section est dédicacée à l'apprentissage de la manière de dire 'si' en japonais. Haaa, si seulement c'était aussi simple qu'en français. En japonais, il y a quatre (oui oui, quatre) manières de dire 'si'. Heureusement, les conjugaisons sont rares et faciles, spécialement parce que vous ne devez pas tenir compte du temps.
+
+<h2 id="part2">Exprimer une conséquence naturelle en utilisant 「と」</h2>
+Nous couvrirons d'abord le type le plus simple de 'si' qui exprime une conséquence naturelle. Cela signifie que si [X] se produit, [Y] se produira également, point. Pas de doute à ce propos. Si je lâche une balle, elle va tomber sur le sol. Si j'éteind toutes les lampes la nuit, il ferra noir. Nous pouvons exprimer ce type de condition grâce au format suivant. La condition doit être un Etat-d'être ou une action explicite. Cela signifie que les noms non-conjugués et les adjectifs-na doivent se terminer par 「だ」 (encore une fois). Peut-être est-ce pour éviter une confusion avec la particule 「と」.
+
+<div class="sumbox">
+<span class="summary">Règles d'utilisation de la particule 「と」</span>
+<ol>
+<li>Attacher 「と」 à la condition suivie par le résultat qui surviendra si cette condition est satisfaite.
+<br /><b>= [Condition] + と + [Résultat]</b></li>
+<li>Les Etats-d'être doivent être rendu explicites
+<br /><b>= [Etat-d'être] + <u>だ</u>と + [Résultat]</b></li>
+</ol>
+</div>
+
+<h3>Exemples</h3>
+<p>
+（１）　<span title="ボール - balle" class="popup">ボール</span>を<span title="おとす - laisser tomber" class="popup">落す</span><em>と</em><span title="おちる - tomber" class="popup">落ちる</span>。
+<br />- Si tu lâche la balle, elle va tomber.
+</p>
+
+<p>
+（２）　<span title="でんき - électricité, lumière (électrique)" class="popup">電気</span>を<span title="けす - effacer" class="popup">消す</span><em>と</em><span title="くらい - noir, sombre" class="popup">暗く</span><span title="なる - devenir" class="popup">なる</span>。
+<br />- Si tu éteinds les lumières, il ferra noir.
+</p>
+
+<p>Ces exemples permettent de montrer comment 「と」 est utilisé pour exprimer une conséquence naturelle. Cependant, même si la déclaration n'est pas naturelle en elle-même, le 「と」 ferra passer le message que l'on considère malgré tout celle-ci comme une conséquence naturelle.
+</p>
+
+<p>（１）　<span title="がっこう - école" class="popup">学校</span>に<span title="いく - aller" class="popup">行かない</span><em>と</em><span title="こまる - être ennuyé" class="popup">困る</span>よ。
+<br />- Si tu ne vas pas à l'école, tu auras des problèmes, c'est certain.
+</p>
+
+<p>
+（２）　<span title="たくさん - beaucoup" class="popup">たくさん</span><span title="たべる - manger" class="popup">食べる</span><em>と</em><span title="ふとる - grossir" class="popup">太る</span>よ。
+<br />- Si tu mange beaucoup, tu grossiras, c'est certain.
+</p>
+
+<p>
+（３）　<span title="せんせい - professeur" class="popup">先生</span><em>だと</em>、<span title="きっと - sûrement" class="popup">きっと</span><span title="としうえ - plus vieux" class="popup">年上</span>なんじゃないですか？
+<br />- Si c'est un professeur, il est sûrement plus agé, non ?
+</p>
+
+<p>La partie "sûrement" est la signification implicite fournie par le 「と」. L'orateur exprime que la condition suivante est de toute façon vraie dans cette situation.
+</p>
+
+
+<h2 id="part3">Conditionnels contextuels utilisant 「なら（ば）」</h2>
+Un autre type de 'si' relativement facile à comprendre est le conditionnel contextuel. Vous pouvez utiliser cette particule pour exprimer ce qui se passera dans un certain contexte. 
+Par exemple, si vous voulez dire : "Bien, si tout le monde y va, j'ai vais aussi", vous utiliserez le conditionnel 「なら」 parce que vous êtes en train de dire que vous irez dans le contexte où tout le monde y va. Le conditionnel contextuel nécessite un contexte dans lequel l'événement résultant se produira. Vous l'utiliserez entre autre pour dire des choses comme : "Si <i>c'est</i> ce dont vous parlez..." ou "Si <i>c'est</i> le cas, alors..."
+
+<p>
+Dans un sens, vous expliquez ce qui se passera si vous supposez que la condition est satisfaite. En d'autres mots, vous disez "Dans un certain contexte, voilà ce qui se produira."
+</p>
+
+<p>Le 「なら」 est attaché au contexte dans lequel l'événement résultant se produit. Le format est le même que le conditionnel 「と」 excepté que vous <u>ne pouvez pas</u> utiliser le 「だ」 déclaratif.</p>
+
+<div class="sumbox">
+<span class="summary">Règles d'utilisation du conditionnel contextuel 「なら」</span>
+<ol>
+<li>Attacher 「なら」 au contexte dans lequel le résultat se produit.
+<br /><b>= [Contexte supposé] + なら + [Résultat]</b></li>
+<li>Vous <u>ne pouvez pas</u> attacher le 「だ」 déclaratif.</li>
+</ol>
+</div>
+
+<h3>Exemples</h3>
+<p>
+（１）　<span title="みんな - tout le monde" class="popup">みんな</span>が<span title="いく - aller" class="popup">行く</span><em>なら</em><span title="わたし - je, moi, moi-même" class="popup">私</span>も<span title="いく - aller" class="popup">行く</span>。
+<br />- Si tout le monde y va, j'irai aussi.
+</p>
+
+<p>
+（２）　アリス<span title="さん - suffixe de politesse" class="popup">さん</span>が<span title="いう - dire" class="popup">言う</span><em>なら</em><span title="もんだい - problème" class="popup">問題</span><span title="ある - être, exister (inanimé)" class="popup">ない</span>よ。
+<br />- Si Alice-san l'a dit, il n'y a pas de problème.
+</p>
+
+<p>
+アリス）　<span title="としょかん - librairie" class="popup">図書館</span>は<span title="どこ - où" class="popup">どこ</span>ですか。 - Où est la librairie ?
+<br />ボブ）　<span title="としょかん - librairie" class="popup">図書館</span><em>なら</em>、<span title="あそこ - là-bas" class="popup">あそこ</span>です。- Si tu parles de la librairie, elle est là-bas.
+</p>
+
+<p>Ce qui suit n'est pas correct.
+<br />（誤）　<span title="としょかん - librairie" class="popup">図書館</span><em><strike>だ</strike></em>なら<span title="あそこ - là-bas" class="popup">あそこ</span>です。
+</p>
+
+<p>Vous pouvez utiliser 「ならば」 à la place de 「なら」, ce qui signifie exactement la même chose mais avec une nuance un rien plus formelle.
+</p>
+
+<h2 id="part4">Conditionnels généraux utilisant 「ば」</h2>
+Ce type de conditionnel exprime juste une condition mais sans aucune supposition ou arrière pensée. Cependant, il ne peut pas être utilisé avec les noms et les adjectifs-na. Le conditionnel 「ば」 est plutôt facile à conjuguer. Pour les verbes-u, comme la forme potentielle, vous devez changer la dernière voyelle-u en voyelle-e et, plutôt que d'attacher 「る」, vous attachez 「ば」. Cette règle s'applique également aux verbes-ru. Facile, hein ? Pour les adjectifs-i ainsi que pour les terminaisons négatives 「ない」, vous devez enlever le 「い」 final et ajouter 「ければ」.
+
+<div class="sumbox">
+<span class="summary">Règles de conjugaison pour 「ば」</span>
+<ol>
+<li>Pour les verbes comme la <span title="4_06" class="link"><i>forme potentielle</i></span>,
+changer la dernière voyelle / u / en son équivalent / e / et attacher 「ば」
+<br />（例） <span title="たべる - manger" class="popup">食べ<em>る</em></span>　→　<span title="たべる - manger" class="popup">食べ<em>れ</em></span> →  <span title="たべる - manger" class="popup">食べれ<em>ば</em></span>
+<br />（例） <span title="まつ - attendre" class="popup">待<em>つ</em></span>　→　<span title="まつ - attendre" class="popup">待<em>て</em></span> →  <span title="まつ - attendre" class="popup">待て<em>ば</em></span></li>
+<li>Pour les adjectifs-i ou les terminaisons négatives en 「ない」, laisser tomber le dernier 「い」 et attacher 「ければ」.
+<br />（例） <span title="おかしい - amusant" class="popup">おかし<em><strike>い</strike></em></span>　→　<span title="おかしい - amusant" class="popup">おかし<em>ければ</em></span>
+<br />（例） <span title="ある - être, exister (inanimé)" class="popup">な<em><strike>い</strike></em></span>　→　<span title="ある - être, exister (inanimé)" class="popup">な<em>ければ</em></span></li>
+</ol>
+</div>
+
+<h3>Exemples</h3>
+<p>
+（１）　<span title="ともだち - ami" class="popup">友達</span>に<span title="あう - rencontrer" class="popup">会えれ<em>ば</em></span>、<span title="かいもの - shopping" class="popup">買い物</span>に<span title="いく - aller" class="popup">行きます</span>。
+<br />- Si je peux rencontrer mon ami, nous irons faire des courses.
+</p>
+
+<p>
+（２）　<span title="おかね - argent" class="popup">お金</span>が<span title="ある - être, exister (inanimé)" class="popup">あれ<em>ば</em></span><span title="いい - bon" class="popup">いい</span>ね。
+<br />- Si j'avais de l'argent, ce serait bien, hein ?
+</p>
+
+<p>
+（３）　<span title="たのしい - amusant" class="popup">楽し<em>ければ</em></span>、<span title="わたし - je, moi, moi-même" class="popup">私</span>も<span title="いく - aller" class="popup">行く</span>。
+<br />- Si c'est amusant, j'irai aussi.
+</p>
+
+<p>
+（４）　<span title="たのしい - amusant" class="popup">楽しくな<em>ければ</em></span>、<span title="わたし - je, moi, moi-même" class="popup">私</span>も<span title="いく - aller" class="popup">行かない</span>。
+<br />- Si ce n'est pas amusant, je n'irai pas non plus.
+</p>
+
+<p>
+（５）　<span title="たべる - manger" class="popup">食べな<em>ければ</em></span><span title="びょうき - maladie" class="popup">病気</span>に<span title="なる - devenir" class="popup">なる</span>よ。
+<br />- Si tu ne manges pas, tu va tomber malade.
+</p>
+
+<h2 id="part5">Conditionnels passés utilisant 「たら（ば）」</h2>
+J'appelle ce conditionnel le conditionnel passé parce qu'il est produit en prenant un passé et en ajoutant 「ら」. On l'appele fréquemment le conditionnel「たら」 parce que tout les passés se terminent avec 「た」 et donc, ça devient 「たら」. Tout comme le conditionnel 「ば」, il s'agit d'un conditionnel général, excepté qu'il peut être également utilisé avec les noms et les adjectifs-i.
+
+<div class="sumbox">
+<span class="summary">Règles de conjugaison pour  「たら（ば）」</span>
+<ol>
+<li>D'abord, mettre le nom, l'adjectif ou le verbe au passé et attacher 「ら」
+<br />（例） <span title="じどう - automatique" class="popup">自動</span>　→　<span title="じどう - automatique" class="popup">自動</span><em>だった</em> →  <span title="じどう - automatique" class="popup">自動</span>だった<em>ら</em>
+<br />（例） <span title="まつ - attendre" class="popup">待<em>つ</em></span>　→　<span title="まつ - attendre" class="popup">待<em>った</em></span> →  <span title="まつ - attendre" class="popup">待った<em>ら</em></span>
+<br />（例） <span title="いそがしい - occupé" class="popup">忙し<em>い</em></span>　→　<span title="いそがしい - occupé" class="popup">忙し<em>かった</em></span> →  <span title="いそがしい - occupé" class="popup">忙しかった<em>ら</em></span></li>
+</ol>
+</div>
+
+
+<h3>Exemples</h3>
+（１）　<span title="ひま - temps libre" class="popup">暇</span>だっ<em>たら</em>、<span title="あそぶ - jouer" class="popup">遊び</span>に<span title="いく - aller" class="popup">行く</span>よ。- Si j'ai du temps libre, j'irai jouer.
+<br />（２）　<span title="がくせい - étudiant" class="popup">学生</span>だっ<em>たら</em>、<span title="おかね - argent" class="popup">お金</span>は<span title="ある - être, exister (inanimé)" class="popup">ありません</span>ね。- Si c'est un étudiant, il n'a pas d'argent, hein ?
+
+<p>Pour les adjectifs-i et les verbes, il est très difficile de différencier les deux types de conditionnels et vous pouvez vous rendre la vie plus facile en les considérant identiques. Cependant, si vous insistez, j'ai cherché sur internet une explication de cette différence avec laquelle je pourrais être d'accord. Voilà le <a href="http://homepage3.nifty.com/i-yasu/Lesson8.htm">texte original</a>. A la base, le conditionnel 「たら」 se concentre sur ce qu'il se passe après la condition. C'est une autre raison pour laquelle je l'appelle le conditionnel passé, parce que la condition est "au passé" (pas littéralement) et ce qui nous intéresse c'est le résultat, pas la condition. Le conditionnel 「ば」, d'un autre côté, se concentre sur la partie conditionnelle.
+</p>
+
+<p>Comparons la différence de nuance.
+<br />（１）　<span title="ともだち - ami" class="popup">友達</span>に<span title="あう - rencontrer" class="popup">会えれ<em>ば</em></span>、<span title="かいもの - shopping" class="popup">買い物</span>に<span title="いく - aller" class="popup">行きます</span>。- Nous irons faire des courses, <b>si</b> je peux rencontrer mon ami.
+<br />（２）　<span title="ともだち - ami" class="popup">友達</span>に<span title="あう - rencontrer" class="popup">会え<em>たら</em></span>、<span title="かいもの - shopping" class="popup">買い物</span>に<span title="いく - aller" class="popup">行きます</span>。- Si je peux rencontrer mon ami, <b>nous irons faire des courses</b>.
+</p>
+
+<p>
+（１）　<span title="おかね - argent" class="popup">お金</span>が<span title="ある - être, exister (inanimé)" class="popup">あれ<em>ば</em></span><span title="いい - bon" class="popup">いい</span>ね。- Ce serait bien, <b>si</b> j'avais de l'argent, hein ?
+<br />（２）　<span title="おかね - argent" class="popup">お金</span>が<span title="ある - être, exister (inanimé)" class="popup">あっ<em>たら</em></span><span title="いい - bon" class="popup">いい</span>ね。- Si j'avais de l'argent, <b>ce serait bien, hein ?</b>?
+</p>
+
+<p>Etant donné les contextes que nous avons ici, la forme 「～たら」 parait plus naturelle pour les deux exemples car on ne se concentre pas vraiment sur la condition. Nous sommes probablement plus intéressés dans ce qui se produira une fois que nous aurons rencontré l'ami ou comme ça serait si nous avions de l'argent.
+</p>
+
+<p>Le conditionnel passé est le seul type de conditionnel dont le résultat peut être au passé. Il peut sembler étrange d'avoir un 'si' dont le résultat s'est déjà produit. En effet, dans ce cas, il n'y a pas vraiment de 'si'. Il s'agit plutôt d'une manière d'exprimer la surprise au vu du résultat d'une condition. Cela n'a plus grand chose à voir avec le conditionnel mais je l'explique ici car il a la même structure grammaticale.
+</p>
+
+<p>（１）　<span title="いえ - maison" class="popup">家</span>に<span title="かえる - rentrer à la maison" class="popup">帰ったら</span>、<span title="だれも - personne" class="popup">誰も</span><span title="いる - être, exister (animé)" class="popup">いなかった</span>！
+<br />- Quand je suis rentré, il n'y avait personne ! (résultat inattendu)
+</p>
+
+<p>
+（２）　<span title="アメリカ - Etats-Unis" class="popup">アメリカ</span>に<span title="いく - aller" class="popup">行ったら</span>、<span title="たくさん - beaucoup" class="popup">たくさん</span><span title="ふとる - grossir" class="popup">太りました</span>。
+<br />- En allant aux Etats-Unis, j'ai beaucoup grossi. (résultat inattendu)
+</p>
+
+<p>Vous pouvez utiliser 「たらば」 à la place de 「たら」 qui a exactement la même nuance mais un ton légèrement plus formel.
+</p>
+
+<h2 id="part6">Comment se positionne 「<span title="もし - si, au cas où" class="popup">もし</span>」 par rapport au reste ?</h2>
+Certains d'entre vous pourraient connaître le mot 「<span title="もし - si, au cas où" class="popup">もし</span>」 qui signifie 'si' et ils pourraient se demander comment il se positionne dans tout ça. He bien, si vous voulez exprimer un conditionnel, vous aurez besoin d'un des conditionnels expliqué ci-dessus. 「<span title="もし - si, au cas où" class="popup">もし</span>」 est un supplément pour ajouter une nuance d'incertitude que la condition soit vraie.
+<p>（１）　<em><span title="もし - si, au cas où" class="popup">もし</span></em><span title="いい - bon" class="popup">よかった</span>ら、<span title="えいが - film" class="popup">映画</span>を<span title="みる - regarder" class="popup">観</span>に<span title="いく - aller" class="popup">行きます</span>か？
+<br />- Si, <em>à tout hasard</em>, c'est bon pour toi, allons voir ce film.
+</p>
+
+<p>（２）　<em><span title="もし - si, au cas où" class="popup">もし</span></em><span title="じかん - temps" class="popup">時間</span>が<span title="ある - être, exister (inanimé)" class="popup">ない</span>なら、<span title="あした - demain" class="popup">明日</span>でも<span title="いい - bon" class="popup">いい</span>よ。
+<br />- Etant donné qu'il n'y a pas le temps, demain est bon aussi. (Pas certain qu'il n'y a pas le temps)
+</p>
+</body>

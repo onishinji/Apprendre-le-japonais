@@ -20,6 +20,8 @@
     if (self) {
         self.view.backgroundColor = [UIColor clearColor];
         self.modalPresentationStyle = UIModalPresentationCurrentContext;
+        self.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+        
         
     }
     return self;

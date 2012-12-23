@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "VocabularyItem.h"
-#import "LessonControllerViewController.h"
+#import "ExerciseController.h"
 
-@interface VocabularyDetailViewController : LessonControllerViewController
+@interface VocabularyDetailViewController : ExerciseController
 @property (weak, nonatomic) IBOutlet UILabel *traduction;
 @property (weak, nonatomic) IBOutlet UILabel *sampleUsageRomanji;
 @property (weak, nonatomic) IBOutlet UILabel *sampleUsageJapan;

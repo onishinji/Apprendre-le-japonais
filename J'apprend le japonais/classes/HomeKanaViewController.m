@@ -7,7 +7,7 @@
 //
 
 #import "HomeKanaViewController.h"
-#import "LessonControllerViewController.h"
+#import "ExerciseController.h"
 
 @interface HomeKanaViewController ()
 
@@ -43,7 +43,7 @@
 {
     NSLog(@"prepareForSegue: %@  from %@", segue.identifier, self.kanaType);
     
-    LessonControllerViewController *dest = (LessonControllerViewController *)[segue destinationViewController];
+    ExerciseController *dest = (ExerciseController *)[segue destinationViewController];
     [dest setCurrentKanaType:self.kanaType];
     
     if ([segue.identifier isEqualToString:@"romanji"]) {

@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "KanaFlipView.h"
-#import "LessonControllerViewController.h"
+#import "ExerciseController.h"
 
 #import "HelpViewController.h"
 
 
-@interface KanaRandomController : LessonControllerViewController
+@interface KanaRandomController : ExerciseController
 {
     NSMutableArray * knows;
     NSMutableArray * knowsRomanji;

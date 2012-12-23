@@ -1,0 +1,138 @@
+<body>
+<title>Forme du passé</title>
+<h1>Tout est dans le passé</h1>
+<h2 id="part1">Mettre les verbes à la forme du passé</h2>
+Pour finir avec les propriétés de base des
+verbes, nous allons voir comment exprimer une action dans le passé. Je vous
+avertis tout de suite, les règles de conjugaison de cette leçon seront les
+plus difficiles que vous aurez à apprendre en japonais. Par contre,
+une fois que vous aurez assimilé cette leçon, toutes les autres règles
+de conjugaison vous sembleront simples. Enfin, vous aurez peut-être
+ besoin de revenir assez souvent sur cette leçon avant d'être finalement capable
+de maîtriser toutes les règles. Beaucoup de pratique sera nécessaire
+afin d'être familier avec les différentes conjugaisons.
+
+<h2 id="part2">Forme du passé pour les verbes en -ru</h2>
+Nous commencerons avec la catégorie facile des verbes en -ru. Pour changer
+un verbe en -ru de sa forme du dictionnaire en forme du passé, vous devez
+simplement retirer 「る」 et ajouter 「た」. 
+
+<div class="sumbox">
+<span class="summary">Pour changer les verbes en -ru dans la forme du passé</span>
+<ul class="plain">
+<li>Retirer 「る」 du verbe en -ru et ajouter 「た」</li>
+<li>例）<span title="でる - sortir" class="popup">出<em><strike>る</strike></em></span> → <span title="でる - sortir" class="popup">出<em>た</em></span></li>
+<li>例）<span title="すてる - lancer" class="popup">捨て<em><strike>る</strike></em></span> → <span title="すてる - lancer" class="popup">捨て<em>た</em></span></li>
+</ul>
+</div>
+
+<h3>Exemples</h3>
+<p>
+（１）　<span title="ごはん - repas" class="popup">ご飯</span>は、<em><span title="たべる - manger" class="popup">食べた</span></em>。<br />- En ce qui concerne le repas, j’ai mangé.
+</p>
+<p>
+（２）　<span title="えいが - film" class="popup">映画</span>は、<span title="ぜんぶ - tous" class="popup">全部</span><em><span title="みる - to see" class="popup">見た</span></em>。<br />- En ce qui concerne les films, j'ai tout vu.
+</p>
+
+<h2 id="part3">Forme du passé pour les verbes en -u</h2>
+Changer un verbe en -u à partir de sa forme du dictionnaire vers sa forme du
+passé est difficile car nous devons classer les verbes en -u dans 4
+nouvelles catégories. Ces 4 catégories dépendent du dernier caractère
+du verbe. Le tableau ci-dessous indique ces différentes catégories. De plus, il 
+existe une exception à la règle, qui est le verbe 「<span title="いく - aller" class="popup">行く</span>」. 
+Je l'ai classé dans la catégorie des exceptions normales avec 「<span title="する - faire" class="popup">する</span>」 et 
+「<span title="くる - venir" class="popup">来る</span>」 même si 「<span title="いく - aller" class="popup">行く</span>」 
+est un verbe en -u régulier pour les autres conjugaisons.
+
+<p />
+<center>
+<table border="1" cellpadding="5">
+<caption>Forme du passé pour les verbes en -u</caption>
+
+<tr><th>Terminaison</th><th>Non passé</th><th>Se change en...</th><th>Passé</th></tr>
+
+<tr align="center">
+<td>す</td>
+<td><span title="はなす - parler" class="popup">話<em>す</em></span></td>
+<td>す→した</td><td><span title="はなす - parler" class="popup">話<em>した</em></span></td></tr>
+
+<tr align="center"><td>く<br />ぐ</td>
+<td><span title="やく - griller" class="popup">焼<em>く</em></span><br /><span title="およぐ - nager" class="popup">泳<em>ぐ</em></span></td>
+<td>く→いた<br />ぐ→いだ</td>
+<td><span title="やく - griller" class="popup">焼<em>いた</em></span><br /><span title="およぐ - nager" class="popup">泳<em>いだ</em></span></td></tr>
+
+<tr align="center"><td>む<br />ぶ<br />ぬ</td>
+<td><span title="かむ - mordre" class="popup">噛<em>む</em></span><br /><span title="あそぶ - jouer" class="popup">遊<em>ぶ</em></span><br /><span title="しぬ - to die" class="popup">死<em>ぬ</em></span></td>
+<td>む→んだ<br />ぶ→んだ<br />ぬ→んだ</td>
+<td><span title="かむ - mordre" class="popup">噛<em>んだ</em></span><br /><span title="あそぶ - jouer" class="popup">遊<em>んだ</em></span><br /><span title="しぬ - to die" class="popup">死<em>んだ</em></span></td></tr>
+
+<tr align="center"><td>る<br />う<br />つ</td>
+<td><span title="きる - couper" class="popup">切<em>る</em></span><br /><span title="ひろう - ramasser" class="popup">拾<em>う</em></span><br /><span title="もつ - to hold" class="popup">持<em>つ</em></span></td>
+<td>る→った<br />う→った<br />つ→った</td>
+<td><span title="きる - couper" class="popup">切<em>った</em></span><br /><span title="ひろう - ramasser" class="popup">拾<em>った</em></span><br /><span title="もつ - to hold" class="popup">持<em>った</em></span></td></tr>
+
+</table>
+<br/>
+<table border="1" cellpadding="5">
+<caption>Exceptions</caption>
+<tr align="center"><th>Non passé</th><th>Passé</th></tr>
+<tr align="center"><td><span title="する - faire" class="popup">する</span></td><td><span title="する - faire" class="popup">し<em>た</em></span></td></tr>
+<tr align="center"><td><span title="くる - venir" class="popup">くる</span></td><td><span title="くる - venir" class="popup">き<em>た</em></span></td></tr>
+<tr align="center"><td><span title="いく - aller" class="popup">行く</span></td><td><span title="いく - aller" class="popup">行<em>った</em></span>*</td></tr>
+</table>
+* Exception concernant cette conjuguaison
+</center>
+
+<h3>Exemples</h3>
+<p>
+（１）　<span title="きょう - aujourd'hui" class="popup">今日</span>は、<em><span title="はしる - to run" class="popup">走った</span></em>。<br />- En ce qui concerne aujourd’hui, j’ai couru .
+</p><p>（２）　<span title="ともだち - ami" class="popup">友達</span>が<em><span title="くる - venir" class="popup">来た</span></em>。<br />- Ami est celui qui est venu.
+</p><p>（３）　<span title="わたし - je, moi, moi-même" class="popup">私</span>も<em><span title="あそぶ - jouer" class="popup">遊んだ</span></em>。<br />- J’ai aussi joué.
+</p><p>（４）　<span title="べんきょう - étude, devoir" class="popup">勉強</span>は、<em><span title="する - faire" class="popup">した</span></em>。<br />- En ce qui concerne les devoirs, je les ai faits.
+</p>
+<h2 id="part4">Forme négative négative passée de tous les verbes</h2>
+Les règles de conjugaison pour la forme négative passée est la même pour <i>tous</i> 
+les verbes. Vous avez surement remarqué la négation d'un verbe se termine toujours 
+par 「ない」. La règle de conjugaison pour la formes négative passée des verbes est pratiquement
+ la même que celle des autres formes négatives se terminant par 「ない」 : vous
+  mettez le verbe à la forme négative et ensuite vous remplacez  「い」 par 「かった」.
+
+<div class="sumbox">
+<span class="summary">Pour changer les verbes dans leur forme négative au passé</span>
+<ul class="plain">
+<li>Changer le verbe dans sa <span title="3_05" class="link"><i>forme négative</i></span> puis remplacer 「い」 avec 「かった」</li>
+<li>例）<span title="すてる - lancer" class="popup">捨て<em>る</em></span> → <span title="すてる - lancer" class="popup">捨てな<em><strike>い</strike></em></span> → <span title="すてる - lancer" class="popup">捨てな<em>かった</em></span></li>
+<li>例）<span title="いく - aller" class="popup">行<em>く</em></span> → <span title="いく - aller" class="popup">行かな<em><strike>い</strike></em></span> → <span title="いく - aller" class="popup">行かな<em>かった</em></span></li>
+</ul>
+</div>
+
+<h3>Exemples</h3>
+
+<p>
+（１）　アリスは<span title="たべる - manger" class="popup">食べな<em>かった</em></span>。
+<br />- En ce qui concerne Alice, n’a pas mangé.
+</p>
+<p>
+（２）　ジムが<span title="する - faire" class="popup">しな<em>かった</em></span>。
+<br />- Jim est celui qui n’a pas fait.
+</p>
+<p>
+（３）　ボブも<span title="いく - aller" class="popup">行かな<em>かった</em></span>。
+
+<br />- Bob aussi n’est pas allé.
+</p>
+<p>
+（４）　<span title="おかね - argent" class="popup">お金</span>が<em><span title="ある - exister (inanimé)" class="popup">なかった</span></em>。
+<br />- Il n’y avait pas d’argent. (Lit : En ce qui concerne argent, n’a pas existé.) 
+</p>
+<p>
+（５）　<span title="わたし - moi, je" class="popup">私</span>は<em><span title="かう - acheter" class="popup">買わなかった</span></em>。
+<br />- En ce qui concerne moi, n’a pas acheté.
+
+</p>
+<p>
+（６）　<span title="ねこ - chat" class="popup">猫</span>は<em><span title="いる- exister (animé)" class="popup">いなかった</span></em>。
+<br />- n’y avait pas de chat. (Lit : En ce qui concerne chat, n’a pas existé.)
+</p>
+<br />
+</body>

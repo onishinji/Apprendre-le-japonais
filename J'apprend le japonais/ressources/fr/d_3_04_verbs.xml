@@ -1,0 +1,231 @@
+<body>
+<title>Notions de base sur les verbes</title>
+<h1>Travaillons sur les verbes !</h1>
+<h2 id="part1">Le rôle des verbes</h2>
+Nous avons à ce jour appris comment décrire des noms de diverses
+manières avec d'autres noms et adjectifs. Ceci nous donne une certaine
+puissance expressive. Cependant, nous ne pouvons pas encore exprimer
+d'actions. C'est là que les verbes interviennent. Les verbes, en
+japonais, viennent toujours à la fin des propositions. Mais puisque nous n'avons
+pas encore appris comment créer plus d'une proposition, il faudra que
+n'importe quelle phrase avec un verbe finisse avec ce
+verbe. Nous allons maintenant apprendre les deux catégories principales
+des verbes, qui nous permettront de définir de manière précise des règles
+de conjugaison. Avant de commencer, il y a une chose importante
+à garder à l'esprit.
+
+<p />
+<center>
+<table class="note">
+<tr><td><strong><b>Une phrase grammaticalement complète exige <u>seulement</u> un verbe (y compris l'état-d'être).</b></strong></td></tr>
+</table>
+</center>
+
+<p>
+Pour reformuler, à la différence du français, la seule
+chose dont vous ayez besoin pour faire une phrase grammaticalement
+complète est un verbe et rien d'autre ! Comprendre cette propriété
+fondamentale du Japonais est essentiel maîtriser le japonais.
+C'est pourquoi même la phrase japonaise la plus simple ne peut pas être traduite 
+en français ! Toutes les conjugaisons commenceront à partir de la forme
+du dictionnaire (comme elles apparaissent dans le dictionnaire).
+</p>
+
+<p>Une phrase grammaticalement complète :
+<br />（１）　<span title="たべる - manger" class="popup">食べる</span>。- Manger (traductions possibles : je mange/elle mange/ils mangent)
+</p>
+
+<h2 id="part2">Classer les verbes en -ru et en -u</h2>
+Pratiquement tous les verbes en japonais peuvent être classés
+en 2 catégories : les verbes en -ru （一段動詞） et les verbes en -u （五段動詞）. Les 2 seuls
+verbes qui n'appartiennent à aucune de ces
+catégories sont 「<span title="する - faire" class="popup">する</span>」 signifiant 'faire' et 「<span title="くる - venir" class="popup">来る</span>」
+signifiant 'venir'. Autrement, les règles de conjugaison sont
+pratiquement toutes les mêmes. Cela dépend juste de la catégorie à laquelle le verbe
+appartient. Le moyen utilisé pour distinguer les classes de verbe est assez facile.
+
+<p>
+Rappelez-vous que tous les verbes sont faits d'une chaîne de kana
+appelée okurigana, que vous pouvez modifier pour conjuguer le verbe.
+Si vous transposez le verbe en caractères romains (appelés 「<span title="ろーまじ - romanisation" class="popup">ローマ字</span>」 en 
+japonais) et qu'il se termine par "iru" ou "eru", alors c'est 
+un verbe en -ru. Par exemple, 「<span title="たべる - manger" class="popup">食べる</span>」 est 
+romanisé en 'taberu' et comme il se termine par 'eru', c'est un verbe en -ru. 
+Un autre exemple, 「<span title="おきる - se lever" class="popup">起きる</span>」,
+qui, romanisé en 'okiru', est un verbe en -ru. Tous les autres verbes sont
+des verbes en -u. 
+</p>
+
+<p>
+Il y a cependant des exceptions qui confirment la règle. Les verbes en -ru se terminent toujours par 「る」 et les verbes-u se
+terminent par un son de voyelle / u /. Cela inclut malheureusement 「る」,
+en plus de 「つ」、「す」、「く」、「ぐ」、「む」、「ぶ」、「う」 et 「ぬ」 （「<span title="しぬ - mourir" class="popup">死ぬ</span>」 
+est le seul verbe qui se termine par 「ぬ」）. Même si un verbe se termine par 「る」 mais qu’il est non terminé par "iru" ou "eru", ce sera un verbe en –u. 
+De plus, il y a un certain nombre de verbes en –u qui se terminent par « iru » ou « eru » et il n’ y a pas de possibilité de les distinguer des verbes en –ru 
+réguliers sinon de les mémoriser. Vous pouvez consulter l’appendice à la fin de la leçon pour la liste de ces verbes. En cas de doute vous pouvez aussi utiliser 
+le site <a href="http://www.csse.monash.edu.au/cgi-bin/cgiwrap/jwb/wwwjdic?1C" shape="rect">Jim Breen's WWWJDIC</a> : les verbes en -ru sont notés (v1) et les verbes en -u sont notés (v5r).
+</p>
+
+<p>
+Grâce aux sons que l'on retrouve dans les règles et après un
+certain temps de pratique, les verbes en -u "sonneront" comme les verbes en -u et
+il en sera de même pour les verbes en -ru. Finalement, vous serez capable de classer simplement un nouveau verbe sans même y réfléchir à deux fois, ou alors cela devait être l'objectif.
+</p>
+
+<div class="sumbox">
+<span class="summary">Comment classer les verbes en –ru ou en -u </span>
+<ul>
+<li>Ne se termine pas en "iru"/"eru" → <b>verbe en -u</b></li>
+<li>Se termine en "iru"/"eru" → <b>verbe en -ru avec quelques exceptions</b></li>
+</ul>
+
+</div>
+
+<center>
+<table border="1" cellpadding="5">
+<caption>Exemples de verbes en -ru</caption>
+<tr align="center"><th>Verbe</th><th>ローマ字</th></tr>
+
+<tr align="center"><td><span title="たべる - manger" class="popup">食べる</span></td><td>tab<em>eru</em></td></tr>
+
+<tr align="center"><td><span title="きる - porter (des vêtements)" class="popup">着る</span></td><td>k<em>iru</em></td></tr>
+
+<tr align="center"><td><span title="しんじる - croire" class="popup">信じる</span></td><td>shinj<em>iru</em></td></tr>
+
+<tr align="center"><td><span title="ねる - dormir" class="popup">寝る</span></td><td>n<em>eru</em></td></tr>
+
+<tr align="center"><td><span title="おきる - se lever" class="popup">起きる</span></td><td>ok<em>iru</em></td></tr>
+
+<tr align="center"><td><span title="でる - sortir" class="popup">出る</span></td><td>d<em>eru</em></td></tr>
+
+<tr align="center"><td><span title="かける - tenir" class="popup">掛ける</span></td><td>kak<em>eru</em></td></tr>
+
+<tr align="center"><td><span title="すてる - lancer" class="popup">捨てる</span></td><td>sut<em>eru</em></td></tr>
+
+<tr align="center"><td><span title="しらべる - enquêter" class="popup">調べる</span></td><td>shirab<em>eru</em></td></tr>
+</table>
+<br/><br/>
+<table border="1" cellpadding="5">
+<caption>Exemples de verbes en -u</caption>
+<tr align="center"><th>Verbe</th><th>ローマ字</th></tr>
+
+<tr align="center"><td><span title="はなす - parler" class="popup">話す</span></td><td>hanasu</td></tr>
+
+<tr align="center"><td><span title="きく - entendre, demander" class="popup">聞く</span></td><td>kiku</td></tr>
+
+<tr align="center"><td><span title="およぐ - nager" class="popup">泳ぐ</span></td><td>oyogu</td></tr>
+
+<tr align="center"><td><span title="あそぶ - jouer" class="popup">遊ぶ</span></td><td>asobu</td></tr>
+
+<tr align="center"><td><span title="まつ - attendre" class="popup">待つ</span></td><td>matu</td></tr>
+
+<tr align="center"><td><span title="のむ - boire" class="popup">飲む</span></td><td>nomu</td></tr>
+
+<tr align="center"><td><span title="なおる - guérir, être réparé" class="popup">直る</span></td><td>naoru</td></tr>
+
+<tr align="center"><td><span title="しぬ - mourrir" class="popup">死ぬ</span></td><td>shinu</td></tr>
+
+<tr align="center"><td><span title="かう - acheter" class="popup">買う</span></td><td>kau</td></tr>
+</table>
+<br/><br/>
+<table border="1" cellpadding="5">
+<caption>Devraient être des verbes en -ru mais sont des verbes en -u</caption>
+<tr align="center"><th>Verbe</th><th>ローマ字</th></tr>
+
+<tr align="center"><td><span title="はいる - entrer" class="popup">入る</span></td><td>ha<em>iru</em></td></tr>
+
+<tr align="center"><td><span title="しる - savoir" class="popup">知る</span></td><td>sh<em>iru</em></td></tr>
+
+<tr align="center"><td><span title="しゃべる - parler" class="popup">しゃべる</span></td><td>shab<em>eru</em></td></tr>
+
+<tr align="center"><td><span title="きる - couper" class="popup">切る</span></td><td>k<em>iru</em></td></tr>
+
+</table>
+<br/><br/>
+<table border="1" cellpadding="5">
+<caption>Des verbes ni en -ru, ni en -u</caption>
+<tr align="center"><th>Verbe</th><th>ローマ字</th></tr>
+
+<tr align="center"><td><span title="する - faire" class="popup">する</span></td><td>suru</td></tr>
+
+<tr align="center"><td><span title="くる - venir" class="popup">くる</span></td><td>kuru</td></tr>
+
+</table>
+</center>
+
+<h3>Exemples</h3>
+Vous trouverez ici des exemples de phrases utilisant un verbe en -ru, un verbe en -u et un verbe appartenant aux exceptions.
+<br />（１）　アリスは<em><span title="たべる - manger" class="popup">食べる</span></em>。- Concernant Alice, manger.
+<br />（２）　ジムが<em><span title="あそぶ - jouer" class="popup">遊ぶ</span></em>。- Jim est celui qui joue.
+<br />（３）　ボブも<em><span title="する - faire" class="popup">する</span></em>。- Bob aussi faire.
+<br />（４）　<span title="おかね - argent" class="popup">お金</span>が<em><span title="ある - exister (inanimé)" class="popup">ある</span></em>。- Il y a de l’argent. (Lit : Concernant l’argent, il existe.)
+<br />（５）　<span title="わたし - moi, je" class="popup">私</span>は<em><span title="かう - acheter" class="popup">買う</span></em>。- Me concernant, acheter.
+<br />（６）　<span title="ねこ - chat" class="popup">猫</span>は<em><span title="いる- exister (animé)" class="popup">いる</span></em>。- Il y a un chat. (Lit : Concernant chat, il existe.)
+
+
+<h2 id="part3">Appendice des verbes en –u ("iru"/"eru") </h2>
+Voici une liste de verbes en –u se terminant en « iru » ou « eru » les plus 
+fréquemment utilisés. Cette liste est à peu près classée en 3 niveaux pour 
+vous aider à vous concentrer sur les verbes que vous devez connaître. 
+Cette liste n’est pas exhaustive. 
+
+<br /><br />
+<center>
+<table border="1" cellpadding="5">
+<caption>Verbes en –u ("iru"/"eru") par niveau </caption>
+<tr align="center"><th>Débutant</th><th>Intermédiaire</th><th>Avancé</th></tr>
+
+<tr align="center">
+
+<td><span title="いる - avoir besoin" class="popup">要る</span></td>
+<td><span title="あせる - être pressé; être impatient" class="popup">焦る</span></td>
+<td><span title="あざける - railler; se moquer de" class="popup">嘲る</span></td>
+</tr>
+
+<tr align="center">
+<td><span title="かえる - rentrer" class="popup">帰る</span></td>
+<td><span title="かぎる - limiter" class="popup">限る</span></td>
+<td><span title="くつがえる - se retourner; se renverser" class="popup">覆る</span></td>
+</tr>
+
+<tr align="center">
+<td><span title="きる - couper" class="popup">切る</span></td>
+<td><span title="ける - donner un coup de pied" class="popup">蹴る</span></td>
+<td><span title="さえぎる - interrompre" class="popup">遮る</span></td>
+</tr>
+
+<tr align="center">
+<td><span title="しゃべる - discuter" class="popup">しゃべる</span></td>
+<td><span title="すべる - glisser" class="popup">滑る</span></td>
+<td><span title="ののしる - injurier" class="popup">罵る</span></td>
+</tr>
+
+<tr align="center">
+<td><span title="しる - connaître" class="popup">知る</span></td>
+<td><span title="にぎる - saisir" class="popup">握る</span></td>
+<td><span title="ひねる - tordre" class="popup">捻る</span></td>
+</tr>
+
+<tr align="center">
+<td><span title="はいる - entrer" class="popup">入る</span></td>
+<td><span title="ねる - lustrer" class="popup">練る</span></td>
+<td><span title="ひるがえる - changer de sens; flotter" class="popup">翻る</span></td>
+
+</tr>
+
+<tr align="center">
+<td><span title="はしる - courir" class="popup">走る</span></td>
+<td><span title="まいる (hum.)  - aller; venir" class="popup">参る</span></td>
+<td><span title="めいる - se sentir dépressif" class="popup">滅入る</span></td>
+</tr>
+
+<tr align="center">
+<td><span title="へる - diminuer" class="popup">減る</span></td>
+<td><span title="まじる - mélanger" class="popup">交じる</span></td>
+<td><span title="よみがえる - ressucité" class="popup">蘇る</span></td>
+
+</tr>
+
+</table>
+</center>
+</body>

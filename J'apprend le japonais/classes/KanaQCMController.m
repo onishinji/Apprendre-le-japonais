@@ -385,7 +385,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)openHelp:(UIBarButtonItem *)bar
+- (IBAction)openHelp:(UIBarButtonItem *)bar
 {
     helpVC = [[HelpViewController alloc] initWithNibName:@"helpQCM" bundle:nil];
     

@@ -223,7 +223,7 @@
     }
 }
 
-- (void)openHelp:(UIBarButtonItem *)bar
+- (IBAction)openHelp:(UIBarButtonItem *)bar
 {
     helpVC = [[HelpViewController alloc] initWithNibName:@"helpParameters" bundle:nil];
     

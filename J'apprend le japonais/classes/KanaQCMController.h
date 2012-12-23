@@ -9,13 +9,13 @@
 
 #import "Kana.h"
 #import "KanaFlipView.h"
-#import "LessonControllerViewController.h"
+#import "ExerciseController.h"
 #import "HelpViewController.h"
 #import "UIViewController+overView.h"
 #import "UIView+Tags.h"
 #import "NSTimer+Blocks.h"
 
-@interface KanaQCMController : LessonControllerViewController
+@interface KanaQCMController : ExerciseController
 {
     Kana * currentKana;
     

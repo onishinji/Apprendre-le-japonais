@@ -1,0 +1,79 @@
+﻿<body>
+<title>Expression formelle de non faisabilité （～ざるを得ない、やむを得ない、～かねる）</title>
+<h1>Expressions formelles de non-faisabilité</h1>
+<h2 id="part1">Expressions formelles de non-faisabilité</h2>
+Nous avons appris comment exprimer la faisabilité dans une section sur la forme potentielle il y a un bon moment. Dans cette section, nous apprendrons des manières avancées et spécialisées d’exprimer certains types de faisabilité ou le manque de cette dernière. Comme la plupart de la grammaire dans la Section Avancée, la grammaire couverte ici est majoritairement utilisée dans les travaux écrits et rarement utilisée dans les conversations régulières.
+
+
+<h2 id="part2">Exprimer l’incapacité de ne pas faire avec 「～ざるを得ない」</h2>
+Cette grammaire est utilisée lorsque quelque chose ne peut pas être empêché et dois en conséquence être fait. C’est la version négative de la grammaire que nous avons précédemment couverte lorsqu’il s’agissait de quelque chose qui doit être fait. Elle utilise la forme négative du verbe 「得る」 ou "obtenir", pour dire en gros «  on ne peut obtenir  le non-faire de cette action. » Cela signifie que vous ne pouvez pas ne pas faire quelque chose même si vous le vouliez avec toute votre volonté. En conséquence de l’utilisation de la double négation, cette grammaire véhicule légèrement l’idée que vous ne voulez pas le faire, mais que vous le devez parce que cela ne peut être empêché. La connotation négative est la seule différence palpable entre cette grammaire et celle que nous avons couvert dans la section « devoir faire ». Cela, en plus du fait que cette grammaire est plus évoluée et avancée.
+
+<p>
+Elle utilise une forme négative archaïque des verbes qui terminent en 「〜ざる」. Cette forme n’est en réalité plus utilisée aujourd’hui à l’exception de cette grammaire et de quelques expressions telles que 「意図せざる」. Les règles de conjugaisons sont les mêmes que pour les verbes négatifs, à ce point près que cette grammaire attache 「ざる」 à la place. Pour le répéter, tout ce que vous avez à faire est de conjuguer le verbe à la forme négative et ensuite remplacer le 「ない」 par 「ざる」. Les deux verbes qui font exception sont 「する」 qui devient 「せざる」 et 「くる」qui devient 「こざる」. Au final, tout ce qu’il reste à faire est d’attacher 「を得ない」 au verbe. Utiliser les hiragana à la place des kanji n’est pas peu fréquent.
+</p>
+
+<div class="sumbox">
+<span class="summary">Utiliser 「〜ざるを得ない」 pour les actions qui doivent être faites (contraint)</span>
+<ul>
+<li>Pour dire que vous ne pouvez pas ne pas faire quelque chose, remplacez la partie 「ない」du verbe négatif avec 「ざる」, ensuite attachez 「を得ない」 à la fin du verbe.
+<br />例）　食<em><strike>る</strike></em> → 食べ<em><strike>ない</strike></em> → 食べ<em>ざる</em> → 食べざる<em>を得ない</em>
+<br />例）　行<em><strike>く</strike></em> → 行か<em><strike>ない</strike></em> → 行か<em>ざる</em> → 行かざる<em>を得ない</em></li>
+<li>Les deux verbes qui font exception,「する」et 「くる」, deviennent respectivement 「せざる」 et 「こざる」.
+<br />例外1）　<em>する</em> → <em>せざる</em> → せざる<em>をえない</em>
+<br />例外2）　<em>くる</em> → <em>こざる</em> → こざる<em>をえない</em></li>
+</ul>
+</div>
+
+<h3>Exemples</h3>
+（１）　このテレビがこれ以上壊れたら、新しいのを<em>買わざるを得ない</em>な。
+<br /> - Si cette TV s’abîme davantage, il n’y aura pas d’autre choix que d’acheter une nouvelle.
+<p>（２）　ずっと我慢してきたが、この状態だと歯医者さんに<em>行かざるを得ない</em>。
+<br /> - Je l’ai toléré tout ce temps mais dans cette situation, je ne peux pas ne pas aller chez le dentiste.
+</p>
+<p>（３）　上司の話を聞くと、どうしても海外に出張を<em>せざるを得ない</em>ようです。
+<br /> - En entendant cette histoire du patron, il semble que je ne puisse pas ne pas aller en voyage d’affaire outremer quoi qu’il arrive.
+</p>
+
+<h2 id="part3">Exprimer l’incapacité d’arrêter de faire quelque chose en utilisant 「やむを得ない」</h2>
+Cette grammaire est fort semblable à celle que nous venons d’apprendre plus haut, excepté qu’elle utilise le verbe 「止む」 pour dire que quelqu’un ne peut obtenir l’arrêt de quelque chose.  Souvenez-vous que normalement, nous ne pouvons pas juste attacher la particule d’objet direct 「を」 au verbe, c’est donc une simple gamme d’expressions. Juste comme la grammaire apprise précédemment, elle est utilisée pour décrire quelque chose que l’on est forcé de faire dû à certaines circonstances. La différence ici est que c’est une phrase complète qui peut être utilisée pour une situation générale qui ne requiert pas d’action spécifique. En d’autres mots, vous n’êtes en fait pas forcé de faire quelque chose; il décrit plutôt une situation qui ne peut être évitée. Si vous avez déjà appris 「仕方がない」 ou 「しょうがない」, cette grammaire signifie à peu près la même chose. La différence se situe dans le fait que vous vouliez dire "Il semblerait que nous soyons coincés" vs "Dû à certaines circonstances hors de notre contrôle...".
+
+<p>
+Comme c’est une gamme d’expressions, il n’y a pas vraiment de points de grammaires sur lesquels discuter. Vous avez juste besoin de prendre la phrase et de vous en servir comme avec n’importe quelle proposition subordonnée.</p>
+
+<h3>Exemples</h3>
+（１）　<em>やむを得ない</em>事由により手続が遅れた場合、必ずご連絡下さい。
+<br />- Si la paperasserie devait être en retard dû à certaines circonstances, s’il-vous plaît, assurez-vous de nous contacter.
+<p>（２）　この仕事は厳しいかもしれませんが、最近の不景気では新しい仕事が見つからないので<em>やむを得ない</em>状態です。
+<br />- Ce travail est peut-être mauvais mais avec les ralentissements économiques récents, c’est une situation où rien ne peut y faire.
+</p>
+
+<h2 id="part4">Exprimer ce qui ne sait pas se faire 「～かねる」</h2>
+La signification et l’utilisation de 「かねる」 est couverte assez bien sur le portail <a href="http://www.jekai.org/entries/aa/00/np/aa00np03.htm">jeKai</a> avec des exemples abondants. Tandis que la plupart de ceci est une répétition de ce qui est écrit là, 「かねる」 est un verbe en –ru qui est utilisé comme suffixe aux autres verbes pour exprimer le fait que quelque chose est impossible. Par impossible, nous ne parlons pas tant d’impossibilité physique, comme créer de la matière hors du néant, mais plutôt  de ce qui ne peut être accompli étant donné certaines conditions. 
+
+<p>
+「かねる」 est utilisé plus souvent à son négatif 「かねない」 pour indiquer qu’il y a impossibilité que le verbe en question prenne effet. Comme le portail jeKai le mentionne, c’est en général en référence à quelque chose de mauvais, comme vous pourriez l’exprimer en français par « Il a un risque que... » ou « il est craint que... ». 
+</p>
+
+<p>
+Une chose important que le jeKai ne mentionne pas est comment vous pourriez vous y prendre pour utiliser cette grammaire. Ce n’est pas difficile et vous pourriez avoir déjà deviné grâce aux phrases d’exemple. Vous avez juste besoin d’attacher 「かねる」 ou 「かねない」 au stem du verbe.
+</p>
+
+<div class="sumbox">
+<span class="summary">Utiliser 「〜かねる」 pour les choses qui ne savent pas se faire</span>
+<ul>
+<li>Pour dire que quelque chose ne sait pas se faire en utilisant 「かねる」, prenez le stem du verbe et ajoutez 「かねる」
+<br />例）　決め<em><strike>る</strike></em> → 決め<em>かねる</em>
+<br />例）　<em><strike>する</strike></em> → し<em>かねる</em></li>
+<li>「かねる」 est le même qu’un verbe régulier en –ru. Vous le niez donc en 「かねない」 pour dire que quelque chose (de mal) pourrait survenir.
+<br />例）　な<em><strike>る</strike></em> → なり<em>かね<strike>る</strike></em> → なりかね<em>ない</em>
+<br />例）　<em><strike>する</strike></em> → し<em>かね<strike>る</strike></em> → しかね<em>ない</em></li>
+</ul>
+</div>
+
+<h3>Exemples</h3>
+（１）　この場ではちょっと<em>決めかねます</em>ので、また別途会議を設けましょう。
+<br />- Etant donné que prendre une décision ici est impossible, fixons encore un rendez-vous différent.
+<p>（２）　このままでは、個人情報が漏洩<em>しかねない</em>ので、速やかに対応をお願い致します。
+<br />- A ce rythme, il y a une possibilité que des informations personnelles puissent fuiter donc je demande à ce que ce soit traiter promptement.
+</p>
+</body>

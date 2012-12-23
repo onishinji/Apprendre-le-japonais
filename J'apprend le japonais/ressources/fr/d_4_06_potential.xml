@@ -1,0 +1,112 @@
+﻿<body>
+<title>La forme pour exprimer le potentiel</title>
+<h1>Maintenant que tu peux le dire, tu peux.</h1>
+<h2 id="part1">Exprimer la capacité de faire quelque chose</h2>
+En japonais, la capacité de faire certaines actions est exprimée en conjugant le verbe plutôt qu'en ajoutant un mot comme en français "pouvoir" ou "être capable". Tous les verbes, une fois conjugués dans leur forme potentielle, deviennent un verbe-ru.
+
+<h2 id="part2">La forme potentielle</h2>
+Encore une fois, les règles peuvent se diviser en deux groupes principaux : les verbes-ru et les verbes-u. La forme potentielle du verbe 「<span title="する - faire" class="popup">する</span>」 (qui veut dire "faire") est un cas spécial car il devient un tout autre verbe : 「<span title="できる - être capable de faire" class="popup">できる</span>」 （<span title="できる - être capable de faire" class="popup">出来る</span>）
+
+<div class="sumbox">
+<span class="summary">Règles de création de la forme potentielle</span>
+<ol>
+<li>verbes-ru - Remplacer le 「る」 par 「られる」.
+<br />（例）　<span title="みる - voir" class="popup">見<em><strike>る</strike></em></span> → <span title="みる - voir" class="popup">見<em>られる</em></span></li>
+<li>verbes-u - Changer le dernier caractère d'une voyelle / u / en son équivalent / e / et ajouter 「る」.
+<br /> （例）　<span title="あそぶ - jouer" class="popup">遊<em><strike>ぶ</strike></em></span> → <span title="あそぶ - jouer" class="popup">遊<em>べ</em></span> → <span title="あそぶ - jouer" class="popup">遊べ<em>る</em></span></li>
+<li>Exceptions - 「<span title="する - faire" class="popup">する</span>」 devient 「<span title="できる - être capable de faire" class="popup">できる</span>」 et 「<span title="くる - venir" class="popup">くる</span>」 devient 「<span title="くる - venir" class="popup">こられる</span>」.</li>
+</ol>
+※Souvenez-vous que tous les verbes dans leur forme potentielle deviennent des verbes-ru
+</div>
+<p />
+<table border="1" cellpadding="5">
+<caption>Exemples de verbes-ru</caption>
+<tr align="center"><td><b>Normal</b></td><td><b>Potentiel</b></td></tr>
+<tr align="center"><td><span title="たべる - manger" class="popup">食べ<em>る</em></span></td><td><span title="たべる - manger" class="popup">食べ<em>られる</em></span></td></tr>
+<tr align="center"><td><span title="きる - porter (un vêtement)" class="popup">着<em>る</em></span></td><td><span title="きる - porter (un vêtement)" class="popup">着<em>られる</em></span></td></tr>
+<tr align="center"><td><span title="しんじる - croire" class="popup">信じ<em>る</em></span></td><td><span title="しんじる - croire" class="popup">信じ<em>られる</em></span></td></tr>
+<tr align="center"><td><span title="ねる - dormir" class="popup">寝<em>る</em></span></td><td><span title="ねる - dormir" class="popup">寝<em>られる</em></span></td></tr>
+<tr align="center"><td><span title="おきる - se lever" class="popup">起き<em>る</em></span></td><td><span title="おきる - se lever" class="popup">起き<em>られる</em></span></td></tr>
+<tr align="center"><td><span title="でる - sortir" class="popup">出<em>る</em></span></td><td><span title="でる - sortir" class="popup">出<em>られる</em></span></td></tr>
+<tr align="center"><td><span title="かける - pendre" class="popup">掛け<em>る</em></span></td><td><span title="かける - pendre" class="popup">掛け<em>られる</em></span></td></tr>
+</table>
+<br/><br/>
+<table border="1" cellpadding="5">
+<caption>Exemples de verbes-u</caption>
+<tr align="center"><td><b>Normal</b></td><td><b>Potentiel</b></td>
+<td><b><span title="ろーまじ - caractères romains" class="popup">ローマ字</span></b></td><td><b><span title="ろーまじ - caractères romains" class="popup">ローマ字</span> (Pot.)</b></td></tr>
+<tr align="center"><td><span title="はなす - parler" class="popup">話<em>す</em></span></td><td><span title="はなす - parler" class="popup">話<em>せる</em></span></td>
+<td>hanas<em>u</em></td><td>hanas<em>eru</em></td></tr>
+<tr align="center"><td><span title="かく - écrire" class="popup">書<em>く</em></span></td><td><span title="かく - écrire" class="popup">書<em>ける</em></span></td>
+<td>kak<em>u</em></td><td>kak<em>eru</em></td></tr>
+<tr align="center"><td><span title="あそぶ - jouer" class="popup">遊<em>ぶ</em></span></td><td><span title="あそぶ - jouer" class="popup">遊<em>べる</em></span></td>
+<td>asob<em>u</em></td><td>asob<em>eru</em></td></tr>
+<tr align="center"><td><span title="まつ - attendre" class="popup">待<em>つ</em></span></td><td><span title="まつ - attendre" class="popup">待<em>てる</em></span></td>
+<td>mat<em>u</em></td><td>mat<em>eru</em></td></tr>
+<tr align="center"><td><span title="のむ - boire" class="popup">飲<em>む</em></span></td><td><span title="のむ - boire" class="popup">飲<em>める</em></span></td>
+<td>nom<em>u</em></td><td>nom<em>eru</em></td></tr>
+<tr align="center"><td><span title="とる - prendre" class="popup">取<em>る</em></span></td><td><span title="とる - prendre" class="popup">取<em>れる</em></span></td>
+<td>tor<em>u</em></td><td>tor<em>eru</em></td></tr>
+<tr align="center"><td><span title="しぬ - mourrir" class="popup">死<em>ぬ</em></span></td><td><span title="しぬ - mourrir" class="popup">死<em>ねる</em></span></td>
+<td>shin<em>u</em></td><td>shin<em>eru</em></td></tr>
+</table>
+<br/><br/>
+<table border="1" cellpadding="5">
+<caption>Exceptions</caption>
+<tr align="center"><td><b>Normal</b></td><td><b>Potentiel</b></td></tr>
+<tr align="center"><td><span title="する - faire" class="popup">する</span></td><td><span title="できる - être capable de faire" class="popup">できる</span></td></tr>
+<tr align="center"><td><span title="くる - venir" class="popup">くる</span></td><td><span title="くる - venir" class="popup">こられる</span></td></tr>
+</table>
+
+
+<p>Certains ajouterons parfois 「れる」 à la place de 「られる」 pour les verbes-ru. Par exemple, 「<span title="たべる - manger" class="popup">食べる</span>」 devient 「<span title="たべる - manger" class="popup">食べれる</span>」 à la place de
+「<span title="たべる - manger" class="popup">食べられる</span>」.  Je vous suggère d'étudier la conjugaison officelle d'abord car la paresse est une habitude difficile difficile à casser et que la version courte, bien que commune, n'est pas techniquement correcte.
+</p>
+
+<h3>Exemples</h3>
+（１）　<span title="かんじ - Kanji" class="popup">漢字</span>は<em><span title="かく - écrire" class="popup">書けます</span>か</em>？- Peux-tu écrire des Kanji?
+<br />（２）　<span title="ざんねん - dommage" class="popup">残念</span>だが、<span title="こんしゅうまつ - ce week-end" class="popup">今週末</span>は<em><span title="いく - aller" class="popup">行けない</span></em>。- Malheureusement, je ne peux pas aller ce week-end.
+<br />（３）　<span title="もう - déjà" class="popup">もう</span><em><span title="しんじる - croire" class="popup">信じられない</span></em>。- Déjà ? Je ne peux le croire.
+
+
+<h2 id="part3">Les formes potentielles n'ont pas d'objet</h2>
+La forme potentielle indique que quelque chose est possible mais qu'aucune action en ce sens n'est entreprise. Alors que la forme potentielle reste un verbe, puisqu'elle décrit l'état de quelque chose, vous ne pouvez pas utiliser l'objet direct 「を」 comme vous l'avez fait avec les verbes réguliers. Par exemple, les phrases suivantes sont incorrectes.
+
+<p>（誤）　<span title="ふじさん - Mt. Fuji" class="popup">富士山</span><em><strike>を</strike></em><span title="のぼる - grimper" class="popup">登れた</span>。
+<br />（誤）　<span title="おもい - lourd" class="popup">重い</span><span title="にもつ - bagages" class="popup">荷物</span><em><strike>を</strike></em><span title="もつ - tenir" class="popup">持てます</span>。
+</p>
+<p>Voici les version correctes :
+<br />（正）　<span title="ふじさん - Mt. Fuji" class="popup">富士山</span><em>が</em><span title="のぼる - grimper" class="popup">登れた</span>。- Fus capable de grimper Fuji-san (Mont Fujiyama).
+<br />（正）　<span title="おもい - lourd" class="popup">重い</span><span title="にもつ - bagages" class="popup">荷物</span><em>が</em><span title="もつ - tenir" class="popup">持てます</span>。- Suis capable de tenir un bagage lourd.
+<br />Bien sûr, les particules 「は」 ou 「も」 peuvent également être utilisées en fonction de ce que vous voulez exprimer.
+</p>
+
+<h2 id="part4">Est-ce que 「<span title="みえる - être visible" class="popup">見える</span>」 and 「<span title="きこえる - être audible" class="popup">聞こえる</span>」 sont des exceptions?</h2>
+Il existe deux verbes 「<span title="みえる - être visible" class="popup">見える</span>」 et 「<span title="きこえる - être audible" class="popup">聞こえる</span>」 qui signifient respectivement "est visible" et "est audible". Quand vous voulez dire que vous pouvez voir ou entendre quelque chose, vous voudrez utiliser ces verbes. Si, par contre, vous voulez dire que vous avez eu l'opportunité de voir ou entendre quelque chose, vous devrez utiliser la forme potentielle. Cependant, dans ce cas, il est plus habituel d'utiliser le type d'expression tel que dans l'exemple （３）.
+
+<h3>Exemples</h3>
+（１）　<span title="きょう - aujourd'hui" class="popup">今日</span>は<span title="はれる - être ensoleillé" class="popup">晴れて</span>、<span title="ふじさん - Mt. Fuji" class="popup">富士山</span>が<span title="みえる - être visible" class="popup">見える</span>。- Le temps s'est dégagé et le Mont Fuji est visible.
+<br />（２）　<span title="ともだち - ami" class="popup">友達</span>の<span title="おかげ - grâce à" class="popup">おかげ</span>で、<span title="えいが - film" class="popup">映画</span>は<span title="ただ - gratuit, seulement" class="popup">ただ</span>で<span title="みる - voir" class="popup">見られた</span>。- Grâce à (mon) ami, (j')ai été capable de voir un film gratuitement.
+<br />（３）　<span title="ともだち - ami" class="popup">友達</span>の<span title="おかげ - grâce à" class="popup">おかげ</span>で、<span title="えいが - film" class="popup">映画</span>を<span title="ただ - gratuit, seulement" class="popup">ただ</span>で<span title="みる - voir" class="popup">見る</span><span title="こと - événement, matière" class="popup">こと</span>が<span title="できる - être capable de faire" class="popup">できた</span>。- Grâce à (mon) ami, (j')ai été capable de voir un film gratuitement.
+
+<p>Vous voyez que （３） utilise un nom générique avec un événement pour dire littéralement "L'événement de voir un film a été capable d'être fait), ce qui signifie la même chose que 「<span title="みる - voir" class="popup">見られる</span>」. Comme je l'ai déjà expliqué dans <span title="3_10" class="link">Particules 3</span>, vous pouvez également utiliser une substitution de nom générique pour substituer 「<span title="こと - événement, matière" class="popup">こと</span>」.
+<br />（１）　<span title="ともだち - ami" class="popup">友達</span>の<span title="おかげ - grâce à" class="popup">おかげ</span>で、<span title="えいが - film" class="popup">映画</span>を<span title="みる - voir" class="popup">見る</span><em>の</em>が<span title="できる - être capable de faire" class="popup">できた</span>。
+</p>
+
+<p>
+Voilà d'autres exemples utilisant 「<span title="いく - entendre, demander" class="popup">聞く</span>」,. Voyez-vous la différence ? Remarquez que 「<span title="きこえる - être audible" class="popup">聞こえる</span>」 signifie toujours "audible" et jamais "capable de demander".
+<br />（１）　<span title="ひさしぶり - après longtemps" class="popup">久しぶり</span>に<span title="かれ - il" class="popup">彼</span>の<span title="こえ - voix" class="popup">声</span>が<em><span title="きく - entendre, demander" class="popup">聞けた</span></em>。- J'ai été capable d'entendre sa voix pour la première fois depuis longtemps.
+<br />（２）　<span title="まわり - alentours" class="popup">周り</span>が<span title="うるさい - bruyant" class="popup">うるさくて</span>、<span title="かれ - il" class="popup">彼</span>が<span title="いう - dire" class="popup">言っている</span><span title="こと - événement, matière" class="popup">こと</span>が<span title="あんまり - pas très" class="popup">あんまり</span><em><span title="きこえる - être audible" class="popup">聞こえなかった</span></em> - Les environs étaient bruyants et je n'ai pas très bien pu entendre ce qu'il disait.
+</p>
+
+<h2 id="part5">「<span title="ある - être exister (inanimé)" class="popup">ある</span>」, encore une autre exception</h2>
+Vous pouvez dire que quelque chose pourrait exister en combinant 「<span title="ある - être exister (inanimé)" class="popup">ある</span>」 et le verbe 「<span title="える - obtenir" class="popup">得る</span>」 pour produire 「<span title="ありうる／ありえる - être possible" class="popup">あり得る</span>」.
+Cela veut donc dire 「<span title="ある - être exister (inanimé)" class="popup">ある</span><span title="こと - événement, matière" class="popup">こと</span>が<span title="できる - être capable de faire" class="popup">できる</span>」 excepté que personne ne dira ça. On utilise juste 「<span title="ありうる／ありえる - être possible" class="popup">あり得る</span>」. Ce verbe est curieux car il peut être lu comme 「<span title="ありうる - être possible" class="popup">ありうる</span>」 ou <span title="ありえる - être possible" class="popup">ありえる</span>」. <i>Cependant</i>, toutes les autres conjugaisons comme 「<span title="ありえる - être possible" class="popup">ありえない</span>」、「<span title="ありえる - être possible" class="popup">ありえた</span>」、et 「<span title="ありえる - être possible" class="popup">ありえなかった</span>」 n'ont qu'une seule lecture possible utilisant 「え」.
+
+<h3>Exemples</h3>
+（１）　<span title="そんな - cette sorte de" class="popup">そんな</span><span title="こと - événement, matière" class="popup">こと</span>は<em><span title="ありうる - être possible" class="popup">ありうる</span></em>。 - Cette sorte d'événement est possible.
+<br />（２）　<span title="そんな - cette sorte de" class="popup">そんな</span><span title="こと - événement, matière" class="popup">こと</span>は<em><span title="ありえる - être possible" class="popup">ありえる</span></em>。 - Cette sorte d'événement est possible.
+<br />（３）　<span title="そんな - cette sorte de" class="popup">そんな</span><span title="こと - événement, matière" class="popup">こと</span>は<em><span title="ありえる - être possible" class="popup">ありえない</span></em>。- Cette sorte d'événement n'est pas possible.
+<br />（４）　<span title="この - ce" class="popup">この</span><span title="パッケージ - bagage" class="popup">パッケージ</span>には<em><span title="ありうる - être possible" class="popup">ありうる</span></em><span title="もの - objet" class="popup">物</span>が<span title="はいる - entrer" class="popup">入っている</span>。- Toute chose qui existe est dans ce sac.
+<br />（５）　<span title="それ - cela" class="popup">それ</span>は、<em><span title="ありえる - être possible" class="popup">ありえない</span></em><span title="はなし - histoire" class="popup">話</span>だよ。- C'est une histoire impossible (histoire qui ne peut pas exister)
+</body>

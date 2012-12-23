@@ -1,0 +1,183 @@
+<body>
+<title>Forme négative des verbes</title>
+<h1>Parfois il faut savoir être négatif</h1>
+<h2 id="part1">Négation des verbes</h2>
+Maintenant que nous savons comment déclarer des choses et exprimer des
+actions avec des verbes, nous aimerions être capables d'exprimer une
+négation. C'est-à-dire signifier que telle ou telle action n'a <i>pas</i>
+été effectuée. La négation des verbes consiste à les conjuguer à la
+forme négative comme la conjugaison négative de l'état-d'être pour les
+noms et les adjectifs. Cependant, les règles sont un peu plus compliquées.
+
+<h2 id="part2">Conjuguer les verbes à la forme négative</h2>
+A partir de maintenant nous nous servirons de la classifichation des verbes pour définir
+les règles de conjugaison. Mais avant de commencer, nous devons aborder
+une exception très importante à la règle de négation : 
+「<span title="ある - exister, être (inanimé)" class="popup">ある</span>」. 
+「<span title="ある - exister, être (inanimé)" class="popup">ある</span>」 est un verbe en -u employé pour exprimer 
+l'existence d'objets inanimés.
+
+<p>
+Par exemple, si vous voulez dire qu'une chaise est dans la pièce, 
+il faut utiliser le verbe 「<span title="ある - exister, être (inanimé)" class="popup">ある</span>」. 
+Le verbe équivalent pour les objets animés (tels que les personnes ou 
+les animaux) est 「<span title="いる - exister, être (animé)" class="popup">いる</span>」
+qui est un verbe en -ru normal. Ainsi, si vous voulez dire qu'une
+personne est dans la pièce, vous devez employer le verbe 「<span title="いる - exister, être (animé)" class="popup">いる</span>」 
+et non pas 「<span title="ある - exister, être (inanimé)" class="popup">ある</span>」. 
+Ces 2 verbes 「<span title="ある - exister, être (inanimé)" class="popup">ある</span>」 et 
+「<span title="いる - exister, être (animé)" class="popup">いる</span>」
+sont tout à fait différents de tous les autres verbes parce qu'ils
+représentent l'existence et non pas une action réelle. Vous devez donc
+passer outre le problème du bon choix du verbe qui traite des objets animés ou
+inanimés.
+</p>
+
+<p>
+Quoi qu'il en soit, la raison pour laquelle j'en parle ici c'est parce que la forme négative de 
+「<span title="ある - exister, être (inanimé)" class="popup">ある</span>」 (signifiant qu'une chose n'existe pas) est 
+「<span title="ある - exister, être (inanimé)" class="popup">ない</span>」. Rappelez-vous, ceci est une exception, donc 
+n'appliquez pas les règles normales de la négation à 「<span title="ある - exister, être (inanimé)" class="popup">ある</span>」.
+</p>
+
+<center>
+<table class="note">
+<tr><td><strong><b>La forme négative de 「<span title="ある - exister, être (inanimé)" class="popup">ある</span>」 est 「<span title="ある - exister, être (inanimé)" class="popup">ない</span>」.</b></strong></td></tr>
+</table>
+</center>
+
+<p>
+Voici les règles pour tous les autres verbes. Pour la négation
+d'un verbe en -ru, vous retirez simplement 「る」 et ajouter 「ない」. Pour les
+verbes en -u, il peut être utile de voir la version romanisée du verbe. Vous
+retirez la voyelle / u / du son et ajoutez "anai". Mais il est préférable de 
+se référer au <span title="2_01" class="link"><i>tableau des Hiragana</i></span> 
+dans lequel il suffit de prendre le dernier caractère hiragana qui sera toujours dans la
+colonne / u / et de remonter pour le remplacer par le caractère de la
+colonne / a /. Par exemple 「く」 se change en 「か」.
+</p>
+
+<p>
+Une exception importante à cette règle concerne les verbes en -u se
+terminant par 「う」. Vous devez remplacer 「う」 par 「わ」 au lieu de 「あ」
+comme la règle le voudrait. Vous devez aussi mémoriser la conjugaison
+des 2 exceptions en plus de 「<span title="ある - exister, être (inanimé)" class="popup">ある</span>」. 
+Les tableaux suivants vous montre des exemples de conjugaison pour tous types de verbes.
+</p>
+
+<div class="sumbox">
+<span class="summary">Comment conjuguer les verbes à la forme négative</span>
+<ul>
+<li><b>Verbes en -ru:</b> Pour conjuguer les verbes en -ru à leur forme négative, retirez 「る」 et ajoutez 「ない」.
+<br />例）　見<em><strike>る</strike></em> → 見<em>ない</em>
+<br />例）　出<em><strike>る</strike></em> → 出<em>ない</em>
+</li>
+</ul>
+
+<ul>
+<li><b>Verbes en -u:</b> Pour conjuguer les verbes en -u à leur forme
+négative, premièrement replacez le dernier caractère en / u / avec le
+caractère équivalent en / a / et ajoutez 「ない」.
+<br />例）　飲<em><strike>む</strike></em> → 飲<em>ま</em> → 飲ま<em>ない</em>
+<br />例）　待<em><strike>つ</strike></em> → 待<em>た</em> → 待た<em>ない</em>
+<br />
+<br />※ Une exception importante concerne les verbes en 「う」. Pour eux, vous devez remplacer 「う」 avec 「わ」 （<i>et non pas</i> 「あ」） et ajouter 「ない」.
+<br />例）　拾<em><strike>う</strike></em> → 拾<em>わ</em> → 拾わ<em>ない</em>
+</li>
+
+</ul>
+</div>
+
+<center>
+<table border="1" cellpadding="5">
+<caption>Exemples de <br />verbes en -ru</caption>
+<tr align="center"><th>Affirmatif</th><th>Négatif</th></tr>
+
+<tr align="center"><td><span title="たべる - manger" class="popup">食べ<em>る</em></span></td><td><span title="たべる - manger" class="popup">食べ<em>ない</em></span></td></tr>
+
+<tr align="center"><td><span title="きる - porter (des vêtements)" class="popup">着<em>る</em></span></td><td><span title="きる - porter (des vêtements)" class="popup">着<em>ない</em></span></td></tr>
+
+<tr align="center"><td><span title="しんじる - croire" class="popup">信じ<em>る</em></span></td><td><span title="しんじる - croire" class="popup">信じ<em>ない</em></span></td></tr>
+
+<tr align="center"><td><span title="ねる - dormir" class="popup">寝<em>る</em></span></td><td><span title="ねる - dormir" class="popup">寝<em>ない</em></span></td></tr>
+
+<tr align="center"><td><span title="おきる - se lever" class="popup">起き<em>る</em></span></td><td><span title="おきる - se lever" class="popup">起き<em>ない</em></span></td></tr>
+
+<tr align="center"><td><span title="でる - sortir" class="popup">出<em>る</em></span></td><td><span title="でる - sortir" class="popup">出<em>ない</em></span></td></tr>
+
+<tr align="center"><td><span title="かける - pendre" class="popup">掛け<em>る</em></span></td><td><span title="かける - pendre" class="popup">掛け<em>ない</em></span></td></tr>
+
+<tr align="center"><td><span title="すてる - lancer" class="popup">捨て<em>る</em></span></td><td><span title="すてる - lancer" class="popup">捨て<em>ない</em></span></td></tr>
+
+<tr align="center"><td><span title="しらべる - enquêter" class="popup">調べ<em>る</em></span></td><td><span title="しらべる - enquêter" class="popup">調べ<em>ない</em></span></td></tr>
+
+</table>
+<br/><br/>
+<table border="1" cellpadding="5">
+<caption>Exemples de verbes en -u</caption>
+<tr align="center"><th>Affirmatif</th><th>Négatif</th>
+<th>ローマ字</th><th>ローマ字 (Nég)</th></tr>
+
+<tr align="center"><td><span title="はなす - parler" class="popup">話<em>す</em></span></td><td><span title="はなす - parler" class="popup">話<em>さない</em></span></td>
+<td>hanas<em>u</em></td><td>hanas<em>anai</em></td></tr>
+
+<tr align="center"><td><span title="きく - entendre, demander" class="popup">聞<em>く</em></span></td><td><span title="きく - entendre, demander" class="popup">聞<em>かない</em></span></td>
+<td>kik<em>u</em></td><td>kik<em>anai</em></td></tr>
+
+<tr align="center"><td><span title="およぐ - nager" class="popup">泳<em>ぐ</em></span></td><td><span title="およぐ - nager" class="popup">泳<em>がない</em></span></td>
+<td>oyog<em>u</em></td><td>oyog<em>anai</em></td></tr>
+
+<tr align="center"><td><span title="あそぶ - jouer" class="popup">遊<em>ぶ</em></span></td><td><span title="あそぶ - jouer" class="popup">遊<em>ばない</em></span></td>
+<td>asob<em>u</em></td><td>asob<em>anai</em></td></tr>
+
+<tr align="center"><td><span title="まつ - attendre" class="popup">待<em>つ</em></span></td><td><span title="まつ - attendre" class="popup">待<em>たない</em></span></td>
+<td>mat<em>u</em></td><td>mat<em>anai</em></td></tr>
+
+<tr align="center"><td><span title="のむ - boire" class="popup">飲<em>む</em></span></td><td><span title="のむ - boire" class="popup">飲<em>まない</em></span></td>
+<td>nom<em>u</em></td><td>nom<em>anai</em></td></tr>
+
+<tr align="center"><td><span title="なおる - guérir, être réparé" class="popup">直<em>る</em></span></td><td><span title="なおる - guérir, être réparé" class="popup">直<em>らない</em></span></td><td>naor<em>u</em></td>
+<td>naor<em>anai</em></td></tr>
+
+<tr align="center"><td><span title="しぬ - mourrir" class="popup">死<em>ぬ</em></span></td><td><span title="しぬ - mourrir" class="popup">死<em>なない</em></span></td><td>shin<em>u</em></td>
+<td>shin<em>anai</em></td></tr>
+
+<tr align="center"><td>＊<span title="かう - acheter" class="popup">買<em><u>う</u></em></span></td><td><span title="かう - acheter" class="popup">買<em><u>わ</u>ない</em></span></td><td>ka<em><u>u</u></em></td>
+<td>ka<em><u>wa</u>nai</em></td></tr>
+
+</table>
+<br/><br/>
+<table border="1" cellpadding="5">
+<caption>Exceptions</caption>
+<tr align="center"><th>Affirmatif</th><th>Négatif</th></tr>
+
+<tr align="center"><td><span title="する - faire" class="popup">する</span></td><td><span title="する - faire" class="popup">しない</span></td></tr>
+
+<tr align="center"><td><span title="くる - venir" class="popup">くる</span></td><td><span title="くる - venir" class="popup">こない</span></td></tr>
+
+<tr align="center"><td>＊<span title="ある - exister, être (inanimé)" class="popup">ある</span></td><td><span title="ある - exister, être (inanimé)" class="popup">ない</span></td></tr>
+
+</table>
+
+
+＊ = Exception particulière pour cette conjugaison
+</center>
+
+<h3>Exemples</h3>
+Vous trouverez quelques exemples de phrases utilisant la forme
+négative. Pour voir ces mots, utilisez le lien qui s'appelle "Translate
+Words in Japanese Text" sur le WWWJDIC ou bien cliquez simplement 
+<a href="http://www.csse.monash.edu.au/cgi-bin/cgiwrap/jwb/wwwjdic?9T" shape="rect">ici</a>.
+Il inversera la conjugaison et vous donnera la forme du dictionnaire 
+(et même quelle conjugaison a été utilisée!). Voici les exemples de la
+dernière section conjugués dans leur forme négative.
+
+<p>（１）　アリスは<em><span title="たべる - manger" class="popup">食べない</span></em>。- En ce qui concerne Alice, elle mange pas (Alice ne mange pas)
+<br />（２）　ジムが<em><span title="あそぶ - jouer" class="popup">遊ばない</span></em>。- Jim est celui qui ne joue pas.
+<br />（３）　ボブも<em><span title="する - faire" class="popup">しない</span></em>。- Bob aussi ne pas faire (Bob ne fait pas non plus).
+<br />（４）　<span title="おかね - argent" class="popup">お金</span>が<em><span title="ある - exister, être (inanimé)" class="popup">ない</span></em>。- En ce qui concerne argent, ne pas exister (Il n'y a pas d'argent).
+<br />（５）　<span title="わたし - je, moi, moi-même" class="popup">私</span>は<em><span title="かう - acheter" class="popup">買わない</span></em>。- En ce qui concerne moi, ne pas acheter (Je n'achète pas).
+<br />（６）　<span title="ねこ - chat" class="popup">猫</span>は<em><span title="いる- exister, être (animé)" class="popup">いない</span></em>。- En ce qui conerne chat, ne pas exister (Il n y a pas de chat).
+</p>
+
+</body>

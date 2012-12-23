@@ -1,0 +1,170 @@
+<body>
+<title>Introduction aux particules （は、も、が）</title>
+<h1>Les particules usuelles de base</h1>
+<h2 id="part1">Définir les fonctions grammaticales avec les particules</h2>
+Nous allons maintenant faire bon usage de ce que nous venons
+d'apprendre en associant un nom à un autre nom. Ceci peut être réalisé
+à l'aide de ce que l'on appelle des particules. Les particules, formées
+de un ou deux caractères hiragana, s'ajoutent à la fin d'un mot pour
+définir quelle fonction grammaticale il remplit dans la phrase.
+Employer les bonnes particules est très important car la signification
+d'une phrase peut en être radicalement changé. Par exemple, la phrase
+"manger du poisson." peut devenir "le poisson mange."
+simplement en changeant une particule.
+
+<h2 id="part2">La particule de thème 「は」</h2>
+La première particule que nous apprendrons est la particule de thème. La
+particule de thème permet de montrer de quoi vous êtes en train
+de parler ou plus simplement, le thème de la phrase. Par exemple, une
+personne nous dit : "pas étudiant." Bien que nous n'ayons pas beaucoup 
+d'informations supplémentaires sur cette phrase à cause du manque de 
+connaissance de son contexte, cette phrase sera parfaitement correcte 
+en japonais. Cette particule nous permet donc d'exprimer de quoi notre phrase va paler. La
+particule de thème utilise le caractère 「は」, mais bien que ce
+caractère soit normalement prononcé / ha /, il est uniquement prononcé / wa /
+lorsqu'il est employé comme particule de thème.
+
+<h3>Exemple 1</h3>
+ボブ：　アリス<em>は</em><span title="がくせい - étudiant" class="popup">学生</span>？- Alice, es-tu étudiante?
+<br />アリス：　<span title="うん - ouais" class="popup">うん</span>、<span title="がくせい - étudiant" class="popup">学生</span>。- Ouais, je le suis. 
+
+<p>
+Dans cet exemple, Bob indique que sa question concerne Alice.
+On remarquera que malgré le fait que 「だ」 n'ait pas été employé, la traduction 
+française utilise tout de même le verbe être : 'es' et 'suis'. De plus, comme nous savons que
+le thème de la question est Alice, nous n'avons besoin de rien d'autre pour deviner
+qu'Alice est une étudiante. En fait, puisque Bob pose une question, il
+<i>ne peut pas</i> ajouter 「だ」 car dans ce cas, il affirmerait une chose tout 
+en posant une question dessus.
+</p>
+
+
+<h3>Exemple 2</h3>
+ボブ：　ジム<em>は</em><span title="あした - demain" class="popup">明日</span>？- Est Jim demain ?
+<br />アリス：　ジム<em>は</em><span title="あした - demain" class="popup">明日</span>じゃない。- Jim pas demain.
+<p>
+Puisque nous n'avons aucun contexte, il n'y a pas assez d'informations pour 
+donner un sens convenable à cette conversation. Il est certain qu'affirmer que 
+Jim <b>soit</b> en réalité demain n'a aucun sens. Dans un contexte donné, aussi 
+longtemps qu'il existe un lien entre Jim et demain, la phrase peut signifier n'importe 
+quoi. Ils pourraient ainsi parler de la date d'un examen.
+</p>
+
+<h3>Exemple 3</h3>
+アリス）　<span title="きょう - aujourd'hui" class="popup">今日</span>は<span title="しけん - examen" class="popup">試験</span>だ。- Aujourd'hui est examen.
+<br/>ボブ）　ジムは？ - Et concernant Jim?
+<br/>アリス）　ジムは<span title="あした - demain" class="popup">明日</span>。 - Jim est demain. (Pour Jim, l'examen est demain.)
+
+<p>Il est important de noter à quel point un sujet peut ne pas être spécifié.
+Il peut se référer à n'importe quel objet ou action qui se trouve n'importe où dans la phrase énoncée, y compris celles qui ont déjà été dites. Par exemple, dans la dernière phrase de 
+la conversation ci-dessus, il n'est nulle part fait mention du mot "examen" 
+alors qu'il est question de l'examen de Jim !
+</p>
+
+
+<h2 id="part3">La particule inclusive de thème  「も」</h2>
+C'est une particule qui est très semblable à la particule de thème. Elle a le 
+sens additionnel d'"aussi". Elle peut ainsi introduire un autre thème en plus 
+du thème courant. La caractère 「も」 est utilisé pour désigner la particule 
+inclusive. Voici des exemples pour mieux comprendre son utilisation.
+
+<h3>Exemple 1</h3>
+ボブ：　アリスは<span title="がくせい - étudiant" class="popup">学生</span>？- Alice, es-tu étudiante?
+<br />アリス：　うん、トム<em>も</em><span title="がくせい - étudiant" class="popup">学生</span>。- Ouais, et Tom l'est aussi étudiant.
+<br />
+Notez qu'Alice doit être inclue. Cela n’aurait aucun sens de dire, "je suis 
+étudiante, et Jim n'est également pas un étudiant." Sinon, Alice emploierait la 
+particule は pour retirer la signification additionnelle comme dans le prochain exemple.
+
+<h3>Exemple 2</h3>
+ボブ：　アリスは<span title="がくせい - étudiant" class="popup">学生</span>？- Alice, es-tu étudiante?
+<br />アリス：　うん、でもトムは<span title="がくせい - étudiant" class="popup">学生</span>じゃない。- Ouais, mais Tom n'est pas étudiant.
+
+
+<h3>Exemple 3</h3>
+Il y a une autre possibilité :
+<br />ボブ：　アリスは<span title="がくせい - étudiant" class="popup">学生</span>？- Alice, es-tu étudiante?
+<br />アリス：　ううん、トム<em>も</em><span title="がくせい - étudiant" class="popup">学生</span>じゃない。- Non, et Tom n'est pas étudiant non plus.
+
+
+<p>
+Mais pourquoi Alice parlerait-elle soudainement de Tom alors que Bob 
+s'adresse à elle ? Peut-être parce que Tom se tient à côté d'elle et qu'elle 
+voudrait l'inclure dans la conversation.
+</p>
+
+<h2 id="part4">La particule d'identification 「が」</h2>
+Bon, ainsi nous pouvons annoncer un thème en utilisant les
+particules 「は」 et 「も」. Mais que se passe t-il lorsque nous ne connaissons 
+pas la nature du thème ? Que se passe t-il si je veux demander, "Qui est
+l'étudiant?" J'ai donc besoin est d'un genre d'identificateur qui détermine
+qui est l'étudiant. En effet, si j'employais la particule de
+thème, la question deviendrait alors : "est qui l'étudiant?"
+et cela n'aurait aucun sens car "qui" n'est pas une personne réelle.
+
+<p>
+C'est ici que la particule 「が」 entre en jeu. Elle est également
+mentionnée comme la particule de sujet mais je déteste ce nom puisqu'il
+signifie quelque chose de complètement différent dans la grammaire
+française. Au lieu de cela, je préfère l'appeler la <i>particule 
+identificatrice</i> car elle indique que locuteur veut identifier quelque chose 
+qui ne l'est pas.
+</p>
+
+
+<h3>Exemple 1</h3>
+ボブ：　<span title="だれ - qui" class="popup">誰</span><em>が</em><span title="がくせい - étudiant" class="popup">学生</span>？- Qui est celui qui est étudiant?
+<br />アリス：　ジム<em>が</em><span title="がくせい - étudiant" class="popup">学生</span>。- Jim est celui qui est étudiant.
+<br />
+Bob veut identifier parmi tous les candidats potentiels, qui peut être
+étudiant. Alice répond que c'est Jim l'étudiant. Notez que, Alice aurait
+aussi pu répondre en utilisant la particule de thème pour indiquer, en parlant 
+de Jim, qu'elle savait qu'il était <i>un</i> étudiant 
+(peut-être pas <i>l</i>'étudiant). Vous pouvez voir la différence dans l'exemple suivant.
+
+<h3>Exemple 2</h3>
+（１）　<span title="だれ - qui" class="popup">誰</span><em>が</em><span title="がくせい - étudiant" class="popup">学生</span>？ - Qui est celui qui est étudiant?
+<br />（２）　<span title="がくせい - étudiant" class="popup">学生</span>は<span title="だれ - qui" class="popup">誰</span>？- L'étudiant est qui ?
+<br />Si tout va bien, vous pouvez voir que (1) cherche à identifier une
+personne spécifique pour 'étudiant' alors que (2) parle simplement de
+l'étudiant. Vous ne pouvez pas remplacer 「が」 avec 「は」 dans (1) car
+'Qui' deviendrait le thème et la question serait, "Est ce que 'qui' est
+un étudiant?".
+
+
+<p>
+Les 2 particules 「は」 et 「が」 peuvent paraître très semblables car
+il est impossible de traduire leurs différences
+directement en français. Par exemple, 「<span title="わたし - je, moi, moi-même" class="popup">私</span>は<span title="がくせい - étudiant" class="popup">学生</span>」 et 
+「<span title="わたし - je, moi, moi-même" class="popup">私</span>が<span title="がくせい - étudiant" class="popup">学生</span>」 se
+traduisent tous les 2 par : "Je suis étudiant"*. Elles paraissent
+semblables parce que le français ne peut pas énoncer une information à
+propos du contexte aussi succinctement que le japonais le peut parfois.
+Dans le premier cas 「<span title="わたし - je, moi, moi-même" class="popup">私</span>は<span title="がくせい - student" class="popup">学生</span>」,
+comme 「<span title="わたし - je, moi, moi-même" class="popup">私</span>」 est le 
+thème, la phrase signifie, "En parlant de moi, je suis un étudiant". Alors que, 
+dans la seconde phrase, 「<span title="わたし - je, moi, moi-même" class="popup">私</span>」 spécifie qui est l'étudiant: 
+「<span title="がくせい - étudiant" class="popup">学生</span>」. Si nous voulons savoir qui est l'étudiant, 
+la particule 「が」 nous dit que c'est 「<span title="わたし - je, moi, moi-même" class="popup">私</span>」.
+</p>
+
+<p>
+Vous pouvez également penser que la particule 「が」 répond
+toujours à une question silencieuse. Par exemple, si nous avons 「ジムが<span title="さかな - poisson" class="popup">魚</span>だ」,
+nous répondons à la question : "Qui est le poisson?" ou "Quelle
+personne est le poisson?" ou encore "Quelle
+nourriture Jim aime?". La phrase 「これが<span title="くるま - voiture" class="popup">車</span>」,
+répond à la question, "Laquelle est la voiture?" ou
+"Quelle est la voiture?". Les particules 「は」 et 「が」 sont réellement
+complètement différentes si vous y pensez de la bonne manière. La
+particule 「が」 identifie une propriété spécifique d'une chose
+tandis que la particule 「は」 est seulement employée pour évoquer un
+nouveau thème dans la conversation. C'est pourquoi, dans de plus
+longues phrases, il est commun de séparer le thème par des virgules
+pour enlever l'ambiguïté entre le sujet et le thème.
+
+</p>
+
+<p><font size="-1">*C'est, techniquement, la traduction la plus naturelle étant donné le manque de contexte.</font></p>
+
+</body>

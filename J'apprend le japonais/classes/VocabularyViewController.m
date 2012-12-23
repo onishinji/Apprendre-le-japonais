@@ -29,6 +29,8 @@ static NSMutableDictionary * myDicData;
 - (void) activeController
 {
     
+    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"home_bkg.png"]];
+    
     NSString * baseUrl = @"https://spreadsheets.google.com/feeds/worksheets/%@/public/basic";
     idSpreadsheet = @"0AhFKp-lXqsT9dDRpc1ZUeDRJa01XQW9iZEhRRl9Bc1E";
     
@@ -36,37 +38,23 @@ static NSMutableDictionary * myDicData;
     
     self.mode = @"list";
     
-    [self runDownload:FALSE];
     self.title = @"Leçons disponibles";
     
     self.navigationItem.rightBarButtonItem = nil;
     
-    
-    [self.tableView addPullToRefreshWithActionHandler:^{
-        [self runDownload:TRUE];
-        NSLog(@"coucou");
-        // prepend data to dataSource, insert cells at top of table view
-        // call [tableView.pullToRefreshView stopAnimating] when done
-    }];
+    [self runDownload:FALSE];
 }
 
 - (void) activeDetail
 {
-    self.title = @"Contenu de la leçon";
     
-    [self.tableView addPullToRefreshWithActionHandler:^{
-        [self runDownload:TRUE];
-        NSLog(@"coucou");
-        // prepend data to dataSource, insert cells at top of table view
-        // call [tableView.pullToRefreshView stopAnimating] when done
-    }];
+    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"home_bkg.png"]];
+    self.title = @"Contenu de la leçon"; 
+    
 }
 
 - (void) runDownload:(BOOL)removeCache
 {
-    
-    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"home_bkg.png"]];
-    
     results = [[NSMutableArray alloc] init];
     
     static GDataServiceGoogleSpreadsheet* service = nil;
@@ -120,7 +108,13 @@ static NSMutableDictionary * myDicData;
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+    [super viewDidLoad]; 
+    
+    [self.tableView addPullToRefreshWithActionHandler:^{
+        [self runDownload:YES];
+        // prepend data to dataSource, insert cells at top of table view
+        // call [tableView.pullToRefreshView stopAnimating] when done
+    }];
     
 }
 

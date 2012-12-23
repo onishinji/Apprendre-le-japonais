@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LessonControllerViewController.h"
+#import "ExerciseController.h"
 #import "VocabularyDetailViewController.h"
 
-@interface VocabularyViewController : LessonControllerViewController
+@interface VocabularyViewController : ExerciseController
 {
     NSMutableArray * results;
-    NSString * idSpreadsheet;
+    NSString * idSpreadsheet; 
 }
 
 @property (nonatomic, strong) IBOutlet UITableView * tableView;

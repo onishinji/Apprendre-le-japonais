@@ -43,24 +43,9 @@
 		F03603CA167DE6640003E2D3 /* helpRandom.xib in Resources */ = {isa = PBXBuildFile; fileRef = F03603C4167DE6640003E2D3 /* helpRandom.xib */; };
 		F03603CE167DE7460003E2D3 /* aide_parametres.png in Resources */ = {isa = PBXBuildFile; fileRef = F03603CC167DE7460003E2D3 /* aide_parametres.png */; };
 		F03603CF167DE7460003E2D3 /* aide_parametres@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F03603CD167DE7460003E2D3 /* aide_parametres@2x.png */; };
-		F040096A1659365A0090AA18 /* cmu07a.dic in Resources */ = {isa = PBXBuildFile; fileRef = F040095A1659365A0090AA18 /* cmu07a.dic */; };
-		F040096B1659365A0090AA18 /* feat.params in Resources */ = {isa = PBXBuildFile; fileRef = F040095C1659365A0090AA18 /* feat.params */; };
-		F040096C1659365A0090AA18 /* mdef in Resources */ = {isa = PBXBuildFile; fileRef = F040095D1659365A0090AA18 /* mdef */; };
-		F040096D1659365A0090AA18 /* means in Resources */ = {isa = PBXBuildFile; fileRef = F040095E1659365A0090AA18 /* means */; };
-		F040096E1659365A0090AA18 /* noisedict in Resources */ = {isa = PBXBuildFile; fileRef = F040095F1659365A0090AA18 /* noisedict */; };
-		F040096F1659365A0090AA18 /* sendump in Resources */ = {isa = PBXBuildFile; fileRef = F04009601659365A0090AA18 /* sendump */; };
-		F04009701659365A0090AA18 /* transition_matrices in Resources */ = {isa = PBXBuildFile; fileRef = F04009611659365A0090AA18 /* transition_matrices */; };
-		F04009711659365A0090AA18 /* variances in Resources */ = {isa = PBXBuildFile; fileRef = F04009621659365A0090AA18 /* variances */; };
-		F04009721659365A0090AA18 /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04009631659365A0090AA18 /* OpenEars.framework */; };
-		F04009731659365A0090AA18 /* OpenEars1.dic in Resources */ = {isa = PBXBuildFile; fileRef = F04009641659365A0090AA18 /* OpenEars1.dic */; };
-		F04009741659365A0090AA18 /* OpenEars1.gram in Resources */ = {isa = PBXBuildFile; fileRef = F04009651659365A0090AA18 /* OpenEars1.gram */; };
-		F04009751659365A0090AA18 /* OpenEars1.languagemodel in Resources */ = {isa = PBXBuildFile; fileRef = F04009661659365A0090AA18 /* OpenEars1.languagemodel */; };
-		F04009761659365A0090AA18 /* OpenEars2.gram in Resources */ = {isa = PBXBuildFile; fileRef = F04009671659365A0090AA18 /* OpenEars2.gram */; };
-		F04009771659365A0090AA18 /* OpenEarsCorpus.txt in Resources */ = {isa = PBXBuildFile; fileRef = F04009681659365A0090AA18 /* OpenEarsCorpus.txt */; };
-		F04009781659365A0090AA18 /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04009691659365A0090AA18 /* Slt.framework */; };
 		F040097B165CBDDF0090AA18 /* epkyouka.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F040097A165CBDDF0090AA18 /* epkyouka.ttf */; };
 		F0400994165CC5050090AA18 /* KanaView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0400993165CC5050090AA18 /* KanaView.m */; };
-		F04009AE165D5FE10090AA18 /* LessonControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F04009AD165D5FE00090AA18 /* LessonControllerViewController.m */; };
+		F04009AE165D5FE10090AA18 /* ExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = F04009AD165D5FE00090AA18 /* ExerciseController.m */; };
 		F04009B0165D61480090AA18 /* KanaQCMController.m in Sources */ = {isa = PBXBuildFile; fileRef = F04009AF165D61480090AA18 /* KanaQCMController.m */; };
 		F04C00B31642E33300EAF61D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04C00B21642E33300EAF61D /* QuartzCore.framework */; };
 		F060E974163C0A4B009C01E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F060E973163C0A4B009C01E3 /* UIKit.framework */; };
@@ -74,6 +59,84 @@
 		F061D98B166BDD2E007E7422 /* nekosensei_kana_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F061D98A166BDD2E007E7422 /* nekosensei_kana_logo@2x.png */; };
 		F061D993167150AD007E7422 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F061D992167150AC007E7422 /* Default@2x.png */; };
 		F073AE0516431ACB00332D78 /* SectionLessonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F073AE0416431ACA00332D78 /* SectionLessonCell.m */; };
+		F083B2431686568C002BB523 /* CMHTMLView.m in Sources */ = {isa = PBXBuildFile; fileRef = F083B2421686568C002BB523 /* CMHTMLView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F083B24B16865B96002BB523 /* LessonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F083B24A16865B96002BB523 /* LessonViewController.m */; };
+		F083B24E16865D02002BB523 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F083B24D16865D01002BB523 /* ContentViewController.m */; };
+		F083B28C168660C0002BB523 /* d_1start.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B250168660BF002BB523 /* d_1start.xml */; };
+		F083B28D168660C0002BB523 /* d_2_01_hiragana.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B251168660BF002BB523 /* d_2_01_hiragana.xml */; };
+		F083B28E168660C0002BB523 /* d_2_02_katakana.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B252168660BF002BB523 /* d_2_02_katakana.xml */; };
+		F083B28F168660C0002BB523 /* d_2_03_kanji.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B253168660BF002BB523 /* d_2_03_kanji.xml */; };
+		F083B290168660C0002BB523 /* d_2writingsys.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B254168660BF002BB523 /* d_2writingsys.xml */; };
+		F083B291168660C0002BB523 /* d_3_01_copula.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B255168660BF002BB523 /* d_3_01_copula.xml */; };
+		F083B292168660C0002BB523 /* d_3_02_particles.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B256168660BF002BB523 /* d_3_02_particles.xml */; };
+		F083B293168660C0002BB523 /* d_3_03_adjectives.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B257168660BF002BB523 /* d_3_03_adjectives.xml */; };
+		F083B294168660C0002BB523 /* d_3_04_verbs.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B258168660BF002BB523 /* d_3_04_verbs.xml */; };
+		F083B295168660C0002BB523 /* d_3_05_negverb.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B259168660BF002BB523 /* d_3_05_negverb.xml */; };
+		F083B296168660C0002BB523 /* d_3_06_pastverb.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B25A168660BF002BB523 /* d_3_06_pastverb.xml */; };
+		F083B297168660C0002BB523 /* d_3_07_particles2.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B25B168660BF002BB523 /* d_3_07_particles2.xml */; };
+		F083B298168660C0002BB523 /* d_3_08_transtype.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B25C168660BF002BB523 /* d_3_08_transtype.xml */; };
+		F083B299168660C0002BB523 /* d_3_09_subclause.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B25D168660BF002BB523 /* d_3_09_subclause.xml */; };
+		F083B29A168660C0002BB523 /* d_3_10_particles3.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B25E168660BF002BB523 /* d_3_10_particles3.xml */; };
+		F083B29B168660C0002BB523 /* d_3_11_adgobi.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B25F168660BF002BB523 /* d_3_11_adgobi.xml */; };
+		F083B29C168660C0002BB523 /* d_3basicgram.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B260168660BF002BB523 /* d_3basicgram.xml */; };
+		F083B29D168660C0002BB523 /* d_4_01_polite.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B261168660BF002BB523 /* d_4_01_polite.xml */; };
+		F083B29E168660C0002BB523 /* d_4_02_people.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B262168660BF002BB523 /* d_4_02_people.xml */; };
+		F083B29F168660C0002BB523 /* d_4_03_question.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B263168660BF002BB523 /* d_4_03_question.xml */; };
+		F083B2A0168660C0002BB523 /* d_4_04_compound.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B264168660BF002BB523 /* d_4_04_compound.xml */; };
+		F083B2A1168660C0002BB523 /* d_4_05_teform.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B265168660BF002BB523 /* d_4_05_teform.xml */; };
+		F083B2A2168660C0002BB523 /* d_4_06_potential.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B266168660BF002BB523 /* d_4_06_potential.xml */; };
+		F083B2A3168660C0002BB523 /* d_4_07_surunaru.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B267168660BF002BB523 /* d_4_07_surunaru.xml */; };
+		F083B2A4168660C0002BB523 /* d_4_08_conditionals.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B268168660BF002BB523 /* d_4_08_conditionals.xml */; };
+		F083B2A5168660C0002BB523 /* d_4_09_must.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B269168660BF002BB523 /* d_4_09_must.xml */; };
+		F083B2A6168660C0002BB523 /* d_4_10_desire.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B26A168660BF002BB523 /* d_4_10_desire.xml */; };
+		F083B2A7168660C0002BB523 /* d_4_11_actionsubclause.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B26B168660BF002BB523 /* d_4_11_actionsubclause.xml */; };
+		F083B2A8168660C0002BB523 /* d_4_12_define.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B26C168660BF002BB523 /* d_4_12_define.xml */; };
+		F083B2A9168660C0002BB523 /* d_4_13_try.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B26D168660BF002BB523 /* d_4_13_try.xml */; };
+		F083B2AA168660C0002BB523 /* d_4_14_favors.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B26E168660BF002BB523 /* d_4_14_favors.xml */; };
+		F083B2AB168660C0002BB523 /* d_4_15_requests.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B26F168660BF002BB523 /* d_4_15_requests.xml */; };
+		F083B2AC168660C0002BB523 /* d_4_16_numbers.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B270168660C0002BB523 /* d_4_16_numbers.xml */; };
+		F083B2AD168660C0002BB523 /* d_4_18_gobi.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B271168660C0002BB523 /* d_4_18_gobi.xml */; };
+		F083B2AE168660C0002BB523 /* d_4essential.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B272168660C0002BB523 /* d_4essential.xml */; };
+		F083B2AF168660C0002BB523 /* d_5_01_causepass.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B273168660C0002BB523 /* d_5_01_causepass.xml */; };
+		F083B2B0168660C0002BB523 /* d_5_02_honorific.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B274168660C0002BB523 /* d_5_02_honorific.xml */; };
+		F083B2B1168660C0002BB523 /* d_5_03_unintended.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B275168660C0002BB523 /* d_5_03_unintended.xml */; };
+		F083B2B2168660C0002BB523 /* d_5_04_genericnouns.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B276168660C0002BB523 /* d_5_04_genericnouns.xml */; };
+		F083B2B3168660C0002BB523 /* d_5_05_certainty.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B277168660C0002BB523 /* d_5_05_certainty.xml */; };
+		F083B2B4168660C0002BB523 /* d_5_06_amount.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B278168660C0002BB523 /* d_5_06_amount.xml */; };
+		F083B2B5168660C0002BB523 /* d_5_07_similarity.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B279168660C0002BB523 /* d_5_07_similarity.xml */; };
+		F083B2B6168660C0002BB523 /* d_5_08_comparison.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B27A168660C0002BB523 /* d_5_08_comparison.xml */; };
+		F083B2B7168660C0002BB523 /* d_5_09_easyhard.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B27B168660C0002BB523 /* d_5_09_easyhard.xml */; };
+		F083B2B8168660C0002BB523 /* d_5_10_negativeverbs2.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B27C168660C0002BB523 /* d_5_10_negativeverbs2.xml */; };
+		F083B2B9168660C0002BB523 /* d_5_11_reasoning.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B27D168660C0002BB523 /* d_5_11_reasoning.xml */; };
+		F083B2BA168660C0002BB523 /* d_5_12_timeactions.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B27E168660C0002BB523 /* d_5_12_timeactions.xml */; };
+		F083B2BB168660C0002BB523 /* d_5_13_nochange.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B27F168660C0002BB523 /* d_5_13_nochange.xml */; };
+		F083B2BC168660C0002BB523 /* d_6_01_formal.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B280168660C0002BB523 /* d_6_01_formal.xml */; };
+		F083B2BD168660C0002BB523 /* d_6_02_should.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B281168660C0002BB523 /* d_6_02_should.xml */; };
+		F083B2BE168660C0002BB523 /* d_6_03_even.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B282168660C0002BB523 /* d_6_03_even.xml */; };
+		F083B2BF168660C0002BB523 /* d_6_04_signs.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B283168660C0002BB523 /* d_6_04_signs.xml */; };
+		F083B2C0168660C0002BB523 /* d_6_05_feasibility.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B284168660C0002BB523 /* d_6_05_feasibility.xml */; };
+		F083B2C1168660C0002BB523 /* d_6_06_tendency.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B285168660C0002BB523 /* d_6_06_tendency.xml */; };
+		F083B2C2168660C0002BB523 /* d_6_07_volitional2.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B286168660C0002BB523 /* d_6_07_volitional2.xml */; };
+		F083B2C3168660C0002BB523 /* d_6_08_covered.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B287168660C0002BB523 /* d_6_08_covered.xml */; };
+		F083B2C4168660C0002BB523 /* d_6_10_immedate.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B288168660C0002BB523 /* d_6_10_immedate.xml */; };
+		F083B2C5168660C0002BB523 /* d_6_11_other.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B289168660C0002BB523 /* d_6_11_other.xml */; };
+		F083B2C6168660C0002BB523 /* d_6advanced.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B28A168660C0002BB523 /* d_6advanced.xml */; };
+		F083B2C7168660C0002BB523 /* gram_credits.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B28B168660C0002BB523 /* gram_credits.xml */; };
+		F083B34916867CE8002BB523 /* popoverArrowDown.png in Resources */ = {isa = PBXBuildFile; fileRef = F083B33616867CE8002BB523 /* popoverArrowDown.png */; };
+		F083B34A16867CE8002BB523 /* popoverArrowDown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F083B33716867CE8002BB523 /* popoverArrowDown@2x.png */; };
+		F083B34B16867CE8002BB523 /* popoverArrowLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = F083B33816867CE8002BB523 /* popoverArrowLeft.png */; };
+		F083B34C16867CE8002BB523 /* popoverArrowLeft@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F083B33916867CE8002BB523 /* popoverArrowLeft@2x.png */; };
+		F083B34D16867CE8002BB523 /* popoverArrowRight.png in Resources */ = {isa = PBXBuildFile; fileRef = F083B33A16867CE8002BB523 /* popoverArrowRight.png */; };
+		F083B34E16867CE8002BB523 /* popoverArrowRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F083B33B16867CE8002BB523 /* popoverArrowRight@2x.png */; };
+		F083B34F16867CE8002BB523 /* popoverArrowUp.png in Resources */ = {isa = PBXBuildFile; fileRef = F083B33C16867CE8002BB523 /* popoverArrowUp.png */; };
+		F083B35016867CE8002BB523 /* popoverArrowUp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F083B33D16867CE8002BB523 /* popoverArrowUp@2x.png */; };
+		F083B35116867CE8002BB523 /* popoverBg.png in Resources */ = {isa = PBXBuildFile; fileRef = F083B33E16867CE8002BB523 /* popoverBg.png */; };
+		F083B35216867CE8002BB523 /* popoverBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F083B33F16867CE8002BB523 /* popoverBg@2x.png */; };
+		F083B35316867CE8002BB523 /* UIBarButtonItem+WEPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = F083B34116867CE8002BB523 /* UIBarButtonItem+WEPopover.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F083B35416867CE8002BB523 /* WEPopoverContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F083B34316867CE8002BB523 /* WEPopoverContainerView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F083B35516867CE8002BB523 /* WEPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = F083B34516867CE8002BB523 /* WEPopoverController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F083B35616867CE8002BB523 /* WETouchableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F083B34816867CE8002BB523 /* WETouchableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F083B35816867E4F002BB523 /* VocabularyDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F083B35716867E4F002BB523 /* VocabularyDetailViewController.xib */; };
 		F08686AE16791C08009C0C8B /* params_icon_over.png in Resources */ = {isa = PBXBuildFile; fileRef = F08686A216791C08009C0C8B /* params_icon_over.png */; };
 		F08686AF16791C08009C0C8B /* params_icon_over@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F08686A316791C08009C0C8B /* params_icon_over@2x.png */; };
 		F08686B216791C08009C0C8B /* shuffle_icon_over.png in Resources */ = {isa = PBXBuildFile; fileRef = F08686A616791C08009C0C8B /* shuffle_icon_over.png */; };
@@ -138,7 +201,6 @@
 		F0E6D172167E1944006DE22B /* VocabularyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0E6D171167E1944006DE22B /* VocabularyViewController.xib */; };
 		F0E6D17A167E5F98006DE22B /* VocabularyItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E6D179167E5F98006DE22B /* VocabularyItem.m */; };
 		F0E6D17D167E7AC5006DE22B /* VocabularyDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E6D17C167E7AC5006DE22B /* VocabularyDetailViewController.m */; };
-		F0E6D17F167E7AF8006DE22B /* VocabularyDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0E6D17E167E7AF8006DE22B /* VocabularyDetailViewController.xib */; };
 		F0EF2BA81683BAA90007119D /* NSObject+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EF2BA71683BAA90007119D /* NSObject+Blocks.m */; };
 /* End PBXBuildFile section */
 
@@ -237,27 +299,12 @@
 		F03603C4167DE6640003E2D3 /* helpRandom.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = helpRandom.xib; path = ressources/helpRandom.xib; sourceTree = "<group>"; };
 		F03603CC167DE7460003E2D3 /* aide_parametres.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = aide_parametres.png; path = ressources/aide_parametres.png; sourceTree = "<group>"; };
 		F03603CD167DE7460003E2D3 /* aide_parametres@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "aide_parametres@2x.png"; path = "ressources/aide_parametres@2x.png"; sourceTree = "<group>"; };
-		F040095A1659365A0090AA18 /* cmu07a.dic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cmu07a.dic; sourceTree = "<group>"; };
-		F040095C1659365A0090AA18 /* feat.params */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = feat.params; sourceTree = "<group>"; };
-		F040095D1659365A0090AA18 /* mdef */ = {isa = PBXFileReference; lastKnownFileType = file; path = mdef; sourceTree = "<group>"; };
-		F040095E1659365A0090AA18 /* means */ = {isa = PBXFileReference; lastKnownFileType = file; path = means; sourceTree = "<group>"; };
-		F040095F1659365A0090AA18 /* noisedict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = noisedict; sourceTree = "<group>"; };
-		F04009601659365A0090AA18 /* sendump */ = {isa = PBXFileReference; lastKnownFileType = file; path = sendump; sourceTree = "<group>"; };
-		F04009611659365A0090AA18 /* transition_matrices */ = {isa = PBXFileReference; lastKnownFileType = file; path = transition_matrices; sourceTree = "<group>"; };
-		F04009621659365A0090AA18 /* variances */ = {isa = PBXFileReference; lastKnownFileType = file; path = variances; sourceTree = "<group>"; };
-		F04009631659365A0090AA18 /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenEars.framework; sourceTree = "<group>"; };
-		F04009641659365A0090AA18 /* OpenEars1.dic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenEars1.dic; sourceTree = "<group>"; };
-		F04009651659365A0090AA18 /* OpenEars1.gram */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenEars1.gram; sourceTree = "<group>"; };
-		F04009661659365A0090AA18 /* OpenEars1.languagemodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenEars1.languagemodel; sourceTree = "<group>"; };
-		F04009671659365A0090AA18 /* OpenEars2.gram */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenEars2.gram; sourceTree = "<group>"; };
-		F04009681659365A0090AA18 /* OpenEarsCorpus.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenEarsCorpus.txt; sourceTree = "<group>"; };
-		F04009691659365A0090AA18 /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
 		F040097A165CBDDF0090AA18 /* epkyouka.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = epkyouka.ttf; path = ressources/epkyouka.ttf; sourceTree = "<group>"; };
 		F0400992165CC5050090AA18 /* KanaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KanaView.h; path = classes/KanaView.h; sourceTree = "<group>"; };
 		F0400993165CC5050090AA18 /* KanaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KanaView.m; path = classes/KanaView.m; sourceTree = "<group>"; };
 		F04009A9165D5C9F0090AA18 /* constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = constant.h; path = classes/constant.h; sourceTree = "<group>"; };
-		F04009AC165D5FDF0090AA18 /* LessonControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LessonControllerViewController.h; path = classes/LessonControllerViewController.h; sourceTree = "<group>"; };
-		F04009AD165D5FE00090AA18 /* LessonControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LessonControllerViewController.m; path = classes/LessonControllerViewController.m; sourceTree = "<group>"; };
+		F04009AC165D5FDF0090AA18 /* ExerciseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExerciseController.h; path = classes/ExerciseController.h; sourceTree = "<group>"; };
+		F04009AD165D5FE00090AA18 /* ExerciseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExerciseController.m; path = classes/ExerciseController.m; sourceTree = "<group>"; };
 		F04009AF165D61480090AA18 /* KanaQCMController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KanaQCMController.m; path = classes/KanaQCMController.m; sourceTree = "<group>"; };
 		F04C00B21642E33300EAF61D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F060E96F163C0A4B009C01E3 /* J'apprend le japonais.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "J'apprend le japonais.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -281,6 +328,92 @@
 		F061D994167150B5007E7422 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		F073AE0316431ACA00332D78 /* SectionLessonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SectionLessonCell.h; path = Classes/SectionLessonCell.h; sourceTree = "<group>"; };
 		F073AE0416431ACA00332D78 /* SectionLessonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SectionLessonCell.m; path = Classes/SectionLessonCell.m; sourceTree = "<group>"; };
+		F083B2411686568C002BB523 /* CMHTMLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CMHTMLView.h; path = classes/CMHTMLView.h; sourceTree = "<group>"; };
+		F083B2421686568C002BB523 /* CMHTMLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CMHTMLView.m; path = classes/CMHTMLView.m; sourceTree = "<group>"; };
+		F083B24916865B96002BB523 /* LessonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LessonViewController.h; path = classes/LessonViewController.h; sourceTree = "<group>"; };
+		F083B24A16865B96002BB523 /* LessonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LessonViewController.m; path = classes/LessonViewController.m; sourceTree = "<group>"; };
+		F083B24C16865D01002BB523 /* ContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContentViewController.h; path = classes/ContentViewController.h; sourceTree = "<group>"; };
+		F083B24D16865D01002BB523 /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContentViewController.m; path = classes/ContentViewController.m; sourceTree = "<group>"; };
+		F083B250168660BF002BB523 /* d_1start.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_1start.xml; sourceTree = "<group>"; };
+		F083B251168660BF002BB523 /* d_2_01_hiragana.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_2_01_hiragana.xml; sourceTree = "<group>"; };
+		F083B252168660BF002BB523 /* d_2_02_katakana.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_2_02_katakana.xml; sourceTree = "<group>"; };
+		F083B253168660BF002BB523 /* d_2_03_kanji.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_2_03_kanji.xml; sourceTree = "<group>"; };
+		F083B254168660BF002BB523 /* d_2writingsys.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_2writingsys.xml; sourceTree = "<group>"; };
+		F083B255168660BF002BB523 /* d_3_01_copula.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_3_01_copula.xml; sourceTree = "<group>"; };
+		F083B256168660BF002BB523 /* d_3_02_particles.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_3_02_particles.xml; sourceTree = "<group>"; };
+		F083B257168660BF002BB523 /* d_3_03_adjectives.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_3_03_adjectives.xml; sourceTree = "<group>"; };
+		F083B258168660BF002BB523 /* d_3_04_verbs.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_3_04_verbs.xml; sourceTree = "<group>"; };
+		F083B259168660BF002BB523 /* d_3_05_negverb.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_3_05_negverb.xml; sourceTree = "<group>"; };
+		F083B25A168660BF002BB523 /* d_3_06_pastverb.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_3_06_pastverb.xml; sourceTree = "<group>"; };
+		F083B25B168660BF002BB523 /* d_3_07_particles2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_3_07_particles2.xml; sourceTree = "<group>"; };
+		F083B25C168660BF002BB523 /* d_3_08_transtype.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_3_08_transtype.xml; sourceTree = "<group>"; };
+		F083B25D168660BF002BB523 /* d_3_09_subclause.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_3_09_subclause.xml; sourceTree = "<group>"; };
+		F083B25E168660BF002BB523 /* d_3_10_particles3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_3_10_particles3.xml; sourceTree = "<group>"; };
+		F083B25F168660BF002BB523 /* d_3_11_adgobi.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_3_11_adgobi.xml; sourceTree = "<group>"; };
+		F083B260168660BF002BB523 /* d_3basicgram.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_3basicgram.xml; sourceTree = "<group>"; };
+		F083B261168660BF002BB523 /* d_4_01_polite.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4_01_polite.xml; sourceTree = "<group>"; };
+		F083B262168660BF002BB523 /* d_4_02_people.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4_02_people.xml; sourceTree = "<group>"; };
+		F083B263168660BF002BB523 /* d_4_03_question.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4_03_question.xml; sourceTree = "<group>"; };
+		F083B264168660BF002BB523 /* d_4_04_compound.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4_04_compound.xml; sourceTree = "<group>"; };
+		F083B265168660BF002BB523 /* d_4_05_teform.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4_05_teform.xml; sourceTree = "<group>"; };
+		F083B266168660BF002BB523 /* d_4_06_potential.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4_06_potential.xml; sourceTree = "<group>"; };
+		F083B267168660BF002BB523 /* d_4_07_surunaru.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4_07_surunaru.xml; sourceTree = "<group>"; };
+		F083B268168660BF002BB523 /* d_4_08_conditionals.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4_08_conditionals.xml; sourceTree = "<group>"; };
+		F083B269168660BF002BB523 /* d_4_09_must.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4_09_must.xml; sourceTree = "<group>"; };
+		F083B26A168660BF002BB523 /* d_4_10_desire.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4_10_desire.xml; sourceTree = "<group>"; };
+		F083B26B168660BF002BB523 /* d_4_11_actionsubclause.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4_11_actionsubclause.xml; sourceTree = "<group>"; };
+		F083B26C168660BF002BB523 /* d_4_12_define.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4_12_define.xml; sourceTree = "<group>"; };
+		F083B26D168660BF002BB523 /* d_4_13_try.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4_13_try.xml; sourceTree = "<group>"; };
+		F083B26E168660BF002BB523 /* d_4_14_favors.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4_14_favors.xml; sourceTree = "<group>"; };
+		F083B26F168660BF002BB523 /* d_4_15_requests.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4_15_requests.xml; sourceTree = "<group>"; };
+		F083B270168660C0002BB523 /* d_4_16_numbers.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4_16_numbers.xml; sourceTree = "<group>"; };
+		F083B271168660C0002BB523 /* d_4_18_gobi.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4_18_gobi.xml; sourceTree = "<group>"; };
+		F083B272168660C0002BB523 /* d_4essential.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4essential.xml; sourceTree = "<group>"; };
+		F083B273168660C0002BB523 /* d_5_01_causepass.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_5_01_causepass.xml; sourceTree = "<group>"; };
+		F083B274168660C0002BB523 /* d_5_02_honorific.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_5_02_honorific.xml; sourceTree = "<group>"; };
+		F083B275168660C0002BB523 /* d_5_03_unintended.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_5_03_unintended.xml; sourceTree = "<group>"; };
+		F083B276168660C0002BB523 /* d_5_04_genericnouns.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_5_04_genericnouns.xml; sourceTree = "<group>"; };
+		F083B277168660C0002BB523 /* d_5_05_certainty.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_5_05_certainty.xml; sourceTree = "<group>"; };
+		F083B278168660C0002BB523 /* d_5_06_amount.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_5_06_amount.xml; sourceTree = "<group>"; };
+		F083B279168660C0002BB523 /* d_5_07_similarity.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_5_07_similarity.xml; sourceTree = "<group>"; };
+		F083B27A168660C0002BB523 /* d_5_08_comparison.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_5_08_comparison.xml; sourceTree = "<group>"; };
+		F083B27B168660C0002BB523 /* d_5_09_easyhard.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_5_09_easyhard.xml; sourceTree = "<group>"; };
+		F083B27C168660C0002BB523 /* d_5_10_negativeverbs2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_5_10_negativeverbs2.xml; sourceTree = "<group>"; };
+		F083B27D168660C0002BB523 /* d_5_11_reasoning.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_5_11_reasoning.xml; sourceTree = "<group>"; };
+		F083B27E168660C0002BB523 /* d_5_12_timeactions.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_5_12_timeactions.xml; sourceTree = "<group>"; };
+		F083B27F168660C0002BB523 /* d_5_13_nochange.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_5_13_nochange.xml; sourceTree = "<group>"; };
+		F083B280168660C0002BB523 /* d_6_01_formal.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_6_01_formal.xml; sourceTree = "<group>"; };
+		F083B281168660C0002BB523 /* d_6_02_should.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_6_02_should.xml; sourceTree = "<group>"; };
+		F083B282168660C0002BB523 /* d_6_03_even.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_6_03_even.xml; sourceTree = "<group>"; };
+		F083B283168660C0002BB523 /* d_6_04_signs.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_6_04_signs.xml; sourceTree = "<group>"; };
+		F083B284168660C0002BB523 /* d_6_05_feasibility.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_6_05_feasibility.xml; sourceTree = "<group>"; };
+		F083B285168660C0002BB523 /* d_6_06_tendency.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_6_06_tendency.xml; sourceTree = "<group>"; };
+		F083B286168660C0002BB523 /* d_6_07_volitional2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_6_07_volitional2.xml; sourceTree = "<group>"; };
+		F083B287168660C0002BB523 /* d_6_08_covered.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_6_08_covered.xml; sourceTree = "<group>"; };
+		F083B288168660C0002BB523 /* d_6_10_immedate.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_6_10_immedate.xml; sourceTree = "<group>"; };
+		F083B289168660C0002BB523 /* d_6_11_other.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_6_11_other.xml; sourceTree = "<group>"; };
+		F083B28A168660C0002BB523 /* d_6advanced.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_6advanced.xml; sourceTree = "<group>"; };
+		F083B28B168660C0002BB523 /* gram_credits.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gram_credits.xml; sourceTree = "<group>"; };
+		F083B33616867CE8002BB523 /* popoverArrowDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = popoverArrowDown.png; sourceTree = "<group>"; };
+		F083B33716867CE8002BB523 /* popoverArrowDown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popoverArrowDown@2x.png"; sourceTree = "<group>"; };
+		F083B33816867CE8002BB523 /* popoverArrowLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = popoverArrowLeft.png; sourceTree = "<group>"; };
+		F083B33916867CE8002BB523 /* popoverArrowLeft@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popoverArrowLeft@2x.png"; sourceTree = "<group>"; };
+		F083B33A16867CE8002BB523 /* popoverArrowRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = popoverArrowRight.png; sourceTree = "<group>"; };
+		F083B33B16867CE8002BB523 /* popoverArrowRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popoverArrowRight@2x.png"; sourceTree = "<group>"; };
+		F083B33C16867CE8002BB523 /* popoverArrowUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = popoverArrowUp.png; sourceTree = "<group>"; };
+		F083B33D16867CE8002BB523 /* popoverArrowUp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popoverArrowUp@2x.png"; sourceTree = "<group>"; };
+		F083B33E16867CE8002BB523 /* popoverBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = popoverBg.png; sourceTree = "<group>"; };
+		F083B33F16867CE8002BB523 /* popoverBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popoverBg@2x.png"; sourceTree = "<group>"; };
+		F083B34016867CE8002BB523 /* UIBarButtonItem+WEPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+WEPopover.h"; sourceTree = "<group>"; };
+		F083B34116867CE8002BB523 /* UIBarButtonItem+WEPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+WEPopover.m"; sourceTree = "<group>"; };
+		F083B34216867CE8002BB523 /* WEPopoverContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WEPopoverContainerView.h; sourceTree = "<group>"; };
+		F083B34316867CE8002BB523 /* WEPopoverContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WEPopoverContainerView.m; sourceTree = "<group>"; };
+		F083B34416867CE8002BB523 /* WEPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WEPopoverController.h; sourceTree = "<group>"; };
+		F083B34516867CE8002BB523 /* WEPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WEPopoverController.m; sourceTree = "<group>"; };
+		F083B34616867CE8002BB523 /* WEPopoverParentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WEPopoverParentView.h; sourceTree = "<group>"; };
+		F083B34716867CE8002BB523 /* WETouchableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WETouchableView.h; sourceTree = "<group>"; };
+		F083B34816867CE8002BB523 /* WETouchableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WETouchableView.m; sourceTree = "<group>"; };
+		F083B35716867E4F002BB523 /* VocabularyDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VocabularyDetailViewController.xib; path = ressources/VocabularyDetailViewController.xib; sourceTree = "<group>"; };
 		F08686A216791C08009C0C8B /* params_icon_over.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = params_icon_over.png; path = ressources/params_icon_over.png; sourceTree = "<group>"; };
 		F08686A316791C08009C0C8B /* params_icon_over@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "params_icon_over@2x.png"; path = "ressources/params_icon_over@2x.png"; sourceTree = "<group>"; };
 		F08686A616791C08009C0C8B /* shuffle_icon_over.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shuffle_icon_over.png; path = ressources/shuffle_icon_over.png; sourceTree = "<group>"; };
@@ -679,7 +812,6 @@
 		F0E6D179167E5F98006DE22B /* VocabularyItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VocabularyItem.m; path = classes/VocabularyItem.m; sourceTree = "<group>"; };
 		F0E6D17B167E7AC5006DE22B /* VocabularyDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VocabularyDetailViewController.h; path = classes/VocabularyDetailViewController.h; sourceTree = "<group>"; };
 		F0E6D17C167E7AC5006DE22B /* VocabularyDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VocabularyDetailViewController.m; path = classes/VocabularyDetailViewController.m; sourceTree = "<group>"; };
-		F0E6D17E167E7AF8006DE22B /* VocabularyDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VocabularyDetailViewController.xib; sourceTree = "<group>"; };
 		F0EF2BA61683BAA90007119D /* NSObject+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+Blocks.h"; path = "classes/NSObject+Blocks.h"; sourceTree = "<group>"; };
 		F0EF2BA71683BAA90007119D /* NSObject+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Blocks.m"; path = "classes/NSObject+Blocks.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -699,8 +831,6 @@
 				F060E974163C0A4B009C01E3 /* UIKit.framework in Frameworks */,
 				F060E976163C0A4B009C01E3 /* Foundation.framework in Frameworks */,
 				F060E978163C0A4B009C01E3 /* CoreGraphics.framework in Frameworks */,
-				F04009721659365A0090AA18 /* OpenEars.framework in Frameworks */,
-				F04009781659365A0090AA18 /* Slt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -710,6 +840,7 @@
 		F00D6F971674AF98001AF0B9 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				F02D138D164837750093EAD0 /* NSMutableArray+Shuffling.h */,
 				F08686DA167CBFDF009C0C8B /* NSTimer+Blocks.h */,
 				F08686DB167CBFE0009C0C8B /* NSTimer+Blocks.m */,
 				F00D6F991674AFB1001AF0B9 /* UIColor+RGB.h */,
@@ -801,8 +932,8 @@
 		F00D6F9E1674B034001AF0B9 /* iphone */ = {
 			isa = PBXGroup;
 			children = (
+				F083B35716867E4F002BB523 /* VocabularyDetailViewController.xib */,
 				F0E6D171167E1944006DE22B /* VocabularyViewController.xib */,
-				F0E6D17E167E7AF8006DE22B /* VocabularyDetailViewController.xib */,
 				F0CE948D163F2F95004F7E2B /* ParametersCell.xib */,
 				F03603C0167DE6640003E2D3 /* helpParameters.xib */,
 				F03603C2167DE6640003E2D3 /* helpQCM.xib */,
@@ -820,17 +951,6 @@
 				F00D6F9E1674B034001AF0B9 /* iphone */,
 			);
 			name = views;
-			sourceTree = "<group>";
-		};
-		F0283AAC16850914007F3B0F /* old */ = {
-			isa = PBXGroup;
-			children = (
-				F04009AC165D5FDF0090AA18 /* LessonControllerViewController.h */,
-				F04009AD165D5FE00090AA18 /* LessonControllerViewController.m */,
-				F08686BD16792898009C0C8B /* HelpViewController.h */,
-				F08686BE16792898009C0C8B /* HelpViewController.m */,
-			);
-			name = old;
 			sourceTree = "<group>";
 		};
 		F02D1388164836EC0093EAD0 /* PSTCollectionView */ = {
@@ -863,52 +983,14 @@
 			name = PSTCollectionView;
 			sourceTree = "<group>";
 		};
-		F02D13891648370F0093EAD0 /* categories */ = {
-			isa = PBXGroup;
-			children = (
-				F02D138D164837750093EAD0 /* NSMutableArray+Shuffling.h */,
-			);
-			name = categories;
-			sourceTree = "<group>";
-		};
-		F04009591659365A0090AA18 /* Framework */ = {
-			isa = PBXGroup;
-			children = (
-				F040095A1659365A0090AA18 /* cmu07a.dic */,
-				F040095B1659365A0090AA18 /* hub4wsj_sc_8k */,
-				F04009631659365A0090AA18 /* OpenEars.framework */,
-				F04009641659365A0090AA18 /* OpenEars1.dic */,
-				F04009651659365A0090AA18 /* OpenEars1.gram */,
-				F04009661659365A0090AA18 /* OpenEars1.languagemodel */,
-				F04009671659365A0090AA18 /* OpenEars2.gram */,
-				F04009681659365A0090AA18 /* OpenEarsCorpus.txt */,
-				F04009691659365A0090AA18 /* Slt.framework */,
-			);
-			path = Framework;
-			sourceTree = "<group>";
-		};
-		F040095B1659365A0090AA18 /* hub4wsj_sc_8k */ = {
-			isa = PBXGroup;
-			children = (
-				F040095C1659365A0090AA18 /* feat.params */,
-				F040095D1659365A0090AA18 /* mdef */,
-				F040095E1659365A0090AA18 /* means */,
-				F040095F1659365A0090AA18 /* noisedict */,
-				F04009601659365A0090AA18 /* sendump */,
-				F04009611659365A0090AA18 /* transition_matrices */,
-				F04009621659365A0090AA18 /* variances */,
-			);
-			path = hub4wsj_sc_8k;
-			sourceTree = "<group>";
-		};
 		F04C008E1642E19300EAF61D /* librairies */ = {
 			isa = PBXGroup;
 			children = (
-				F09E45C1167FC59400909F57 /* Headers */,
+				F083B33516867CE8002BB523 /* WEPopover */,
+				F083B23D16865650002BB523 /* CMHTMLView */,
+				F09E45C1167FC59400909F57 /* GData */,
 				F09E46FF1682785700909F57 /* pullToRefresh */,
 				F00D6F971674AF98001AF0B9 /* Categories */,
-				F04009591659365A0090AA18 /* Framework */,
-				F02D13891648370F0093EAD0 /* categories */,
 				F02D1388164836EC0093EAD0 /* PSTCollectionView */,
 			);
 			name = librairies;
@@ -974,11 +1056,116 @@
 		F060E999163C0C3C009C01E3 /* ressources */ = {
 			isa = PBXGroup;
 			children = (
+				F083B24F168660BF002BB523 /* fr */,
 				F00D6F9C1674B029001AF0B9 /* images */,
 				F040097A165CBDDF0090AA18 /* epkyouka.ttf */,
 				F0CE948F163F2F95004F7E2B /* Model.xcdatamodeld */,
 			);
 			name = ressources;
+			sourceTree = "<group>";
+		};
+		F083B23D16865650002BB523 /* CMHTMLView */ = {
+			isa = PBXGroup;
+			children = (
+				F083B2411686568C002BB523 /* CMHTMLView.h */,
+				F083B2421686568C002BB523 /* CMHTMLView.m */,
+			);
+			name = CMHTMLView;
+			sourceTree = "<group>";
+		};
+		F083B24F168660BF002BB523 /* fr */ = {
+			isa = PBXGroup;
+			children = (
+				F083B250168660BF002BB523 /* d_1start.xml */,
+				F083B251168660BF002BB523 /* d_2_01_hiragana.xml */,
+				F083B252168660BF002BB523 /* d_2_02_katakana.xml */,
+				F083B253168660BF002BB523 /* d_2_03_kanji.xml */,
+				F083B254168660BF002BB523 /* d_2writingsys.xml */,
+				F083B255168660BF002BB523 /* d_3_01_copula.xml */,
+				F083B256168660BF002BB523 /* d_3_02_particles.xml */,
+				F083B257168660BF002BB523 /* d_3_03_adjectives.xml */,
+				F083B258168660BF002BB523 /* d_3_04_verbs.xml */,
+				F083B259168660BF002BB523 /* d_3_05_negverb.xml */,
+				F083B25A168660BF002BB523 /* d_3_06_pastverb.xml */,
+				F083B25B168660BF002BB523 /* d_3_07_particles2.xml */,
+				F083B25C168660BF002BB523 /* d_3_08_transtype.xml */,
+				F083B25D168660BF002BB523 /* d_3_09_subclause.xml */,
+				F083B25E168660BF002BB523 /* d_3_10_particles3.xml */,
+				F083B25F168660BF002BB523 /* d_3_11_adgobi.xml */,
+				F083B260168660BF002BB523 /* d_3basicgram.xml */,
+				F083B261168660BF002BB523 /* d_4_01_polite.xml */,
+				F083B262168660BF002BB523 /* d_4_02_people.xml */,
+				F083B263168660BF002BB523 /* d_4_03_question.xml */,
+				F083B264168660BF002BB523 /* d_4_04_compound.xml */,
+				F083B265168660BF002BB523 /* d_4_05_teform.xml */,
+				F083B266168660BF002BB523 /* d_4_06_potential.xml */,
+				F083B267168660BF002BB523 /* d_4_07_surunaru.xml */,
+				F083B268168660BF002BB523 /* d_4_08_conditionals.xml */,
+				F083B269168660BF002BB523 /* d_4_09_must.xml */,
+				F083B26A168660BF002BB523 /* d_4_10_desire.xml */,
+				F083B26B168660BF002BB523 /* d_4_11_actionsubclause.xml */,
+				F083B26C168660BF002BB523 /* d_4_12_define.xml */,
+				F083B26D168660BF002BB523 /* d_4_13_try.xml */,
+				F083B26E168660BF002BB523 /* d_4_14_favors.xml */,
+				F083B26F168660BF002BB523 /* d_4_15_requests.xml */,
+				F083B270168660C0002BB523 /* d_4_16_numbers.xml */,
+				F083B271168660C0002BB523 /* d_4_18_gobi.xml */,
+				F083B272168660C0002BB523 /* d_4essential.xml */,
+				F083B273168660C0002BB523 /* d_5_01_causepass.xml */,
+				F083B274168660C0002BB523 /* d_5_02_honorific.xml */,
+				F083B275168660C0002BB523 /* d_5_03_unintended.xml */,
+				F083B276168660C0002BB523 /* d_5_04_genericnouns.xml */,
+				F083B277168660C0002BB523 /* d_5_05_certainty.xml */,
+				F083B278168660C0002BB523 /* d_5_06_amount.xml */,
+				F083B279168660C0002BB523 /* d_5_07_similarity.xml */,
+				F083B27A168660C0002BB523 /* d_5_08_comparison.xml */,
+				F083B27B168660C0002BB523 /* d_5_09_easyhard.xml */,
+				F083B27C168660C0002BB523 /* d_5_10_negativeverbs2.xml */,
+				F083B27D168660C0002BB523 /* d_5_11_reasoning.xml */,
+				F083B27E168660C0002BB523 /* d_5_12_timeactions.xml */,
+				F083B27F168660C0002BB523 /* d_5_13_nochange.xml */,
+				F083B280168660C0002BB523 /* d_6_01_formal.xml */,
+				F083B281168660C0002BB523 /* d_6_02_should.xml */,
+				F083B282168660C0002BB523 /* d_6_03_even.xml */,
+				F083B283168660C0002BB523 /* d_6_04_signs.xml */,
+				F083B284168660C0002BB523 /* d_6_05_feasibility.xml */,
+				F083B285168660C0002BB523 /* d_6_06_tendency.xml */,
+				F083B286168660C0002BB523 /* d_6_07_volitional2.xml */,
+				F083B287168660C0002BB523 /* d_6_08_covered.xml */,
+				F083B288168660C0002BB523 /* d_6_10_immedate.xml */,
+				F083B289168660C0002BB523 /* d_6_11_other.xml */,
+				F083B28A168660C0002BB523 /* d_6advanced.xml */,
+				F083B28B168660C0002BB523 /* gram_credits.xml */,
+			);
+			name = fr;
+			path = ressources/fr;
+			sourceTree = "<group>";
+		};
+		F083B33516867CE8002BB523 /* WEPopover */ = {
+			isa = PBXGroup;
+			children = (
+				F083B33616867CE8002BB523 /* popoverArrowDown.png */,
+				F083B33716867CE8002BB523 /* popoverArrowDown@2x.png */,
+				F083B33816867CE8002BB523 /* popoverArrowLeft.png */,
+				F083B33916867CE8002BB523 /* popoverArrowLeft@2x.png */,
+				F083B33A16867CE8002BB523 /* popoverArrowRight.png */,
+				F083B33B16867CE8002BB523 /* popoverArrowRight@2x.png */,
+				F083B33C16867CE8002BB523 /* popoverArrowUp.png */,
+				F083B33D16867CE8002BB523 /* popoverArrowUp@2x.png */,
+				F083B33E16867CE8002BB523 /* popoverBg.png */,
+				F083B33F16867CE8002BB523 /* popoverBg@2x.png */,
+				F083B34016867CE8002BB523 /* UIBarButtonItem+WEPopover.h */,
+				F083B34116867CE8002BB523 /* UIBarButtonItem+WEPopover.m */,
+				F083B34216867CE8002BB523 /* WEPopoverContainerView.h */,
+				F083B34316867CE8002BB523 /* WEPopoverContainerView.m */,
+				F083B34416867CE8002BB523 /* WEPopoverController.h */,
+				F083B34516867CE8002BB523 /* WEPopoverController.m */,
+				F083B34616867CE8002BB523 /* WEPopoverParentView.h */,
+				F083B34716867CE8002BB523 /* WETouchableView.h */,
+				F083B34816867CE8002BB523 /* WETouchableView.m */,
+			);
+			name = WEPopover;
+			path = vendors/WEPopover;
 			sourceTree = "<group>";
 		};
 		F09E45A8167FC4BE00909F57 /* Products */ = {
@@ -993,7 +1180,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F09E45C1167FC59400909F57 /* Headers */ = {
+		F09E45C1167FC59400909F57 /* GData */ = {
 			isa = PBXGroup;
 			children = (
 				F09E45C2167FC59400909F57 /* GData.h */,
@@ -1314,7 +1501,7 @@
 				F09E46FD167FC59500909F57 /* SBJsonParser.h */,
 				F09E46FE167FC59500909F57 /* SBJsonWriter.h */,
 			);
-			name = Headers;
+			name = GData;
 			path = "../../../../../Library/Developer/Xcode/DerivedData/J'apprend_le_japonais-hbldlgdwnbhiazaufpfeoychqnzb/Build/Products/Release-iphonesimulator/Headers";
 			sourceTree = "<group>";
 		};
@@ -1368,11 +1555,14 @@
 		F0CE949B163F2FD2004F7E2B /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F0283AAC16850914007F3B0F /* old */,
+				F04009AC165D5FDF0090AA18 /* ExerciseController.h */,
+				F04009AD165D5FE00090AA18 /* ExerciseController.m */,
 				F0283AA91685068B007F3B0F /* HomeViewController.h */,
 				F0283AAA1685068B007F3B0F /* HomeViewController.m */,
 				F0283AAD16850995007F3B0F /* HomeKanaViewController.h */,
 				F0283AAE16850995007F3B0F /* HomeKanaViewController.m */,
+				F08686BD16792898009C0C8B /* HelpViewController.h */,
+				F08686BE16792898009C0C8B /* HelpViewController.m */,
 				F02D13811647EA240093EAD0 /* KanaQCMController.h */,
 				F04009AF165D61480090AA18 /* KanaQCMController.m */,
 				F0CE94D9164084B9004F7E2B /* KanaRandomController.h */,
@@ -1383,6 +1573,10 @@
 				F0E6D16D167E190A006DE22B /* VocabularyViewController.m */,
 				F0E6D17B167E7AC5006DE22B /* VocabularyDetailViewController.h */,
 				F0E6D17C167E7AC5006DE22B /* VocabularyDetailViewController.m */,
+				F083B24916865B96002BB523 /* LessonViewController.h */,
+				F083B24A16865B96002BB523 /* LessonViewController.m */,
+				F083B24C16865D01002BB523 /* ContentViewController.h */,
+				F083B24D16865D01002BB523 /* ContentViewController.m */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -1507,19 +1701,6 @@
 				F060E97E163C0A4B009C01E3 /* InfoPlist.strings in Resources */,
 				F0CE9495163F2F95004F7E2B /* ParametersCell.xib in Resources */,
 				F02D137A1646AAE90093EAD0 /* tired-konata.jpeg in Resources */,
-				F040096A1659365A0090AA18 /* cmu07a.dic in Resources */,
-				F040096B1659365A0090AA18 /* feat.params in Resources */,
-				F040096C1659365A0090AA18 /* mdef in Resources */,
-				F040096D1659365A0090AA18 /* means in Resources */,
-				F040096E1659365A0090AA18 /* noisedict in Resources */,
-				F040096F1659365A0090AA18 /* sendump in Resources */,
-				F04009701659365A0090AA18 /* transition_matrices in Resources */,
-				F04009711659365A0090AA18 /* variances in Resources */,
-				F04009731659365A0090AA18 /* OpenEars1.dic in Resources */,
-				F04009741659365A0090AA18 /* OpenEars1.gram in Resources */,
-				F04009751659365A0090AA18 /* OpenEars1.languagemodel in Resources */,
-				F04009761659365A0090AA18 /* OpenEars2.gram in Resources */,
-				F04009771659365A0090AA18 /* OpenEarsCorpus.txt in Resources */,
 				F040097B165CBDDF0090AA18 /* epkyouka.ttf in Resources */,
 				F061D984166BDD05007E7422 /* nekoneko_applications_alt.png in Resources */,
 				F061D985166BDD05007E7422 /* nekoneko_applications_alt@2x.png in Resources */,
@@ -1581,9 +1762,79 @@
 				F03603CE167DE7460003E2D3 /* aide_parametres.png in Resources */,
 				F03603CF167DE7460003E2D3 /* aide_parametres@2x.png in Resources */,
 				F0E6D172167E1944006DE22B /* VocabularyViewController.xib in Resources */,
-				F0E6D17F167E7AF8006DE22B /* VocabularyDetailViewController.xib in Resources */,
 				F0BDD56D167FB0E100F8A782 /* nekosensei_kana_57.png in Resources */,
 				F0BDD56F167FB0EF00F8A782 /* nekosensei_kana_114.png in Resources */,
+				F083B28C168660C0002BB523 /* d_1start.xml in Resources */,
+				F083B28D168660C0002BB523 /* d_2_01_hiragana.xml in Resources */,
+				F083B28E168660C0002BB523 /* d_2_02_katakana.xml in Resources */,
+				F083B28F168660C0002BB523 /* d_2_03_kanji.xml in Resources */,
+				F083B290168660C0002BB523 /* d_2writingsys.xml in Resources */,
+				F083B291168660C0002BB523 /* d_3_01_copula.xml in Resources */,
+				F083B292168660C0002BB523 /* d_3_02_particles.xml in Resources */,
+				F083B293168660C0002BB523 /* d_3_03_adjectives.xml in Resources */,
+				F083B294168660C0002BB523 /* d_3_04_verbs.xml in Resources */,
+				F083B295168660C0002BB523 /* d_3_05_negverb.xml in Resources */,
+				F083B296168660C0002BB523 /* d_3_06_pastverb.xml in Resources */,
+				F083B297168660C0002BB523 /* d_3_07_particles2.xml in Resources */,
+				F083B298168660C0002BB523 /* d_3_08_transtype.xml in Resources */,
+				F083B299168660C0002BB523 /* d_3_09_subclause.xml in Resources */,
+				F083B29A168660C0002BB523 /* d_3_10_particles3.xml in Resources */,
+				F083B29B168660C0002BB523 /* d_3_11_adgobi.xml in Resources */,
+				F083B29C168660C0002BB523 /* d_3basicgram.xml in Resources */,
+				F083B29D168660C0002BB523 /* d_4_01_polite.xml in Resources */,
+				F083B29E168660C0002BB523 /* d_4_02_people.xml in Resources */,
+				F083B29F168660C0002BB523 /* d_4_03_question.xml in Resources */,
+				F083B2A0168660C0002BB523 /* d_4_04_compound.xml in Resources */,
+				F083B2A1168660C0002BB523 /* d_4_05_teform.xml in Resources */,
+				F083B2A2168660C0002BB523 /* d_4_06_potential.xml in Resources */,
+				F083B2A3168660C0002BB523 /* d_4_07_surunaru.xml in Resources */,
+				F083B2A4168660C0002BB523 /* d_4_08_conditionals.xml in Resources */,
+				F083B2A5168660C0002BB523 /* d_4_09_must.xml in Resources */,
+				F083B2A6168660C0002BB523 /* d_4_10_desire.xml in Resources */,
+				F083B2A7168660C0002BB523 /* d_4_11_actionsubclause.xml in Resources */,
+				F083B2A8168660C0002BB523 /* d_4_12_define.xml in Resources */,
+				F083B2A9168660C0002BB523 /* d_4_13_try.xml in Resources */,
+				F083B2AA168660C0002BB523 /* d_4_14_favors.xml in Resources */,
+				F083B2AB168660C0002BB523 /* d_4_15_requests.xml in Resources */,
+				F083B2AC168660C0002BB523 /* d_4_16_numbers.xml in Resources */,
+				F083B2AD168660C0002BB523 /* d_4_18_gobi.xml in Resources */,
+				F083B2AE168660C0002BB523 /* d_4essential.xml in Resources */,
+				F083B2AF168660C0002BB523 /* d_5_01_causepass.xml in Resources */,
+				F083B2B0168660C0002BB523 /* d_5_02_honorific.xml in Resources */,
+				F083B2B1168660C0002BB523 /* d_5_03_unintended.xml in Resources */,
+				F083B2B2168660C0002BB523 /* d_5_04_genericnouns.xml in Resources */,
+				F083B2B3168660C0002BB523 /* d_5_05_certainty.xml in Resources */,
+				F083B2B4168660C0002BB523 /* d_5_06_amount.xml in Resources */,
+				F083B2B5168660C0002BB523 /* d_5_07_similarity.xml in Resources */,
+				F083B2B6168660C0002BB523 /* d_5_08_comparison.xml in Resources */,
+				F083B2B7168660C0002BB523 /* d_5_09_easyhard.xml in Resources */,
+				F083B2B8168660C0002BB523 /* d_5_10_negativeverbs2.xml in Resources */,
+				F083B2B9168660C0002BB523 /* d_5_11_reasoning.xml in Resources */,
+				F083B2BA168660C0002BB523 /* d_5_12_timeactions.xml in Resources */,
+				F083B2BB168660C0002BB523 /* d_5_13_nochange.xml in Resources */,
+				F083B2BC168660C0002BB523 /* d_6_01_formal.xml in Resources */,
+				F083B2BD168660C0002BB523 /* d_6_02_should.xml in Resources */,
+				F083B2BE168660C0002BB523 /* d_6_03_even.xml in Resources */,
+				F083B2BF168660C0002BB523 /* d_6_04_signs.xml in Resources */,
+				F083B2C0168660C0002BB523 /* d_6_05_feasibility.xml in Resources */,
+				F083B2C1168660C0002BB523 /* d_6_06_tendency.xml in Resources */,
+				F083B2C2168660C0002BB523 /* d_6_07_volitional2.xml in Resources */,
+				F083B2C3168660C0002BB523 /* d_6_08_covered.xml in Resources */,
+				F083B2C4168660C0002BB523 /* d_6_10_immedate.xml in Resources */,
+				F083B2C5168660C0002BB523 /* d_6_11_other.xml in Resources */,
+				F083B2C6168660C0002BB523 /* d_6advanced.xml in Resources */,
+				F083B2C7168660C0002BB523 /* gram_credits.xml in Resources */,
+				F083B34916867CE8002BB523 /* popoverArrowDown.png in Resources */,
+				F083B34A16867CE8002BB523 /* popoverArrowDown@2x.png in Resources */,
+				F083B34B16867CE8002BB523 /* popoverArrowLeft.png in Resources */,
+				F083B34C16867CE8002BB523 /* popoverArrowLeft@2x.png in Resources */,
+				F083B34D16867CE8002BB523 /* popoverArrowRight.png in Resources */,
+				F083B34E16867CE8002BB523 /* popoverArrowRight@2x.png in Resources */,
+				F083B34F16867CE8002BB523 /* popoverArrowUp.png in Resources */,
+				F083B35016867CE8002BB523 /* popoverArrowUp@2x.png in Resources */,
+				F083B35116867CE8002BB523 /* popoverBg.png in Resources */,
+				F083B35216867CE8002BB523 /* popoverBg@2x.png in Resources */,
+				F083B35816867E4F002BB523 /* VocabularyDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1616,7 +1867,7 @@
 				F00EEA681643293B006D21DA /* PSTGridLayoutRow.m in Sources */,
 				F00EEA691643293B006D21DA /* PSTGridLayoutSection.m in Sources */,
 				F0400994165CC5050090AA18 /* KanaView.m in Sources */,
-				F04009AE165D5FE10090AA18 /* LessonControllerViewController.m in Sources */,
+				F04009AE165D5FE10090AA18 /* ExerciseController.m in Sources */,
 				F04009B0165D61480090AA18 /* KanaQCMController.m in Sources */,
 				F00D6F9B1674AFB1001AF0B9 /* UIColor+RGB.m in Sources */,
 				F08686BF16792898009C0C8B /* HelpViewController.m in Sources */,
@@ -1631,6 +1882,13 @@
 				F0EF2BA81683BAA90007119D /* NSObject+Blocks.m in Sources */,
 				F0283AAB1685068B007F3B0F /* HomeViewController.m in Sources */,
 				F0283AAF16850995007F3B0F /* HomeKanaViewController.m in Sources */,
+				F083B2431686568C002BB523 /* CMHTMLView.m in Sources */,
+				F083B24B16865B96002BB523 /* LessonViewController.m in Sources */,
+				F083B24E16865D02002BB523 /* ContentViewController.m in Sources */,
+				F083B35316867CE8002BB523 /* UIBarButtonItem+WEPopover.m in Sources */,
+				F083B35416867CE8002BB523 /* WEPopoverContainerView.m in Sources */,
+				F083B35516867CE8002BB523 /* WEPopoverController.m in Sources */,
+				F083B35616867CE8002BB523 /* WETouchableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
