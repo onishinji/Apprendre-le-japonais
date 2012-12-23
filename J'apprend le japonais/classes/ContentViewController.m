@@ -39,8 +39,8 @@
                 _htmlView.alpha = 1;
             }];
             
-            
-            for(int i=0; i < [self.nbUpDown intValue]; i++)
+            // restore size
+            for(int i=0; i < fabs([self.nbUpDown intValue]); i++)
             {
                 if([self.nbUpDown intValue] > 0)
                 {
@@ -59,18 +59,26 @@
 }
 
 - (void) sizeDown
-{ 
+{
+    NSString* filePath = [[NSBundle mainBundle] pathForResource:@"contentLessonAdapterDown" ofType:@"txt"];
+    NSData* htmlData = [NSData dataWithContentsOfFile:filePath];
+    NSString* htmlString = [[NSString alloc] initWithData:htmlData encoding:NSUTF8StringEncoding];
     
-    NSLog(@"content sizeDown");
-    [_htmlView stringByEvaluatingJavaScriptFromString:@"if (document.body.style.fontSize == ''){ document.body.style.fontSize = '1.0em'; }document.body.style.fontSize = parseFloat(document.body.style.fontSize) - 0.1 + ' em';"];
+    NSLog(@"js: %@", htmlString);
+
+    [_htmlView stringByEvaluatingJavaScriptFromString:htmlString];
      
 }
 
 - (void) sizeUp
 {
+    NSString* filePath = [[NSBundle mainBundle] pathForResource:@"contentLessonAdapterUp" ofType:@"txt"];
+    NSData* htmlData = [NSData dataWithContentsOfFile:filePath];
+    NSString* htmlString = [[NSString alloc] initWithData:htmlData encoding:NSUTF8StringEncoding];
     
-    NSLog(@"content sizeUp");
-    [_htmlView stringByEvaluatingJavaScriptFromString:@"if (document.body.style.fontSize == ''){ document.body.style.fontSize = '1.0em'; }document.body.style.fontSize = parseFloat(document.body.style.fontSize) + 0.1 + ' em';"];
+    NSLog(@"js: %@", htmlString);
+    
+    [_htmlView stringByEvaluatingJavaScriptFromString:htmlString];
     
 }
 

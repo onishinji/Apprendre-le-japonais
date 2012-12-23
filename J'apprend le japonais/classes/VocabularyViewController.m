@@ -28,7 +28,6 @@ static NSMutableDictionary * myDicData;
 
 - (void) activeController
 {
-    
     self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"home_bkg.png"]];
     
     NSString * baseUrl = @"https://spreadsheets.google.com/feeds/worksheets/%@/public/basic";
@@ -47,9 +46,19 @@ static NSMutableDictionary * myDicData;
 
 - (void) activeDetail
 {
-    
     self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"home_bkg.png"]];
-    self.title = @"Contenu de la leçon"; 
+    self.title = @"Contenu de la leçon";
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    [self.tableView addPullToRefreshWithActionHandler:^{
+        [self runDownload:YES];
+        // prepend data to dataSource, insert cells at top of table view
+        // call [tableView.pullToRefreshView stopAnimating] when done
+    }];
     
 }
 
@@ -83,7 +92,6 @@ static NSMutableDictionary * myDicData;
         
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     }
-    
 }
 
 - (id)kownUrl:(NSString *)url
@@ -106,17 +114,6 @@ static NSMutableDictionary * myDicData;
     }
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad]; 
-    
-    [self.tableView addPullToRefreshWithActionHandler:^{
-        [self runDownload:YES];
-        // prepend data to dataSource, insert cells at top of table view
-        // call [tableView.pullToRefreshView stopAnimating] when done
-    }];
-    
-}
 
 - (void)ticket:(GDataServiceTicket *)ticket
 finishedWithFeed:(id)feed
@@ -222,7 +219,7 @@ finishedWithFeed:(id)feed
             [self.tableView reloadData];
             
         } else {
-            NSLog(@"the user has no calendars");
+            NSLog(@"Oups");
         }
     } else {
         NSLog(@"fetch error: %@", error);
@@ -289,8 +286,10 @@ finishedWithFeed:(id)feed
     VocabularyItem * item = [results objectAtIndex:indexPath.row];
     
     if([self.mode isEqualToString:@"list"])
-    {
-        VocabularyViewController * subListController = [[VocabularyViewController alloc] initWithNibName:@"VocabularyViewController" bundle:nil];
+    {   UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:[NSBundle mainBundle]];
+        
+        VocabularyViewController *subListController = [storyboard instantiateViewControllerWithIdentifier:@"vocabularyList"];
+        
         subListController.mode = @"detail";
         subListController.url = item.url;
         [subListController activeDetail];
@@ -300,8 +299,9 @@ finishedWithFeed:(id)feed
     }
     else
     {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:[NSBundle mainBundle]];
         
-        VocabularyDetailViewController *detailViewController = [[VocabularyDetailViewController alloc] initWithNibName:@"VocabularyDetailViewController" bundle:nil];
+        VocabularyDetailViewController *detailViewController = [storyboard instantiateViewControllerWithIdentifier:@"vocabularyDetail"];
         
         detailViewController.currentItem = item;
         

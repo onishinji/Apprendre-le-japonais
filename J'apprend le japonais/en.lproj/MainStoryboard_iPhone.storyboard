@@ -4,6 +4,92 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
     </dependencies>
     <scenes>
+        <!--Vocabulary Detail View Controller-->
+        <scene sceneID="VLg-0X-crz">
+            <objects>
+                <viewController storyboardIdentifier="vocabularyDetail" id="p27-PF-rOB" customClass="VocabularyDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vM6-GV-qF4">
+                        <rect key="frame" x="0.0" y="44" width="480" height="276"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="home_bkg.png" id="i89-Vl-19l">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="aOC-xA-7s7">
+                                <rect key="frame" x="5" y="20" width="470" height="181"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="kana" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" id="OC6-t0-05h">
+                                <rect key="frame" x="10" y="49" width="434" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="romanji" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" id="N15-En-Ju3">
+                                <rect key="frame" x="10" y="20" width="434" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="traduction" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" id="PCa-b5-11z">
+                                <rect key="frame" x="10" y="73" width="434" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="sampleUsageRomanji" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" id="oXP-Mv-7Dd">
+                                <rect key="frame" x="10" y="95" width="434" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="sampleUsageKana" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" id="CiA-xh-Xod">
+                                <rect key="frame" x="10" y="119" width="434" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="sampleUsageTraduction" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" id="yUJ-X4-O4O">
+                                <rect key="frame" x="10" y="144" width="434" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="kanji" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" id="wir-QA-snr">
+                                <rect key="frame" x="10" y="166" width="434" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5De-92-6ao"/>
+                    <connections>
+                        <outlet property="kana" destination="OC6-t0-05h" id="ZY7-eb-Xqv"/>
+                        <outlet property="kanji" destination="wir-QA-snr" id="J0G-aS-doS"/>
+                        <outlet property="romanji" destination="N15-En-Ju3" id="YTI-A0-VR0"/>
+                        <outlet property="sampleUsageJapan" destination="CiA-xh-Xod" id="1MJ-SG-e1S"/>
+                        <outlet property="sampleUsageRomanji" destination="oXP-Mv-7Dd" id="k9U-uE-cHV"/>
+                        <outlet property="sampleUsageTraduction" destination="yUJ-X4-O4O" id="m23-dF-3gd"/>
+                        <outlet property="traduction" destination="PCa-b5-11z" id="cFP-bQ-0Ys"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zzm-Ed-eGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1360" y="-833"/>
+        </scene>
         <!--KanaQCM Controller - Neko Sensei - Je fais un QCM-->
         <scene sceneID="Vm6-vr-9iP">
             <objects>
@@ -463,7 +549,7 @@
         <!--Vocabulary View Controller - Vocabulaire-->
         <scene sceneID="OcU-tO-Wvp">
             <objects>
-                <viewController id="QhO-iA-uMO" customClass="VocabularyViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="vocabularyList" id="QhO-iA-uMO" customClass="VocabularyViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4qv-OR-SkZ">
                         <rect key="frame" x="0.0" y="44" width="480" height="276"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -494,6 +580,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="L4L-c3-DJp" id="dlg-Jf-i5u"/>
+                        <segue destination="p27-PF-rOB" kind="push" id="q1g-Dh-K7F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6GW-Em-xaQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -845,6 +932,18 @@
             <relationships>
                 <relationship kind="action" name="sizeDown:"/>
                 <relationship kind="action" name="sizeUp:"/>
+            </relationships>
+        </class>
+        <class className="VocabularyDetailViewController" superclassName="ExerciseController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/VocabularyDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="kana" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="kanji" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="romanji" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="sampleUsageJapan" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="sampleUsageRomanji" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="sampleUsageTraduction" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="traduction" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="VocabularyViewController" superclassName="ExerciseController">

@@ -12,7 +12,7 @@
 @interface LessonViewController : UIViewController <UIPageViewControllerDataSource, UITableViewDataSource, UITableViewDelegate, WEPopoverControllerDelegate>
 {
     int currentIndex;
-    int fontSize;
+    int nbSizeUpDown;
     
 	WEPopoverController *popoverController;
 	Class popoverClass;

@@ -1,0 +1,23 @@
+if (document.body.style.fontSize == '')
+{
+    document.body.style.fontSize = '1.0em';
+}
+
+document.body.style.fontSize = parseFloat(document.body.style.fontSize) - 0.1 + ' em';
+
+var size =parseFloat(document.body.style.fontSize) + ' em';
+
+var tableRows = document.getElementsByTagName("table");
+
+for(var t=0; t < tableRows.length; t++)
+{
+	rows = tableRows[t].rows;
+	for(var i = 0; i<rows.length;i++)
+	{
+    	var rowCells = rows[i].cells;
+    	for(var a = 0; a<rowCells.length;a++)
+    	{
+            rowCells[a].style.fontSize = size;
+   		}
+	}
+}

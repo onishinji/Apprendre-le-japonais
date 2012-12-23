@@ -136,7 +136,8 @@
 		F083B35416867CE8002BB523 /* WEPopoverContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F083B34316867CE8002BB523 /* WEPopoverContainerView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F083B35516867CE8002BB523 /* WEPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = F083B34516867CE8002BB523 /* WEPopoverController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F083B35616867CE8002BB523 /* WETouchableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F083B34816867CE8002BB523 /* WETouchableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F083B35816867E4F002BB523 /* VocabularyDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F083B35716867E4F002BB523 /* VocabularyDetailViewController.xib */; };
+		F083B35D16878881002BB523 /* contentLessonAdapterUp.txt in Resources */ = {isa = PBXBuildFile; fileRef = F083B3591687864F002BB523 /* contentLessonAdapterUp.txt */; };
+		F083B35E16878881002BB523 /* contentLessonAdapterDown.txt in Resources */ = {isa = PBXBuildFile; fileRef = F083B35B16878696002BB523 /* contentLessonAdapterDown.txt */; };
 		F08686AE16791C08009C0C8B /* params_icon_over.png in Resources */ = {isa = PBXBuildFile; fileRef = F08686A216791C08009C0C8B /* params_icon_over.png */; };
 		F08686AF16791C08009C0C8B /* params_icon_over@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F08686A316791C08009C0C8B /* params_icon_over@2x.png */; };
 		F08686B216791C08009C0C8B /* shuffle_icon_over.png in Resources */ = {isa = PBXBuildFile; fileRef = F08686A616791C08009C0C8B /* shuffle_icon_over.png */; };
@@ -198,7 +199,6 @@
 		F0E2375C167E12760051DC7E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E2375B167E12750051DC7E /* SystemConfiguration.framework */; };
 		F0E2375E167E127D0051DC7E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E2375D167E127D0051DC7E /* Security.framework */; };
 		F0E6D16F167E190A006DE22B /* VocabularyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E6D16D167E190A006DE22B /* VocabularyViewController.m */; };
-		F0E6D172167E1944006DE22B /* VocabularyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0E6D171167E1944006DE22B /* VocabularyViewController.xib */; };
 		F0E6D17A167E5F98006DE22B /* VocabularyItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E6D179167E5F98006DE22B /* VocabularyItem.m */; };
 		F0E6D17D167E7AC5006DE22B /* VocabularyDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E6D17C167E7AC5006DE22B /* VocabularyDetailViewController.m */; };
 		F0EF2BA81683BAA90007119D /* NSObject+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EF2BA71683BAA90007119D /* NSObject+Blocks.m */; };
@@ -413,7 +413,8 @@
 		F083B34616867CE8002BB523 /* WEPopoverParentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WEPopoverParentView.h; sourceTree = "<group>"; };
 		F083B34716867CE8002BB523 /* WETouchableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WETouchableView.h; sourceTree = "<group>"; };
 		F083B34816867CE8002BB523 /* WETouchableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WETouchableView.m; sourceTree = "<group>"; };
-		F083B35716867E4F002BB523 /* VocabularyDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VocabularyDetailViewController.xib; path = ressources/VocabularyDetailViewController.xib; sourceTree = "<group>"; };
+		F083B3591687864F002BB523 /* contentLessonAdapterUp.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = contentLessonAdapterUp.txt; sourceTree = "<group>"; };
+		F083B35B16878696002BB523 /* contentLessonAdapterDown.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = contentLessonAdapterDown.txt; sourceTree = "<group>"; };
 		F08686A216791C08009C0C8B /* params_icon_over.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = params_icon_over.png; path = ressources/params_icon_over.png; sourceTree = "<group>"; };
 		F08686A316791C08009C0C8B /* params_icon_over@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "params_icon_over@2x.png"; path = "ressources/params_icon_over@2x.png"; sourceTree = "<group>"; };
 		F08686A616791C08009C0C8B /* shuffle_icon_over.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shuffle_icon_over.png; path = ressources/shuffle_icon_over.png; sourceTree = "<group>"; };
@@ -807,7 +808,6 @@
 		F0E2375D167E127D0051DC7E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		F0E6D16C167E190A006DE22B /* VocabularyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VocabularyViewController.h; path = classes/VocabularyViewController.h; sourceTree = "<group>"; };
 		F0E6D16D167E190A006DE22B /* VocabularyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VocabularyViewController.m; path = classes/VocabularyViewController.m; sourceTree = "<group>"; };
-		F0E6D171167E1944006DE22B /* VocabularyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VocabularyViewController.xib; path = ressources/VocabularyViewController.xib; sourceTree = "<group>"; };
 		F0E6D178167E5F98006DE22B /* VocabularyItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VocabularyItem.h; path = classes/VocabularyItem.h; sourceTree = "<group>"; };
 		F0E6D179167E5F98006DE22B /* VocabularyItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VocabularyItem.m; path = classes/VocabularyItem.m; sourceTree = "<group>"; };
 		F0E6D17B167E7AC5006DE22B /* VocabularyDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VocabularyDetailViewController.h; path = classes/VocabularyDetailViewController.h; sourceTree = "<group>"; };
@@ -932,8 +932,6 @@
 		F00D6F9E1674B034001AF0B9 /* iphone */ = {
 			isa = PBXGroup;
 			children = (
-				F083B35716867E4F002BB523 /* VocabularyDetailViewController.xib */,
-				F0E6D171167E1944006DE22B /* VocabularyViewController.xib */,
 				F0CE948D163F2F95004F7E2B /* ParametersCell.xib */,
 				F03603C0167DE6640003E2D3 /* helpParameters.xib */,
 				F03603C2167DE6640003E2D3 /* helpQCM.xib */,
@@ -1060,6 +1058,8 @@
 				F00D6F9C1674B029001AF0B9 /* images */,
 				F040097A165CBDDF0090AA18 /* epkyouka.ttf */,
 				F0CE948F163F2F95004F7E2B /* Model.xcdatamodeld */,
+				F083B3591687864F002BB523 /* contentLessonAdapterUp.txt */,
+				F083B35B16878696002BB523 /* contentLessonAdapterDown.txt */,
 			);
 			name = ressources;
 			sourceTree = "<group>";
@@ -1694,6 +1694,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F083B35D16878881002BB523 /* contentLessonAdapterUp.txt in Resources */,
+				F083B35E16878881002BB523 /* contentLessonAdapterDown.txt in Resources */,
 				F02D137C1646AFFA0093EAD0 /* MainStoryboard_iPhone.storyboard in Resources */,
 				F02D137D1646AFFA0093EAD0 /* MainStoryboard_iPad.storyboard in Resources */,
 				F02D137B1646AFDC0093EAD0 /* Model.xcdatamodeld in Resources */,
@@ -1761,7 +1763,6 @@
 				F03603CA167DE6640003E2D3 /* helpRandom.xib in Resources */,
 				F03603CE167DE7460003E2D3 /* aide_parametres.png in Resources */,
 				F03603CF167DE7460003E2D3 /* aide_parametres@2x.png in Resources */,
-				F0E6D172167E1944006DE22B /* VocabularyViewController.xib in Resources */,
 				F0BDD56D167FB0E100F8A782 /* nekosensei_kana_57.png in Resources */,
 				F0BDD56F167FB0EF00F8A782 /* nekosensei_kana_114.png in Resources */,
 				F083B28C168660C0002BB523 /* d_1start.xml in Resources */,
@@ -1834,7 +1835,6 @@
 				F083B35016867CE8002BB523 /* popoverArrowUp@2x.png in Resources */,
 				F083B35116867CE8002BB523 /* popoverBg.png in Resources */,
 				F083B35216867CE8002BB523 /* popoverBg@2x.png in Resources */,
-				F083B35816867E4F002BB523 /* VocabularyDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

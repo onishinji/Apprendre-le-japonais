@@ -17,6 +17,48 @@
 
 @synthesize popoverController;
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    [self createContentPages];
+    
+    popoverClass = [WEPopoverController class];
+    
+    nbSizeUpDown = [self getDefaultNbUpDownFont];
+    
+    NSDictionary *options = [NSDictionary dictionaryWithObject: [NSNumber numberWithInteger:UIPageViewControllerSpineLocationMin] forKey: UIPageViewControllerOptionSpineLocationKey];
+    
+    _pageController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options: options];
+    
+    _pageController.dataSource = self;
+    [[_pageController view] setFrame:[[self view] bounds]];
+    
+    ContentViewController *initialViewController = [self viewControllerAtIndex:0];
+    NSArray *viewControllers = [NSArray arrayWithObject:initialViewController];
+    
+    [_pageController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
+    
+    [self addChildViewController:_pageController];
+    [[self view] addSubview:[_pageController view]];
+    [_pageController didMoveToParentViewController:self];
+    
+    
+    UIBarButtonItem *Button1 = [[UIBarButtonItem alloc]initWithTitle:@"aA" style:UIBarButtonItemStylePlain
+                                                              target:self action:@selector(sizeUp:)] ;
+    
+    UIBarButtonItem *Button2 = [[UIBarButtonItem alloc] initWithTitle:@"Aa" style:UIBarButtonItemStylePlain
+                                                               target:self action:@selector(sizeDown:)] ;
+    
+    UIBarButtonItem *btnSommaire = [[UIBarButtonItem alloc] initWithTitle:@"Sommaire" style:UIBarButtonItemStylePlain target:self action:@selector(openPopup:)];
+    
+    self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:btnSommaire, Button1,Button2, nil];
+    
+    [self restoreIndex];
+    
+}
+
+#pragma mark - data source
+
 - (void) createContentPages
 {
     NSArray * lessons = [NSArray arrayWithObjects:
@@ -97,7 +139,7 @@
                     @"Le passé",
                     @"Les particules, le retour",
                     @"Verbe transitif, intransifif",
-    nil];
+                    nil];
     
     NSMutableArray *pageStrings = [[NSMutableArray alloc] init];
     for (int i = 0; i < lessons.count; i++)
@@ -111,59 +153,13 @@
     _pageContent = [[NSArray alloc] initWithArray:pageStrings];
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-    popoverClass = [WEPopoverController class];
-    
-    fontSize = 0;
-    [self createContentPages];
-    NSDictionary *options = [NSDictionary dictionaryWithObject:
-                             [NSNumber numberWithInteger:UIPageViewControllerSpineLocationMin]
-                                                        forKey: UIPageViewControllerOptionSpineLocationKey];
-    
-    _pageController = [[UIPageViewController alloc]
-                       initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl
-                       navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal
-                       options: options];
-    
-    _pageController.dataSource = self;
-    [[_pageController view] setFrame:[[self view] bounds]];
-    
-    ContentViewController *initialViewController =
-    [self viewControllerAtIndex:0];
-    NSArray *viewControllers =
-    [NSArray arrayWithObject:initialViewController];
-    
-    [_pageController setViewControllers:viewControllers
-                              direction:UIPageViewControllerNavigationDirectionForward
-                               animated:NO
-                             completion:nil];
-    
-    [self addChildViewController:_pageController];
-    [[self view] addSubview:[_pageController view]];
-    [_pageController didMoveToParentViewController:self];
-    
-    
-    UIBarButtonItem *Button1 = [[UIBarButtonItem alloc]initWithTitle:@"aA" style:UIBarButtonItemStylePlain
-                                                              target:self action:@selector(sizeUp:)] ;
-    
-    UIBarButtonItem *Button2 = [[UIBarButtonItem alloc] initWithTitle:@"Aa" style:UIBarButtonItemStylePlain
-                                                               target:self action:@selector(sizeDown:)] ;
-    
-    UIBarButtonItem *btnSommaire = [[UIBarButtonItem alloc] initWithTitle:@"Sommaire" style:UIBarButtonItemStylePlain target:self action:@selector(openPopup:)];
-    
-    self.navigationItem.rightBarButtonItems =
-    [NSArray arrayWithObjects:btnSommaire, Button1,Button2, nil];
-    
-}
+#pragma mark - UIPageViewController Delegate
 
 - (ContentViewController *)viewControllerAtIndex:(NSUInteger)index
 {
     // Return the data view controller for the given index.
-    if (([self.pageContent count] == 0) ||
-        (index >= [self.pageContent count])) {
+    if (([self.pageContent count] == 0) || (index >= [self.pageContent count]))
+    {
         return nil;
     }
     
@@ -171,7 +167,7 @@
     
     ContentViewController *dataViewController = [storyboard instantiateViewControllerWithIdentifier:@"contentView"];
     dataViewController.dataObject = _pageContent[index];
-    dataViewController.nbUpDown = [NSNumber numberWithInt:fontSize];
+    dataViewController.nbUpDown = [NSNumber numberWithInt:nbSizeUpDown];
     
     return dataViewController;
 }
@@ -181,54 +177,116 @@
     return [_pageContent indexOfObject:viewController.dataObject];
 }
 
-
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
 {
     currentIndex = [self indexOfViewController:(ContentViewController *)viewController];
-    if ((currentIndex == 0) || (currentIndex == NSNotFound)) {
+    if ((currentIndex == 0) || (currentIndex == NSNotFound))
+    {
         return nil;
     }
     
     currentIndex--;
+    
+    [self saveIndex:currentIndex];
+    
     return [self viewControllerAtIndex:currentIndex];
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
 {
     currentIndex = [self indexOfViewController:(ContentViewController *)viewController];
-    if (currentIndex == NSNotFound) {
+    if (currentIndex == NSNotFound)
+    {
         return nil;
     }
     
     currentIndex++;
-    if (currentIndex == [self.pageContent count]) {
+    
+    if (currentIndex == [self.pageContent count])
+    {
         return nil;
     }
+    
+    [self saveIndex:currentIndex];
+    
     return [self viewControllerAtIndex:currentIndex];
 }
- 
+
+#pragma mark - bookmark actions
+
+- (void) saveIndex:(int) index
+{
+    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:index] forKey:@"current_page"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+- (void) restoreIndex
+{
+    NSNumber * index = (NSNumber *)[[NSUserDefaults standardUserDefaults] objectForKey:@"current_page"];
+    if(index != nil && [index intValue] > 0)
+    {
+        [self flipToPage:[index intValue]];
+    }
+}
+
+#pragma mark - FontSize
+
+- (CGFloat) getDefaultNbUpDownFont
+{
+    NSNumber * index = (NSNumber *)[[NSUserDefaults standardUserDefaults] objectForKey:@"current_nb_up_down_font_size"];
+    NSLog(@"fontSize %@", index);
+    if(index != nil)
+    {
+        return [index intValue];
+    }
+    else
+    {
+        return 0;
+    }
+}
+
+- (void) setDefaultNbUpDownFont:(CGFloat) index
+{
+    NSLog(@"index %2.f", index);
+    if(index > -8 && index < 12)
+    {
+        [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:index] forKey:@"current_nb_up_down_font_size"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+    
+}
+
+#pragma mark - IBAction
 
 - (IBAction)sizeUp:(id)sender
 {
-    fontSize++;
-    ContentViewController * content = (ContentViewController *)[[self.pageController viewControllers] objectAtIndex:0];
-    [content sizeUp];
+    if(nbSizeUpDown < 12)
+    {
+        nbSizeUpDown++;
+        [self setDefaultNbUpDownFont:nbSizeUpDown];
+        ContentViewController * content = (ContentViewController *)[[self.pageController viewControllers] objectAtIndex:0];
+        [content sizeUp];
+    }
 }
 
 - (IBAction)sizeDown:(id)sender
 {
-    fontSize--;
-    ContentViewController * content = (ContentViewController *)[[self.pageController viewControllers] objectAtIndex:0];
-    [content sizeDown];
+    if(nbSizeUpDown > -8)
+    {
+        nbSizeUpDown--;
+        [self setDefaultNbUpDownFont:nbSizeUpDown];
+        ContentViewController * content = (ContentViewController *)[[self.pageController viewControllers] objectAtIndex:0];
+        [content sizeDown];
+    }
 }
 
 # pragma mark - popover
 
-
 - (void) openPopup:(id)sender
 {
     
-    if (!self.popoverController) {
+    if (!self.popoverController)
+    {
 		
 		UITableViewController *contentViewController = [[UITableViewController alloc] init];
         contentViewController.tableView.dataSource = self;
@@ -238,7 +296,8 @@
 		self.popoverController.delegate = self;
 		self.popoverController.passthroughViews = [NSArray arrayWithObject:self.navigationController.navigationBar];
         
-		if ([self.popoverController respondsToSelector:@selector(setContainerViewProperties:)]) {
+		if ([self.popoverController respondsToSelector:@selector(setContainerViewProperties:)])
+        {
 			[self.popoverController setContainerViewProperties:[self improvedContainerViewProperties]];
 		}
 		
@@ -246,7 +305,9 @@
 									   permittedArrowDirections:UIPopoverArrowDirectionUp
 													   animated:YES];
         
-	} else {
+	}
+    else
+    {
 		[self.popoverController dismissPopoverAnimated:YES];
 		self.popoverController = nil;
 	}
@@ -288,8 +349,6 @@
 	return props;
 }
 
-
-#pragma mark -
 #pragma mark WEPopoverControllerDelegate implementation
 
 - (void)popoverControllerDidDismissPopover:(WEPopoverController *)thePopoverController {
@@ -302,7 +361,8 @@
 	return YES;
 }
 
-#pragma sommaire
+#pragma - UITableView for summary
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;
@@ -316,7 +376,8 @@
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
+    if (cell == nil)
+    {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
@@ -349,17 +410,23 @@
     viewControllers = [NSArray arrayWithObjects:firstViewController, nil];
     
     
-    if (retreivedIndex < x){
-        
+    if (retreivedIndex < x)
+    {
         [self.pageController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:NULL];
-        
-    } else {
-        
-        if (retreivedIndex > x ){
-            
+    }
+    else
+    {
+        if (retreivedIndex > x )
+        {
             [self.pageController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionReverse animated:YES completion:NULL];
         } 
     }
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    // Return YES for supported orientations
+    return UIInterfaceOrientationIsLandscape(interfaceOrientation);
 }
 
 
