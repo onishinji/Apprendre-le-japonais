@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
     </dependencies>
     <scenes>
-        <!--KanaQCM Controller - Je me teste avec un QCM-->
+        <!--KanaQCM Controller - Neko Sensei - Je fais un QCM-->
         <scene sceneID="Vm6-vr-9iP">
             <objects>
                 <viewController storyboardIdentifier="QCMKana" id="EYZ-m6-37y" customClass="KanaQCMController" sceneMemberID="viewController">
@@ -185,7 +185,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Je me teste avec un QCM" id="DcA-ve-1nL">
+                    <navigationItem key="navigationItem" title="Neko Sensei - Je fais un QCM" id="DcA-ve-1nL">
                         <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="pgw-6C-HuI">
                             <connections>
                                 <action selector="openHelp:" destination="EYZ-m6-37y" id="QsD-aj-de6"/>
@@ -210,7 +210,7 @@
             </objects>
             <point key="canvasLocation" x="1352" y="-335"/>
         </scene>
-        <!--Kana Random Controller - J'apprend avec des cartes-->
+        <!--Kana Random Controller - Neko Sensei - J'apprend avec des cartes-->
         <scene sceneID="omS-XA-D8e">
             <objects>
                 <viewController storyboardIdentifier="RandomKana" id="PuH-Y3-eCf" customClass="KanaRandomController" sceneMemberID="viewController">
@@ -291,7 +291,7 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     </view>
-                    <navigationItem key="navigationItem" title="J'apprend avec des cartes" id="Z0s-v9-TIB">
+                    <navigationItem key="navigationItem" title="Neko Sensei - J'apprend avec des cartes" id="Z0s-v9-TIB">
                         <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="gBf-mN-gM4">
                             <connections>
                                 <action selector="openHelp:" destination="PuH-Y3-eCf" id="eYW-i1-uVv"/>
@@ -309,7 +309,7 @@
             </objects>
             <point key="canvasLocation" x="1352" y="199"/>
         </scene>
-        <!--Kana Parameters Controller - Je sélectionne la difficulté-->
+        <!--Kana Parameters Controller - Neko Sensei - Je choisi ma difficulté-->
         <scene sceneID="6tf-Tj-yLf">
             <objects>
                 <viewController storyboardIdentifier="ParamsKana" id="awG-ig-rA0" customClass="KanaParametersController" sceneMemberID="viewController">
@@ -342,7 +342,7 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Je sélectionne la difficulté" id="3NQ-DA-iYo">
+                    <navigationItem key="navigationItem" title="Neko Sensei - Je choisi ma difficulté" id="3NQ-DA-iYo">
                         <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="D0J-gm-I0u">
                             <connections>
                                 <action selector="openHelp:" destination="awG-ig-rA0" id="uAj-9K-bwu"/>
@@ -606,7 +606,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
-                    <navigationItem key="navigationItem" title="J'apprend les Katakana" id="nF6-46-yaC">
+                    <navigationItem key="navigationItem" title="Neko Sensei - J'apprend les Katakana" id="nF6-46-yaC">
                         <barButtonItem key="backBarButtonItem" title="retour" id="dhy-Bc-SJJ"/>
                     </navigationItem>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -716,7 +716,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
-                    <navigationItem key="navigationItem" title="J'apprend les Hiragana" id="uMJ-0Q-RdE">
+                    <navigationItem key="navigationItem" title="Neko Sensei - J'apprend les Hiragana" id="uMJ-0Q-RdE">
                         <barButtonItem key="backBarButtonItem" title="Retour" id="ecj-mx-C87"/>
                     </navigationItem>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -860,8 +860,8 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="7BM-tE-5PQ"/>
-        <segue reference="wpF-AK-zvp"/>
-        <segue reference="3Pj-Cm-jVO"/>
+        <segue reference="y7T-1G-Anv"/>
+        <segue reference="hlj-nX-dug"/>
+        <segue reference="Tby-Mj-Arf"/>
     </inferredMetricsTieBreakers>
 </document>
