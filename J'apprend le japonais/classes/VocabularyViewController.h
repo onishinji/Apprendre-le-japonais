@@ -9,11 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "ExerciseController.h"
 #import "VocabularyDetailViewController.h"
+#import "UITableView+NXEmptyView.h"
 
 @interface VocabularyViewController : ExerciseController
 {
     NSMutableArray * results;
-    NSString * idSpreadsheet; 
+    NSString * idSpreadsheet;
+    NSData *dataTmp;
 }
 
 @property (nonatomic, strong) IBOutlet UITableView * tableView;

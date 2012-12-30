@@ -517,7 +517,54 @@ static Computer *sharedObject;
         BOOL hasOnlyTrueKana = [[self getSelectedsHiragana] count] == 4;
 
     return hasYamaGuchi && hasOnlyTrueKana;
+}
 
+
+- (Cache *) getWithKey:(NSString *)key
+{
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Cache" inManagedObjectContext:_managedObjectContext];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"key = %@", key];
+    [request setPredicate:predicate];
+    
+    NSSortDescriptor *sort = [[NSSortDescriptor alloc] initWithKey:@"key" ascending:NO];
+    [request setSortDescriptors:[NSArray arrayWithObject:sort]];
+    
+    NSError *error = nil;
+    NSArray *array = [_managedObjectContext executeFetchRequest:request error:&error];
+    if (array == nil)
+    {
+        NSLog(@"Error while retriving\n%@",
+              ([error localizedDescription] != nil) ? [error localizedDescription]: @"Unknown Error");
+    }
+    
+    if([array count] == 0)
+    {
+        return nil;
+    }
+    else
+    {
+        Cache * aResult = [array objectAtIndex: arc4random() % [array count]];
+        return aResult;
+    }
+}
+
+- (void) setWithKey:(NSString *)key andValue:(NSData *)value
+{
+    Cache * cache = [self getWithKey:key];
+    
+    if(cache == nil)
+    {
+        NSEntityDescription *entity = [NSEntityDescription entityForName:@"Cache" inManagedObjectContext:_managedObjectContext];
+        cache = [[Cache alloc] initWithEntity:entity insertIntoManagedObjectContext:_managedObjectContext];
+        cache.key = key;
+    }
+    
+    cache.value = value;
+    
+    [self flush];
 }
 
 

@@ -12,8 +12,7 @@
 @implementation ParametersCell
 
 @synthesize title = _title;
-@synthesize subTitle = _subTitle;
-@synthesize circle = _circle;
+@synthesize subTitle = _subTitle; 
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -35,6 +34,8 @@
         self.layer.borderColor = [UIColor blackColor].CGColor;
         self.layer.borderWidth = 1;
         
+        [self disabled];
+        
     }
     
     return self;
@@ -43,30 +44,43 @@
 
 - (void) enabled
 {
+    highlited = true;
+    
     _title.textColor = [UIColor colorWithR:0 G:0 B:0 A:1];
     _subTitle.textColor = [UIColor colorWithR:0 G:0 B:0 A:1];
-    self.backgroundColor = [UIColor colorWithR:255 G:255 B:255 A:0.5];
-    [_circle setImage:[UIImage imageNamed:@"circle-green"]];
+    self.backgroundColor = [UIColor colorWithR:255 G:255 B:255 A:0.5]; 
 }
 
 - (void) disabled
 {
+    highlited = false;
+    
     int r = 100;
     int g = 100;
     int b = 100;
     
     _title.textColor = [UIColor colorWithR:r G:g B:b A:1];
     _subTitle.textColor = [UIColor colorWithR:r G:g B:b A:1];
-    self.backgroundColor = [UIColor colorWithR:255 G:255 B:255 A:0.3];
-    [_circle setImage:[UIImage imageNamed:@"circle-red"]];
+    self.backgroundColor = [UIColor colorWithR:255 G:255 B:255 A:0.3]; 
 }
 
 - (void) empty
 {
+    self.backgroundColor = [UIColor colorWithR:255 G:255 B:255 A:0.3];
+
+    highlited = false;
+    
     _title.text = @"";
     _subTitle.text = @"";
-    [_circle setImage:nil];
+    
 }
+
+- (BOOL) cellIsHighlighted
+{
+    return highlited;
+}
+
+
 
 /*
  // Only override drawRect: if you perform custom drawing.

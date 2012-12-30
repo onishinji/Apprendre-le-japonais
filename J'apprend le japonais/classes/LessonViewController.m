@@ -223,6 +223,7 @@
 - (void) restoreIndex
 {
     NSNumber * index = (NSNumber *)[[NSUserDefaults standardUserDefaults] objectForKey:@"current_page"];
+    NSLog(@"restore %@", index);
     if(index != nil && [index intValue] > 0)
     {
         [self flipToPage:[index intValue]];

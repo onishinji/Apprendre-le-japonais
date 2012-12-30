@@ -9,13 +9,16 @@
 #import <UIKit/UIKit.h>
 
 @interface ParametersCell : PSTCollectionViewCell
+{
+    BOOL highlited;
+}
 
 @property (strong, nonatomic) IBOutlet UILabel * title;
-@property (strong, nonatomic) IBOutlet UILabel * subTitle;
-@property (strong, nonatomic) IBOutlet UIImageView * circle;
+@property (strong, nonatomic) IBOutlet UILabel * subTitle; 
 
 - (void) disabled;
 - (void) enabled;
 - (void) empty;
+- (BOOL) cellIsHighlighted;
 
 @end

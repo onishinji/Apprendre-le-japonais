@@ -30,6 +30,8 @@
 		F00EEA691643293B006D21DA /* PSTGridLayoutSection.m in Sources */ = {isa = PBXBuildFile; fileRef = F00EEA5E1643293B006D21DA /* PSTGridLayoutSection.m */; };
 		F0283AAB1685068B007F3B0F /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0283AAA1685068B007F3B0F /* HomeViewController.m */; };
 		F0283AAF16850995007F3B0F /* HomeKanaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0283AAE16850995007F3B0F /* HomeKanaViewController.m */; };
+		F02AE6DB1690A54900177925 /* Cache.m in Sources */ = {isa = PBXBuildFile; fileRef = F02AE6DA1690A54900177925 /* Cache.m */; };
+		F02AE6DE1690A59400177925 /* UITableView+NXEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = F02AE6DD1690A59400177925 /* UITableView+NXEmptyView.m */; };
 		F02D137A1646AAE90093EAD0 /* tired-konata.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F02D13791646AAE90093EAD0 /* tired-konata.jpeg */; };
 		F02D137B1646AFDC0093EAD0 /* Model.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = F0CE948F163F2F95004F7E2B /* Model.xcdatamodeld */; };
 		F02D137C1646AFFA0093EAD0 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F060E98B163C0A4B009C01E3 /* MainStoryboard_iPhone.storyboard */; };
@@ -287,6 +289,10 @@
 		F0283AAA1685068B007F3B0F /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = classes/HomeViewController.m; sourceTree = "<group>"; };
 		F0283AAD16850995007F3B0F /* HomeKanaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeKanaViewController.h; path = classes/HomeKanaViewController.h; sourceTree = "<group>"; };
 		F0283AAE16850995007F3B0F /* HomeKanaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeKanaViewController.m; path = classes/HomeKanaViewController.m; sourceTree = "<group>"; };
+		F02AE6D91690A54900177925 /* Cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cache.h; path = classes/Cache.h; sourceTree = "<group>"; };
+		F02AE6DA1690A54900177925 /* Cache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cache.m; path = classes/Cache.m; sourceTree = "<group>"; };
+		F02AE6DC1690A59400177925 /* UITableView+NXEmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITableView+NXEmptyView.h"; path = "classes/UITableView+NXEmptyView.h"; sourceTree = "<group>"; };
+		F02AE6DD1690A59400177925 /* UITableView+NXEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITableView+NXEmptyView.m"; path = "classes/UITableView+NXEmptyView.m"; sourceTree = "<group>"; };
 		F02D13791646AAE90093EAD0 /* tired-konata.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tired-konata.jpeg"; sourceTree = "<group>"; };
 		F02D13811647EA240093EAD0 /* KanaQCMController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KanaQCMController.h; path = classes/KanaQCMController.h; sourceTree = "<group>"; };
 		F02D138D164837750093EAD0 /* NSMutableArray+Shuffling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+Shuffling.h"; path = "classes/NSMutableArray+Shuffling.h"; sourceTree = "<group>"; };
@@ -984,6 +990,8 @@
 		F04C008E1642E19300EAF61D /* librairies */ = {
 			isa = PBXGroup;
 			children = (
+				F02AE6DC1690A59400177925 /* UITableView+NXEmptyView.h */,
+				F02AE6DD1690A59400177925 /* UITableView+NXEmptyView.m */,
 				F083B33516867CE8002BB523 /* WEPopover */,
 				F083B23D16865650002BB523 /* CMHTMLView */,
 				F09E45C1167FC59400909F57 /* GData */,
@@ -1546,6 +1554,8 @@
 				F0CE94CC164084B9004F7E2B /* Computer.m */,
 				F0CE94CD164084B9004F7E2B /* Kana.h */,
 				F0CE94CE164084B9004F7E2B /* Kana.m */,
+				F02AE6D91690A54900177925 /* Cache.h */,
+				F02AE6DA1690A54900177925 /* Cache.m */,
 				F0E6D178167E5F98006DE22B /* VocabularyItem.h */,
 				F0E6D179167E5F98006DE22B /* VocabularyItem.m */,
 			);
@@ -1889,6 +1899,8 @@
 				F083B35416867CE8002BB523 /* WEPopoverContainerView.m in Sources */,
 				F083B35516867CE8002BB523 /* WEPopoverController.m in Sources */,
 				F083B35616867CE8002BB523 /* WETouchableView.m in Sources */,
+				F02AE6DB1690A54900177925 /* Cache.m in Sources */,
+				F02AE6DE1690A59400177925 /* UITableView+NXEmptyView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

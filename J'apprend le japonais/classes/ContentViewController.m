@@ -63,8 +63,6 @@
     NSString* filePath = [[NSBundle mainBundle] pathForResource:@"contentLessonAdapterDown" ofType:@"txt"];
     NSData* htmlData = [NSData dataWithContentsOfFile:filePath];
     NSString* htmlString = [[NSString alloc] initWithData:htmlData encoding:NSUTF8StringEncoding];
-    
-    NSLog(@"js: %@", htmlString);
 
     [_htmlView stringByEvaluatingJavaScriptFromString:htmlString];
      
@@ -75,8 +73,6 @@
     NSString* filePath = [[NSBundle mainBundle] pathForResource:@"contentLessonAdapterUp" ofType:@"txt"];
     NSData* htmlData = [NSData dataWithContentsOfFile:filePath];
     NSString* htmlString = [[NSString alloc] initWithData:htmlData encoding:NSUTF8StringEncoding];
-    
-    NSLog(@"js: %@", htmlString);
     
     [_htmlView stringByEvaluatingJavaScriptFromString:htmlString];
     

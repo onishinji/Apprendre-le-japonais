@@ -184,25 +184,28 @@
     
     id objetInArray = [[allResult objectForKey:[NSString stringWithFormat:@"section_%d",indexPath.section ]] objectAtIndex:indexPath.row];
     
-    [cell disabled];
     if([objetInArray isKindOfClass:[Kana class]])
     {
+        
         Kana * hir = objetInArray;
         
         cell.title.text = hir.japan;
         cell.subTitle.text = hir.romanji;
         
-        [cell disabled];
-        
         if([hir.isSelected boolValue])
         {
             [cell enabled];
+        }
+        
+        if(![hir.isSelected boolValue])
+        {
+            [cell disabled];            
         }
     }
     else
     {
         [cell empty];
-    }  
+    }
     
     return cell;
 }

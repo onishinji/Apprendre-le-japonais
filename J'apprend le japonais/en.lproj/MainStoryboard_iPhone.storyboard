@@ -825,11 +825,42 @@
                     <navigationItem key="navigationItem" id="2hR-dl-ZJx"/>
                     <connections>
                         <segue destination="SI0-bu-eT3" kind="custom" id="Yjr-zQ-keN"/>
+                        <segue destination="v2f-5t-MnM" kind="push" id="mZD-WU-MM9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Izl-Em-NvA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="490" y="1157"/>
+        </scene>
+        <!--View Controller - VocabularyTableViewEmpty-->
+        <scene sceneID="zmY-Cu-Tkx">
+            <objects>
+                <viewController storyboardIdentifier="VocabularyTableViewEmpty" title="VocabularyTableViewEmpty" id="v2f-5t-MnM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xqx-nJ-AJU">
+                        <rect key="frame" x="0.0" y="44" width="480" height="276"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="title_scroll.png" id="GDg-oN-W7Z">
+                                <rect key="frame" x="98" y="36" width="284" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4jX-vc-hS9">
+                                <rect key="frame" x="121" y="47" width="253" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Aucune donnée disponible. 
+Veuillez vérifier votre connexion internet.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OW2-wJ-mcJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lLa-bN-iCR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1144" y="1608"/>
         </scene>
         <!--Content View Controller-->
         <scene sceneID="OIv-yQ-9aQ">
@@ -934,6 +965,12 @@
                 <relationship kind="action" name="sizeUp:"/>
             </relationships>
         </class>
+        <class className="UITableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UITableView.h"/>
+            <relationships>
+                <relationship kind="outlet" name="nxEV_emptyView" candidateClass="UIView"/>
+            </relationships>
+        </class>
         <class className="VocabularyDetailViewController" superclassName="ExerciseController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/VocabularyDetailViewController.h"/>
             <relationships>
@@ -960,7 +997,7 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="y7T-1G-Anv"/>
-        <segue reference="hlj-nX-dug"/>
         <segue reference="Tby-Mj-Arf"/>
+        <segue reference="wpF-AK-zvp"/>
     </inferredMetricsTieBreakers>
 </document>

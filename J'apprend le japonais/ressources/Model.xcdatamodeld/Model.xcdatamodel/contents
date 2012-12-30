@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="11G63" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Cache" representedClassName="Cache" syncable="YES">
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Binary" syncable="YES"/>
+    </entity>
     <entity name="Kana" representedClassName="Kana" syncable="YES">
         <attribute name="col" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="isSelected" optional="YES" attributeType="Boolean" syncable="YES"/>
@@ -14,5 +18,6 @@
     <fetchRequest name="FetchRequest" entity="Kana" predicateString="type == 1"/>
     <elements>
         <element name="Kana" positionX="160" positionY="192" width="128" height="180"/>
+        <element name="Cache" positionX="160" positionY="192" width="128" height="75"/>
     </elements>
 </model>

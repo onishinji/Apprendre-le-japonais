@@ -10,6 +10,7 @@
 #import "Kana.h"
 #import "NSMutableArray+Shuffling.h"
 #import "GData.h"
+#import "Cache.h"
 
 @interface Computer : NSObject
 {
@@ -44,8 +45,10 @@
 -(Kana *) getHiraganaWithRomanji:(NSString *)romanji;
 -(Kana *) getHiraganaWithJapan:(NSString *)romanji;
 
-
 -(Kana *) toggleSelectedKana:(Kana *)hiragana withFlush:(BOOL)flush;
+
+- (Cache *) getWithKey:(NSString *)key;
+- (void) setWithKey:(NSString *)key andValue:(NSData *)value;
 
 - (BOOL) hasGrantedToVocabulary;
 

@@ -15,8 +15,6 @@
 #import "UIScrollView+SVPullToRefresh.h"
 #import "NSObject+Blocks.h"
 
-static NSMutableDictionary * myDicData;
-
 @interface VocabularyViewController ()
 
 @end
@@ -60,6 +58,9 @@ static NSMutableDictionary * myDicData;
         // call [tableView.pullToRefreshView stopAnimating] when done
     }];
     
+    UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"VocabularyTableViewEmpty"];
+    [self.tableView setNxEV_emptyView:viewController.view];
+    
 }
 
 - (void) runDownload:(BOOL)removeCache
@@ -70,20 +71,43 @@ static NSMutableDictionary * myDicData;
     
     if (!service) {
         service = [[GDataServiceGoogleSpreadsheet alloc] init];
-        
         [service setShouldCacheResponseData:YES];
         [service setServiceShouldFollowNextLinks:YES];
-        
     }
     
     if(removeCache)
     {
-        [myDicData setObject:@"waza" forKey:self.url.absoluteString];
+        [[Computer sharedInstance] setWithKey:self.url.absoluteString andValue:nil];
     }
     
     if([[self kownUrl:self.url.absoluteString] isEqualToString:@"alreayKnow"])
     {
-        [self ticket:nil finishedWithFeed:[myDicData objectForKey:self.url.absoluteString] error:nil];
+        if([self.mode isEqualToString:@"list"])
+        {
+            Cache * cache = [[Computer sharedInstance] getWithKey:self.url.absoluteString];
+            NSString * xmlString = [[NSString alloc] initWithData:cache.value encoding:NSUTF8StringEncoding];
+            GDataFeedWorksheet * feed;
+            NSError * error;
+            
+            NSXMLElement *xmlElement = [[NSXMLElement alloc] initWithXMLString:xmlString error: &error];
+            feed =  [[GDataFeedWorksheet alloc] initWithXMLElement:xmlElement parent:nil];
+            
+            [self ticket:nil finishedWithFeed:feed error:nil];
+        }
+        else
+        {
+            Cache * cache = [[Computer sharedInstance] getWithKey:self.url.absoluteString];
+            NSString * xmlString = [[NSString alloc] initWithData:cache.value encoding:NSUTF8StringEncoding];
+            GDataFeedSpreadsheetCell * feed;
+            NSError * error;
+            
+            NSXMLElement *xmlElement = [[NSXMLElement alloc] initWithXMLString:xmlString error: &error];
+            feed =  [[GDataFeedSpreadsheetCell alloc] initWithXMLElement:xmlElement parent:nil];
+            
+            [self ticket:nil finishedWithFeed:feed error:nil];
+        }
+        
+        
     }
     else
     {
@@ -96,15 +120,9 @@ static NSMutableDictionary * myDicData;
 
 - (id)kownUrl:(NSString *)url
 {
-    if(myDicData == nil)
-    {
-        myDicData = [[NSMutableDictionary alloc] init];
-    }
+    Cache * cache = [[Computer sharedInstance] getWithKey:url];
     
-    id laclasse = [[myDicData objectForKey:url] class];
-    NSLog(@"%@", laclasse);
-    
-    if([laclasse isSubclassOfClass:[GDataFeedWorksheet class]] || [laclasse isSubclassOfClass:[GDataFeedSpreadsheetCell class]])
+    if(cache != nil && cache.value != nil)
     {
         return @"alreayKnow";
     }
@@ -115,114 +133,135 @@ static NSMutableDictionary * myDicData;
 }
 
 
+
 - (void)ticket:(GDataServiceTicket *)ticket
-finishedWithFeed:(id)feed
+finishedWithFeed:(GDataFeedBase *)feed
          error:(NSError *)error {
     
-    if(ticket != nil)
+    if(feed != nil)
     {
-        [myDicData setObject:feed forKey:self.url.absoluteString];
-    }
-    
-    [self performBlock:^{
-        [self.tableView.pullToRefreshView stopAnimating];
-    } afterDelay:0.3];
-    
-    //self.tableView.tableHeaderView = nil;
-    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-    if (error == nil) {
+        // if ticket, it's grabed from the net
+        if(ticket != nil)
+        {
+            NSString * xmlString = [[feed XMLElement] XMLString];
+            NSLog(@"xml representation = %@", xmlString);
+            NSData * data = [xmlString dataUsingEncoding:NSUTF8StringEncoding];
+            
+            NSLog(@"%@", data);
+            
+            [[Computer sharedInstance] setWithKey:self.url.absoluteString andValue:data];
+        }
         
-        NSArray *entries = [feed entries];
-        if ([entries count] > 0) {
+        [self performBlock:^{
+            [self.tableView.pullToRefreshView stopAnimating];
+        } afterDelay:0.3];
+        
+        //self.tableView.tableHeaderView = nil;
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+        if (error == nil) {
             
-            VocabularyItem * currentItem = [[VocabularyItem alloc] init];
-            
-            if([self.mode isEqualToString:@"list"])
-            {
-                NSURL * currentUrl;
-                
-                
-                
-                for(GDataEntryWorksheet * entry in entries)
-                {
-                    NSString * title = entry.title.contentStringValue;
-                    
-                    currentItem.romanji = title;
-                    
-                    if(![entry.listFeedURL isEqual:currentUrl])
-                    {
-                        currentUrl = entry.listFeedURL;
-                        
-                        currentItem.url = [NSURL URLWithString:[[entry.cellsLink.URL absoluteString] stringByReplacingOccurrencesOfString:@"/basic" withString:@"/values"]];
-                        
-                        [results addObject:currentItem];
-                        currentItem = [[VocabularyItem alloc] init];
-                    }
-                }
-                
-            }
-            else
-            {
-                int currentRow = 1;
-                
-                for(GDataEntrySpreadsheetCell * entry in entries)
-                {
-                    NSString * title = entry.title.contentStringValue;
-                    NSString * content = entry.content.contentStringValue;
-                    
-                    GDataSpreadsheetCell *cell = [entry cell];
-                    
-                    switch (cell.column) {
-                        case 1:
-                            [currentItem setTraduction:content];
-                            break;
-                            
-                        case 2:
-                            [currentItem setRomanji:content];
-                            break;
-                            
-                        case 3:
-                            [currentItem setKana:content];
-                            break;
-                            
-                        case 4:
-                            [currentItem setKanji:content];
-                            break;
-                            
-                        case 5:
-                            [currentItem setSampleUsageRomanji:content];
-                            break;
-                        case 6:
-                            [currentItem setSampleUsageJapan:content];
-                            break;
-                        case 7:
-                            [currentItem setSampleUsageTraduction:content];
-                            break;
-                            
-                        default:
-                            break;
-                    }
-                    
-                    if(currentRow != (int)cell.row)
-                    {
-                        NSLog(@"row: %i", cell.row);
-                        [results addObject:currentItem];
-                        currentItem = [[VocabularyItem alloc] init];
-                        currentRow = cell.row;
-                    }
-                }
-                
-                [results addObject:currentItem];
-                
-            }
-            
-            [self.tableView reloadData];
+            NSArray *entries = [feed entries];
+            [self createDataSource:entries];
             
         } else {
-            NSLog(@"Oups");
+            NSLog(@"fetch error: %@", error);
         }
-    } else {
+    }
+    else
+    {
+        [self.tableView.pullToRefreshView stopAnimating];
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+    
         NSLog(@"fetch error: %@", error);
+    }
+}
+
+- (void) createDataSource:(NSArray *) entries
+{
+    if ([entries count] > 0) {
+        
+        VocabularyItem * currentItem = [[VocabularyItem alloc] init];
+        
+        if([self.mode isEqualToString:@"list"])
+        {
+            NSURL * currentUrl;
+            
+            for(GDataEntryWorksheet * entry in entries)
+            {
+                NSString * title = entry.title.contentStringValue;
+                
+                currentItem.romanji = title;
+                
+                if(![entry.listFeedURL isEqual:currentUrl])
+                {
+                    currentUrl = entry.listFeedURL;
+                    
+                    currentItem.url = [NSURL URLWithString:[[entry.cellsLink.URL absoluteString] stringByReplacingOccurrencesOfString:@"/basic" withString:@"/values"]];
+                    
+                    [results addObject:currentItem];
+                    currentItem = [[VocabularyItem alloc] init];
+                }
+            }
+        }
+        else
+        {
+            int currentRow = 1;
+            
+            for(GDataEntrySpreadsheetCell * entry in entries)
+            {
+                NSString * title = entry.title.contentStringValue;
+                NSString * content = entry.content.contentStringValue;
+                
+                GDataSpreadsheetCell *cell = [entry cell];
+                
+                switch (cell.column) {
+                    case 1:
+                        [currentItem setTraduction:content];
+                        break;
+                        
+                    case 2:
+                        [currentItem setRomanji:content];
+                        break;
+                        
+                    case 3:
+                        [currentItem setKana:content];
+                        break;
+                        
+                    case 4:
+                        [currentItem setKanji:content];
+                        break;
+                        
+                    case 5:
+                        [currentItem setSampleUsageRomanji:content];
+                        break;
+                    case 6:
+                        [currentItem setSampleUsageJapan:content];
+                        break;
+                    case 7:
+                        [currentItem setSampleUsageTraduction:content];
+                        break;
+                        
+                    default:
+                        break;
+                }
+                
+                if(currentRow != (int)cell.row)
+                {
+                    NSLog(@"row: %i", cell.row);
+                    [results addObject:currentItem];
+                    currentItem = [[VocabularyItem alloc] init];
+                    currentRow = cell.row;
+                }
+            }
+            
+            [results addObject:currentItem];
+            
+        }
+        
+        [self.tableView reloadData];
+        
+    } else {
+        NSLog(@"Oups");
     }
 }
 
@@ -256,7 +295,6 @@ finishedWithFeed:(id)feed
     
     if([results count] > 0)
     {
-        
         VocabularyItem * item = [results objectAtIndex:indexPath.row];
         cell.textLabel.text = item.romanji;
         cell.detailTextLabel.text = item.traduction;

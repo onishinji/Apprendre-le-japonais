@@ -247,7 +247,7 @@
     
     [[Computer sharedInstance] createKana:@"te" japan:@"テ" position:19 col:4 row:4 section:1 type:1 ];
     
-    [[Computer sharedInstance] createKana:@"to" japan:@"ヨ" position:20 col:5 row:4 section:1 type:1 ];
+    [[Computer sharedInstance] createKana:@"to" japan:@"ト" position:20 col:5 row:4 section:1 type:1 ];
     
     [[Computer sharedInstance] createKana:@"na" japan:@"ナ" position:21 col:1 row:5 section:1 type:1 ];
     
