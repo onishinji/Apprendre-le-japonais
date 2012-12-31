@@ -9,15 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "VocabularyItem.h"
 #import "ExerciseController.h"
+#import "ContentViewController.h"
 
 @interface VocabularyDetailViewController : ExerciseController
-@property (weak, nonatomic) IBOutlet UILabel *traduction;
-@property (weak, nonatomic) IBOutlet UILabel *sampleUsageRomanji;
-@property (weak, nonatomic) IBOutlet UILabel *sampleUsageJapan;
-@property (weak, nonatomic) IBOutlet UILabel *sampleUsageTraduction;
-@property (weak, nonatomic) IBOutlet UILabel *kanji;
+{
+    int nbSizeUpDown;
+    ContentViewController *dataViewController;
+}
 
-@property (weak, nonatomic) IBOutlet UILabel *kana;
-@property (weak, nonatomic) IBOutlet UILabel *romanji;
 @property (nonatomic, weak) VocabularyItem * currentItem;
 @end

@@ -32,6 +32,7 @@
 		F0283AAF16850995007F3B0F /* HomeKanaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0283AAE16850995007F3B0F /* HomeKanaViewController.m */; };
 		F02AE6DB1690A54900177925 /* Cache.m in Sources */ = {isa = PBXBuildFile; fileRef = F02AE6DA1690A54900177925 /* Cache.m */; };
 		F02AE6DE1690A59400177925 /* UITableView+NXEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = F02AE6DD1690A59400177925 /* UITableView+NXEmptyView.m */; };
+		F02AE6E01691023900177925 /* vocabulary.html in Resources */ = {isa = PBXBuildFile; fileRef = F02AE6DF1691023900177925 /* vocabulary.html */; };
 		F02D137A1646AAE90093EAD0 /* tired-konata.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F02D13791646AAE90093EAD0 /* tired-konata.jpeg */; };
 		F02D137B1646AFDC0093EAD0 /* Model.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = F0CE948F163F2F95004F7E2B /* Model.xcdatamodeld */; };
 		F02D137C1646AFFA0093EAD0 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F060E98B163C0A4B009C01E3 /* MainStoryboard_iPhone.storyboard */; };
@@ -293,6 +294,7 @@
 		F02AE6DA1690A54900177925 /* Cache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cache.m; path = classes/Cache.m; sourceTree = "<group>"; };
 		F02AE6DC1690A59400177925 /* UITableView+NXEmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITableView+NXEmptyView.h"; path = "classes/UITableView+NXEmptyView.h"; sourceTree = "<group>"; };
 		F02AE6DD1690A59400177925 /* UITableView+NXEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITableView+NXEmptyView.m"; path = "classes/UITableView+NXEmptyView.m"; sourceTree = "<group>"; };
+		F02AE6DF1691023900177925 /* vocabulary.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = vocabulary.html; path = ressources/vocabulary.html; sourceTree = "<group>"; };
 		F02D13791646AAE90093EAD0 /* tired-konata.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tired-konata.jpeg"; sourceTree = "<group>"; };
 		F02D13811647EA240093EAD0 /* KanaQCMController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KanaQCMController.h; path = classes/KanaQCMController.h; sourceTree = "<group>"; };
 		F02D138D164837750093EAD0 /* NSMutableArray+Shuffling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+Shuffling.h"; path = "classes/NSMutableArray+Shuffling.h"; sourceTree = "<group>"; };
@@ -1068,6 +1070,7 @@
 				F0CE948F163F2F95004F7E2B /* Model.xcdatamodeld */,
 				F083B3591687864F002BB523 /* contentLessonAdapterUp.txt */,
 				F083B35B16878696002BB523 /* contentLessonAdapterDown.txt */,
+				F02AE6DF1691023900177925 /* vocabulary.html */,
 			);
 			name = ressources;
 			sourceTree = "<group>";
@@ -1845,6 +1848,7 @@
 				F083B35016867CE8002BB523 /* popoverArrowUp@2x.png in Resources */,
 				F083B35116867CE8002BB523 /* popoverBg.png in Resources */,
 				F083B35216867CE8002BB523 /* popoverBg@2x.png in Resources */,
+				F02AE6E01691023900177925 /* vocabulary.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

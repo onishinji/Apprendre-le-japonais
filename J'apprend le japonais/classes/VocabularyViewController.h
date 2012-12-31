@@ -14,8 +14,7 @@
 @interface VocabularyViewController : ExerciseController
 {
     NSMutableArray * results;
-    NSString * idSpreadsheet;
-    NSData *dataTmp;
+    NSString * idSpreadsheet; 
 }
 
 @property (nonatomic, strong) IBOutlet UITableView * tableView;

@@ -144,10 +144,7 @@ finishedWithFeed:(GDataFeedBase *)feed
         if(ticket != nil)
         {
             NSString * xmlString = [[feed XMLElement] XMLString];
-            NSLog(@"xml representation = %@", xmlString);
             NSData * data = [xmlString dataUsingEncoding:NSUTF8StringEncoding];
-            
-            NSLog(@"%@", data);
             
             [[Computer sharedInstance] setWithKey:self.url.absoluteString andValue:data];
         }
@@ -209,10 +206,21 @@ finishedWithFeed:(GDataFeedBase *)feed
             
             for(GDataEntrySpreadsheetCell * entry in entries)
             {
-                NSString * title = entry.title.contentStringValue;
                 NSString * content = entry.content.contentStringValue;
                 
                 GDataSpreadsheetCell *cell = [entry cell];
+                
+                
+                NSLog(@"row: %i  %i ", cell.row, cell.column);
+                
+                if((int)cell.row > currentRow)
+                {
+                    NSLog(@"add %@ %@", currentItem.romanji, currentItem.traduction);
+                    [results addObject:currentItem];
+                    currentItem = [[VocabularyItem alloc] init];
+                    currentRow = cell.row;
+                }
+                
                 
                 switch (cell.column) {
                     case 1:
@@ -234,23 +242,17 @@ finishedWithFeed:(GDataFeedBase *)feed
                     case 5:
                         [currentItem setSampleUsageRomanji:content];
                         break;
+                        
                     case 6:
                         [currentItem setSampleUsageJapan:content];
                         break;
+                        
                     case 7:
                         [currentItem setSampleUsageTraduction:content];
                         break;
                         
                     default:
                         break;
-                }
-                
-                if(currentRow != (int)cell.row)
-                {
-                    NSLog(@"row: %i", cell.row);
-                    [results addObject:currentItem];
-                    currentItem = [[VocabularyItem alloc] init];
-                    currentRow = cell.row;
                 }
             }
             
@@ -296,8 +298,28 @@ finishedWithFeed:(GDataFeedBase *)feed
     if([results count] > 0)
     {
         VocabularyItem * item = [results objectAtIndex:indexPath.row];
-        cell.textLabel.text = item.romanji;
-        cell.detailTextLabel.text = item.traduction;
+        
+        
+        if([self.mode isEqualToString:@"list"])
+        {
+            cell.textLabel.text = item.romanji;
+            cell.detailTextLabel.text = item.traduction;
+        }
+        else
+        {
+            cell.textLabel.text = [NSString stringWithFormat:@"%@ - %@", item.romanji, item.traduction];
+            
+            if(item.kanji == nil)
+            {
+                cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", item.kana];
+            }
+            else
+            {
+                cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ - %@", item.kana, item.kanji];
+                
+            }
+        }
+        
         cell.detailTextLabel.textColor = [UIColor colorWithR:0 G:0 B:0 A:0.9];
         
         cell.backgroundColor = [UIColor clearColor];

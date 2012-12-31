@@ -30,14 +30,10 @@
     
     NSString* htmlString = _dataObject;
     
-    _htmlView.alpha = 0;
     [_htmlView setBackgroundColor:[UIColor clearColor]];
     
     [_htmlView loadHtmlBody:htmlString competition:^(NSError *error) {
         if (!error) {
-            [UIView animateWithDuration:0.2 animations:^{
-                _htmlView.alpha = 1;
-            }];
             
             // restore size
             for(int i=0; i < fabs([self.nbUpDown intValue]); i++)

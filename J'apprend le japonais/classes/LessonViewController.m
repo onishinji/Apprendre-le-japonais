@@ -391,6 +391,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 
+    currentIndex = indexPath.row;
+    [self saveIndex:currentIndex];
     [self flipToPage:indexPath.row];
     
 }
