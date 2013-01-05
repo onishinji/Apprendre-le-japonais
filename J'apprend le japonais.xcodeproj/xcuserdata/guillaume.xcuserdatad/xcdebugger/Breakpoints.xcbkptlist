@@ -1324,11 +1324,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/KanaParametersController.m"
-         timestampString = "379072001.96151"
+         timestampString = "379072904.046324"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "263"
-         endingLineNumber = "263"
+         startingLineNumber = "262"
+         endingLineNumber = "262"
          landmarkName = "-collectionView:cellForItemAtIndexPath:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1363,11 +1363,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/Computer.m"
-         timestampString = "378580746.404812"
+         timestampString = "379072904.046324"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "565"
-         endingLineNumber = "565"
+         startingLineNumber = "521"
+         endingLineNumber = "521"
          landmarkName = "-setWithKey:andValue:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1415,11 +1415,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/Computer.m"
-         timestampString = "378580741.283388"
+         timestampString = "379072904.046324"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "560"
-         endingLineNumber = "560"
+         startingLineNumber = "516"
+         endingLineNumber = "516"
          landmarkName = "-setWithKey:andValue:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1428,11 +1428,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/Computer.m"
-         timestampString = "378580774.477196"
+         timestampString = "379072904.046324"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "549"
-         endingLineNumber = "549"
+         startingLineNumber = "505"
+         endingLineNumber = "505"
          landmarkName = "-getWithKey:"
          landmarkType = "5">
       </FileBreakpoint>

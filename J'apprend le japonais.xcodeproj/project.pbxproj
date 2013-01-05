@@ -41,9 +41,6 @@
 		F03603BB167DDE0A0003E2D3 /* aide_shuffle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F03603B9167DDE0A0003E2D3 /* aide_shuffle@2x.png */; };
 		F03603BE167DE51F0003E2D3 /* aide_qcm.png in Resources */ = {isa = PBXBuildFile; fileRef = F03603BC167DE51F0003E2D3 /* aide_qcm.png */; };
 		F03603BF167DE51F0003E2D3 /* aide_qcm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F03603BD167DE51F0003E2D3 /* aide_qcm@2x.png */; };
-		F03603C6167DE6640003E2D3 /* helpParameters.xib in Resources */ = {isa = PBXBuildFile; fileRef = F03603C0167DE6640003E2D3 /* helpParameters.xib */; };
-		F03603C8167DE6640003E2D3 /* helpQCM.xib in Resources */ = {isa = PBXBuildFile; fileRef = F03603C2167DE6640003E2D3 /* helpQCM.xib */; };
-		F03603CA167DE6640003E2D3 /* helpRandom.xib in Resources */ = {isa = PBXBuildFile; fileRef = F03603C4167DE6640003E2D3 /* helpRandom.xib */; };
 		F03603CE167DE7460003E2D3 /* aide_parametres.png in Resources */ = {isa = PBXBuildFile; fileRef = F03603CC167DE7460003E2D3 /* aide_parametres.png */; };
 		F03603CF167DE7460003E2D3 /* aide_parametres@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F03603CD167DE7460003E2D3 /* aide_parametres@2x.png */; };
 		F040097B165CBDDF0090AA18 /* epkyouka.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F040097A165CBDDF0090AA18 /* epkyouka.ttf */; };
@@ -302,9 +299,6 @@
 		F03603B9167DDE0A0003E2D3 /* aide_shuffle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "aide_shuffle@2x.png"; path = "ressources/aide_shuffle@2x.png"; sourceTree = "<group>"; };
 		F03603BC167DE51F0003E2D3 /* aide_qcm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = aide_qcm.png; path = ressources/aide_qcm.png; sourceTree = "<group>"; };
 		F03603BD167DE51F0003E2D3 /* aide_qcm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "aide_qcm@2x.png"; path = "ressources/aide_qcm@2x.png"; sourceTree = "<group>"; };
-		F03603C0167DE6640003E2D3 /* helpParameters.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = helpParameters.xib; path = ressources/helpParameters.xib; sourceTree = "<group>"; };
-		F03603C2167DE6640003E2D3 /* helpQCM.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = helpQCM.xib; path = ressources/helpQCM.xib; sourceTree = "<group>"; };
-		F03603C4167DE6640003E2D3 /* helpRandom.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = helpRandom.xib; path = ressources/helpRandom.xib; sourceTree = "<group>"; };
 		F03603CC167DE7460003E2D3 /* aide_parametres.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = aide_parametres.png; path = ressources/aide_parametres.png; sourceTree = "<group>"; };
 		F03603CD167DE7460003E2D3 /* aide_parametres@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "aide_parametres@2x.png"; path = "ressources/aide_parametres@2x.png"; sourceTree = "<group>"; };
 		F040097A165CBDDF0090AA18 /* epkyouka.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = epkyouka.ttf; path = ressources/epkyouka.ttf; sourceTree = "<group>"; };
@@ -941,9 +935,6 @@
 			isa = PBXGroup;
 			children = (
 				F0CE948D163F2F95004F7E2B /* ParametersCell.xib */,
-				F03603C0167DE6640003E2D3 /* helpParameters.xib */,
-				F03603C2167DE6640003E2D3 /* helpQCM.xib */,
-				F03603C4167DE6640003E2D3 /* helpRandom.xib */,
 			);
 			name = iphone;
 			sourceTree = "<group>";
@@ -1771,9 +1762,6 @@
 				F03603BB167DDE0A0003E2D3 /* aide_shuffle@2x.png in Resources */,
 				F03603BE167DE51F0003E2D3 /* aide_qcm.png in Resources */,
 				F03603BF167DE51F0003E2D3 /* aide_qcm@2x.png in Resources */,
-				F03603C6167DE6640003E2D3 /* helpParameters.xib in Resources */,
-				F03603C8167DE6640003E2D3 /* helpQCM.xib in Resources */,
-				F03603CA167DE6640003E2D3 /* helpRandom.xib in Resources */,
 				F03603CE167DE7460003E2D3 /* aide_parametres.png in Resources */,
 				F03603CF167DE7460003E2D3 /* aide_parametres@2x.png in Resources */,
 				F0BDD56D167FB0E100F8A782 /* nekosensei_kana_57.png in Resources */,

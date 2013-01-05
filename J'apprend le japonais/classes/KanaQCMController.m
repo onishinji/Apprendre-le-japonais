@@ -387,7 +387,8 @@
 
 - (IBAction)openHelp:(UIBarButtonItem *)bar
 {
-    helpVC = [[HelpViewController alloc] initWithNibName:@"helpQCM" bundle:nil];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:[NSBundle mainBundle]];
+    helpVC = [storyboard instantiateViewControllerWithIdentifier:@"helpQCM"];
     
     if(openHelpAlready)
     {

@@ -63,7 +63,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" id="YVx-5b-bxL">
-                                <rect key="frame" x="0.0" y="-2" width="480" height="30"/>
+                                <rect key="frame" x="1" y="-3" width="480" height="30"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.87965852349999996" green="0.8648014316" blue="0.78163352330000002" alpha="0.48999999999999999" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
@@ -237,6 +237,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YkY-ar-seu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1352" y="-335"/>
+        </scene>
+        <!--Help View Controller-->
+        <scene sceneID="1j8-Ei-e5i">
+            <objects>
+                <viewController storyboardIdentifier="helpQCM" id="JDw-Ms-gGj" customClass="HelpViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="277-Vo-Zda">
+                        <rect key="frame" x="0.0" y="64" width="480" height="256"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleAspectFill" id="akB-z4-cfj">
+                                <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.25098039220000001" green="0.25098039220000001" blue="0.25098039220000001" alpha="0.75" colorSpace="calibratedRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="aide_qcm.png" id="3xN-JW-A3H">
+                                <rect key="frame" x="0.0" y="-7" width="480" height="276"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.047118742970000002" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                        <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="view" destination="277-Vo-Zda" id="kHw-ZF-aDu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HmR-c3-nlF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2266" y="-592"/>
         </scene>
         <!--Kana Random Controller - Neko Sensei - J'apprend avec des cartes-->
         <scene sceneID="omS-XA-D8e">
@@ -974,8 +1007,77 @@ Veuillez vérifier votre connexion internet.</string>
             </objects>
             <point key="canvasLocation" x="1198" y="1191"/>
         </scene>
+        <!--Help View Controller-->
+        <scene sceneID="atV-gs-6a3">
+            <objects>
+                <viewController storyboardIdentifier="helpParameters" id="7hL-rR-XtM" customClass="HelpViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gcp-Lz-AJe">
+                        <rect key="frame" x="0.0" y="64" width="480" height="256"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleAspectFill" id="4Pm-Mq-D4J">
+                                <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.25098039220000001" green="0.25098039220000001" blue="0.25098039220000001" alpha="0.75" colorSpace="calibratedRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="aide_parametres.png" id="heS-t5-r53">
+                                <rect key="frame" x="0.0" y="-7" width="480" height="276"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.047118742970000002" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                        <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="view" destination="gcp-Lz-AJe" id="n3X-sD-7yJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="upi-iv-XDS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2232" y="-156"/>
+        </scene>
+        <!--Help View Controller-->
+        <scene sceneID="vnX-BI-16k">
+            <objects>
+                <viewController storyboardIdentifier="helpRandom" id="ABV-1p-obe" customClass="HelpViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Rd-sR-ueR">
+                        <rect key="frame" x="0.0" y="64" width="480" height="256"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleAspectFill" id="w8k-GA-Wnn">
+                                <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.25098039220000001" green="0.25098039220000001" blue="0.25098039220000001" alpha="0.75" colorSpace="calibratedRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="aide_shuffle.png" id="gZn-qO-yEa">
+                                <rect key="frame" x="0.0" y="8" width="480" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.047118742970000002" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                        <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="view" destination="3Rd-sR-ueR" id="mnR-0m-aLA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ap-AP-N6X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2237" y="287"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="aide_parametres.png" width="480" height="268"/>
+        <image name="aide_qcm.png" width="960" height="535"/>
+        <image name="aide_shuffle.png" width="480" height="268"/>
         <image name="boardcard.png" width="220" height="220"/>
         <image name="btn_back.png" width="47" height="46"/>
         <image name="btn_back_over.png" width="47" height="46"/>
@@ -991,14 +1093,96 @@ Veuillez vérifier votre connexion internet.</string>
         <image name="shuffle_romanji_icon.png" width="90" height="90"/>
         <image name="title_scroll.png" width="195" height="23"/>
     </resources>
+    <classes>
+        <class className="ContentViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ContentViewController.h"/>
+        </class>
+        <class className="ExerciseController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ExerciseController.h"/>
+            <relationships>
+                <relationship kind="action" name="openHelp:" candidateClass="UIBarButtonItem"/>
+            </relationships>
+        </class>
+        <class className="HelpViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HelpViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="closeModal:"/>
+            </relationships>
+        </class>
+        <class className="HomeKanaViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HomeKanaViewController.h"/>
+        </class>
+        <class className="HomeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HomeViewController.h"/>
+        </class>
+        <class className="KanaFlipView" superclassName="KanaView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KanaFlipView.h"/>
+        </class>
+        <class className="KanaParametersController" superclassName="ExerciseController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KanaParametersController.h"/>
+        </class>
+        <class className="KanaQCMController" superclassName="ExerciseController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KanaQCMController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="kanaView" candidateClass="KanaView"/>
+                <relationship kind="outlet" name="lblResponse" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="leftBottomButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="leftMiddleButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="leftTopButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="msg" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="rightBottomButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="rightMiddleButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="rightTopButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="scoreLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="KanaRandomController" superclassName="ExerciseController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KanaRandomController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="btnNext" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btnPrev" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="kanaFlipView" candidateClass="KanaFlipView"/>
+                <relationship kind="outlet" name="msg" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="KanaView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KanaView.h"/>
+            <relationships>
+                <relationship kind="outlet" name="imgCentral" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="lblHiragana" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="LessonViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LessonViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="sizeDown:"/>
+                <relationship kind="action" name="sizeUp:"/>
+            </relationships>
+        </class>
+        <class className="UITableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UITableView.h"/>
+            <relationships>
+                <relationship kind="outlet" name="nxEV_emptyView" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="VocabularyDetailViewController" superclassName="ExerciseController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/VocabularyDetailViewController.h"/>
+        </class>
+        <class className="VocabularyViewController" superclassName="ExerciseController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/VocabularyViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="wpF-AK-zvp"/>
         <segue reference="5NK-w8-1YS"/>
+        <segue reference="wpF-AK-zvp"/>
         <segue reference="3Pj-Cm-jVO"/>
     </inferredMetricsTieBreakers>
 </document>
