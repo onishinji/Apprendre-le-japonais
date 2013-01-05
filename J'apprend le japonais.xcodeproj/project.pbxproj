@@ -196,6 +196,7 @@
 		F0CE94E6164084B9004F7E2B /* KanaRandomController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CE94DA164084B9004F7E2B /* KanaRandomController.m */; };
 		F0CE94E8164084B9004F7E2B /* KanaParametersController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CE94DE164084B9004F7E2B /* KanaParametersController.m */; };
 		F0CE94E91640850B004F7E2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F060E97F163C0A4B009C01E3 /* main.m */; };
+		F0DBA82916983E400044735D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = F0DBA82816983E400044735D /* Reachability.m */; };
 		F0E2375C167E12760051DC7E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E2375B167E12750051DC7E /* SystemConfiguration.framework */; };
 		F0E2375E167E127D0051DC7E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E2375D167E127D0051DC7E /* Security.framework */; };
 		F0E6D16F167E190A006DE22B /* VocabularyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E6D16D167E190A006DE22B /* VocabularyViewController.m */; };
@@ -806,6 +807,8 @@
 		F0CE94DA164084B9004F7E2B /* KanaRandomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KanaRandomController.m; path = classes/KanaRandomController.m; sourceTree = "<group>"; };
 		F0CE94DD164084B9004F7E2B /* KanaParametersController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KanaParametersController.h; path = classes/KanaParametersController.h; sourceTree = "<group>"; };
 		F0CE94DE164084B9004F7E2B /* KanaParametersController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KanaParametersController.m; path = classes/KanaParametersController.m; sourceTree = "<group>"; };
+		F0DBA82716983E400044735D /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = classes/Reachability.h; sourceTree = "<group>"; };
+		F0DBA82816983E400044735D /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = classes/Reachability.m; sourceTree = "<group>"; };
 		F0E2375B167E12750051DC7E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F0E2375D167E127D0051DC7E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		F0E6D16C167E190A006DE22B /* VocabularyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VocabularyViewController.h; path = classes/VocabularyViewController.h; sourceTree = "<group>"; };
@@ -983,6 +986,8 @@
 		F04C008E1642E19300EAF61D /* librairies */ = {
 			isa = PBXGroup;
 			children = (
+				F0DBA82716983E400044735D /* Reachability.h */,
+				F0DBA82816983E400044735D /* Reachability.m */,
 				F02AE6DC1690A59400177925 /* UITableView+NXEmptyView.h */,
 				F02AE6DD1690A59400177925 /* UITableView+NXEmptyView.m */,
 				F083B33516867CE8002BB523 /* WEPopover */,
@@ -1893,6 +1898,7 @@
 				F083B35616867CE8002BB523 /* WETouchableView.m in Sources */,
 				F02AE6DB1690A54900177925 /* Cache.m in Sources */,
 				F02AE6DE1690A59400177925 /* UITableView+NXEmptyView.m in Sources */,
+				F0DBA82916983E400044735D /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
