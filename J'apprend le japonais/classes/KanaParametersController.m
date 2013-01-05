@@ -168,13 +168,78 @@
     label.textColor = [UIColor blackColor];
     label.backgroundColor = [UIColor clearColor];
     UIImageView * img = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title_scroll.png"]];
-    img.frame = CGRectMake(20, 10, 240, 40);
+    img.frame = CGRectMake(20, 10, 270, 40);
     [cell addSubview:img];
+    
+    //SelectButton
+    UIButton * button = [self configureButtonSelecForSection:indexPath.section];
+    [button setTitle:@"++" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(selectAll:) forControlEvents:UIControlEventTouchDown];
+    [cell addSubview:button];
+    
+    
+    // UnSelectButton
+    button = [self configureButtonSelecForSection:indexPath.section];
+    [button setTitle:@"--" forState:UIControlStateNormal];
+    [button setFrame:CGRectMake(button.frame.origin.x - button.frame.size.width - 5, button.frame.origin.y, button.frame.size.width, button.frame.size.height)];
+    [button addTarget:self action:@selector(unSelectAll:) forControlEvents:UIControlEventTouchDown];
+    [cell addSubview:button];
     
     cell.backgroundColor = [UIColor clearColor];
     [cell addSubview:label];
     
     return cell;
+}
+
+- (UIButton *) configureButtonSelecForSection:(NSInteger)section
+{
+    //AddParameterButton
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setFrame:CGRectMake(440, 17, 27.0, 27.0)];
+    button.tag = section;
+    button.hidden = NO;
+    button.layer.borderWidth = 1;
+    button.layer.borderColor = [UIColor redColor].CGColor;
+    [button setBackgroundColor:[UIColor clearColor]];
+    [button setBackgroundColor:[UIColor grayColor]];
+    
+    return button;
+}
+
+- (IBAction)selectAll:(id)sender
+{
+    UIButton * btn = (UIButton *)sender;
+    NSLog(@"select all %i", btn.tag);
+    NSArray * kanas = [allResult objectForKey:[NSString stringWithFormat:@"section_%d", btn.tag]];
+    for (id obj in kanas) {
+        
+        if([[obj class] isSubclassOfClass:[Kana class]])
+        {
+            Kana * aKana = (Kana *) obj;
+            [aKana setIsSelected:[NSNumber numberWithBool:TRUE]];
+        }
+    }
+    
+    [[Computer sharedInstance] flush];
+    [_collectionView reloadData];
+}
+
+- (IBAction)unSelectAll:(id)sender
+{
+    UIButton * btn = (UIButton *)sender;
+    NSLog(@"select all %i", btn.tag);
+    NSArray * kanas = [allResult objectForKey:[NSString stringWithFormat:@"section_%d", btn.tag]];
+    for (id obj in kanas) {
+        
+        if([[obj class] isSubclassOfClass:[Kana class]])
+        {
+            Kana * aKana = (Kana *) obj;
+            [aKana setIsSelected:[NSNumber numberWithBool:FALSE]];
+        }
+    }
+    
+    [[Computer sharedInstance] flush];
+    [_collectionView reloadData];
 }
 
 - (PSTCollectionViewCell *)collectionView:(PSTCollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -218,7 +283,6 @@
     {
         Kana * hir = objetInArray;
         [[Computer sharedInstance] toggleSelectedKana:hir withFlush:TRUE];
-        
         
         [collectionView reloadItemsAtIndexPaths:[NSArray arrayWithObject:indexPath]];
         NSLog(@"%@ a été cliqué", [hir romanji]);
