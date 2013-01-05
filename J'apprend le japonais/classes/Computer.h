@@ -50,8 +50,6 @@
 - (Cache *) getWithKey:(NSString *)key;
 - (void) setWithKey:(NSString *)key andValue:(NSData *)value;
 
-- (BOOL) hasGrantedToVocabulary;
-
 -(void)flush;
 
 @end
