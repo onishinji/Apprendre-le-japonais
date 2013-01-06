@@ -17,6 +17,8 @@
 
     PSTCollectionViewFlowLayout * _collectionViewLayout;
     PSTCollectionView * _collectionView;
+    
+    NSMutableArray * headersIsSelected;
 } 
 
 @end

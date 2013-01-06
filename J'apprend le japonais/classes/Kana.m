@@ -21,4 +21,16 @@
 @dynamic section;
 @dynamic type;
 
+
+- (NSString *)displayRomanji
+{
+    [self willAccessValueForKey:@"romanji"];
+    NSString *myName = [self primitiveValueForKey:@"romanji"];
+    
+    [self didAccessValueForKey:@"romanji"];
+    return [myName stringByReplacingCharactersInRange:NSMakeRange(0,1)
+                                             withString:[[myName  substringToIndex:1] capitalizedString]];;
+    
+}
+
 @end

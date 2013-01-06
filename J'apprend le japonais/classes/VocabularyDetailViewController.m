@@ -32,9 +32,7 @@
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:[NSBundle mainBundle]];
     
-    dataViewController = [storyboard instantiateViewControllerWithIdentifier:@"contentView"];
-    
-    NSLog(@"%@", self.currentItem.sampleUsageTraduction);
+    dataViewController = [storyboard instantiateViewControllerWithIdentifier:@"contentViewVocabulary"];
     
     NSDictionary * substitutions = [NSDictionary
                                     dictionaryWithObjects:[NSArray arrayWithObjects:
@@ -42,9 +40,9 @@
                                                            self.currentItem.traduction ? self.currentItem.traduction : @"-",
                                                            self.currentItem.kana ? self.currentItem.kana : @"-",
                                                            self.currentItem.kanji ? self.currentItem.kanji : @"-",
-                                                           self.currentItem.sampleUsageTraduction ? self.currentItem.sampleUsageTraduction : @"-",
-                                                           self.currentItem.sampleUsageJapan ? self.currentItem.sampleUsageJapan : @"-",
-                                                           self.currentItem.sampleUsageRomanji ? self.currentItem.sampleUsageRomanji : @"-",
+                                                           self.currentItem.sampleUsageTraduction ? self.currentItem.sampleUsageTraduction : @"",
+                                                           self.currentItem.sampleUsageJapan ? self.currentItem.sampleUsageJapan : @"",
+                                                           self.currentItem.sampleUsageRomanji ? self.currentItem.sampleUsageRomanji : @"",
                                             nil]
                                     forKeys:[NSArray arrayWithObjects:
                                              @"romanji",
@@ -73,7 +71,6 @@
     
     dataViewController.dataObject = html;
     dataViewController.nbUpDown = [NSNumber numberWithInt:nbSizeUpDown];
-
     
     [self.view addSubview:dataViewController.view];
     
@@ -86,18 +83,6 @@
      
     self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects: Button1,Button2, nil];
     
-    
-   /* self.romanji.text = self.currentItem.romanji;
-    self.kana.text = self.currentItem.kana;
-    self.sampleUsageJapan.text = self.currentItem.sampleUsageJapan;
-    self.sampleUsageRomanji.text = self.currentItem.sampleUsageRomanji;
-    self.sampleUsageTraduction.text = self.currentItem.sampleUsageTraduction;
-    self.kanji.text = self.currentItem.kanji;
-    self.traduction.text = self.currentItem.traduction;
-	// Do any additional setup after loading the view.
-    */
-    
-    self.title = @"Détails";
 }
 #pragma mark - IBAction
 

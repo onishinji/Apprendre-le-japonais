@@ -15,7 +15,7 @@
 #import "UIView+Tags.h"
 #import "NSTimer+Blocks.h"
 
-@interface KanaQCMController : ExerciseController
+@interface KanaQCMController : ExerciseController <UIAlertViewDelegate>
 {
     Kana * currentKana;
     

@@ -20,10 +20,10 @@
     [super loadView];
     
     _collectionViewLayout = [[PSTCollectionViewFlowLayout alloc] init];
-    _collectionViewLayout.itemSize = CGSizeMake(90, 90.0f);
-    _collectionViewLayout.sectionInset =  UIEdgeInsetsMake(0, 5, 0, 5);
-    _collectionViewLayout.minimumInteritemSpacing = 3;
-    _collectionViewLayout.minimumLineSpacing = 3;
+    _collectionViewLayout.itemSize = CGSizeMake(76, 76.0f);
+    _collectionViewLayout.sectionInset =  UIEdgeInsetsMake(0, 20, 0, 20);
+    _collectionViewLayout.minimumInteritemSpacing = 8;
+    _collectionViewLayout.minimumLineSpacing = 15;
     _collectionViewLayout.headerReferenceSize = CGSizeMake(260, 60);
     
     _collectionView = [[PSTCollectionView alloc] initWithFrame:CGRectMake(0, 35, self.view.frame.size.width, self.view.frame.size.height - 35) collectionViewLayout:_collectionViewLayout];
@@ -40,7 +40,6 @@
     [_collectionView registerClass:PSTCollectionViewCell.class forCellWithReuseIdentifier:@"PSTCollectionViewCell"];
     [_collectionView registerClass:ParametersCell.class forCellWithReuseIdentifier:@"ParametersCell"];
     
-
 }
 
 - (void)viewDidLoad
@@ -53,6 +52,8 @@
 - (void) activeController
 {
     // Custom initialization
+    
+    headersIsSelected = [[NSMutableArray alloc] init];
     
     NSFetchedResultsController * resultsController;
     if([self isForHiragana])
@@ -110,6 +111,8 @@
                 }
             }
         }
+        
+        [headersIsSelected setObject:[NSNumber numberWithBool:TRUE] atIndexedSubscript:sectionId];
         
         [allResult setObject:sectionKana forKey:[NSString stringWithFormat:@"section_%d", sectionId] ];
         sectionId++;
@@ -173,16 +176,14 @@
     
     //SelectButton
     UIButton * button = [self configureButtonSelecForSection:indexPath.section];
-    [button setTitle:@"++" forState:UIControlStateNormal];
-    [button addTarget:self action:@selector(selectAll:) forControlEvents:UIControlEventTouchDown];
-    [cell addSubview:button];
+    [button setImage:[UIImage imageNamed:@"checkbox_off"] forState:UIControlStateNormal];
     
+    [button setImage:[UIImage imageNamed:@"checkbox_on"] forState:UIControlStateSelected];
     
-    // UnSelectButton
-    button = [self configureButtonSelecForSection:indexPath.section];
-    [button setTitle:@"--" forState:UIControlStateNormal];
-    [button setFrame:CGRectMake(button.frame.origin.x - button.frame.size.width - 5, button.frame.origin.y, button.frame.size.width, button.frame.size.height)];
-    [button addTarget:self action:@selector(unSelectAll:) forControlEvents:UIControlEventTouchDown];
+    [button addTarget:self action:@selector(onSelectButton:) forControlEvents:UIControlEventTouchDown];
+    
+    [button setSelected:[[headersIsSelected objectAtIndex:button.tag] boolValue]];
+    [button setAutoresizingMask:UIViewAutoresizingFlexibleRightMargin];
     [cell addSubview:button];
     
     cell.backgroundColor = [UIColor clearColor];
@@ -195,28 +196,41 @@
 {
     //AddParameterButton
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [button setFrame:CGRectMake(440, 17, 27.0, 27.0)];
+    [button setFrame:CGRectMake(self.view.frame.size.width - 45, 17, 34.0, 28.0)];
     button.tag = section;
-    button.hidden = NO;
-    button.layer.borderWidth = 1;
-    button.layer.borderColor = [UIColor redColor].CGColor;
+    button.hidden = NO;  
     [button setBackgroundColor:[UIColor clearColor]];
-    [button setBackgroundColor:[UIColor grayColor]];
     
     return button;
 }
 
-- (IBAction)selectAll:(id)sender
+- (void)onSelectButton:(UIButton *)button
 {
-    UIButton * btn = (UIButton *)sender;
-    NSLog(@"select all %i", btn.tag);
-    NSArray * kanas = [allResult objectForKey:[NSString stringWithFormat:@"section_%d", btn.tag]];
+    [_collectionView reloadSections:[[NSIndexSet alloc] initWithIndex:button.tag]];
+    
+    BOOL selected = [button isSelected];
+    
+    selected = !selected;
+    
+    selected = selected;
+    
+    [headersIsSelected setObject:[NSNumber numberWithBool:selected] atIndexedSubscript:button.tag];
+    
+    NSArray * kanas = [allResult objectForKey:[NSString stringWithFormat:@"section_%d", button.tag]];
     for (id obj in kanas) {
         
         if([[obj class] isSubclassOfClass:[Kana class]])
         {
             Kana * aKana = (Kana *) obj;
-            [aKana setIsSelected:[NSNumber numberWithBool:TRUE]];
+            
+            if(selected)
+            {
+                [aKana setIsSelected:[NSNumber numberWithBool:TRUE]];
+            }
+            else
+            {
+                [aKana setIsSelected:[NSNumber numberWithBool:FALSE]];
+            }
         }
     }
     
@@ -226,8 +240,7 @@
 
 - (IBAction)unSelectAll:(id)sender
 {
-    UIButton * btn = (UIButton *)sender;
-    NSLog(@"select all %i", btn.tag);
+    UIButton * btn = (UIButton *)sender; 
     NSArray * kanas = [allResult objectForKey:[NSString stringWithFormat:@"section_%d", btn.tag]];
     for (id obj in kanas) {
         

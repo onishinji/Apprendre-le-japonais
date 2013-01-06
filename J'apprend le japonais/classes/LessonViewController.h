@@ -18,6 +18,7 @@
 	Class popoverClass;
     
     NSArray * titleLessons;
+    UITableViewController *contentViewController;
     
 }
     

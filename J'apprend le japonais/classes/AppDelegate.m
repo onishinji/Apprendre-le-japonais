@@ -63,11 +63,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
     NSManagedObjectContext *context = [self managedObjectContext];
     
     UINavigationController *rootViewController = (UINavigationController *)self.window.rootViewController;
     HomeViewController * main = (HomeViewController *)[[rootViewController viewControllers] objectAtIndex:0];
     main.managedObjectContext = context;
+    
+    [[UIBarButtonItem appearance] setTintColor:[UIColor redColor]];
     
     [[Computer sharedInstance] setManagedObjectContext:context];
     
@@ -81,6 +84,7 @@
 
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
+    
     
     return YES;
 }

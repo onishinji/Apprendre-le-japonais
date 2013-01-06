@@ -22,4 +22,6 @@
 @property (nonatomic, retain) NSNumber * section;
 @property (nonatomic, retain) NSNumber * type;
 
+- (NSString *)displayRomanji;
+
 @end

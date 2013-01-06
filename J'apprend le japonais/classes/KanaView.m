@@ -64,7 +64,7 @@
     { 
         [_lblHiragana setFont:[UIFont fontWithName:@"Arial" size:fontSize]];
         
-        _lblHiragana.text = _currentHiragana.romanji;
+        _lblHiragana.text = _currentHiragana.displayRomanji;
     }
     else
     { 
@@ -87,7 +87,7 @@
     {
         [_lblHiragana setFont:[UIFont fontWithName:@"Arial" size:fontSize]];
         
-        _lblHiragana.text = _currentHiragana.romanji;
+        _lblHiragana.text = _currentHiragana.displayRomanji;
     }
     
 }

@@ -62,6 +62,10 @@
         nbKanaLesson = [[[Computer sharedInstance] getSelectedsKatakana] count];
     }
     
+    if(nbKanaLesson == 0)
+    {
+        [[[UIAlertView alloc] initWithTitle:@"Oups !" message:@"Vous n'avez aucun Kana à apprendre ! Il faut aller dans l'écran Paramètre pour en ajouter." delegate:nil cancelButtonTitle:@"Fermer" otherButtonTitles:nil, nil] show];
+    }
     
     Kana * kana = nil;
     if(currentPos < [knows count])
@@ -94,11 +98,11 @@
     int nb = 0;
     if([self isForHiragana])
     {
-         nb = [[[Computer sharedInstance] getSelectedsHiragana] count] - currentPos - 1;
+         nb = nbKanaLesson - currentPos - 1;
     }
     else
     {
-        nb = [[[Computer sharedInstance] getSelectedsKatakana] count] - currentPos - 1;
+        nb = nbKanaLesson - currentPos - 1;
     }
     
     if(nb == 0)

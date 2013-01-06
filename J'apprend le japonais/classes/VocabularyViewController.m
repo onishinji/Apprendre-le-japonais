@@ -51,7 +51,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+     
     [self.tableView addPullToRefreshWithActionHandler:^{
         [self runDownload:YES];
         // prepend data to dataSource, insert cells at top of table view
@@ -60,7 +60,12 @@
     
     UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"VocabularyTableViewEmpty"];
     [self.tableView setNxEV_emptyView:viewController.view];
-    
+}
+
+- (void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController.navigationBar setHidden:FALSE];
 }
 
 - (void) runDownload:(BOOL)removeCache
@@ -148,6 +153,12 @@ finishedWithFeed:(GDataFeedBase *)feed
             
             [[Computer sharedInstance] setWithKey:self.url.absoluteString andValue:data];
         }
+        
+        NSDate * date = [[feed updatedDate] date];
+          
+        NSString * dateString = [NSDateFormatter localizedStringFromDate:date dateStyle:NSDateFormatterMediumStyle timeStyle:NSDateFormatterShortStyle];
+        
+        [self.tableView.pullToRefreshView setSubtitle:[NSString stringWithFormat:NSLocalizedString(@"PullToRefresh.lastUpdated",), dateString] forState:SVPullToRefreshStateAll];
         
         [self performBlock:^{
             [self.tableView.pullToRefreshView stopAnimating];
@@ -299,12 +310,13 @@ finishedWithFeed:(GDataFeedBase *)feed
     {
         VocabularyItem * item = [results objectAtIndex:indexPath.row];
         
-        
+        // lesson list
         if([self.mode isEqualToString:@"list"])
         {
-            cell.textLabel.text = item.romanji;
+            cell.textLabel.text = [NSString stringWithFormat:@"Leçon %i - %@", indexPath.row+1, item.romanji];
             cell.detailTextLabel.text = item.traduction;
         }
+        // word list
         else
         {
             cell.textLabel.text = [NSString stringWithFormat:@"%@ - %@", item.romanji, item.traduction];
@@ -328,7 +340,6 @@ finishedWithFeed:(GDataFeedBase *)feed
         
         cell.backgroundView.hidden = TRUE;
         cell.backgroundView.backgroundColor = [UIColor clearColor];
-        // Configure the cell...
         
         [cell setSelectionStyle:UITableViewCellSelectionStyleGray];
         [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];

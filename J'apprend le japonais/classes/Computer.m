@@ -44,7 +44,7 @@ static Computer *sharedObject;
 }
 
 -(Kana *) getRandomHiragana:(NSArray *)knowRomanjis
-{
+{    
     NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Kana" inManagedObjectContext:_managedObjectContext];
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     [request setEntity:entityDescription];
@@ -76,7 +76,7 @@ static Computer *sharedObject;
 
 
 -(Kana *) getRandomKatakana:(NSArray *)knowRomanjis
-{
+{    
     NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Kana" inManagedObjectContext:_managedObjectContext];
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     [request setEntity:entityDescription];
@@ -94,6 +94,9 @@ static Computer *sharedObject;
         NSLog(@"Error while retriving\n%@",
               ([error localizedDescription] != nil) ? [error localizedDescription]: @"Unknown Error");
     }
+    
+    
+    NSLog(@"nb kana restant à trouver %i", array.count);
     
     if([array count] == 0)
     {
@@ -138,14 +141,6 @@ static Computer *sharedObject;
         NSMutableArray * mutable = [NSMutableArray arrayWithArray:array];
         [mutable shuffle];
         
-        if([mutable count] < limit)
-        {
-            for(int i = 0; i < [mutable count] - limit; i++)
-            {
-                [mutable addObject:[mutable objectAtIndex:0]];
-            }
-        }
-        
         return mutable;
     }
 }
@@ -181,14 +176,6 @@ static Computer *sharedObject;
     {
         NSMutableArray * mutable = [NSMutableArray arrayWithArray:array];
         [mutable shuffle];
-        
-        if([mutable count] < limit)
-        {
-            for(int i = 0; i < [mutable count] - limit; i++)
-            {
-                [mutable addObject:[mutable objectAtIndex:0]];
-            }
-        }
         
         return mutable;
     }
@@ -345,7 +332,7 @@ static Computer *sharedObject;
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     [request setEntity:entityDescription];
     
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"romanji = %@ and type = 1", romanji];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"romanji = [c]%@ and type = 1", romanji];
     [request setPredicate:predicate];
     
     NSSortDescriptor *sort = [[NSSortDescriptor alloc] initWithKey:@"romanji" ascending:NO];
@@ -377,7 +364,7 @@ static Computer *sharedObject;
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     [request setEntity:entityDescription];
     
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"japan = %@ and type = 1", romanji];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"japan = [c]%@ and type = 1", romanji];
     [request setPredicate:predicate];
     
     NSSortDescriptor *sort = [[NSSortDescriptor alloc] initWithKey:@"romanji" ascending:NO];
@@ -408,7 +395,7 @@ static Computer *sharedObject;
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     [request setEntity:entityDescription];
     
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"romanji = %@ and type = 0", romanji];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"romanji = [c]%@ and type = 0", romanji];
     [request setPredicate:predicate];
     
     NSSortDescriptor *sort = [[NSSortDescriptor alloc] initWithKey:@"romanji" ascending:NO];
@@ -440,7 +427,7 @@ static Computer *sharedObject;
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     [request setEntity:entityDescription];
     
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"japan = %@ and type = 0", romanji];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"japan = [c]%@ and type = 0", romanji];
     [request setPredicate:predicate];
     
     NSSortDescriptor *sort = [[NSSortDescriptor alloc] initWithKey:@"romanji" ascending:NO];

@@ -33,10 +33,7 @@
 		F02AE6DB1690A54900177925 /* Cache.m in Sources */ = {isa = PBXBuildFile; fileRef = F02AE6DA1690A54900177925 /* Cache.m */; };
 		F02AE6DE1690A59400177925 /* UITableView+NXEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = F02AE6DD1690A59400177925 /* UITableView+NXEmptyView.m */; };
 		F02AE6E01691023900177925 /* vocabulary.html in Resources */ = {isa = PBXBuildFile; fileRef = F02AE6DF1691023900177925 /* vocabulary.html */; };
-		F02D137A1646AAE90093EAD0 /* tired-konata.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F02D13791646AAE90093EAD0 /* tired-konata.jpeg */; };
 		F02D137B1646AFDC0093EAD0 /* Model.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = F0CE948F163F2F95004F7E2B /* Model.xcdatamodeld */; };
-		F02D137C1646AFFA0093EAD0 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F060E98B163C0A4B009C01E3 /* MainStoryboard_iPhone.storyboard */; };
-		F02D137D1646AFFA0093EAD0 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F060E98E163C0A4B009C01E3 /* MainStoryboard_iPad.storyboard */; };
 		F03603BA167DDE0A0003E2D3 /* aide_shuffle.png in Resources */ = {isa = PBXBuildFile; fileRef = F03603B8167DDE0A0003E2D3 /* aide_shuffle.png */; };
 		F03603BB167DDE0A0003E2D3 /* aide_shuffle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F03603B9167DDE0A0003E2D3 /* aide_shuffle@2x.png */; };
 		F03603BE167DE51F0003E2D3 /* aide_qcm.png in Resources */ = {isa = PBXBuildFile; fileRef = F03603BC167DE51F0003E2D3 /* aide_qcm.png */; };
@@ -51,10 +48,7 @@
 		F060E974163C0A4B009C01E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F060E973163C0A4B009C01E3 /* UIKit.framework */; };
 		F060E976163C0A4B009C01E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F060E975163C0A4B009C01E3 /* Foundation.framework */; };
 		F060E978163C0A4B009C01E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F060E977163C0A4B009C01E3 /* CoreGraphics.framework */; };
-		F060E97E163C0A4B009C01E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F060E97C163C0A4B009C01E3 /* InfoPlist.strings */; };
 		F060E9B4163D5BB3009C01E3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F060E9B3163D5BB3009C01E3 /* CoreData.framework */; };
-		F061D984166BDD05007E7422 /* nekoneko_applications_alt.png in Resources */ = {isa = PBXBuildFile; fileRef = F061D980166BDD05007E7422 /* nekoneko_applications_alt.png */; };
-		F061D985166BDD05007E7422 /* nekoneko_applications_alt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F061D981166BDD05007E7422 /* nekoneko_applications_alt@2x.png */; };
 		F061D989166BDD26007E7422 /* nekosensei_kana_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F061D988166BDD26007E7422 /* nekosensei_kana_logo.png */; };
 		F061D98B166BDD2E007E7422 /* nekosensei_kana_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F061D98A166BDD2E007E7422 /* nekosensei_kana_logo@2x.png */; };
 		F061D993167150AD007E7422 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F061D992167150AC007E7422 /* Default@2x.png */; };
@@ -62,66 +56,6 @@
 		F083B2431686568C002BB523 /* CMHTMLView.m in Sources */ = {isa = PBXBuildFile; fileRef = F083B2421686568C002BB523 /* CMHTMLView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F083B24B16865B96002BB523 /* LessonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F083B24A16865B96002BB523 /* LessonViewController.m */; };
 		F083B24E16865D02002BB523 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F083B24D16865D01002BB523 /* ContentViewController.m */; };
-		F083B28C168660C0002BB523 /* d_1start.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B250168660BF002BB523 /* d_1start.xml */; };
-		F083B28D168660C0002BB523 /* d_2_01_hiragana.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B251168660BF002BB523 /* d_2_01_hiragana.xml */; };
-		F083B28E168660C0002BB523 /* d_2_02_katakana.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B252168660BF002BB523 /* d_2_02_katakana.xml */; };
-		F083B28F168660C0002BB523 /* d_2_03_kanji.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B253168660BF002BB523 /* d_2_03_kanji.xml */; };
-		F083B290168660C0002BB523 /* d_2writingsys.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B254168660BF002BB523 /* d_2writingsys.xml */; };
-		F083B291168660C0002BB523 /* d_3_01_copula.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B255168660BF002BB523 /* d_3_01_copula.xml */; };
-		F083B292168660C0002BB523 /* d_3_02_particles.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B256168660BF002BB523 /* d_3_02_particles.xml */; };
-		F083B293168660C0002BB523 /* d_3_03_adjectives.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B257168660BF002BB523 /* d_3_03_adjectives.xml */; };
-		F083B294168660C0002BB523 /* d_3_04_verbs.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B258168660BF002BB523 /* d_3_04_verbs.xml */; };
-		F083B295168660C0002BB523 /* d_3_05_negverb.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B259168660BF002BB523 /* d_3_05_negverb.xml */; };
-		F083B296168660C0002BB523 /* d_3_06_pastverb.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B25A168660BF002BB523 /* d_3_06_pastverb.xml */; };
-		F083B297168660C0002BB523 /* d_3_07_particles2.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B25B168660BF002BB523 /* d_3_07_particles2.xml */; };
-		F083B298168660C0002BB523 /* d_3_08_transtype.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B25C168660BF002BB523 /* d_3_08_transtype.xml */; };
-		F083B299168660C0002BB523 /* d_3_09_subclause.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B25D168660BF002BB523 /* d_3_09_subclause.xml */; };
-		F083B29A168660C0002BB523 /* d_3_10_particles3.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B25E168660BF002BB523 /* d_3_10_particles3.xml */; };
-		F083B29B168660C0002BB523 /* d_3_11_adgobi.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B25F168660BF002BB523 /* d_3_11_adgobi.xml */; };
-		F083B29C168660C0002BB523 /* d_3basicgram.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B260168660BF002BB523 /* d_3basicgram.xml */; };
-		F083B29D168660C0002BB523 /* d_4_01_polite.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B261168660BF002BB523 /* d_4_01_polite.xml */; };
-		F083B29E168660C0002BB523 /* d_4_02_people.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B262168660BF002BB523 /* d_4_02_people.xml */; };
-		F083B29F168660C0002BB523 /* d_4_03_question.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B263168660BF002BB523 /* d_4_03_question.xml */; };
-		F083B2A0168660C0002BB523 /* d_4_04_compound.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B264168660BF002BB523 /* d_4_04_compound.xml */; };
-		F083B2A1168660C0002BB523 /* d_4_05_teform.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B265168660BF002BB523 /* d_4_05_teform.xml */; };
-		F083B2A2168660C0002BB523 /* d_4_06_potential.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B266168660BF002BB523 /* d_4_06_potential.xml */; };
-		F083B2A3168660C0002BB523 /* d_4_07_surunaru.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B267168660BF002BB523 /* d_4_07_surunaru.xml */; };
-		F083B2A4168660C0002BB523 /* d_4_08_conditionals.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B268168660BF002BB523 /* d_4_08_conditionals.xml */; };
-		F083B2A5168660C0002BB523 /* d_4_09_must.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B269168660BF002BB523 /* d_4_09_must.xml */; };
-		F083B2A6168660C0002BB523 /* d_4_10_desire.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B26A168660BF002BB523 /* d_4_10_desire.xml */; };
-		F083B2A7168660C0002BB523 /* d_4_11_actionsubclause.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B26B168660BF002BB523 /* d_4_11_actionsubclause.xml */; };
-		F083B2A8168660C0002BB523 /* d_4_12_define.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B26C168660BF002BB523 /* d_4_12_define.xml */; };
-		F083B2A9168660C0002BB523 /* d_4_13_try.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B26D168660BF002BB523 /* d_4_13_try.xml */; };
-		F083B2AA168660C0002BB523 /* d_4_14_favors.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B26E168660BF002BB523 /* d_4_14_favors.xml */; };
-		F083B2AB168660C0002BB523 /* d_4_15_requests.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B26F168660BF002BB523 /* d_4_15_requests.xml */; };
-		F083B2AC168660C0002BB523 /* d_4_16_numbers.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B270168660C0002BB523 /* d_4_16_numbers.xml */; };
-		F083B2AD168660C0002BB523 /* d_4_18_gobi.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B271168660C0002BB523 /* d_4_18_gobi.xml */; };
-		F083B2AE168660C0002BB523 /* d_4essential.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B272168660C0002BB523 /* d_4essential.xml */; };
-		F083B2AF168660C0002BB523 /* d_5_01_causepass.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B273168660C0002BB523 /* d_5_01_causepass.xml */; };
-		F083B2B0168660C0002BB523 /* d_5_02_honorific.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B274168660C0002BB523 /* d_5_02_honorific.xml */; };
-		F083B2B1168660C0002BB523 /* d_5_03_unintended.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B275168660C0002BB523 /* d_5_03_unintended.xml */; };
-		F083B2B2168660C0002BB523 /* d_5_04_genericnouns.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B276168660C0002BB523 /* d_5_04_genericnouns.xml */; };
-		F083B2B3168660C0002BB523 /* d_5_05_certainty.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B277168660C0002BB523 /* d_5_05_certainty.xml */; };
-		F083B2B4168660C0002BB523 /* d_5_06_amount.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B278168660C0002BB523 /* d_5_06_amount.xml */; };
-		F083B2B5168660C0002BB523 /* d_5_07_similarity.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B279168660C0002BB523 /* d_5_07_similarity.xml */; };
-		F083B2B6168660C0002BB523 /* d_5_08_comparison.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B27A168660C0002BB523 /* d_5_08_comparison.xml */; };
-		F083B2B7168660C0002BB523 /* d_5_09_easyhard.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B27B168660C0002BB523 /* d_5_09_easyhard.xml */; };
-		F083B2B8168660C0002BB523 /* d_5_10_negativeverbs2.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B27C168660C0002BB523 /* d_5_10_negativeverbs2.xml */; };
-		F083B2B9168660C0002BB523 /* d_5_11_reasoning.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B27D168660C0002BB523 /* d_5_11_reasoning.xml */; };
-		F083B2BA168660C0002BB523 /* d_5_12_timeactions.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B27E168660C0002BB523 /* d_5_12_timeactions.xml */; };
-		F083B2BB168660C0002BB523 /* d_5_13_nochange.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B27F168660C0002BB523 /* d_5_13_nochange.xml */; };
-		F083B2BC168660C0002BB523 /* d_6_01_formal.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B280168660C0002BB523 /* d_6_01_formal.xml */; };
-		F083B2BD168660C0002BB523 /* d_6_02_should.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B281168660C0002BB523 /* d_6_02_should.xml */; };
-		F083B2BE168660C0002BB523 /* d_6_03_even.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B282168660C0002BB523 /* d_6_03_even.xml */; };
-		F083B2BF168660C0002BB523 /* d_6_04_signs.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B283168660C0002BB523 /* d_6_04_signs.xml */; };
-		F083B2C0168660C0002BB523 /* d_6_05_feasibility.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B284168660C0002BB523 /* d_6_05_feasibility.xml */; };
-		F083B2C1168660C0002BB523 /* d_6_06_tendency.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B285168660C0002BB523 /* d_6_06_tendency.xml */; };
-		F083B2C2168660C0002BB523 /* d_6_07_volitional2.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B286168660C0002BB523 /* d_6_07_volitional2.xml */; };
-		F083B2C3168660C0002BB523 /* d_6_08_covered.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B287168660C0002BB523 /* d_6_08_covered.xml */; };
-		F083B2C4168660C0002BB523 /* d_6_10_immedate.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B288168660C0002BB523 /* d_6_10_immedate.xml */; };
-		F083B2C5168660C0002BB523 /* d_6_11_other.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B289168660C0002BB523 /* d_6_11_other.xml */; };
-		F083B2C6168660C0002BB523 /* d_6advanced.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B28A168660C0002BB523 /* d_6advanced.xml */; };
-		F083B2C7168660C0002BB523 /* gram_credits.xml in Resources */ = {isa = PBXBuildFile; fileRef = F083B28B168660C0002BB523 /* gram_credits.xml */; };
 		F083B34916867CE8002BB523 /* popoverArrowDown.png in Resources */ = {isa = PBXBuildFile; fileRef = F083B33616867CE8002BB523 /* popoverArrowDown.png */; };
 		F083B34A16867CE8002BB523 /* popoverArrowDown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F083B33716867CE8002BB523 /* popoverArrowDown@2x.png */; };
 		F083B34B16867CE8002BB523 /* popoverArrowLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = F083B33816867CE8002BB523 /* popoverArrowLeft.png */; };
@@ -179,10 +113,66 @@
 		F0A6F057167513040054E7B6 /* btn_back_over@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0A6F053167513030054E7B6 /* btn_back_over@2x.png */; };
 		F0A6F058167513040054E7B6 /* btn_next_over.png in Resources */ = {isa = PBXBuildFile; fileRef = F0A6F054167513040054E7B6 /* btn_next_over.png */; };
 		F0A6F059167513040054E7B6 /* btn_next_over@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0A6F055167513040054E7B6 /* btn_next_over@2x.png */; };
-		F0A6F05E1675169D0054E7B6 /* btn_qcm_over.png in Resources */ = {isa = PBXBuildFile; fileRef = F0A6F05A1675169C0054E7B6 /* btn_qcm_over.png */; };
-		F0A6F05F1675169D0054E7B6 /* btn_qcm_over@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0A6F05B1675169C0054E7B6 /* btn_qcm_over@2x.png */; };
-		F0A6F0601675169D0054E7B6 /* btn_qcm.png in Resources */ = {isa = PBXBuildFile; fileRef = F0A6F05C1675169D0054E7B6 /* btn_qcm.png */; };
-		F0A6F0611675169D0054E7B6 /* btn_qcm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0A6F05D1675169D0054E7B6 /* btn_qcm@2x.png */; };
+		F0B25BE31699D76F006A9162 /* d_1start.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BA71699D76E006A9162 /* d_1start.xml */; };
+		F0B25BE41699D76F006A9162 /* d_2_01_hiragana.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BA81699D76E006A9162 /* d_2_01_hiragana.xml */; };
+		F0B25BE51699D76F006A9162 /* d_2_02_katakana.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BA91699D76E006A9162 /* d_2_02_katakana.xml */; };
+		F0B25BE61699D76F006A9162 /* d_2_03_kanji.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BAA1699D76E006A9162 /* d_2_03_kanji.xml */; };
+		F0B25BE71699D76F006A9162 /* d_2writingsys.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BAB1699D76E006A9162 /* d_2writingsys.xml */; };
+		F0B25BE81699D76F006A9162 /* d_3_01_copula.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BAC1699D76E006A9162 /* d_3_01_copula.xml */; };
+		F0B25BE91699D76F006A9162 /* d_3_02_particles.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BAD1699D76E006A9162 /* d_3_02_particles.xml */; };
+		F0B25BEA1699D76F006A9162 /* d_3_03_adjectives.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BAE1699D76E006A9162 /* d_3_03_adjectives.xml */; };
+		F0B25BEB1699D76F006A9162 /* d_3_04_verbs.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BAF1699D76E006A9162 /* d_3_04_verbs.xml */; };
+		F0B25BEC1699D76F006A9162 /* d_3_05_negverb.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BB01699D76E006A9162 /* d_3_05_negverb.xml */; };
+		F0B25BED1699D76F006A9162 /* d_3_06_pastverb.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BB11699D76E006A9162 /* d_3_06_pastverb.xml */; };
+		F0B25BEE1699D76F006A9162 /* d_3_07_particles2.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BB21699D76E006A9162 /* d_3_07_particles2.xml */; };
+		F0B25BEF1699D76F006A9162 /* d_3_08_transtype.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BB31699D76E006A9162 /* d_3_08_transtype.xml */; };
+		F0B25BF01699D76F006A9162 /* d_3_09_subclause.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BB41699D76E006A9162 /* d_3_09_subclause.xml */; };
+		F0B25BF11699D76F006A9162 /* d_3_10_particles3.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BB51699D76E006A9162 /* d_3_10_particles3.xml */; };
+		F0B25BF21699D76F006A9162 /* d_3_11_adgobi.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BB61699D76E006A9162 /* d_3_11_adgobi.xml */; };
+		F0B25BF31699D76F006A9162 /* d_3basicgram.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BB71699D76E006A9162 /* d_3basicgram.xml */; };
+		F0B25BF41699D76F006A9162 /* d_4_01_polite.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BB81699D76E006A9162 /* d_4_01_polite.xml */; };
+		F0B25BF51699D76F006A9162 /* d_4_02_people.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BB91699D76E006A9162 /* d_4_02_people.xml */; };
+		F0B25BF61699D76F006A9162 /* d_4_03_question.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BBA1699D76E006A9162 /* d_4_03_question.xml */; };
+		F0B25BF71699D76F006A9162 /* d_4_04_compound.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BBB1699D76E006A9162 /* d_4_04_compound.xml */; };
+		F0B25BF81699D76F006A9162 /* d_4_05_teform.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BBC1699D76E006A9162 /* d_4_05_teform.xml */; };
+		F0B25BF91699D76F006A9162 /* d_4_06_potential.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BBD1699D76E006A9162 /* d_4_06_potential.xml */; };
+		F0B25BFA1699D76F006A9162 /* d_4_07_surunaru.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BBE1699D76E006A9162 /* d_4_07_surunaru.xml */; };
+		F0B25BFB1699D76F006A9162 /* d_4_08_conditionals.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BBF1699D76E006A9162 /* d_4_08_conditionals.xml */; };
+		F0B25BFC1699D76F006A9162 /* d_4_09_must.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BC01699D76E006A9162 /* d_4_09_must.xml */; };
+		F0B25BFD1699D76F006A9162 /* d_4_10_desire.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BC11699D76E006A9162 /* d_4_10_desire.xml */; };
+		F0B25BFE1699D76F006A9162 /* d_4_11_actionsubclause.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BC21699D76E006A9162 /* d_4_11_actionsubclause.xml */; };
+		F0B25BFF1699D76F006A9162 /* d_4_12_define.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BC31699D76E006A9162 /* d_4_12_define.xml */; };
+		F0B25C001699D76F006A9162 /* d_4_13_try.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BC41699D76E006A9162 /* d_4_13_try.xml */; };
+		F0B25C011699D76F006A9162 /* d_4_14_favors.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BC51699D76E006A9162 /* d_4_14_favors.xml */; };
+		F0B25C021699D76F006A9162 /* d_4_15_requests.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BC61699D76E006A9162 /* d_4_15_requests.xml */; };
+		F0B25C031699D76F006A9162 /* d_4_16_numbers.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BC71699D76E006A9162 /* d_4_16_numbers.xml */; };
+		F0B25C041699D76F006A9162 /* d_4_18_gobi.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BC81699D76E006A9162 /* d_4_18_gobi.xml */; };
+		F0B25C051699D76F006A9162 /* d_4essential.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BC91699D76E006A9162 /* d_4essential.xml */; };
+		F0B25C061699D76F006A9162 /* d_5_01_causepass.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BCA1699D76E006A9162 /* d_5_01_causepass.xml */; };
+		F0B25C071699D76F006A9162 /* d_5_02_honorific.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BCB1699D76E006A9162 /* d_5_02_honorific.xml */; };
+		F0B25C081699D76F006A9162 /* d_5_03_unintended.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BCC1699D76E006A9162 /* d_5_03_unintended.xml */; };
+		F0B25C091699D76F006A9162 /* d_5_04_genericnouns.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BCD1699D76E006A9162 /* d_5_04_genericnouns.xml */; };
+		F0B25C0A1699D76F006A9162 /* d_5_05_certainty.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BCE1699D76E006A9162 /* d_5_05_certainty.xml */; };
+		F0B25C0B1699D76F006A9162 /* d_5_06_amount.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BCF1699D76E006A9162 /* d_5_06_amount.xml */; };
+		F0B25C0C1699D76F006A9162 /* d_5_07_similarity.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BD01699D76E006A9162 /* d_5_07_similarity.xml */; };
+		F0B25C0D1699D76F006A9162 /* d_5_08_comparison.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BD11699D76F006A9162 /* d_5_08_comparison.xml */; };
+		F0B25C0E1699D76F006A9162 /* d_5_09_easyhard.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BD21699D76F006A9162 /* d_5_09_easyhard.xml */; };
+		F0B25C0F1699D76F006A9162 /* d_5_10_negativeverbs2.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BD31699D76F006A9162 /* d_5_10_negativeverbs2.xml */; };
+		F0B25C101699D76F006A9162 /* d_5_11_reasoning.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BD41699D76F006A9162 /* d_5_11_reasoning.xml */; };
+		F0B25C111699D76F006A9162 /* d_5_12_timeactions.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BD51699D76F006A9162 /* d_5_12_timeactions.xml */; };
+		F0B25C121699D76F006A9162 /* d_5_13_nochange.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BD61699D76F006A9162 /* d_5_13_nochange.xml */; };
+		F0B25C131699D76F006A9162 /* d_6_01_formal.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BD71699D76F006A9162 /* d_6_01_formal.xml */; };
+		F0B25C141699D76F006A9162 /* d_6_02_should.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BD81699D76F006A9162 /* d_6_02_should.xml */; };
+		F0B25C151699D76F006A9162 /* d_6_03_even.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BD91699D76F006A9162 /* d_6_03_even.xml */; };
+		F0B25C161699D76F006A9162 /* d_6_04_signs.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BDA1699D76F006A9162 /* d_6_04_signs.xml */; };
+		F0B25C171699D76F006A9162 /* d_6_05_feasibility.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BDB1699D76F006A9162 /* d_6_05_feasibility.xml */; };
+		F0B25C181699D76F006A9162 /* d_6_06_tendency.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BDC1699D76F006A9162 /* d_6_06_tendency.xml */; };
+		F0B25C191699D76F006A9162 /* d_6_07_volitional2.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BDD1699D76F006A9162 /* d_6_07_volitional2.xml */; };
+		F0B25C1A1699D76F006A9162 /* d_6_08_covered.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BDE1699D76F006A9162 /* d_6_08_covered.xml */; };
+		F0B25C1B1699D76F006A9162 /* d_6_10_immedate.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BDF1699D76F006A9162 /* d_6_10_immedate.xml */; };
+		F0B25C1C1699D76F006A9162 /* d_6_11_other.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BE01699D76F006A9162 /* d_6_11_other.xml */; };
+		F0B25C1D1699D76F006A9162 /* d_6advanced.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BE11699D76F006A9162 /* d_6advanced.xml */; };
+		F0B25C1E1699D76F006A9162 /* gram_credits.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0B25BE21699D76F006A9162 /* gram_credits.xml */; };
 		F0BDD56D167FB0E100F8A782 /* nekosensei_kana_57.png in Resources */ = {isa = PBXBuildFile; fileRef = F0BDD56C167FB0E100F8A782 /* nekosensei_kana_57.png */; };
 		F0BDD56F167FB0EF00F8A782 /* nekosensei_kana_114.png in Resources */ = {isa = PBXBuildFile; fileRef = F0BDD56E167FB0EE00F8A782 /* nekosensei_kana_114.png */; };
 		F0CE9495163F2F95004F7E2B /* ParametersCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0CE948D163F2F95004F7E2B /* ParametersCell.xib */; };
@@ -196,7 +186,26 @@
 		F0CE94E6164084B9004F7E2B /* KanaRandomController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CE94DA164084B9004F7E2B /* KanaRandomController.m */; };
 		F0CE94E8164084B9004F7E2B /* KanaParametersController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CE94DE164084B9004F7E2B /* KanaParametersController.m */; };
 		F0CE94E91640850B004F7E2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F060E97F163C0A4B009C01E3 /* main.m */; };
-		F0DBA82916983E400044735D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = F0DBA82816983E400044735D /* Reachability.m */; };
+		F0DBA834169854EE0044735D /* btn_cours.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DBA82A169854EE0044735D /* btn_cours.png */; };
+		F0DBA835169854EE0044735D /* btn_cours@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DBA82B169854EE0044735D /* btn_cours@2x.png */; };
+		F0DBA836169854EE0044735D /* btn_hiragana.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DBA82C169854EE0044735D /* btn_hiragana.png */; };
+		F0DBA837169854EE0044735D /* btn_hiragana@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DBA82D169854EE0044735D /* btn_hiragana@2x.png */; };
+		F0DBA838169854EE0044735D /* btn_katakana.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DBA82E169854EE0044735D /* btn_katakana.png */; };
+		F0DBA839169854EE0044735D /* btn_katakana@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DBA82F169854EE0044735D /* btn_katakana@2x.png */; };
+		F0DBA83A169854EE0044735D /* btn_lexique.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DBA830169854EE0044735D /* btn_lexique.png */; };
+		F0DBA83B169854EE0044735D /* btn_lexique@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DBA831169854EE0044735D /* btn_lexique@2x.png */; };
+		F0DBA83C169854EE0044735D /* home_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DBA832169854EE0044735D /* home_logo.png */; };
+		F0DBA83D169854EE0044735D /* home_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DBA833169854EE0044735D /* home_logo@2x.png */; };
+		F0DBA8421698B38D0044735D /* checkbox_off.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DBA83E1698B38D0044735D /* checkbox_off.png */; };
+		F0DBA8431698B38D0044735D /* checkbox_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DBA83F1698B38D0044735D /* checkbox_off@2x.png */; };
+		F0DBA8441698B38D0044735D /* checkbox_on.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DBA8401698B38D0044735D /* checkbox_on.png */; };
+		F0DBA8451698B38D0044735D /* checkbox_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DBA8411698B38D0044735D /* checkbox_on@2x.png */; };
+		F0DBA84A1698D3F40044735D /* btn_glossy_off.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DBA8461698D3F40044735D /* btn_glossy_off.png */; };
+		F0DBA84B1698D3F40044735D /* btn_glossy_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DBA8471698D3F40044735D /* btn_glossy_off@2x.png */; };
+		F0DBA84C1698D3F40044735D /* btn_glossy.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DBA8481698D3F40044735D /* btn_glossy.png */; };
+		F0DBA84D1698D3F40044735D /* btn_glossy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DBA8491698D3F40044735D /* btn_glossy@2x.png */; };
+		F0DBA84E16997C2B0044735D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F061D994167150B5007E7422 /* Default-568h@2x.png */; };
+		F0DBA85416999AC60044735D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F0DBA85316999AC10044735D /* Localizable.strings */; };
 		F0E2375C167E12760051DC7E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E2375B167E12750051DC7E /* SystemConfiguration.framework */; };
 		F0E2375E167E127D0051DC7E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E2375D167E127D0051DC7E /* Security.framework */; };
 		F0E6D16F167E190A006DE22B /* VocabularyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E6D16D167E190A006DE22B /* VocabularyViewController.m */; };
@@ -293,7 +302,6 @@
 		F02AE6DC1690A59400177925 /* UITableView+NXEmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITableView+NXEmptyView.h"; path = "classes/UITableView+NXEmptyView.h"; sourceTree = "<group>"; };
 		F02AE6DD1690A59400177925 /* UITableView+NXEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITableView+NXEmptyView.m"; path = "classes/UITableView+NXEmptyView.m"; sourceTree = "<group>"; };
 		F02AE6DF1691023900177925 /* vocabulary.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = vocabulary.html; path = ressources/vocabulary.html; sourceTree = "<group>"; };
-		F02D13791646AAE90093EAD0 /* tired-konata.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tired-konata.jpeg"; sourceTree = "<group>"; };
 		F02D13811647EA240093EAD0 /* KanaQCMController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KanaQCMController.h; path = classes/KanaQCMController.h; sourceTree = "<group>"; };
 		F02D138D164837750093EAD0 /* NSMutableArray+Shuffling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+Shuffling.h"; path = "classes/NSMutableArray+Shuffling.h"; sourceTree = "<group>"; };
 		F03603B8167DDE0A0003E2D3 /* aide_shuffle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = aide_shuffle.png; path = ressources/aide_shuffle.png; sourceTree = "<group>"; };
@@ -315,15 +323,10 @@
 		F060E975163C0A4B009C01E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F060E977163C0A4B009C01E3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F060E97B163C0A4B009C01E3 /* J'apprend le japonais-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "J'apprend le japonais-Info.plist"; sourceTree = "<group>"; };
-		F060E97D163C0A4B009C01E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F060E97F163C0A4B009C01E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F060E981163C0A4B009C01E3 /* J'apprend le japonais-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "J'apprend le japonais-Prefix.pch"; sourceTree = "<group>"; };
-		F060E98C163C0A4B009C01E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		F060E98F163C0A4B009C01E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		F060E9B3163D5BB3009C01E3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		F060E9B6163D5C03009C01E3 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		F061D980166BDD05007E7422 /* nekoneko_applications_alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nekoneko_applications_alt.png; path = ressources/nekoneko_applications_alt.png; sourceTree = "<group>"; };
-		F061D981166BDD05007E7422 /* nekoneko_applications_alt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nekoneko_applications_alt@2x.png"; path = "ressources/nekoneko_applications_alt@2x.png"; sourceTree = "<group>"; };
 		F061D988166BDD26007E7422 /* nekosensei_kana_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nekosensei_kana_logo.png; path = ../nekosensei_kana_logo.png; sourceTree = "<group>"; };
 		F061D98A166BDD2E007E7422 /* nekosensei_kana_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nekosensei_kana_logo@2x.png"; path = "../nekosensei_kana_logo@2x.png"; sourceTree = "<group>"; };
 		F061D990167150A0007E7422 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
@@ -337,66 +340,6 @@
 		F083B24A16865B96002BB523 /* LessonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LessonViewController.m; path = classes/LessonViewController.m; sourceTree = "<group>"; };
 		F083B24C16865D01002BB523 /* ContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContentViewController.h; path = classes/ContentViewController.h; sourceTree = "<group>"; };
 		F083B24D16865D01002BB523 /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContentViewController.m; path = classes/ContentViewController.m; sourceTree = "<group>"; };
-		F083B250168660BF002BB523 /* d_1start.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_1start.xml; sourceTree = "<group>"; };
-		F083B251168660BF002BB523 /* d_2_01_hiragana.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_2_01_hiragana.xml; sourceTree = "<group>"; };
-		F083B252168660BF002BB523 /* d_2_02_katakana.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_2_02_katakana.xml; sourceTree = "<group>"; };
-		F083B253168660BF002BB523 /* d_2_03_kanji.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_2_03_kanji.xml; sourceTree = "<group>"; };
-		F083B254168660BF002BB523 /* d_2writingsys.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_2writingsys.xml; sourceTree = "<group>"; };
-		F083B255168660BF002BB523 /* d_3_01_copula.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_3_01_copula.xml; sourceTree = "<group>"; };
-		F083B256168660BF002BB523 /* d_3_02_particles.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_3_02_particles.xml; sourceTree = "<group>"; };
-		F083B257168660BF002BB523 /* d_3_03_adjectives.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_3_03_adjectives.xml; sourceTree = "<group>"; };
-		F083B258168660BF002BB523 /* d_3_04_verbs.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_3_04_verbs.xml; sourceTree = "<group>"; };
-		F083B259168660BF002BB523 /* d_3_05_negverb.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_3_05_negverb.xml; sourceTree = "<group>"; };
-		F083B25A168660BF002BB523 /* d_3_06_pastverb.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_3_06_pastverb.xml; sourceTree = "<group>"; };
-		F083B25B168660BF002BB523 /* d_3_07_particles2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_3_07_particles2.xml; sourceTree = "<group>"; };
-		F083B25C168660BF002BB523 /* d_3_08_transtype.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_3_08_transtype.xml; sourceTree = "<group>"; };
-		F083B25D168660BF002BB523 /* d_3_09_subclause.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_3_09_subclause.xml; sourceTree = "<group>"; };
-		F083B25E168660BF002BB523 /* d_3_10_particles3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_3_10_particles3.xml; sourceTree = "<group>"; };
-		F083B25F168660BF002BB523 /* d_3_11_adgobi.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_3_11_adgobi.xml; sourceTree = "<group>"; };
-		F083B260168660BF002BB523 /* d_3basicgram.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_3basicgram.xml; sourceTree = "<group>"; };
-		F083B261168660BF002BB523 /* d_4_01_polite.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4_01_polite.xml; sourceTree = "<group>"; };
-		F083B262168660BF002BB523 /* d_4_02_people.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4_02_people.xml; sourceTree = "<group>"; };
-		F083B263168660BF002BB523 /* d_4_03_question.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4_03_question.xml; sourceTree = "<group>"; };
-		F083B264168660BF002BB523 /* d_4_04_compound.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4_04_compound.xml; sourceTree = "<group>"; };
-		F083B265168660BF002BB523 /* d_4_05_teform.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4_05_teform.xml; sourceTree = "<group>"; };
-		F083B266168660BF002BB523 /* d_4_06_potential.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4_06_potential.xml; sourceTree = "<group>"; };
-		F083B267168660BF002BB523 /* d_4_07_surunaru.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4_07_surunaru.xml; sourceTree = "<group>"; };
-		F083B268168660BF002BB523 /* d_4_08_conditionals.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4_08_conditionals.xml; sourceTree = "<group>"; };
-		F083B269168660BF002BB523 /* d_4_09_must.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4_09_must.xml; sourceTree = "<group>"; };
-		F083B26A168660BF002BB523 /* d_4_10_desire.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4_10_desire.xml; sourceTree = "<group>"; };
-		F083B26B168660BF002BB523 /* d_4_11_actionsubclause.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4_11_actionsubclause.xml; sourceTree = "<group>"; };
-		F083B26C168660BF002BB523 /* d_4_12_define.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4_12_define.xml; sourceTree = "<group>"; };
-		F083B26D168660BF002BB523 /* d_4_13_try.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4_13_try.xml; sourceTree = "<group>"; };
-		F083B26E168660BF002BB523 /* d_4_14_favors.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4_14_favors.xml; sourceTree = "<group>"; };
-		F083B26F168660BF002BB523 /* d_4_15_requests.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4_15_requests.xml; sourceTree = "<group>"; };
-		F083B270168660C0002BB523 /* d_4_16_numbers.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4_16_numbers.xml; sourceTree = "<group>"; };
-		F083B271168660C0002BB523 /* d_4_18_gobi.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4_18_gobi.xml; sourceTree = "<group>"; };
-		F083B272168660C0002BB523 /* d_4essential.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_4essential.xml; sourceTree = "<group>"; };
-		F083B273168660C0002BB523 /* d_5_01_causepass.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_5_01_causepass.xml; sourceTree = "<group>"; };
-		F083B274168660C0002BB523 /* d_5_02_honorific.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_5_02_honorific.xml; sourceTree = "<group>"; };
-		F083B275168660C0002BB523 /* d_5_03_unintended.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_5_03_unintended.xml; sourceTree = "<group>"; };
-		F083B276168660C0002BB523 /* d_5_04_genericnouns.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_5_04_genericnouns.xml; sourceTree = "<group>"; };
-		F083B277168660C0002BB523 /* d_5_05_certainty.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_5_05_certainty.xml; sourceTree = "<group>"; };
-		F083B278168660C0002BB523 /* d_5_06_amount.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_5_06_amount.xml; sourceTree = "<group>"; };
-		F083B279168660C0002BB523 /* d_5_07_similarity.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_5_07_similarity.xml; sourceTree = "<group>"; };
-		F083B27A168660C0002BB523 /* d_5_08_comparison.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_5_08_comparison.xml; sourceTree = "<group>"; };
-		F083B27B168660C0002BB523 /* d_5_09_easyhard.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_5_09_easyhard.xml; sourceTree = "<group>"; };
-		F083B27C168660C0002BB523 /* d_5_10_negativeverbs2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_5_10_negativeverbs2.xml; sourceTree = "<group>"; };
-		F083B27D168660C0002BB523 /* d_5_11_reasoning.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_5_11_reasoning.xml; sourceTree = "<group>"; };
-		F083B27E168660C0002BB523 /* d_5_12_timeactions.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_5_12_timeactions.xml; sourceTree = "<group>"; };
-		F083B27F168660C0002BB523 /* d_5_13_nochange.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_5_13_nochange.xml; sourceTree = "<group>"; };
-		F083B280168660C0002BB523 /* d_6_01_formal.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_6_01_formal.xml; sourceTree = "<group>"; };
-		F083B281168660C0002BB523 /* d_6_02_should.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_6_02_should.xml; sourceTree = "<group>"; };
-		F083B282168660C0002BB523 /* d_6_03_even.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_6_03_even.xml; sourceTree = "<group>"; };
-		F083B283168660C0002BB523 /* d_6_04_signs.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_6_04_signs.xml; sourceTree = "<group>"; };
-		F083B284168660C0002BB523 /* d_6_05_feasibility.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_6_05_feasibility.xml; sourceTree = "<group>"; };
-		F083B285168660C0002BB523 /* d_6_06_tendency.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_6_06_tendency.xml; sourceTree = "<group>"; };
-		F083B286168660C0002BB523 /* d_6_07_volitional2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_6_07_volitional2.xml; sourceTree = "<group>"; };
-		F083B287168660C0002BB523 /* d_6_08_covered.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_6_08_covered.xml; sourceTree = "<group>"; };
-		F083B288168660C0002BB523 /* d_6_10_immedate.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_6_10_immedate.xml; sourceTree = "<group>"; };
-		F083B289168660C0002BB523 /* d_6_11_other.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_6_11_other.xml; sourceTree = "<group>"; };
-		F083B28A168660C0002BB523 /* d_6advanced.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = d_6advanced.xml; sourceTree = "<group>"; };
-		F083B28B168660C0002BB523 /* gram_credits.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gram_credits.xml; sourceTree = "<group>"; };
 		F083B33616867CE8002BB523 /* popoverArrowDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = popoverArrowDown.png; sourceTree = "<group>"; };
 		F083B33716867CE8002BB523 /* popoverArrowDown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popoverArrowDown@2x.png"; sourceTree = "<group>"; };
 		F083B33816867CE8002BB523 /* popoverArrowLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = popoverArrowLeft.png; sourceTree = "<group>"; };
@@ -783,10 +726,66 @@
 		F0A6F053167513030054E7B6 /* btn_back_over@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_back_over@2x.png"; path = "ressources/btn_back_over@2x.png"; sourceTree = "<group>"; };
 		F0A6F054167513040054E7B6 /* btn_next_over.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_next_over.png; path = ressources/btn_next_over.png; sourceTree = "<group>"; };
 		F0A6F055167513040054E7B6 /* btn_next_over@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_next_over@2x.png"; path = "ressources/btn_next_over@2x.png"; sourceTree = "<group>"; };
-		F0A6F05A1675169C0054E7B6 /* btn_qcm_over.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_qcm_over.png; path = ressources/btn_qcm_over.png; sourceTree = "<group>"; };
-		F0A6F05B1675169C0054E7B6 /* btn_qcm_over@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_qcm_over@2x.png"; path = "ressources/btn_qcm_over@2x.png"; sourceTree = "<group>"; };
-		F0A6F05C1675169D0054E7B6 /* btn_qcm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_qcm.png; path = ressources/btn_qcm.png; sourceTree = "<group>"; };
-		F0A6F05D1675169D0054E7B6 /* btn_qcm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_qcm@2x.png"; path = "ressources/btn_qcm@2x.png"; sourceTree = "<group>"; };
+		F0B25BA71699D76E006A9162 /* d_1start.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_1start.xml; path = ressources/fr/d_1start.xml; sourceTree = "<group>"; };
+		F0B25BA81699D76E006A9162 /* d_2_01_hiragana.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_2_01_hiragana.xml; path = ressources/fr/d_2_01_hiragana.xml; sourceTree = "<group>"; };
+		F0B25BA91699D76E006A9162 /* d_2_02_katakana.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_2_02_katakana.xml; path = ressources/fr/d_2_02_katakana.xml; sourceTree = "<group>"; };
+		F0B25BAA1699D76E006A9162 /* d_2_03_kanji.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_2_03_kanji.xml; path = ressources/fr/d_2_03_kanji.xml; sourceTree = "<group>"; };
+		F0B25BAB1699D76E006A9162 /* d_2writingsys.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_2writingsys.xml; path = ressources/fr/d_2writingsys.xml; sourceTree = "<group>"; };
+		F0B25BAC1699D76E006A9162 /* d_3_01_copula.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_3_01_copula.xml; path = ressources/fr/d_3_01_copula.xml; sourceTree = "<group>"; };
+		F0B25BAD1699D76E006A9162 /* d_3_02_particles.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_3_02_particles.xml; path = ressources/fr/d_3_02_particles.xml; sourceTree = "<group>"; };
+		F0B25BAE1699D76E006A9162 /* d_3_03_adjectives.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_3_03_adjectives.xml; path = ressources/fr/d_3_03_adjectives.xml; sourceTree = "<group>"; };
+		F0B25BAF1699D76E006A9162 /* d_3_04_verbs.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_3_04_verbs.xml; path = ressources/fr/d_3_04_verbs.xml; sourceTree = "<group>"; };
+		F0B25BB01699D76E006A9162 /* d_3_05_negverb.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_3_05_negverb.xml; path = ressources/fr/d_3_05_negverb.xml; sourceTree = "<group>"; };
+		F0B25BB11699D76E006A9162 /* d_3_06_pastverb.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_3_06_pastverb.xml; path = ressources/fr/d_3_06_pastverb.xml; sourceTree = "<group>"; };
+		F0B25BB21699D76E006A9162 /* d_3_07_particles2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_3_07_particles2.xml; path = ressources/fr/d_3_07_particles2.xml; sourceTree = "<group>"; };
+		F0B25BB31699D76E006A9162 /* d_3_08_transtype.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_3_08_transtype.xml; path = ressources/fr/d_3_08_transtype.xml; sourceTree = "<group>"; };
+		F0B25BB41699D76E006A9162 /* d_3_09_subclause.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_3_09_subclause.xml; path = ressources/fr/d_3_09_subclause.xml; sourceTree = "<group>"; };
+		F0B25BB51699D76E006A9162 /* d_3_10_particles3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_3_10_particles3.xml; path = ressources/fr/d_3_10_particles3.xml; sourceTree = "<group>"; };
+		F0B25BB61699D76E006A9162 /* d_3_11_adgobi.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_3_11_adgobi.xml; path = ressources/fr/d_3_11_adgobi.xml; sourceTree = "<group>"; };
+		F0B25BB71699D76E006A9162 /* d_3basicgram.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_3basicgram.xml; path = ressources/fr/d_3basicgram.xml; sourceTree = "<group>"; };
+		F0B25BB81699D76E006A9162 /* d_4_01_polite.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_4_01_polite.xml; path = ressources/fr/d_4_01_polite.xml; sourceTree = "<group>"; };
+		F0B25BB91699D76E006A9162 /* d_4_02_people.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_4_02_people.xml; path = ressources/fr/d_4_02_people.xml; sourceTree = "<group>"; };
+		F0B25BBA1699D76E006A9162 /* d_4_03_question.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_4_03_question.xml; path = ressources/fr/d_4_03_question.xml; sourceTree = "<group>"; };
+		F0B25BBB1699D76E006A9162 /* d_4_04_compound.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_4_04_compound.xml; path = ressources/fr/d_4_04_compound.xml; sourceTree = "<group>"; };
+		F0B25BBC1699D76E006A9162 /* d_4_05_teform.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_4_05_teform.xml; path = ressources/fr/d_4_05_teform.xml; sourceTree = "<group>"; };
+		F0B25BBD1699D76E006A9162 /* d_4_06_potential.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_4_06_potential.xml; path = ressources/fr/d_4_06_potential.xml; sourceTree = "<group>"; };
+		F0B25BBE1699D76E006A9162 /* d_4_07_surunaru.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_4_07_surunaru.xml; path = ressources/fr/d_4_07_surunaru.xml; sourceTree = "<group>"; };
+		F0B25BBF1699D76E006A9162 /* d_4_08_conditionals.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_4_08_conditionals.xml; path = ressources/fr/d_4_08_conditionals.xml; sourceTree = "<group>"; };
+		F0B25BC01699D76E006A9162 /* d_4_09_must.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_4_09_must.xml; path = ressources/fr/d_4_09_must.xml; sourceTree = "<group>"; };
+		F0B25BC11699D76E006A9162 /* d_4_10_desire.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_4_10_desire.xml; path = ressources/fr/d_4_10_desire.xml; sourceTree = "<group>"; };
+		F0B25BC21699D76E006A9162 /* d_4_11_actionsubclause.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_4_11_actionsubclause.xml; path = ressources/fr/d_4_11_actionsubclause.xml; sourceTree = "<group>"; };
+		F0B25BC31699D76E006A9162 /* d_4_12_define.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_4_12_define.xml; path = ressources/fr/d_4_12_define.xml; sourceTree = "<group>"; };
+		F0B25BC41699D76E006A9162 /* d_4_13_try.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_4_13_try.xml; path = ressources/fr/d_4_13_try.xml; sourceTree = "<group>"; };
+		F0B25BC51699D76E006A9162 /* d_4_14_favors.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_4_14_favors.xml; path = ressources/fr/d_4_14_favors.xml; sourceTree = "<group>"; };
+		F0B25BC61699D76E006A9162 /* d_4_15_requests.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_4_15_requests.xml; path = ressources/fr/d_4_15_requests.xml; sourceTree = "<group>"; };
+		F0B25BC71699D76E006A9162 /* d_4_16_numbers.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_4_16_numbers.xml; path = ressources/fr/d_4_16_numbers.xml; sourceTree = "<group>"; };
+		F0B25BC81699D76E006A9162 /* d_4_18_gobi.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_4_18_gobi.xml; path = ressources/fr/d_4_18_gobi.xml; sourceTree = "<group>"; };
+		F0B25BC91699D76E006A9162 /* d_4essential.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_4essential.xml; path = ressources/fr/d_4essential.xml; sourceTree = "<group>"; };
+		F0B25BCA1699D76E006A9162 /* d_5_01_causepass.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_5_01_causepass.xml; path = ressources/fr/d_5_01_causepass.xml; sourceTree = "<group>"; };
+		F0B25BCB1699D76E006A9162 /* d_5_02_honorific.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_5_02_honorific.xml; path = ressources/fr/d_5_02_honorific.xml; sourceTree = "<group>"; };
+		F0B25BCC1699D76E006A9162 /* d_5_03_unintended.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_5_03_unintended.xml; path = ressources/fr/d_5_03_unintended.xml; sourceTree = "<group>"; };
+		F0B25BCD1699D76E006A9162 /* d_5_04_genericnouns.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_5_04_genericnouns.xml; path = ressources/fr/d_5_04_genericnouns.xml; sourceTree = "<group>"; };
+		F0B25BCE1699D76E006A9162 /* d_5_05_certainty.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_5_05_certainty.xml; path = ressources/fr/d_5_05_certainty.xml; sourceTree = "<group>"; };
+		F0B25BCF1699D76E006A9162 /* d_5_06_amount.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_5_06_amount.xml; path = ressources/fr/d_5_06_amount.xml; sourceTree = "<group>"; };
+		F0B25BD01699D76E006A9162 /* d_5_07_similarity.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_5_07_similarity.xml; path = ressources/fr/d_5_07_similarity.xml; sourceTree = "<group>"; };
+		F0B25BD11699D76F006A9162 /* d_5_08_comparison.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_5_08_comparison.xml; path = ressources/fr/d_5_08_comparison.xml; sourceTree = "<group>"; };
+		F0B25BD21699D76F006A9162 /* d_5_09_easyhard.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_5_09_easyhard.xml; path = ressources/fr/d_5_09_easyhard.xml; sourceTree = "<group>"; };
+		F0B25BD31699D76F006A9162 /* d_5_10_negativeverbs2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_5_10_negativeverbs2.xml; path = ressources/fr/d_5_10_negativeverbs2.xml; sourceTree = "<group>"; };
+		F0B25BD41699D76F006A9162 /* d_5_11_reasoning.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_5_11_reasoning.xml; path = ressources/fr/d_5_11_reasoning.xml; sourceTree = "<group>"; };
+		F0B25BD51699D76F006A9162 /* d_5_12_timeactions.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_5_12_timeactions.xml; path = ressources/fr/d_5_12_timeactions.xml; sourceTree = "<group>"; };
+		F0B25BD61699D76F006A9162 /* d_5_13_nochange.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_5_13_nochange.xml; path = ressources/fr/d_5_13_nochange.xml; sourceTree = "<group>"; };
+		F0B25BD71699D76F006A9162 /* d_6_01_formal.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_6_01_formal.xml; path = ressources/fr/d_6_01_formal.xml; sourceTree = "<group>"; };
+		F0B25BD81699D76F006A9162 /* d_6_02_should.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_6_02_should.xml; path = ressources/fr/d_6_02_should.xml; sourceTree = "<group>"; };
+		F0B25BD91699D76F006A9162 /* d_6_03_even.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_6_03_even.xml; path = ressources/fr/d_6_03_even.xml; sourceTree = "<group>"; };
+		F0B25BDA1699D76F006A9162 /* d_6_04_signs.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_6_04_signs.xml; path = ressources/fr/d_6_04_signs.xml; sourceTree = "<group>"; };
+		F0B25BDB1699D76F006A9162 /* d_6_05_feasibility.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_6_05_feasibility.xml; path = ressources/fr/d_6_05_feasibility.xml; sourceTree = "<group>"; };
+		F0B25BDC1699D76F006A9162 /* d_6_06_tendency.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_6_06_tendency.xml; path = ressources/fr/d_6_06_tendency.xml; sourceTree = "<group>"; };
+		F0B25BDD1699D76F006A9162 /* d_6_07_volitional2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_6_07_volitional2.xml; path = ressources/fr/d_6_07_volitional2.xml; sourceTree = "<group>"; };
+		F0B25BDE1699D76F006A9162 /* d_6_08_covered.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_6_08_covered.xml; path = ressources/fr/d_6_08_covered.xml; sourceTree = "<group>"; };
+		F0B25BDF1699D76F006A9162 /* d_6_10_immedate.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_6_10_immedate.xml; path = ressources/fr/d_6_10_immedate.xml; sourceTree = "<group>"; };
+		F0B25BE01699D76F006A9162 /* d_6_11_other.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_6_11_other.xml; path = ressources/fr/d_6_11_other.xml; sourceTree = "<group>"; };
+		F0B25BE11699D76F006A9162 /* d_6advanced.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = d_6advanced.xml; path = ressources/fr/d_6advanced.xml; sourceTree = "<group>"; };
+		F0B25BE21699D76F006A9162 /* gram_credits.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = gram_credits.xml; path = ressources/fr/gram_credits.xml; sourceTree = "<group>"; };
 		F0BDD56C167FB0E100F8A782 /* nekosensei_kana_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nekosensei_kana_57.png; path = ../nekosensei_kana_57.png; sourceTree = "<group>"; };
 		F0BDD56E167FB0EE00F8A782 /* nekosensei_kana_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nekosensei_kana_114.png; path = ../nekosensei_kana_114.png; sourceTree = "<group>"; };
 		F0CE9469163F2F87004F7E2B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = classes/AppDelegate.h; sourceTree = "<group>"; };
@@ -807,8 +806,25 @@
 		F0CE94DA164084B9004F7E2B /* KanaRandomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KanaRandomController.m; path = classes/KanaRandomController.m; sourceTree = "<group>"; };
 		F0CE94DD164084B9004F7E2B /* KanaParametersController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KanaParametersController.h; path = classes/KanaParametersController.h; sourceTree = "<group>"; };
 		F0CE94DE164084B9004F7E2B /* KanaParametersController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KanaParametersController.m; path = classes/KanaParametersController.m; sourceTree = "<group>"; };
-		F0DBA82716983E400044735D /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = classes/Reachability.h; sourceTree = "<group>"; };
-		F0DBA82816983E400044735D /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = classes/Reachability.m; sourceTree = "<group>"; };
+		F0DBA82A169854EE0044735D /* btn_cours.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_cours.png; path = ressources/btn_cours.png; sourceTree = "<group>"; };
+		F0DBA82B169854EE0044735D /* btn_cours@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_cours@2x.png"; path = "ressources/btn_cours@2x.png"; sourceTree = "<group>"; };
+		F0DBA82C169854EE0044735D /* btn_hiragana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_hiragana.png; path = ressources/btn_hiragana.png; sourceTree = "<group>"; };
+		F0DBA82D169854EE0044735D /* btn_hiragana@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_hiragana@2x.png"; path = "ressources/btn_hiragana@2x.png"; sourceTree = "<group>"; };
+		F0DBA82E169854EE0044735D /* btn_katakana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_katakana.png; path = ressources/btn_katakana.png; sourceTree = "<group>"; };
+		F0DBA82F169854EE0044735D /* btn_katakana@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_katakana@2x.png"; path = "ressources/btn_katakana@2x.png"; sourceTree = "<group>"; };
+		F0DBA830169854EE0044735D /* btn_lexique.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_lexique.png; path = ressources/btn_lexique.png; sourceTree = "<group>"; };
+		F0DBA831169854EE0044735D /* btn_lexique@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_lexique@2x.png"; path = "ressources/btn_lexique@2x.png"; sourceTree = "<group>"; };
+		F0DBA832169854EE0044735D /* home_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home_logo.png; path = ressources/home_logo.png; sourceTree = "<group>"; };
+		F0DBA833169854EE0044735D /* home_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "home_logo@2x.png"; path = "ressources/home_logo@2x.png"; sourceTree = "<group>"; };
+		F0DBA83E1698B38D0044735D /* checkbox_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checkbox_off.png; path = ressources/checkbox_off.png; sourceTree = "<group>"; };
+		F0DBA83F1698B38D0044735D /* checkbox_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "checkbox_off@2x.png"; path = "ressources/checkbox_off@2x.png"; sourceTree = "<group>"; };
+		F0DBA8401698B38D0044735D /* checkbox_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checkbox_on.png; path = ressources/checkbox_on.png; sourceTree = "<group>"; };
+		F0DBA8411698B38D0044735D /* checkbox_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "checkbox_on@2x.png"; path = "ressources/checkbox_on@2x.png"; sourceTree = "<group>"; };
+		F0DBA8461698D3F40044735D /* btn_glossy_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_glossy_off.png; path = ressources/btn_glossy_off.png; sourceTree = "<group>"; };
+		F0DBA8471698D3F40044735D /* btn_glossy_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_glossy_off@2x.png"; path = "ressources/btn_glossy_off@2x.png"; sourceTree = "<group>"; };
+		F0DBA8481698D3F40044735D /* btn_glossy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_glossy.png; path = ressources/btn_glossy.png; sourceTree = "<group>"; };
+		F0DBA8491698D3F40044735D /* btn_glossy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_glossy@2x.png"; path = "ressources/btn_glossy@2x.png"; sourceTree = "<group>"; };
+		F0DBA85316999AC10044735D /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		F0E2375B167E12750051DC7E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F0E2375D167E127D0051DC7E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		F0E6D16C167E190A006DE22B /* VocabularyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VocabularyViewController.h; path = classes/VocabularyViewController.h; sourceTree = "<group>"; };
@@ -863,6 +879,24 @@
 		F00D6F9C1674B029001AF0B9 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				F0DBA8461698D3F40044735D /* btn_glossy_off.png */,
+				F0DBA8471698D3F40044735D /* btn_glossy_off@2x.png */,
+				F0DBA8481698D3F40044735D /* btn_glossy.png */,
+				F0DBA8491698D3F40044735D /* btn_glossy@2x.png */,
+				F0DBA83E1698B38D0044735D /* checkbox_off.png */,
+				F0DBA83F1698B38D0044735D /* checkbox_off@2x.png */,
+				F0DBA8401698B38D0044735D /* checkbox_on.png */,
+				F0DBA8411698B38D0044735D /* checkbox_on@2x.png */,
+				F0DBA82A169854EE0044735D /* btn_cours.png */,
+				F0DBA82B169854EE0044735D /* btn_cours@2x.png */,
+				F0DBA82C169854EE0044735D /* btn_hiragana.png */,
+				F0DBA82D169854EE0044735D /* btn_hiragana@2x.png */,
+				F0DBA82E169854EE0044735D /* btn_katakana.png */,
+				F0DBA82F169854EE0044735D /* btn_katakana@2x.png */,
+				F0DBA830169854EE0044735D /* btn_lexique.png */,
+				F0DBA831169854EE0044735D /* btn_lexique@2x.png */,
+				F0DBA832169854EE0044735D /* home_logo.png */,
+				F0DBA833169854EE0044735D /* home_logo@2x.png */,
 				F0BDD56E167FB0EE00F8A782 /* nekosensei_kana_114.png */,
 				F0BDD56C167FB0E100F8A782 /* nekosensei_kana_57.png */,
 				F061D994167150B5007E7422 /* Default-568h@2x.png */,
@@ -894,10 +928,6 @@
 				F08686AB16791C08009C0C8B /* shuffle_romanji_icon_over@2x.png */,
 				F08686AC16791C08009C0C8B /* shuffle_romanji_icon.png */,
 				F08686AD16791C08009C0C8B /* shuffle_romanji_icon@2x.png */,
-				F0A6F05A1675169C0054E7B6 /* btn_qcm_over.png */,
-				F0A6F05B1675169C0054E7B6 /* btn_qcm_over@2x.png */,
-				F0A6F05C1675169D0054E7B6 /* btn_qcm.png */,
-				F0A6F05D1675169D0054E7B6 /* btn_qcm@2x.png */,
 				F0A6F052167513030054E7B6 /* btn_back_over.png */,
 				F0A6F053167513030054E7B6 /* btn_back_over@2x.png */,
 				F0A6F054167513040054E7B6 /* btn_next_over.png */,
@@ -920,9 +950,6 @@
 				F00D6FA91674D5CF001AF0B9 /* boardcard@2x.png */,
 				F00D6FA31674D4D3001AF0B9 /* splashscreen.png */,
 				F00D6FA41674D4D3001AF0B9 /* splashscreen@2x.png */,
-				F061D980166BDD05007E7422 /* nekoneko_applications_alt.png */,
-				F061D981166BDD05007E7422 /* nekoneko_applications_alt@2x.png */,
-				F02D13791646AAE90093EAD0 /* tired-konata.jpeg */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -945,8 +972,6 @@
 		F0283A941684FA21007F3B0F /* views */ = {
 			isa = PBXGroup;
 			children = (
-				F060E98E163C0A4B009C01E3 /* MainStoryboard_iPad.storyboard */,
-				F060E98B163C0A4B009C01E3 /* MainStoryboard_iPhone.storyboard */,
 				F00D6F9D1674B02E001AF0B9 /* ipad */,
 				F00D6F9E1674B034001AF0B9 /* iphone */,
 			);
@@ -986,8 +1011,6 @@
 		F04C008E1642E19300EAF61D /* librairies */ = {
 			isa = PBXGroup;
 			children = (
-				F0DBA82716983E400044735D /* Reachability.h */,
-				F0DBA82816983E400044735D /* Reachability.m */,
 				F02AE6DC1690A59400177925 /* UITableView+NXEmptyView.h */,
 				F02AE6DD1690A59400177925 /* UITableView+NXEmptyView.m */,
 				F083B33516867CE8002BB523 /* WEPopover */,
@@ -1050,7 +1073,6 @@
 			isa = PBXGroup;
 			children = (
 				F060E97B163C0A4B009C01E3 /* J'apprend le japonais-Info.plist */,
-				F060E97C163C0A4B009C01E3 /* InfoPlist.strings */,
 				F060E97F163C0A4B009C01E3 /* main.m */,
 				F060E981163C0A4B009C01E3 /* J'apprend le japonais-Prefix.pch */,
 			);
@@ -1060,13 +1082,14 @@
 		F060E999163C0C3C009C01E3 /* ressources */ = {
 			isa = PBXGroup;
 			children = (
-				F083B24F168660BF002BB523 /* fr */,
+				F0B25C1F1699D775006A9162 /* cours */,
 				F00D6F9C1674B029001AF0B9 /* images */,
 				F040097A165CBDDF0090AA18 /* epkyouka.ttf */,
 				F0CE948F163F2F95004F7E2B /* Model.xcdatamodeld */,
 				F083B3591687864F002BB523 /* contentLessonAdapterUp.txt */,
 				F083B35B16878696002BB523 /* contentLessonAdapterDown.txt */,
 				F02AE6DF1691023900177925 /* vocabulary.html */,
+				F0DBA85316999AC10044735D /* Localizable.strings */,
 			);
 			name = ressources;
 			sourceTree = "<group>";
@@ -1078,74 +1101,6 @@
 				F083B2421686568C002BB523 /* CMHTMLView.m */,
 			);
 			name = CMHTMLView;
-			sourceTree = "<group>";
-		};
-		F083B24F168660BF002BB523 /* fr */ = {
-			isa = PBXGroup;
-			children = (
-				F083B250168660BF002BB523 /* d_1start.xml */,
-				F083B251168660BF002BB523 /* d_2_01_hiragana.xml */,
-				F083B252168660BF002BB523 /* d_2_02_katakana.xml */,
-				F083B253168660BF002BB523 /* d_2_03_kanji.xml */,
-				F083B254168660BF002BB523 /* d_2writingsys.xml */,
-				F083B255168660BF002BB523 /* d_3_01_copula.xml */,
-				F083B256168660BF002BB523 /* d_3_02_particles.xml */,
-				F083B257168660BF002BB523 /* d_3_03_adjectives.xml */,
-				F083B258168660BF002BB523 /* d_3_04_verbs.xml */,
-				F083B259168660BF002BB523 /* d_3_05_negverb.xml */,
-				F083B25A168660BF002BB523 /* d_3_06_pastverb.xml */,
-				F083B25B168660BF002BB523 /* d_3_07_particles2.xml */,
-				F083B25C168660BF002BB523 /* d_3_08_transtype.xml */,
-				F083B25D168660BF002BB523 /* d_3_09_subclause.xml */,
-				F083B25E168660BF002BB523 /* d_3_10_particles3.xml */,
-				F083B25F168660BF002BB523 /* d_3_11_adgobi.xml */,
-				F083B260168660BF002BB523 /* d_3basicgram.xml */,
-				F083B261168660BF002BB523 /* d_4_01_polite.xml */,
-				F083B262168660BF002BB523 /* d_4_02_people.xml */,
-				F083B263168660BF002BB523 /* d_4_03_question.xml */,
-				F083B264168660BF002BB523 /* d_4_04_compound.xml */,
-				F083B265168660BF002BB523 /* d_4_05_teform.xml */,
-				F083B266168660BF002BB523 /* d_4_06_potential.xml */,
-				F083B267168660BF002BB523 /* d_4_07_surunaru.xml */,
-				F083B268168660BF002BB523 /* d_4_08_conditionals.xml */,
-				F083B269168660BF002BB523 /* d_4_09_must.xml */,
-				F083B26A168660BF002BB523 /* d_4_10_desire.xml */,
-				F083B26B168660BF002BB523 /* d_4_11_actionsubclause.xml */,
-				F083B26C168660BF002BB523 /* d_4_12_define.xml */,
-				F083B26D168660BF002BB523 /* d_4_13_try.xml */,
-				F083B26E168660BF002BB523 /* d_4_14_favors.xml */,
-				F083B26F168660BF002BB523 /* d_4_15_requests.xml */,
-				F083B270168660C0002BB523 /* d_4_16_numbers.xml */,
-				F083B271168660C0002BB523 /* d_4_18_gobi.xml */,
-				F083B272168660C0002BB523 /* d_4essential.xml */,
-				F083B273168660C0002BB523 /* d_5_01_causepass.xml */,
-				F083B274168660C0002BB523 /* d_5_02_honorific.xml */,
-				F083B275168660C0002BB523 /* d_5_03_unintended.xml */,
-				F083B276168660C0002BB523 /* d_5_04_genericnouns.xml */,
-				F083B277168660C0002BB523 /* d_5_05_certainty.xml */,
-				F083B278168660C0002BB523 /* d_5_06_amount.xml */,
-				F083B279168660C0002BB523 /* d_5_07_similarity.xml */,
-				F083B27A168660C0002BB523 /* d_5_08_comparison.xml */,
-				F083B27B168660C0002BB523 /* d_5_09_easyhard.xml */,
-				F083B27C168660C0002BB523 /* d_5_10_negativeverbs2.xml */,
-				F083B27D168660C0002BB523 /* d_5_11_reasoning.xml */,
-				F083B27E168660C0002BB523 /* d_5_12_timeactions.xml */,
-				F083B27F168660C0002BB523 /* d_5_13_nochange.xml */,
-				F083B280168660C0002BB523 /* d_6_01_formal.xml */,
-				F083B281168660C0002BB523 /* d_6_02_should.xml */,
-				F083B282168660C0002BB523 /* d_6_03_even.xml */,
-				F083B283168660C0002BB523 /* d_6_04_signs.xml */,
-				F083B284168660C0002BB523 /* d_6_05_feasibility.xml */,
-				F083B285168660C0002BB523 /* d_6_06_tendency.xml */,
-				F083B286168660C0002BB523 /* d_6_07_volitional2.xml */,
-				F083B287168660C0002BB523 /* d_6_08_covered.xml */,
-				F083B288168660C0002BB523 /* d_6_10_immedate.xml */,
-				F083B289168660C0002BB523 /* d_6_11_other.xml */,
-				F083B28A168660C0002BB523 /* d_6advanced.xml */,
-				F083B28B168660C0002BB523 /* gram_credits.xml */,
-			);
-			name = fr;
-			path = ressources/fr;
 			sourceTree = "<group>";
 		};
 		F083B33516867CE8002BB523 /* WEPopover */ = {
@@ -1524,6 +1479,73 @@
 			name = pullToRefresh;
 			sourceTree = "<group>";
 		};
+		F0B25C1F1699D775006A9162 /* cours */ = {
+			isa = PBXGroup;
+			children = (
+				F0B25BA71699D76E006A9162 /* d_1start.xml */,
+				F0B25BA81699D76E006A9162 /* d_2_01_hiragana.xml */,
+				F0B25BA91699D76E006A9162 /* d_2_02_katakana.xml */,
+				F0B25BAA1699D76E006A9162 /* d_2_03_kanji.xml */,
+				F0B25BAB1699D76E006A9162 /* d_2writingsys.xml */,
+				F0B25BAC1699D76E006A9162 /* d_3_01_copula.xml */,
+				F0B25BAD1699D76E006A9162 /* d_3_02_particles.xml */,
+				F0B25BAE1699D76E006A9162 /* d_3_03_adjectives.xml */,
+				F0B25BAF1699D76E006A9162 /* d_3_04_verbs.xml */,
+				F0B25BB01699D76E006A9162 /* d_3_05_negverb.xml */,
+				F0B25BB11699D76E006A9162 /* d_3_06_pastverb.xml */,
+				F0B25BB21699D76E006A9162 /* d_3_07_particles2.xml */,
+				F0B25BB31699D76E006A9162 /* d_3_08_transtype.xml */,
+				F0B25BB41699D76E006A9162 /* d_3_09_subclause.xml */,
+				F0B25BB51699D76E006A9162 /* d_3_10_particles3.xml */,
+				F0B25BB61699D76E006A9162 /* d_3_11_adgobi.xml */,
+				F0B25BB71699D76E006A9162 /* d_3basicgram.xml */,
+				F0B25BB81699D76E006A9162 /* d_4_01_polite.xml */,
+				F0B25BB91699D76E006A9162 /* d_4_02_people.xml */,
+				F0B25BBA1699D76E006A9162 /* d_4_03_question.xml */,
+				F0B25BBB1699D76E006A9162 /* d_4_04_compound.xml */,
+				F0B25BBC1699D76E006A9162 /* d_4_05_teform.xml */,
+				F0B25BBD1699D76E006A9162 /* d_4_06_potential.xml */,
+				F0B25BBE1699D76E006A9162 /* d_4_07_surunaru.xml */,
+				F0B25BBF1699D76E006A9162 /* d_4_08_conditionals.xml */,
+				F0B25BC01699D76E006A9162 /* d_4_09_must.xml */,
+				F0B25BC11699D76E006A9162 /* d_4_10_desire.xml */,
+				F0B25BC21699D76E006A9162 /* d_4_11_actionsubclause.xml */,
+				F0B25BC31699D76E006A9162 /* d_4_12_define.xml */,
+				F0B25BC41699D76E006A9162 /* d_4_13_try.xml */,
+				F0B25BC51699D76E006A9162 /* d_4_14_favors.xml */,
+				F0B25BC61699D76E006A9162 /* d_4_15_requests.xml */,
+				F0B25BC71699D76E006A9162 /* d_4_16_numbers.xml */,
+				F0B25BC81699D76E006A9162 /* d_4_18_gobi.xml */,
+				F0B25BC91699D76E006A9162 /* d_4essential.xml */,
+				F0B25BCA1699D76E006A9162 /* d_5_01_causepass.xml */,
+				F0B25BCB1699D76E006A9162 /* d_5_02_honorific.xml */,
+				F0B25BCC1699D76E006A9162 /* d_5_03_unintended.xml */,
+				F0B25BCD1699D76E006A9162 /* d_5_04_genericnouns.xml */,
+				F0B25BCE1699D76E006A9162 /* d_5_05_certainty.xml */,
+				F0B25BCF1699D76E006A9162 /* d_5_06_amount.xml */,
+				F0B25BD01699D76E006A9162 /* d_5_07_similarity.xml */,
+				F0B25BD11699D76F006A9162 /* d_5_08_comparison.xml */,
+				F0B25BD21699D76F006A9162 /* d_5_09_easyhard.xml */,
+				F0B25BD31699D76F006A9162 /* d_5_10_negativeverbs2.xml */,
+				F0B25BD41699D76F006A9162 /* d_5_11_reasoning.xml */,
+				F0B25BD51699D76F006A9162 /* d_5_12_timeactions.xml */,
+				F0B25BD61699D76F006A9162 /* d_5_13_nochange.xml */,
+				F0B25BD71699D76F006A9162 /* d_6_01_formal.xml */,
+				F0B25BD81699D76F006A9162 /* d_6_02_should.xml */,
+				F0B25BD91699D76F006A9162 /* d_6_03_even.xml */,
+				F0B25BDA1699D76F006A9162 /* d_6_04_signs.xml */,
+				F0B25BDB1699D76F006A9162 /* d_6_05_feasibility.xml */,
+				F0B25BDC1699D76F006A9162 /* d_6_06_tendency.xml */,
+				F0B25BDD1699D76F006A9162 /* d_6_07_volitional2.xml */,
+				F0B25BDE1699D76F006A9162 /* d_6_08_covered.xml */,
+				F0B25BDF1699D76F006A9162 /* d_6_10_immedate.xml */,
+				F0B25BE01699D76F006A9162 /* d_6_11_other.xml */,
+				F0B25BE11699D76F006A9162 /* d_6advanced.xml */,
+				F0B25BE21699D76F006A9162 /* gram_credits.xml */,
+			);
+			name = cours;
+			sourceTree = "<group>";
+		};
 		F0CE9468163F2F73004F7E2B /* classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -1643,6 +1665,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				fr,
 			);
 			mainGroup = F060E964163C0A4B009C01E3;
 			productRefGroup = F060E970163C0A4B009C01E3 /* Products */;
@@ -1705,16 +1728,10 @@
 			files = (
 				F083B35D16878881002BB523 /* contentLessonAdapterUp.txt in Resources */,
 				F083B35E16878881002BB523 /* contentLessonAdapterDown.txt in Resources */,
-				F02D137C1646AFFA0093EAD0 /* MainStoryboard_iPhone.storyboard in Resources */,
-				F02D137D1646AFFA0093EAD0 /* MainStoryboard_iPad.storyboard in Resources */,
 				F02D137B1646AFDC0093EAD0 /* Model.xcdatamodeld in Resources */,
 				F0CE94C916408483004F7E2B /* AppDelegate.m in Resources */,
-				F060E97E163C0A4B009C01E3 /* InfoPlist.strings in Resources */,
 				F0CE9495163F2F95004F7E2B /* ParametersCell.xib in Resources */,
-				F02D137A1646AAE90093EAD0 /* tired-konata.jpeg in Resources */,
 				F040097B165CBDDF0090AA18 /* epkyouka.ttf in Resources */,
-				F061D984166BDD05007E7422 /* nekoneko_applications_alt.png in Resources */,
-				F061D985166BDD05007E7422 /* nekoneko_applications_alt@2x.png in Resources */,
 				F061D989166BDD26007E7422 /* nekosensei_kana_logo.png in Resources */,
 				F061D98B166BDD2E007E7422 /* nekosensei_kana_logo@2x.png in Resources */,
 				F061D993167150AD007E7422 /* Default@2x.png in Resources */,
@@ -1741,10 +1758,6 @@
 				F0A6F057167513040054E7B6 /* btn_back_over@2x.png in Resources */,
 				F0A6F058167513040054E7B6 /* btn_next_over.png in Resources */,
 				F0A6F059167513040054E7B6 /* btn_next_over@2x.png in Resources */,
-				F0A6F05E1675169D0054E7B6 /* btn_qcm_over.png in Resources */,
-				F0A6F05F1675169D0054E7B6 /* btn_qcm_over@2x.png in Resources */,
-				F0A6F0601675169D0054E7B6 /* btn_qcm.png in Resources */,
-				F0A6F0611675169D0054E7B6 /* btn_qcm@2x.png in Resources */,
 				F08686AE16791C08009C0C8B /* params_icon_over.png in Resources */,
 				F08686AF16791C08009C0C8B /* params_icon_over@2x.png in Resources */,
 				F08686B216791C08009C0C8B /* shuffle_icon_over.png in Resources */,
@@ -1771,66 +1784,6 @@
 				F03603CF167DE7460003E2D3 /* aide_parametres@2x.png in Resources */,
 				F0BDD56D167FB0E100F8A782 /* nekosensei_kana_57.png in Resources */,
 				F0BDD56F167FB0EF00F8A782 /* nekosensei_kana_114.png in Resources */,
-				F083B28C168660C0002BB523 /* d_1start.xml in Resources */,
-				F083B28D168660C0002BB523 /* d_2_01_hiragana.xml in Resources */,
-				F083B28E168660C0002BB523 /* d_2_02_katakana.xml in Resources */,
-				F083B28F168660C0002BB523 /* d_2_03_kanji.xml in Resources */,
-				F083B290168660C0002BB523 /* d_2writingsys.xml in Resources */,
-				F083B291168660C0002BB523 /* d_3_01_copula.xml in Resources */,
-				F083B292168660C0002BB523 /* d_3_02_particles.xml in Resources */,
-				F083B293168660C0002BB523 /* d_3_03_adjectives.xml in Resources */,
-				F083B294168660C0002BB523 /* d_3_04_verbs.xml in Resources */,
-				F083B295168660C0002BB523 /* d_3_05_negverb.xml in Resources */,
-				F083B296168660C0002BB523 /* d_3_06_pastverb.xml in Resources */,
-				F083B297168660C0002BB523 /* d_3_07_particles2.xml in Resources */,
-				F083B298168660C0002BB523 /* d_3_08_transtype.xml in Resources */,
-				F083B299168660C0002BB523 /* d_3_09_subclause.xml in Resources */,
-				F083B29A168660C0002BB523 /* d_3_10_particles3.xml in Resources */,
-				F083B29B168660C0002BB523 /* d_3_11_adgobi.xml in Resources */,
-				F083B29C168660C0002BB523 /* d_3basicgram.xml in Resources */,
-				F083B29D168660C0002BB523 /* d_4_01_polite.xml in Resources */,
-				F083B29E168660C0002BB523 /* d_4_02_people.xml in Resources */,
-				F083B29F168660C0002BB523 /* d_4_03_question.xml in Resources */,
-				F083B2A0168660C0002BB523 /* d_4_04_compound.xml in Resources */,
-				F083B2A1168660C0002BB523 /* d_4_05_teform.xml in Resources */,
-				F083B2A2168660C0002BB523 /* d_4_06_potential.xml in Resources */,
-				F083B2A3168660C0002BB523 /* d_4_07_surunaru.xml in Resources */,
-				F083B2A4168660C0002BB523 /* d_4_08_conditionals.xml in Resources */,
-				F083B2A5168660C0002BB523 /* d_4_09_must.xml in Resources */,
-				F083B2A6168660C0002BB523 /* d_4_10_desire.xml in Resources */,
-				F083B2A7168660C0002BB523 /* d_4_11_actionsubclause.xml in Resources */,
-				F083B2A8168660C0002BB523 /* d_4_12_define.xml in Resources */,
-				F083B2A9168660C0002BB523 /* d_4_13_try.xml in Resources */,
-				F083B2AA168660C0002BB523 /* d_4_14_favors.xml in Resources */,
-				F083B2AB168660C0002BB523 /* d_4_15_requests.xml in Resources */,
-				F083B2AC168660C0002BB523 /* d_4_16_numbers.xml in Resources */,
-				F083B2AD168660C0002BB523 /* d_4_18_gobi.xml in Resources */,
-				F083B2AE168660C0002BB523 /* d_4essential.xml in Resources */,
-				F083B2AF168660C0002BB523 /* d_5_01_causepass.xml in Resources */,
-				F083B2B0168660C0002BB523 /* d_5_02_honorific.xml in Resources */,
-				F083B2B1168660C0002BB523 /* d_5_03_unintended.xml in Resources */,
-				F083B2B2168660C0002BB523 /* d_5_04_genericnouns.xml in Resources */,
-				F083B2B3168660C0002BB523 /* d_5_05_certainty.xml in Resources */,
-				F083B2B4168660C0002BB523 /* d_5_06_amount.xml in Resources */,
-				F083B2B5168660C0002BB523 /* d_5_07_similarity.xml in Resources */,
-				F083B2B6168660C0002BB523 /* d_5_08_comparison.xml in Resources */,
-				F083B2B7168660C0002BB523 /* d_5_09_easyhard.xml in Resources */,
-				F083B2B8168660C0002BB523 /* d_5_10_negativeverbs2.xml in Resources */,
-				F083B2B9168660C0002BB523 /* d_5_11_reasoning.xml in Resources */,
-				F083B2BA168660C0002BB523 /* d_5_12_timeactions.xml in Resources */,
-				F083B2BB168660C0002BB523 /* d_5_13_nochange.xml in Resources */,
-				F083B2BC168660C0002BB523 /* d_6_01_formal.xml in Resources */,
-				F083B2BD168660C0002BB523 /* d_6_02_should.xml in Resources */,
-				F083B2BE168660C0002BB523 /* d_6_03_even.xml in Resources */,
-				F083B2BF168660C0002BB523 /* d_6_04_signs.xml in Resources */,
-				F083B2C0168660C0002BB523 /* d_6_05_feasibility.xml in Resources */,
-				F083B2C1168660C0002BB523 /* d_6_06_tendency.xml in Resources */,
-				F083B2C2168660C0002BB523 /* d_6_07_volitional2.xml in Resources */,
-				F083B2C3168660C0002BB523 /* d_6_08_covered.xml in Resources */,
-				F083B2C4168660C0002BB523 /* d_6_10_immedate.xml in Resources */,
-				F083B2C5168660C0002BB523 /* d_6_11_other.xml in Resources */,
-				F083B2C6168660C0002BB523 /* d_6advanced.xml in Resources */,
-				F083B2C7168660C0002BB523 /* gram_credits.xml in Resources */,
 				F083B34916867CE8002BB523 /* popoverArrowDown.png in Resources */,
 				F083B34A16867CE8002BB523 /* popoverArrowDown@2x.png in Resources */,
 				F083B34B16867CE8002BB523 /* popoverArrowLeft.png in Resources */,
@@ -1842,6 +1795,86 @@
 				F083B35116867CE8002BB523 /* popoverBg.png in Resources */,
 				F083B35216867CE8002BB523 /* popoverBg@2x.png in Resources */,
 				F02AE6E01691023900177925 /* vocabulary.html in Resources */,
+				F0DBA834169854EE0044735D /* btn_cours.png in Resources */,
+				F0DBA835169854EE0044735D /* btn_cours@2x.png in Resources */,
+				F0DBA836169854EE0044735D /* btn_hiragana.png in Resources */,
+				F0DBA837169854EE0044735D /* btn_hiragana@2x.png in Resources */,
+				F0DBA838169854EE0044735D /* btn_katakana.png in Resources */,
+				F0DBA839169854EE0044735D /* btn_katakana@2x.png in Resources */,
+				F0DBA83A169854EE0044735D /* btn_lexique.png in Resources */,
+				F0DBA83B169854EE0044735D /* btn_lexique@2x.png in Resources */,
+				F0DBA83C169854EE0044735D /* home_logo.png in Resources */,
+				F0DBA83D169854EE0044735D /* home_logo@2x.png in Resources */,
+				F0DBA8421698B38D0044735D /* checkbox_off.png in Resources */,
+				F0DBA8431698B38D0044735D /* checkbox_off@2x.png in Resources */,
+				F0DBA8441698B38D0044735D /* checkbox_on.png in Resources */,
+				F0DBA8451698B38D0044735D /* checkbox_on@2x.png in Resources */,
+				F0DBA84A1698D3F40044735D /* btn_glossy_off.png in Resources */,
+				F0DBA84B1698D3F40044735D /* btn_glossy_off@2x.png in Resources */,
+				F0DBA84C1698D3F40044735D /* btn_glossy.png in Resources */,
+				F0DBA84D1698D3F40044735D /* btn_glossy@2x.png in Resources */,
+				F0DBA84E16997C2B0044735D /* Default-568h@2x.png in Resources */,
+				F0DBA85416999AC60044735D /* Localizable.strings in Resources */,
+				F0B25BE31699D76F006A9162 /* d_1start.xml in Resources */,
+				F0B25BE41699D76F006A9162 /* d_2_01_hiragana.xml in Resources */,
+				F0B25BE51699D76F006A9162 /* d_2_02_katakana.xml in Resources */,
+				F0B25BE61699D76F006A9162 /* d_2_03_kanji.xml in Resources */,
+				F0B25BE71699D76F006A9162 /* d_2writingsys.xml in Resources */,
+				F0B25BE81699D76F006A9162 /* d_3_01_copula.xml in Resources */,
+				F0B25BE91699D76F006A9162 /* d_3_02_particles.xml in Resources */,
+				F0B25BEA1699D76F006A9162 /* d_3_03_adjectives.xml in Resources */,
+				F0B25BEB1699D76F006A9162 /* d_3_04_verbs.xml in Resources */,
+				F0B25BEC1699D76F006A9162 /* d_3_05_negverb.xml in Resources */,
+				F0B25BED1699D76F006A9162 /* d_3_06_pastverb.xml in Resources */,
+				F0B25BEE1699D76F006A9162 /* d_3_07_particles2.xml in Resources */,
+				F0B25BEF1699D76F006A9162 /* d_3_08_transtype.xml in Resources */,
+				F0B25BF01699D76F006A9162 /* d_3_09_subclause.xml in Resources */,
+				F0B25BF11699D76F006A9162 /* d_3_10_particles3.xml in Resources */,
+				F0B25BF21699D76F006A9162 /* d_3_11_adgobi.xml in Resources */,
+				F0B25BF31699D76F006A9162 /* d_3basicgram.xml in Resources */,
+				F0B25BF41699D76F006A9162 /* d_4_01_polite.xml in Resources */,
+				F0B25BF51699D76F006A9162 /* d_4_02_people.xml in Resources */,
+				F0B25BF61699D76F006A9162 /* d_4_03_question.xml in Resources */,
+				F0B25BF71699D76F006A9162 /* d_4_04_compound.xml in Resources */,
+				F0B25BF81699D76F006A9162 /* d_4_05_teform.xml in Resources */,
+				F0B25BF91699D76F006A9162 /* d_4_06_potential.xml in Resources */,
+				F0B25BFA1699D76F006A9162 /* d_4_07_surunaru.xml in Resources */,
+				F0B25BFB1699D76F006A9162 /* d_4_08_conditionals.xml in Resources */,
+				F0B25BFC1699D76F006A9162 /* d_4_09_must.xml in Resources */,
+				F0B25BFD1699D76F006A9162 /* d_4_10_desire.xml in Resources */,
+				F0B25BFE1699D76F006A9162 /* d_4_11_actionsubclause.xml in Resources */,
+				F0B25BFF1699D76F006A9162 /* d_4_12_define.xml in Resources */,
+				F0B25C001699D76F006A9162 /* d_4_13_try.xml in Resources */,
+				F0B25C011699D76F006A9162 /* d_4_14_favors.xml in Resources */,
+				F0B25C021699D76F006A9162 /* d_4_15_requests.xml in Resources */,
+				F0B25C031699D76F006A9162 /* d_4_16_numbers.xml in Resources */,
+				F0B25C041699D76F006A9162 /* d_4_18_gobi.xml in Resources */,
+				F0B25C051699D76F006A9162 /* d_4essential.xml in Resources */,
+				F0B25C061699D76F006A9162 /* d_5_01_causepass.xml in Resources */,
+				F0B25C071699D76F006A9162 /* d_5_02_honorific.xml in Resources */,
+				F0B25C081699D76F006A9162 /* d_5_03_unintended.xml in Resources */,
+				F0B25C091699D76F006A9162 /* d_5_04_genericnouns.xml in Resources */,
+				F0B25C0A1699D76F006A9162 /* d_5_05_certainty.xml in Resources */,
+				F0B25C0B1699D76F006A9162 /* d_5_06_amount.xml in Resources */,
+				F0B25C0C1699D76F006A9162 /* d_5_07_similarity.xml in Resources */,
+				F0B25C0D1699D76F006A9162 /* d_5_08_comparison.xml in Resources */,
+				F0B25C0E1699D76F006A9162 /* d_5_09_easyhard.xml in Resources */,
+				F0B25C0F1699D76F006A9162 /* d_5_10_negativeverbs2.xml in Resources */,
+				F0B25C101699D76F006A9162 /* d_5_11_reasoning.xml in Resources */,
+				F0B25C111699D76F006A9162 /* d_5_12_timeactions.xml in Resources */,
+				F0B25C121699D76F006A9162 /* d_5_13_nochange.xml in Resources */,
+				F0B25C131699D76F006A9162 /* d_6_01_formal.xml in Resources */,
+				F0B25C141699D76F006A9162 /* d_6_02_should.xml in Resources */,
+				F0B25C151699D76F006A9162 /* d_6_03_even.xml in Resources */,
+				F0B25C161699D76F006A9162 /* d_6_04_signs.xml in Resources */,
+				F0B25C171699D76F006A9162 /* d_6_05_feasibility.xml in Resources */,
+				F0B25C181699D76F006A9162 /* d_6_06_tendency.xml in Resources */,
+				F0B25C191699D76F006A9162 /* d_6_07_volitional2.xml in Resources */,
+				F0B25C1A1699D76F006A9162 /* d_6_08_covered.xml in Resources */,
+				F0B25C1B1699D76F006A9162 /* d_6_10_immedate.xml in Resources */,
+				F0B25C1C1699D76F006A9162 /* d_6_11_other.xml in Resources */,
+				F0B25C1D1699D76F006A9162 /* d_6advanced.xml in Resources */,
+				F0B25C1E1699D76F006A9162 /* gram_credits.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1898,7 +1931,6 @@
 				F083B35616867CE8002BB523 /* WETouchableView.m in Sources */,
 				F02AE6DB1690A54900177925 /* Cache.m in Sources */,
 				F02AE6DE1690A59400177925 /* UITableView+NXEmptyView.m in Sources */,
-				F0DBA82916983E400044735D /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1911,33 +1943,6 @@
 			targetProxy = F09E45BF167FC4E900909F57 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		F060E97C163C0A4B009C01E3 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F060E97D163C0A4B009C01E3 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		F060E98B163C0A4B009C01E3 /* MainStoryboard_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F060E98C163C0A4B009C01E3 /* en */,
-			);
-			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		F060E98E163C0A4B009C01E3 /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F060E98F163C0A4B009C01E3 /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F060E994163C0A4B009C01E3 /* Debug */ = {

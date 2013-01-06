@@ -28,11 +28,14 @@
         
         self = [arrayOfViews objectAtIndex:0];
         
-        [_title setFont:[UIFont fontWithName:@"EPSON ã≥â»èëëÃÇl" size:80]];
+        [_title setFont:[UIFont fontWithName:@"EPSON ã≥â»èëëÃÇl" size:55]];
         
-        self.layer.cornerRadius = 10;
-        self.layer.borderColor = [UIColor blackColor].CGColor;
-        self.layer.borderWidth = 1;
+        _title.textColor = [UIColor colorWithR:0 G:0 B:0 A:1];
+        _subTitle.textColor = [UIColor colorWithR:0 G:0 B:0 A:1];
+        
+       // self.layer.cornerRadius = 10;
+       // self.layer.borderColor = [UIColor blackColor].CGColor;
+      //  self.layer.borderWidth = 1;
         
         [self disabled];
         
@@ -44,11 +47,9 @@
 
 - (void) enabled
 {
-    highlited = true;
+    highlited = true; 
     
-    _title.textColor = [UIColor colorWithR:0 G:0 B:0 A:1];
-    _subTitle.textColor = [UIColor colorWithR:0 G:0 B:0 A:1];
-    self.backgroundColor = [UIColor colorWithR:255 G:255 B:255 A:0.5]; 
+    self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"btn_glossy.png"]];
 }
 
 - (void) disabled
@@ -58,10 +59,8 @@
     int r = 100;
     int g = 100;
     int b = 100;
-    
-    _title.textColor = [UIColor colorWithR:r G:g B:b A:1];
-    _subTitle.textColor = [UIColor colorWithR:r G:g B:b A:1];
-    self.backgroundColor = [UIColor colorWithR:255 G:255 B:255 A:0.3]; 
+     
+    self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"btn_glossy_off.png"]];
 }
 
 - (void) empty

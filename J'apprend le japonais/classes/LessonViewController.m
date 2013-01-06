@@ -9,6 +9,10 @@
 #import "LessonViewController.h"
 #import "ContentViewController.h"
 
+#define FONT_SIZE 16.0f
+#define CELL_CONTENT_WIDTH 320.0f
+#define CELL_CONTENT_MARGIN 5.0f
+
 @interface LessonViewController ()
 
 @end
@@ -16,6 +20,13 @@
 @implementation LessonViewController
 
 @synthesize popoverController;
+
+
+- (void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController.navigationBar setHidden:FALSE];
+}
 
 - (void)viewDidLoad
 {
@@ -63,10 +74,11 @@
 {
     NSArray * lessons = [NSArray arrayWithObjects:
                          @"d_1start",
+                         @"d_2writingsys",
                          @"d_2_01_hiragana",
                          @"d_2_02_katakana",
                          @"d_2_03_kanji",
-                         @"d_2writingsys",
+                         @"d_3basicgram",
                          @"d_3_01_copula",
                          @"d_3_02_particles",
                          @"d_3_03_adjectives",
@@ -78,7 +90,7 @@
                          @"d_3_09_subclause",
                          @"d_3_10_particles3",
                          @"d_3_11_adgobi",
-                         @"d_3basicgram",
+                         @"d_4essential",
                          @"d_4_01_polite",
                          @"d_4_02_people",
                          @"d_4_03_question",
@@ -90,13 +102,13 @@
                          @"d_4_09_must",
                          @"d_4_10_desire",
                          @"d_4_11_actionsubclause",
-                         @"d_4_12_define",
+                       //  @"d_4_12_define",
                          @"d_4_13_try",
                          @"d_4_14_favors",
                          @"d_4_15_requests",
                          @"d_4_16_numbers",
                          @"d_4_18_gobi",
-                         @"d_4essential",
+                         @"d_5_13_nochange",
                          @"d_5_01_causepass",
                          @"d_5_02_honorific",
                          @"d_5_03_unintended",
@@ -110,6 +122,7 @@
                          @"d_5_11_reasoning",
                          @"d_5_12_timeactions",
                          @"d_5_13_nochange",
+                         @"d_6advanced",
                          @"d_6_01_formal",
                          @"d_6_02_should",
                          @"d_6_03_even",
@@ -120,25 +133,71 @@
                          @"d_6_08_covered",
                          @"d_6_10_immedate",
                          @"d_6_11_other",
-                         @"d_6advanced",
                          @"gram_credits",
                          
                          nil];
     
     titleLessons = [NSArray arrayWithObjects:
-                    @"Intro",
-                    @"Hiragana",
-                    @"Katakana",
-                    @"Kanji",
-                    @"Les alphabets",
-                    @"Expression de l'état d'être",
-                    @"Les particules de bases",
-                    @"Les adjectifs",
-                    @"Les verbes",
-                    @"Forme Négative",
-                    @"Le passé",
-                    @"Les particules, le retour",
-                    @"Verbe transitif, intransifif",
+                    @"1) Un guide japonais de grammaire japonaise",
+                    @"2) Le système d'écriture",
+                    @"  a) Hiragana",
+                    @"  b) Katakana",
+                    @"  c) Kanji",
+                    @"3) Grammaire de base",
+                    @"   a) Expression de l'état d'être",
+                    @"   b) Introduction aux particules (は, も, が)",
+                    @"   c) Adjectifs",
+                    @"   d) Notions de base sur les verbes",
+                    @"   e) Forme négative des verbes",
+                    @"   f) Forme du passé",
+                    @"   g) Particules utilisées avec les verbes (を,　に,　へ,　で)",
+                    @"   h) Verbes transitifs et intransitifs",
+                    @"   i) Description des propositions subordonnées et la position des mots dans une phrase",
+                    @"   j) Particules nominales (と,　や,　とか,　の)",
+                    @"   k) Utiliser des adverbes et les Gobi",
+                    @"4) Grammaire essentielle",
+                    @"   a) Forme polie et radicaux des verbes (~です、~ます)",
+                    @"   b) S'adresser aux gens",
+                    @"   c) Marque de questionnement (か)",
+                    @"   d) Phrases composées ( forme ~て, から, のに, が, けど, し, ~たりする)",
+                    @"   e) Autres utilisations de la forme en ～て （～ている、～てある、～ておく、～ていく、～てくる",
+                    @"   f) La forme pour exprimer le potentiel ",
+                    @"   g) Utiliser する et なる avec la particule に （～[のよう]になる／する）",
+                    @"   h) Conditionnel （と、なら、ば、たら） ",
+                    @"   i) Exprimer \"devoir\" （～だめ、～いけない、～ならない、～ても）",
+                    @"   j) Désir et suggestion （たい、欲しい、Conjectural、～たらどう）",
+                    @"   k) Travailler sur une proposition subordonnée （と、って）",
+                    @"   l) Essayer de réaliser quelque chose simplement ou dans l’attente d’un résultat（～てみる、conjecture+とする）",
+                    @"   m) Donner et recevoir （あげる、やる、くれる、もらう） ",
+                    @"   n) Faire une requête （～ください、～ちょうだい、～なさい、Forme impérative） ",
+                    @"   o) Les nombres et compter",
+                    @"   p) Condensé du chapitre 4 et plus de suffixes grammaticaux",
+                    @"5) Expressions particulières",
+                    @"   a) Forme active et passive des verbes",
+                    @"   b) Forme honorifique et humble",
+                    @"   c) Choses qui se produisent involontairement （～てしまう、～ちゃう／～じゃう）",
+                    @"   d) Expressions spéciales avec des noms communs （こと、ところ、もの)",
+                    @"   e) Exprimer différents niveaux de certitude （かもしれない、でしょう、だろう）",
+                    @"   f) Exprimer une quantité （だけ、のみ、しか、ばかり、すぎる、quantité+も、ほど、さ）",
+                    @"   g) Diverses manières d'exprimer la similitude et la rumeur（よう、～みたい、～そう、～そうだ、～らしい、～っぽい）",
+                    @"   h) Utiliser 方 et よる pour des comparaisons ou d’autres fonctions（より、の方、stem＋方、によって、によると）",
+                    @"   i) Dire que quelque chose est facile ou difficile à faire （～やすい、～にくい）",
+                    @"   j) Plus de formes négatives pour les verbes （ないで、ず、～ん、ぬ）",
+                    @"   k) Présomption et conclusion （わけ、～とする）",
+                    @"   l) Exprimer une action ayant une position spécifique dans le temps （ばかり、とたんに、ながら、まくる）",
+                    @"   m) Laisser quelque chose dans l’état où il est （まま、っぱなし）",
+                    @"6) Sujets avancés",
+                    @"   a) Expressions formels （である、ではない）",
+                    @"   b) Choses qui devraient être d’une certaine manière （はず、べき、べく、べからず）",
+                    @"   c) Exprimer l'espérance minimum （でさえ、ですら、おろか）",
+                    @"   d) Montrer les signes de quelque chose （～がる、ばかり、～めく）",
+                    @"   e) Expression formelle de non faisabilité （～ざるを得ない、やむを得ない、～かねる）",
+                    @"   f) Tendances （～がち、～つつ、きらいがある）",
+                    @"   g) Conjecture avancée （まい、であろう、かろう）",
+                    @"   h) Couvert par quelque chose （だらけ、まみれ、ずくめ）",
+                    @"   i) Proximité avancée des actions （が早いか、や否や、そばから）",
+                    @"   j) Autres （思いきや、あげく）",
+                    
                     nil];
     
     NSMutableArray *pageStrings = [[NSMutableArray alloc] init];
@@ -218,6 +277,8 @@
 {
     [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:index] forKey:@"current_page"];
     [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    [self scrollToCurrentLessonPage];
 }
 
 - (void) restoreIndex
@@ -289,7 +350,7 @@
     if (!self.popoverController)
     {
 		
-		UITableViewController *contentViewController = [[UITableViewController alloc] init];
+        contentViewController = [[UITableViewController alloc] init];
         contentViewController.tableView.dataSource = self;
         contentViewController.tableView.delegate = self;
         
@@ -305,7 +366,7 @@
 		[self.popoverController presentPopoverFromBarButtonItem:sender
 									   permittedArrowDirections:UIPopoverArrowDirectionUp
 													   animated:YES];
-        
+        [self scrollToCurrentLessonPage];
 	}
     else
     {
@@ -313,6 +374,13 @@
 		self.popoverController = nil;
 	}
     
+}
+
+- (void) scrollToCurrentLessonPage
+{
+    NSNumber * index = (NSNumber *)[[NSUserDefaults standardUserDefaults] objectForKey:@"current_page"];
+    NSIndexPath * indexPath = [NSIndexPath indexPathForRow:[index intValue] inSection:0];
+    [contentViewController.tableView selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionTop];
 }
 
 - (WEPopoverContainerViewProperties *)improvedContainerViewProperties {
@@ -376,17 +444,51 @@
 {
     static NSString *CellIdentifier = @"Cell";
     
+    UILabel *label = nil;
+ 
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil)
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        label = [[UILabel alloc] initWithFrame:CGRectZero];
+        [label setLineBreakMode:UILineBreakModeWordWrap];
+        [label setMinimumFontSize:FONT_SIZE];
+        [label setNumberOfLines:0];
+        [label setFont:[UIFont systemFontOfSize:FONT_SIZE]];
+        [label setTag:1];
+        
+        [[cell contentView] addSubview:label];
+        
     }
     
-    // Set up the cell...
-    NSString *cellValue = [titleLessons objectAtIndex:indexPath.row];
-    cell.textLabel.text = cellValue;
+    NSString *text = [titleLessons objectAtIndex:[indexPath row]];
     
-    return cell;
+    CGSize constraint = CGSizeMake(CELL_CONTENT_WIDTH - (CELL_CONTENT_MARGIN * 2), 20000.0f);
+    
+    CGSize size = [text sizeWithFont:[UIFont systemFontOfSize:FONT_SIZE] constrainedToSize:constraint lineBreakMode:UILineBreakModeWordWrap];
+    
+    if (!label)
+    {
+        label = (UILabel*)[cell viewWithTag:1];
+    }
+    
+    [label setText:text];
+    [label setFrame:CGRectMake(CELL_CONTENT_MARGIN, CELL_CONTENT_MARGIN, CELL_CONTENT_WIDTH - (CELL_CONTENT_MARGIN * 2), MAX(size.height, 44.0f))];
+    
+     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
+{
+    NSString *text = [titleLessons objectAtIndex:[indexPath row]];
+    
+    CGSize constraint = CGSizeMake(CELL_CONTENT_WIDTH - (CELL_CONTENT_MARGIN * 2), 20000.0f);
+    
+    CGSize size = [text sizeWithFont:[UIFont systemFontOfSize:FONT_SIZE] constrainedToSize:constraint lineBreakMode:UILineBreakModeWordWrap];
+    
+    CGFloat height = MAX(size.height, 44.0f);
+    
+    return height + (CELL_CONTENT_MARGIN * 2);
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

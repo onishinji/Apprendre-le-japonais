@@ -10,6 +10,7 @@
 #import "constant.h"
 #import "HomeKanaViewController.h"
 #import "VocabularyViewController.h"
+#import "UIColor+RGB.h"
 
 @interface HomeViewController ()
 
@@ -19,6 +20,24 @@
 
 @synthesize managedObjectContext = _managedObjectContext;
 
+
+- (void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController.navigationBar setHidden:TRUE];
+}
+
+- (void) viewDidLoad
+{
+    [super viewDidLoad];
+    
+    CAGradientLayer *gradient = [CAGradientLayer layer];
+    gradient.bounds = self.view.bounds;
+    gradient.frame = CGRectMake(0, 0, 1024, 320);
+    gradient.colors = [NSArray arrayWithObjects:(id)[[UIColor colorWithR:255 G:77 B:63 A:1]CGColor], (id)[[UIColor colorWithR:127 G:0 B:13 A:1]CGColor], nil];
+    
+    [self.view.layer insertSublayer:gradient atIndex:0];
+}
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {

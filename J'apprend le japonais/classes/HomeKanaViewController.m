@@ -26,11 +26,10 @@
     return self;
 }
 
-- (void)viewDidLoad
+- (void) viewWillAppear:(BOOL)animated
 {
-    [super viewDidLoad];
-     
-	// Do any additional setup after loading the view.
+    [super viewWillAppear:animated];
+    [self.navigationController.navigationBar setHidden:FALSE];
 }
 
 - (void)didReceiveMemoryWarning

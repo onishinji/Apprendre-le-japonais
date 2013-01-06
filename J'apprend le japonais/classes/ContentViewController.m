@@ -23,7 +23,6 @@
     fontSize = 14;
     
     _htmlView = [[CMHTMLView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-    _htmlView.backgroundColor = [UIColor whiteColor];
     _htmlView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     
     [_htmlView setFontSize:fontSize];
