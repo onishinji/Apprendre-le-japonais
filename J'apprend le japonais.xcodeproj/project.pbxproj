@@ -212,6 +212,7 @@
 		F0E6D17A167E5F98006DE22B /* VocabularyItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E6D179167E5F98006DE22B /* VocabularyItem.m */; };
 		F0E6D17D167E7AC5006DE22B /* VocabularyDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E6D17C167E7AC5006DE22B /* VocabularyDetailViewController.m */; };
 		F0EF2BA81683BAA90007119D /* NSObject+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EF2BA71683BAA90007119D /* NSObject+Blocks.m */; };
+		F0FA639B16A083F1003E09A2 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0FA639A16A083F1003E09A2 /* MainStoryboard_iPhone.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -835,6 +836,7 @@
 		F0E6D17C167E7AC5006DE22B /* VocabularyDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VocabularyDetailViewController.m; path = classes/VocabularyDetailViewController.m; sourceTree = "<group>"; };
 		F0EF2BA61683BAA90007119D /* NSObject+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+Blocks.h"; path = "classes/NSObject+Blocks.h"; sourceTree = "<group>"; };
 		F0EF2BA71683BAA90007119D /* NSObject+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Blocks.m"; path = "classes/NSObject+Blocks.m"; sourceTree = "<group>"; };
+		F0FA639A16A083F1003E09A2 /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1082,6 +1084,7 @@
 		F060E999163C0C3C009C01E3 /* ressources */ = {
 			isa = PBXGroup;
 			children = (
+				F0FA639A16A083F1003E09A2 /* MainStoryboard_iPhone.storyboard */,
 				F0B25C1F1699D775006A9162 /* cours */,
 				F00D6F9C1674B029001AF0B9 /* images */,
 				F040097A165CBDDF0090AA18 /* epkyouka.ttf */,
@@ -1875,6 +1878,7 @@
 				F0B25C1C1699D76F006A9162 /* d_6_11_other.xml in Resources */,
 				F0B25C1D1699D76F006A9162 /* d_6advanced.xml in Resources */,
 				F0B25C1E1699D76F006A9162 /* gram_credits.xml in Resources */,
+				F0FA639B16A083F1003E09A2 /* MainStoryboard_iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
