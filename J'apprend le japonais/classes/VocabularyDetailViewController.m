@@ -32,7 +32,7 @@
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:[NSBundle mainBundle]];
     
-    dataViewController = [storyboard instantiateViewControllerWithIdentifier:@"contentViewVocabulary"];
+    dataViewController = [storyboard instantiateViewControllerWithIdentifier:@"contentView"];
     
     NSDictionary * substitutions = [NSDictionary
                                     dictionaryWithObjects:[NSArray arrayWithObjects:
