@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="home_bkg.png" id="i89-Vl-19l">
-                                <rect key="frame" x="0.0" y="0.0" width="568" height="300"/>
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" id="aOC-xA-7s7">
@@ -46,7 +46,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="phD-2Q-ZzJ">
                                 <rect key="frame" x="367" y="107" width="105" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Button" backgroundImage="title_scroll.png">
@@ -72,7 +72,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7IZ-Vd-oUk">
                                 <rect key="frame" x="367" y="40" width="105" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Button" backgroundImage="title_scroll.png">
@@ -90,7 +90,7 @@
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Score" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" id="dW7-aB-S1w">
                                 <rect key="frame" x="324" y="6" width="148" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -114,15 +114,15 @@
                                 </state>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="msg" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" id="Nvz-TM-WnV">
-                                <rect key="frame" x="9" y="2" width="299" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="9" y="2" width="357" height="25"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="title_scroll.png" id="kG2-f2-9oW">
                                 <rect key="frame" x="0.0" y="236" width="480" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Fkt-eQ-kvY">
                                 <rect key="frame" x="10" y="40" width="105" height="50"/>
@@ -147,7 +147,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="z6l-GO-oCJ">
                                 <rect key="frame" x="367" y="173" width="105" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Button" backgroundImage="title_scroll.png">
@@ -165,7 +165,7 @@
                             </button>
                             <view contentMode="scaleToFill" id="SUb-dh-cWE" customClass="KanaView">
                                 <rect key="frame" x="140" y="32" width="200" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="boardcard.png" id="Mh7-aI-3wM">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
@@ -204,7 +204,7 @@
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="9" id="jwI-DA-7wp">
                                 <rect key="frame" x="10" y="239" width="462" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -236,7 +236,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YkY-ar-seu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1352" y="-335"/>
+            <point key="canvasLocation" x="1340" y="-351"/>
         </scene>
         <!--Help View Controller-->
         <scene sceneID="1j8-Ei-e5i">
@@ -293,14 +293,14 @@
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="msg" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LHz-e1-VQn">
                                 <rect key="frame" x="5" y="0.0" width="467" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="M8G-hL-O33">
                                 <rect key="frame" x="360" y="44" width="121" height="221"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.97959183670000005" green="0.97959183670000005" blue="0.97959183670000005" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="btn_next.png">
@@ -313,7 +313,7 @@
                             </button>
                             <view contentMode="scaleToFill" id="osK-93-SQb" customClass="KanaFlipView">
                                 <rect key="frame" x="130" y="44" width="220" height="220"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="boardcard.png" id="1PO-g1-s2j">
                                         <rect key="frame" x="0.0" y="0.0" width="220" height="220"/>
@@ -335,7 +335,7 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ufr-y3-eIs">
                                 <rect key="frame" x="0.0" y="44" width="121" height="221"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.97959183670000005" green="0.97959183670000005" blue="0.97959183670000005" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="btn_back.png">
@@ -368,7 +368,112 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qS4-Ol-qSi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1352" y="199"/>
+            <point key="canvasLocation" x="1508" y="80"/>
+        </scene>
+        <!--Kana Stats Controller - Neko Sensei - Vos statistiques-->
+        <scene sceneID="mtb-sr-Iby">
+            <objects>
+                <viewController id="3h0-nD-v8f" customClass="KanaStatsController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6b5-DN-lkZ">
+                        <rect key="frame" x="0.0" y="44" width="480" height="276"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="home_bkg.png" id="ENT-S3-iR1">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="6ue-Sb-uhL">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="title_scroll.png" id="reE-PF-aKU">
+                                        <rect key="frame" x="175" y="3" width="300" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="m7q-UZ-CNb">
+                                        <rect key="frame" x="192" y="7" width="264" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bkg_stats.png" id="yNG-Sf-T17">
+                                        <rect key="frame" x="177" y="49" width="300" height="228"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="34" sectionHeaderHeight="45" sectionFooterHeight="0.0" id="nko-Dz-L6F">
+                                        <rect key="frame" x="189" y="56" width="275" height="214"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <sections/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="3h0-nD-v8f" id="m3d-uE-GW5"/>
+                                            <outlet property="delegate" destination="3h0-nD-v8f" id="McH-NZ-bnH"/>
+                                        </connections>
+                                    </tableView>
+                                    <view contentMode="scaleToFill" id="jFN-8R-FL0">
+                                        <rect key="frame" x="12" y="51" width="153" height="218"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Score Global" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uMG-od-MpO">
+                                                <rect key="frame" x="0.0" y="0.0" width="153" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ic_bronze.png" id="V8k-v3-4EF">
+                                                <rect key="frame" x="42" y="32" width="68" height="68"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="L'avis de Neko Sensei" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P0D-iC-WoA">
+                                                <rect key="frame" x="21" y="96" width="110" height="49"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="“" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PD5-X1-Eo9">
+                                                <rect key="frame" x="-5" y="145" width="30" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Marion-Regular" family="Marion" pointSize="34"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="„" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="W4s-5N-AwG">
+                                                <rect key="frame" x="129" y="184" width="30" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Marion-Regular" family="Marion" pointSize="34"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Il te reste encore beaucoup de travail !" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WbX-hr-yw6">
+                                                <rect key="frame" x="4" y="153" width="145" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Neko Sensei - Vos statistiques" id="4Kj-d7-qds"/>
+                    <connections>
+                        <outlet property="globalScoreImg" destination="V8k-v3-4EF" id="Bae-P3-mby"/>
+                        <outlet property="msg" destination="m7q-UZ-CNb" id="Goj-9W-TNE"/>
+                        <outlet property="nekoMsg" destination="WbX-hr-yw6" id="U2P-9b-5Dz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AbV-WJ-cxY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1352" y="498"/>
         </scene>
         <!--Kana Parameters Controller - Neko Sensei - Je choisis ma difficulté-->
         <scene sceneID="6tf-Tj-yLf">
@@ -413,7 +518,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J7o-aB-deI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1352" y="719"/>
+            <point key="canvasLocation" x="1352" y="903"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wHa-Vx-COG">
@@ -444,6 +549,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="home_bkg_alt_3.png" id="DBk-wd-DHV">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="home_bkg_alt_3.png" id="SBS-6Z-luH">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="v. X.Y" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumFontSize="8" id="vpp-gP-5J5">
+                                <rect key="frame" x="5" y="107" width="69" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                <color key="textColor" red="0.74750356633380877" green="0.7269006729758829" blue="0.73078429518667587" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" id="22f-GF-Qv6">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -528,6 +648,9 @@
                     </navigationItem>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="version" destination="vpp-gP-5J5" id="gRB-Bq-dJM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q1e-Hg-7LX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -543,11 +666,11 @@
                         <subviews>
                             <view contentMode="scaleToFill" id="Er7-Hu-gIv">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.99880137589999995" blue="0.98051053359999996" alpha="0.5" colorSpace="calibratedRGB"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="L4L-c3-DJp">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="308"/>
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -726,6 +849,31 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="SEo-vC-6Ek">
+                                        <rect key="frame" x="190" y="63" width="90" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.99880137589999995" blue="0.98051053359999996" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="70" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Statistique" backgroundImage="stats_icon.png">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="3h0-nD-v8f" kind="push" identifier="stats" id="UiR-Ia-zdu"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
@@ -771,7 +919,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Llq-HO-b0W">
-                                        <rect key="frame" x="342" y="173" width="90" height="90"/>
+                                        <rect key="frame" x="342" y="63" width="90" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="0.99880137589999995" blue="0.98051053359999996" alpha="0.5" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -846,7 +994,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="r4e-D2-RWt">
-                                        <rect key="frame" x="342" y="63" width="90" height="90"/>
+                                        <rect key="frame" x="342" y="173" width="90" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="0.99880137589999995" blue="0.98051053359999996" alpha="0.5" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -893,6 +1041,31 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <segue destination="PuH-Y3-eCf" kind="push" identifier="romanji" id="hlj-nX-dug"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lYj-Ws-KZY">
+                                        <rect key="frame" x="190" y="63" width="90" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.99880137589999995" blue="0.98051053359999996" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="70" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Statistique" backgroundImage="stats_icon.png">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="3h0-nD-v8f" kind="push" identifier="stats" id="3jo-0U-8JB"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -960,7 +1133,7 @@ Veuillez vérifier votre connexion internet.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lLa-bN-iCR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1144" y="1608"/>
+            <point key="canvasLocation" x="1352" y="1962"/>
         </scene>
         <!--Content View Controller-->
         <scene sceneID="OIv-yQ-9aQ">
@@ -976,7 +1149,7 @@ Veuillez vérifier votre connexion internet.</string>
                             </imageView>
                             <view alpha="0.90000000000000002" contentMode="scaleToFill" id="1L2-4H-oaY">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -986,7 +1159,7 @@ Veuillez vérifier votre connexion internet.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fC0-WD-gXc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1198" y="1191"/>
+            <point key="canvasLocation" x="1352" y="1511"/>
         </scene>
         <!--Help View Controller-->
         <scene sceneID="atV-gs-6a3">
@@ -1059,6 +1232,7 @@ Veuillez vérifier votre connexion internet.</string>
         <image name="aide_parametres.png" width="480" height="268"/>
         <image name="aide_qcm.png" width="960" height="535"/>
         <image name="aide_shuffle.png" width="480" height="268"/>
+        <image name="bkg_stats.png" width="316" height="244"/>
         <image name="boardcard.png" width="220" height="220"/>
         <image name="btn_back.png" width="47" height="46"/>
         <image name="btn_back_over.png" width="47" height="46"/>
@@ -1069,7 +1243,9 @@ Veuillez vérifier votre connexion internet.</string>
         <image name="btn_next.png" width="46" height="46"/>
         <image name="btn_next_over.png" width="46" height="46"/>
         <image name="home_bkg.png" width="480" height="320"/>
+        <image name="home_bkg_alt_3.png" width="480" height="320"/>
         <image name="home_logo.png" width="185" height="117"/>
+        <image name="ic_bronze.png" width="68" height="68"/>
         <image name="params_icon.png" width="90" height="90"/>
         <image name="qcm_hiragana_icon.png" width="90" height="90"/>
         <image name="qcm_katakana_icon.png" width="90" height="90"/>
@@ -1077,6 +1253,7 @@ Veuillez vérifier votre connexion internet.</string>
         <image name="shuffle_icon.png" width="90" height="90"/>
         <image name="shuffle_kata_icon.png" width="90" height="90"/>
         <image name="shuffle_romanji_icon.png" width="90" height="90"/>
+        <image name="stats_icon.png" width="90" height="90"/>
         <image name="title_scroll.png" width="195" height="23"/>
     </resources>
     <classes>
@@ -1100,6 +1277,9 @@ Veuillez vérifier votre connexion internet.</string>
         </class>
         <class className="HomeViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/HomeViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="version" candidateClass="UILabel"/>
+            </relationships>
         </class>
         <class className="KanaFlipView" superclassName="KanaView">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/KanaFlipView.h"/>
@@ -1129,6 +1309,14 @@ Veuillez vérifier votre connexion internet.</string>
                 <relationship kind="outlet" name="btnPrev" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="kanaFlipView" candidateClass="KanaFlipView"/>
                 <relationship kind="outlet" name="msg" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="KanaStatsController" superclassName="ExerciseController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KanaStatsController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="globalScoreImg" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="msg" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="nekoMsg" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="KanaView" superclassName="UIView">
@@ -1167,8 +1355,9 @@ Veuillez vérifier votre connexion internet.</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="y7T-1G-Anv"/>
         <segue reference="hlj-nX-dug"/>
+        <segue reference="3jo-0U-8JB"/>
         <segue reference="Tby-Mj-Arf"/>
+        <segue reference="y7T-1G-Anv"/>
     </inferredMetricsTieBreakers>
 </document>

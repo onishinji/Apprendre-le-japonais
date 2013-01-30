@@ -78,7 +78,19 @@
     [_rightTopButton addTarget:self action:@selector(checkResponse:) forControlEvents:UIControlEventTouchUpInside];
     [_rightBottomButton addTarget:self action:@selector(checkResponse:) forControlEvents:UIControlEventTouchUpInside];
     [_rightMiddleButton addTarget:self action:@selector(checkResponse:) forControlEvents:UIControlEventTouchUpInside];
-     
+    
+    nbSeleted = 0;
+    
+    if([self isForHiragana])
+    {
+        nbSeleted =  [[[Computer sharedInstance] getSelectedsHiragana] count];
+    }
+    else
+    {
+        nbSeleted =  [[[Computer sharedInstance] getSelectedsKatakana] count];
+    }
+    
+    
     
     [self displayNext];
 }
@@ -87,7 +99,7 @@
 {
     
     knows = [[NSMutableArray alloc] init];
-    knowsRomanji = [[NSMutableArray alloc] init];
+    knowsJapan = [[NSMutableArray alloc] init];
     currentScore = 0;
     btnArray = [[NSMutableArray alloc] init];
     
@@ -127,12 +139,16 @@
                    ([self isForJapanToRomanji] && [btn.titleLabel.text isEqualToString:currentKana.japan])
                    )
                 {
-                    currentScore++;
-                    currentKana.scoring = [NSNumber numberWithInt:[currentKana.scoring intValue] + 1];
+                    NSLog(@"%i + 1", currentScore);
+                    currentScore = currentScore + 1;
+                    NSLog(@" = %i", currentScore);
+                    
+                    [currentKana increaseScore];
                     [self displayTrueResponse:currentKana];
                 }
                 else
                 {
+                    NSLog(@"j'increase pas ?");
                     if([self isForHiragana])
                     {
                         if([self isForRomanjiToJapan])
@@ -158,7 +174,7 @@
                             [self displayFalseResponse:currentKana falseReponse:[[Computer sharedInstance] getKatakanaWithJapan:btn.titleLabel.text]];
                         }
                     }
-                    currentKana.scoring = [NSNumber numberWithInt:[currentKana.scoring intValue] - 1];
+                    [currentKana decrementScore];
                 }
                 [[Computer sharedInstance] flush];
             }
@@ -169,17 +185,9 @@
 
 -(void) displayNext
 {
-    int nbSeleted = 0;
     
-    if([self isForHiragana])
-    {
-        nbSeleted =  [[[Computer sharedInstance] getSelectedsHiragana] count];
-    }
-    else
-    {
-        nbSeleted =  [[[Computer sharedInstance] getSelectedsKatakana] count];
-    }
-    
+    float percent2 = (0.0 + currentScore) / (0.0 + nbSeleted) * 100.0;
+    NSLog(@"currentScore %i, pourcentage > %2.f", currentScore, percent2);
     
     if(nbSeleted <= 5)
     {
@@ -204,11 +212,11 @@
         // switch type
         if([self isForHiragana])
         {
-            currentKana = [[Computer sharedInstance] getRandomHiragana:knowsRomanji];
+            currentKana = [[Computer sharedInstance] getRandomHiragana:knowsJapan];
         }
         else
         {
-            currentKana = [[Computer sharedInstance] getRandomKatakana:knowsRomanji];
+            currentKana = [[Computer sharedInstance] getRandomKatakana:knowsJapan];
         }
         
         int goodIndex = arc4random() % 6;
@@ -267,7 +275,7 @@
         
         if(currentKana != nil)
         {
-            [knowsRomanji addObject:currentKana.romanji];
+            [knowsJapan addObject:currentKana.japan];
             [knows addObject:currentKana];
             
             [_hiraganaFlipView setCurrentHiragana:currentKana];
@@ -290,10 +298,13 @@
         if(currentKana == nil)
         {
             knows = [[NSMutableArray alloc] init];
-            knowsRomanji = [[NSMutableArray alloc] init];
+            knowsJapan = [[NSMutableArray alloc] init];
             
             
-            float percent = (0.0 + currentScore) / (0.0 + nbSeleted) * 100;
+            float percent = (0.0 + currentScore) / (0.0 + nbSeleted) * 100.0;
+            
+            NSLog(@"pourcentage > %2.f", percent);
+            
             [_hiraganaFlipView displayEmpty];
             
             if(isnan(percent)) percent = 100;

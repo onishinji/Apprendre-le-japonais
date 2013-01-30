@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
+#define SCORE_MAX 10
+#define SCORE_MIN -10
 
 @interface Kana : NSManagedObject
 
@@ -23,5 +25,8 @@
 @property (nonatomic, retain) NSNumber * type;
 
 - (NSString *)displayRomanji;
+
+- (void) increaseScore;
+- (void) decrementScore;
 
 @end

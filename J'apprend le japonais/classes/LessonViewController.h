@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "WEPopoverController.h"
+#import "RAPageViewController.h"
+#import "ContentViewController.h"
 
-@interface LessonViewController : UIViewController <UIPageViewControllerDataSource, UITableViewDataSource, UITableViewDelegate, WEPopoverControllerDelegate>
+@interface LessonViewController : UIViewController <RAPageViewControllerDelegate, UITableViewDataSource, UITableViewDelegate, WEPopoverControllerDelegate, ContentViewControllerDelegate>
 {
     int currentIndex;
     int nbSizeUpDown;
@@ -22,7 +24,7 @@
     
 }
     
-@property (strong, nonatomic) UIPageViewController *pageController;
+@property (strong, nonatomic) RAPageViewController *pageController;
 @property (strong, nonatomic) NSArray *pageContent;
 @property (nonatomic, retain) WEPopoverController *popoverController;
 

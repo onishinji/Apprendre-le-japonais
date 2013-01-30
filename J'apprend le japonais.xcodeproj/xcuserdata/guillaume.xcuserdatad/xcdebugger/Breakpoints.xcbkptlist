@@ -86,11 +86,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/AppDelegate.m"
-         timestampString = "379117460.238901"
+         timestampString = "380498601.97227"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "81"
-         endingLineNumber = "81"
+         startingLineNumber = "84"
+         endingLineNumber = "84"
          landmarkName = "-application:didFinishLaunchingWithOptions:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -99,11 +99,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/AppDelegate.m"
-         timestampString = "379117460.238901"
+         timestampString = "380498601.97227"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "83"
-         endingLineNumber = "83"
+         startingLineNumber = "86"
+         endingLineNumber = "86"
          landmarkName = "-application:didFinishLaunchingWithOptions:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -238,11 +238,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/Computer.m"
-         timestampString = "379172192.384962"
+         timestampString = "380395019.89096"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "52"
-         endingLineNumber = "52"
+         startingLineNumber = "59"
+         endingLineNumber = "59"
          landmarkName = "-getRandomHiragana:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -251,11 +251,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/Computer.m"
-         timestampString = "379172192.384962"
+         timestampString = "380395019.89096"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "58"
-         endingLineNumber = "58"
+         startingLineNumber = "63"
+         endingLineNumber = "63"
          landmarkName = "-getRandomHiragana:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -264,11 +264,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/Computer.m"
-         timestampString = "379172192.384962"
+         timestampString = "380395019.89096"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "62"
-         endingLineNumber = "62"
+         startingLineNumber = "69"
+         endingLineNumber = "69"
          landmarkName = "-getRandomHiragana:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -277,24 +277,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/Computer.m"
-         timestampString = "379172192.384962"
+         timestampString = "380395019.89096"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "68"
-         endingLineNumber = "68"
-         landmarkName = "-getRandomHiragana:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "J&apos;apprend le japonais/classes/Computer.m"
-         timestampString = "379172192.384962"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "72"
-         endingLineNumber = "72"
+         startingLineNumber = "73"
+         endingLineNumber = "73"
          landmarkName = "-getRandomHiragana:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -340,11 +327,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/Computer.m"
-         timestampString = "379172192.384962"
+         timestampString = "381177029.033439"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "290"
-         endingLineNumber = "290"
+         startingLineNumber = "300"
+         endingLineNumber = "300"
          landmarkName = "-getKatakanaPerSections"
          landmarkType = "5">
       </FileBreakpoint>
@@ -609,11 +596,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/VocabularyViewController.m"
-         timestampString = "379166688.283426"
+         timestampString = "381188541.057864"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "169"
-         endingLineNumber = "169"
+         startingLineNumber = "164"
+         endingLineNumber = "164"
          landmarkName = "-ticket:finishedWithFeed:error:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -622,11 +609,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/VocabularyViewController.m"
-         timestampString = "379166688.283426"
+         timestampString = "381188541.057864"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "174"
-         endingLineNumber = "174"
+         startingLineNumber = "169"
+         endingLineNumber = "169"
          landmarkName = "-ticket:finishedWithFeed:error:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -674,85 +661,7 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/VocabularyViewController.m"
-         timestampString = "379166688.283426"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "171"
-         endingLineNumber = "171"
-         landmarkName = "-ticket:finishedWithFeed:error:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "J&apos;apprend le japonais/classes/VocabularyViewController.m"
-         timestampString = "379166688.283426"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "296"
-         endingLineNumber = "296"
-         landmarkName = "-tableView:numberOfRowsInSection:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "J&apos;apprend le japonais/classes/VocabularyViewController.m"
-         timestampString = "379166688.283426"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "297"
-         endingLineNumber = "297"
-         landmarkName = "-tableView:numberOfRowsInSection:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "J&apos;apprend le japonais/classes/VocabularyViewController.m"
-         timestampString = "379166688.283426"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "310"
-         endingLineNumber = "310"
-         landmarkName = "-tableView:cellForRowAtIndexPath:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "J&apos;apprend le japonais/classes/VocabularyViewController.m"
-         timestampString = "379166688.283426"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "311"
-         endingLineNumber = "311"
-         landmarkName = "-tableView:cellForRowAtIndexPath:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "J&apos;apprend le japonais/classes/VocabularyViewController.m"
-         timestampString = "379166688.283426"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "378"
-         endingLineNumber = "378"
-         landmarkName = "-tableView:didSelectRowAtIndexPath:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "J&apos;apprend le japonais/classes/VocabularyViewController.m"
-         timestampString = "379166688.283426"
+         timestampString = "381188541.057864"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "166"
@@ -765,11 +674,76 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/VocabularyViewController.m"
-         timestampString = "379166209.309208"
+         timestampString = "381188541.057864"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "131"
-         endingLineNumber = "131"
+         startingLineNumber = "291"
+         endingLineNumber = "291"
+         landmarkName = "-tableView:numberOfRowsInSection:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "J&apos;apprend le japonais/classes/VocabularyViewController.m"
+         timestampString = "381188541.057864"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "292"
+         endingLineNumber = "292"
+         landmarkName = "-tableView:numberOfRowsInSection:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "J&apos;apprend le japonais/classes/VocabularyViewController.m"
+         timestampString = "381188541.057864"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "305"
+         endingLineNumber = "305"
+         landmarkName = "-tableView:cellForRowAtIndexPath:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "J&apos;apprend le japonais/classes/VocabularyViewController.m"
+         timestampString = "381188541.057864"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "306"
+         endingLineNumber = "306"
+         landmarkName = "-tableView:cellForRowAtIndexPath:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "J&apos;apprend le japonais/classes/VocabularyViewController.m"
+         timestampString = "381188541.057864"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "161"
+         endingLineNumber = "161"
+         landmarkName = "-ticket:finishedWithFeed:error:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "J&apos;apprend le japonais/classes/VocabularyViewController.m"
+         timestampString = "381188541.057864"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "126"
+         endingLineNumber = "126"
          landmarkName = "-kownUrl:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -778,59 +752,7 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/VocabularyViewController.m"
-         timestampString = "379166209.309208"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "135"
-         endingLineNumber = "135"
-         landmarkName = "-kownUrl:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "J&apos;apprend le japonais/classes/VocabularyViewController.m"
-         timestampString = "379083352.386765"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "120"
-         endingLineNumber = "120"
-         landmarkName = "-runDownload:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "J&apos;apprend le japonais/classes/VocabularyViewController.m"
-         timestampString = "379083352.386765"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "119"
-         endingLineNumber = "119"
-         landmarkName = "-runDownload:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "J&apos;apprend le japonais/classes/VocabularyViewController.m"
-         timestampString = "379166209.309208"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "129"
-         endingLineNumber = "129"
-         landmarkName = "-kownUrl:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "J&apos;apprend le japonais/classes/VocabularyViewController.m"
-         timestampString = "379166209.309208"
+         timestampString = "381188541.057864"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "130"
@@ -843,11 +765,63 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/VocabularyViewController.m"
-         timestampString = "379166688.283426"
+         timestampString = "381188541.057864"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "163"
-         endingLineNumber = "163"
+         startingLineNumber = "115"
+         endingLineNumber = "115"
+         landmarkName = "-runDownload:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "J&apos;apprend le japonais/classes/VocabularyViewController.m"
+         timestampString = "381188541.057864"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "114"
+         endingLineNumber = "114"
+         landmarkName = "-runDownload:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "J&apos;apprend le japonais/classes/VocabularyViewController.m"
+         timestampString = "381188541.057864"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "124"
+         endingLineNumber = "124"
+         landmarkName = "-kownUrl:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "J&apos;apprend le japonais/classes/VocabularyViewController.m"
+         timestampString = "381188541.057864"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "125"
+         endingLineNumber = "125"
+         landmarkName = "-kownUrl:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "J&apos;apprend le japonais/classes/VocabularyViewController.m"
+         timestampString = "381188541.057864"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "158"
+         endingLineNumber = "158"
          landmarkName = "-ticket:finishedWithFeed:error:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -856,11 +830,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/HomeViewController.m"
-         timestampString = "379117322.810513"
+         timestampString = "381000644.638201"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "49"
-         endingLineNumber = "49"
+         startingLineNumber = "54"
+         endingLineNumber = "54"
          landmarkName = "-prepareForSegue:sender:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -869,50 +843,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/Computer.m"
-         timestampString = "379172192.384962"
+         timestampString = "380395019.89096"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "48"
-         endingLineNumber = "48"
-         landmarkName = "-getRandomHiragana:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "J&apos;apprend le japonais/classes/Computer.m"
-         timestampString = "379172192.384962"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "49"
-         endingLineNumber = "49"
-         landmarkName = "-getRandomHiragana:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "J&apos;apprend le japonais/classes/Computer.m"
-         timestampString = "379172192.384962"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "50"
-         endingLineNumber = "50"
-         landmarkName = "-getRandomHiragana:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "J&apos;apprend le japonais/classes/Computer.m"
-         timestampString = "379172192.384962"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "80"
-         endingLineNumber = "80"
+         startingLineNumber = "86"
+         endingLineNumber = "86"
          landmarkName = "-getRandomKatakana:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -921,72 +856,7 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/Computer.m"
-         timestampString = "379172192.384962"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "81"
-         endingLineNumber = "81"
-         landmarkName = "-getRandomKatakana:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "J&apos;apprend le japonais/classes/Computer.m"
-         timestampString = "379172192.384962"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "82"
-         endingLineNumber = "82"
-         landmarkName = "-getRandomKatakana:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "J&apos;apprend le japonais/classes/Computer.m"
-         timestampString = "379172192.384962"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "84"
-         endingLineNumber = "84"
-         landmarkName = "-getRandomKatakana:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "J&apos;apprend le japonais/classes/Computer.m"
-         timestampString = "379172192.384962"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "85"
-         endingLineNumber = "85"
-         landmarkName = "-getRandomKatakana:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "J&apos;apprend le japonais/classes/Computer.m"
-         timestampString = "379172192.384962"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "87"
-         endingLineNumber = "87"
-         landmarkName = "-getRandomKatakana:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "J&apos;apprend le japonais/classes/Computer.m"
-         timestampString = "379172192.384962"
+         timestampString = "380395019.89096"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "88"
@@ -999,11 +869,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/Computer.m"
-         timestampString = "379172192.384962"
+         timestampString = "380395019.89096"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "101"
-         endingLineNumber = "101"
+         startingLineNumber = "89"
+         endingLineNumber = "89"
          landmarkName = "-getRandomKatakana:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1011,78 +881,13 @@
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "J&apos;apprend le japonais/classes/KanaRandomController.m"
-         timestampString = "377822179.766031"
+         filePath = "J&apos;apprend le japonais/classes/Computer.m"
+         timestampString = "380395019.89096"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "58"
-         endingLineNumber = "58"
-         landmarkName = "-displayNext"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "J&apos;apprend le japonais/classes/KanaRandomController.m"
-         timestampString = "377822179.766031"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "62"
-         endingLineNumber = "62"
-         landmarkName = "-displayNext"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "J&apos;apprend le japonais/classes/KanaRandomController.m"
-         timestampString = "379088182.971483"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "70"
-         endingLineNumber = "70"
-         landmarkName = "-displayNext"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "J&apos;apprend le japonais/classes/KanaRandomController.m"
-         timestampString = "379088182.971483"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "114"
-         endingLineNumber = "114"
-         landmarkName = "-displayNext"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "J&apos;apprend le japonais/classes/KanaRandomController.m"
-         timestampString = "377822179.766031"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "61"
-         endingLineNumber = "61"
-         landmarkName = "-displayNext"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "J&apos;apprend le japonais/classes/KanaRandomController.m"
-         timestampString = "377822179.766031"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "60"
-         endingLineNumber = "60"
-         landmarkName = "-displayNext"
+         startingLineNumber = "102"
+         endingLineNumber = "102"
+         landmarkName = "-getRandomKatakana:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -1181,11 +986,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/HomeViewController.m"
-         timestampString = "379117322.810513"
+         timestampString = "381000644.638201"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "46"
-         endingLineNumber = "46"
+         startingLineNumber = "51"
+         endingLineNumber = "51"
          landmarkName = "-prepareForSegue:sender:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1194,11 +999,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/HomeViewController.m"
-         timestampString = "379117322.810513"
+         timestampString = "381000644.638201"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "66"
-         endingLineNumber = "66"
+         startingLineNumber = "71"
+         endingLineNumber = "71"
          landmarkName = "-shouldAutorotateToInterfaceOrientation:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1207,11 +1012,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/ContentViewController.m"
-         timestampString = "377910761.748814"
+         timestampString = "380582995.922154"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "23"
-         endingLineNumber = "23"
+         startingLineNumber = "24"
+         endingLineNumber = "24"
          landmarkName = "-viewDidLoad"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1220,11 +1025,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/ContentViewController.m"
-         timestampString = "379081368.981172"
+         timestampString = "380582995.922154"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "28"
-         endingLineNumber = "28"
+         startingLineNumber = "32"
+         endingLineNumber = "32"
          landmarkName = "-viewDidLoad"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1233,37 +1038,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/LessonViewController.m"
-         timestampString = "379159668.281598"
+         timestampString = "380584383.354054"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "506"
-         endingLineNumber = "506"
-         landmarkName = "-flipToPage:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "J&apos;apprend le japonais/classes/ContentViewController.m"
-         timestampString = "379081368.981172"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "37"
-         endingLineNumber = "37"
-         landmarkName = "-viewDidLoad"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "J&apos;apprend le japonais/classes/LessonViewController.m"
-         timestampString = "379159668.281598"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "290"
-         endingLineNumber = "290"
+         startingLineNumber = "297"
+         endingLineNumber = "297"
          landmarkName = "-restoreIndex"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1272,11 +1051,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/KanaParametersController.m"
-         timestampString = "379160048.128681"
+         timestampString = "380658869.781449"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "275"
-         endingLineNumber = "275"
+         startingLineNumber = "276"
+         endingLineNumber = "276"
          landmarkName = "-collectionView:cellForItemAtIndexPath:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1285,11 +1064,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/VocabularyViewController.m"
-         timestampString = "379166688.283426"
+         timestampString = "381188541.057864"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "162"
-         endingLineNumber = "162"
+         startingLineNumber = "157"
+         endingLineNumber = "157"
          landmarkName = "-ticket:finishedWithFeed:error:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1298,11 +1077,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/VocabularyViewController.m"
-         timestampString = "379166209.309208"
+         timestampString = "381188541.057864"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "127"
-         endingLineNumber = "127"
+         startingLineNumber = "122"
+         endingLineNumber = "122"
          landmarkName = "-kownUrl:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1311,11 +1090,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/Computer.m"
-         timestampString = "379172192.384962"
+         timestampString = "381177029.033439"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "508"
-         endingLineNumber = "508"
+         startingLineNumber = "518"
+         endingLineNumber = "518"
          landmarkName = "-setWithKey:andValue:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1324,11 +1103,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/VocabularyViewController.m"
-         timestampString = "379166209.309208"
+         timestampString = "381188541.057864"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "153"
-         endingLineNumber = "153"
+         startingLineNumber = "148"
+         endingLineNumber = "148"
          landmarkName = "-ticket:finishedWithFeed:error:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1337,11 +1116,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/VocabularyViewController.m"
-         timestampString = "379166209.309208"
+         timestampString = "381188541.057864"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "152"
-         endingLineNumber = "152"
+         startingLineNumber = "147"
+         endingLineNumber = "147"
          landmarkName = "-ticket:finishedWithFeed:error:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1350,11 +1129,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/VocabularyViewController.m"
-         timestampString = "379083352.386765"
+         timestampString = "381188541.057864"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "91"
-         endingLineNumber = "91"
+         startingLineNumber = "86"
+         endingLineNumber = "86"
          landmarkName = "-runDownload:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1363,11 +1142,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/Computer.m"
-         timestampString = "379172192.384962"
+         timestampString = "381177029.033439"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "503"
-         endingLineNumber = "503"
+         startingLineNumber = "513"
+         endingLineNumber = "513"
          landmarkName = "-setWithKey:andValue:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1376,11 +1155,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/Computer.m"
-         timestampString = "379172192.384962"
+         timestampString = "381177029.033439"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "492"
-         endingLineNumber = "492"
+         startingLineNumber = "502"
+         endingLineNumber = "502"
          landmarkName = "-getWithKey:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1428,11 +1207,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/Computer.m"
-         timestampString = "379172192.384962"
+         timestampString = "381177029.033439"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "180"
-         endingLineNumber = "180"
+         startingLineNumber = "184"
+         endingLineNumber = "184"
          landmarkName = "-getRandomKatakanaExcept:limit:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1441,11 +1220,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/Computer.m"
-         timestampString = "379172192.384962"
+         timestampString = "381177029.033439"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "181"
-         endingLineNumber = "181"
+         startingLineNumber = "191"
+         endingLineNumber = "191"
          landmarkName = "-getRandomKatakanaExcept:limit:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1454,11 +1233,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/KanaParametersController.m"
-         timestampString = "379160048.128681"
+         timestampString = "380658869.781449"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "228"
-         endingLineNumber = "228"
+         startingLineNumber = "229"
+         endingLineNumber = "229"
          landmarkName = "-onSelectButton:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1467,11 +1246,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/KanaParametersController.m"
-         timestampString = "379160048.128681"
+         timestampString = "380658869.781449"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "232"
-         endingLineNumber = "232"
+         startingLineNumber = "233"
+         endingLineNumber = "233"
          landmarkName = "-onSelectButton:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1480,11 +1259,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/KanaParametersController.m"
-         timestampString = "379160048.128681"
+         timestampString = "380658869.781449"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "209"
-         endingLineNumber = "209"
+         startingLineNumber = "210"
+         endingLineNumber = "210"
          landmarkName = "-onSelectButton:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1493,11 +1272,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/KanaParametersController.m"
-         timestampString = "379160048.128681"
+         timestampString = "380658869.781449"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "211"
-         endingLineNumber = "211"
+         startingLineNumber = "212"
+         endingLineNumber = "212"
          landmarkName = "-onSelectButton:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1545,11 +1324,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/KanaQCMController.m"
-         timestampString = "379180708.075748"
+         timestampString = "381003562.770631"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "420"
-         endingLineNumber = "420"
+         startingLineNumber = "431"
+         endingLineNumber = "431"
          landmarkName = "-displayFalseResponse:falseReponse:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1558,11 +1337,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "J&apos;apprend le japonais/classes/KanaQCMController.m"
-         timestampString = "379180708.075748"
+         timestampString = "381003562.770631"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "410"
-         endingLineNumber = "410"
+         startingLineNumber = "421"
+         endingLineNumber = "421"
          landmarkName = "-displayFalseResponse:falseReponse:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1570,27 +1349,303 @@
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "J&apos;apprend le japonais/classes/KanaQCMController.m"
-         timestampString = "379179865.059961"
+         filePath = "J&apos;apprend le japonais/classes/KanaStatsController.m"
+         timestampString = "380658179.149015"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "158"
-         endingLineNumber = "158"
-         landmarkName = "-checkResponse:"
+         startingLineNumber = "123"
+         endingLineNumber = "123"
+         landmarkName = "-tableView:numberOfRowsInSection:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "J&apos;apprend le japonais/classes/KanaQCMController.m"
-         timestampString = "379179764.780111"
+         filePath = "J&apos;apprend le japonais/classes/KanaStatsController.m"
+         timestampString = "380658179.149015"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "153"
-         endingLineNumber = "153"
-         landmarkName = "-checkResponse:"
+         startingLineNumber = "181"
+         endingLineNumber = "181"
+         landmarkName = "-tableView:viewForHeaderInSection:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "J&apos;apprend le japonais/classes/KanaStatsController.m"
+         timestampString = "380658179.149015"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "185"
+         endingLineNumber = "185"
+         landmarkName = "-tableView:viewForHeaderInSection:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "J&apos;apprend le japonais/classes/KanaStatsController.m"
+         timestampString = "380658179.149015"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "189"
+         endingLineNumber = "189"
+         landmarkName = "-tableView:viewForHeaderInSection:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "J&apos;apprend le japonais/classes/StatUtils.m"
+         timestampString = "381188152.56507"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "122"
+         endingLineNumber = "122"
+         landmarkName = "+entityIsUnknow:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "J&apos;apprend le japonais/classes/Computer.m"
+         timestampString = "381177029.033439"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "540"
+         endingLineNumber = "540"
+         landmarkName = "-upgradeDatabaseForStat"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "J&apos;apprend le japonais/classes/AppDelegate.m"
+         timestampString = "380498601.97227"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "110"
+         endingLineNumber = "110"
+         landmarkName = "-upgradeDatabaseForStat"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "J&apos;apprend le japonais/classes/Computer.m"
+         timestampString = "381177029.033439"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "525"
+         endingLineNumber = "525"
+         landmarkName = "-upgradeDatabaseForStat"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "J&apos;apprend le japonais/classes/Computer.m"
+         timestampString = "381177029.033439"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "538"
+         endingLineNumber = "538"
+         landmarkName = "-upgradeDatabaseForStat"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "J&apos;apprend le japonais/classes/Computer.m"
+         timestampString = "381177029.033439"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "526"
+         endingLineNumber = "526"
+         landmarkName = "-upgradeDatabaseForStat"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "J&apos;apprend le japonais/classes/ContentViewController.m"
+         timestampString = "380582995.922154"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "68"
+         endingLineNumber = "68"
+         landmarkName = "-webViewDidFinishLoad:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "J&apos;apprend le japonais/classes/ContentViewController.m"
+         timestampString = "380582995.922154"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "70"
+         endingLineNumber = "70"
+         landmarkName = "@implementation ContentViewController"
+         landmarkType = "3">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "J&apos;apprend le japonais/SVWebViewController.m"
+         timestampString = "380498145.254156"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "203"
+         endingLineNumber = "203"
+         landmarkName = "-updateToolbarItems"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "J&apos;apprend le japonais/SVWebViewController.m"
+         timestampString = "380498183.873489"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "240"
+         endingLineNumber = "240"
+         landmarkName = "-updateToolbarItems"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "J&apos;apprend le japonais/classes/LessonViewController.m"
+         timestampString = "380584383.354054"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "254"
+         endingLineNumber = "254"
+         landmarkName = "-pageViewController:viewControllerAfterViewController:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "J&apos;apprend le japonais/classes/LessonViewController.m"
+         timestampString = "380584383.354054"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "267"
+         endingLineNumber = "267"
+         landmarkName = "-pageViewController:viewControllerAfterViewController:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "J&apos;apprend le japonais/classes/LessonViewController.m"
+         timestampString = "380584383.354054"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "247"
+         endingLineNumber = "247"
+         landmarkName = "-pageViewController:viewControllerBeforeViewController:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "J&apos;apprend le japonais/vendors/PageViewController/RAPageViewController.m"
+         timestampString = "380583944.366232"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "360"
+         endingLineNumber = "360"
+         landmarkName = "-setCurrentPageViewController:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "J&apos;apprend le japonais/classes/LessonViewController.m"
+         timestampString = "380584383.354054"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "276"
+         endingLineNumber = "276"
+         landmarkName = "-pageViewController:isShowing:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "J&apos;apprend le japonais/classes/Computer.m"
+         timestampString = "381177029.033439"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "139"
+         endingLineNumber = "139"
+         landmarkName = "-getRandomHiraganaExcept:limit:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "J&apos;apprend le japonais/classes/Computer.m"
+         timestampString = "381177029.033439"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "141"
+         endingLineNumber = "141"
+         landmarkName = "-getRandomHiraganaExcept:limit:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "J&apos;apprend le japonais/classes/Computer.m"
+         timestampString = "381177029.033439"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "181"
+         endingLineNumber = "181"
+         landmarkName = "-getRandomKatakanaExcept:limit:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
+   <ExceptionBreakpoints>
+      <ExceptionBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         scope = "0"
+         stopOnStyle = "1">
+      </ExceptionBreakpoint>
+      <ExceptionBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         scope = "0"
+         stopOnStyle = "0">
+      </ExceptionBreakpoint>
+   </ExceptionBreakpoints>
 </Bucket>

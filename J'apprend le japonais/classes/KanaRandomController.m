@@ -42,7 +42,7 @@
 {
     
     knows = [[NSMutableArray alloc] init];
-    knowsRomanji = [[NSMutableArray alloc] init];
+    knowsJapan = [[NSMutableArray alloc] init];
     currentPos = 0;
 }
 
@@ -77,18 +77,18 @@
         // switch type
         if([self isForHiragana])
         {
-            kana = [[Computer sharedInstance] getRandomHiragana:knowsRomanji];
+            kana = [[Computer sharedInstance] getRandomHiragana:knowsJapan];
             
         }
         else
         {
-            kana = [[Computer sharedInstance] getRandomKatakana:knowsRomanji];
+            kana = [[Computer sharedInstance] getRandomKatakana:knowsJapan];
         }
     
         if(kana != nil)
         {
             currentPos = [knows count];
-            [knowsRomanji addObject:kana.romanji];
+            [knowsJapan addObject:kana.japan];
             [knows addObject:kana];
             
         }
@@ -117,7 +117,7 @@
     if(currentPos >= nbKanaLesson)
     {
         knows = [[NSMutableArray alloc] init];
-        knowsRomanji = [[NSMutableArray alloc] init];
+        knowsJapan = [[NSMutableArray alloc] init];
         
         _msg.text = @"Fini ! ";
         [_kanaFlipView displayEmpty];

@@ -28,9 +28,11 @@
     UITapGestureRecognizer * tapToNext;
     
     NSMutableArray * knows;
-    NSMutableArray * knowsRomanji;
+    NSMutableArray * knowsJapan;
     
     NSMutableArray * btnArray;
+    
+    int nbSeleted;
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *msg;

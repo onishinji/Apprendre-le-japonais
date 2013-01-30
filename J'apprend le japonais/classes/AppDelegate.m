@@ -70,12 +70,15 @@
     HomeViewController * main = (HomeViewController *)[[rootViewController viewControllers] objectAtIndex:0];
     main.managedObjectContext = context;
     
+    [[UIToolbar appearance] setTintColor:[UIColor blackColor]];
     [[UIBarButtonItem appearance] setTintColor:[UIColor redColor]];
     
     [[Computer sharedInstance] setManagedObjectContext:context];
     
     [[NSUserDefaults standardUserDefaults] registerDefaults:[NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithBool:YES],@"firstLaunch",nil]];
-
+    
+    [[NSUserDefaults standardUserDefaults] registerDefaults:[NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithBool:YES],@"upgradeForStat",nil]];
+    
     if([[NSUserDefaults standardUserDefaults] boolForKey:@"firstLaunch"])
     {
         [self initKana];
@@ -84,9 +87,34 @@
 
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
+    else
+    {
+        
+        if(true || [[NSUserDefaults standardUserDefaults] boolForKey:@"upgradeForStat"])
+        {
+            
+            [self upgradeDatabaseForStat];
+            
+            [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"upgradeForStat"];
+            
+            [[NSUserDefaults standardUserDefaults] synchronize];
+        }
+    }
     
     
     return YES;
+}
+
+- (void) upgradeDatabaseForStat
+{
+    [[Computer sharedInstance] upgradeDatabaseForStat];
+}
+
+- (NSString *)appNameAndVersionNumberDisplayString {
+    NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
+    //NSString *appDisplayName = [infoDictionary objectForKey:@"CFBundleDisplayName"];
+    NSString *majorVersion = [infoDictionary objectForKey:@"CFBundleShortVersionString"]; 
+    return [NSString stringWithFormat:@"v. %@", majorVersion];
 }
 
 - (void) initKana

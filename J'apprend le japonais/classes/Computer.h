@@ -37,8 +37,8 @@
 -(NSArray *) getSelectedsKatakana;
 
 
--(Kana *) getRandomKatakana:(NSArray *)knowRomanjis;
--(Kana *) getRandomHiragana:(NSArray *)knowRomanjis;
+-(Kana *) getRandomKatakana:(NSArray *)knowsJapan;
+-(Kana *) getRandomHiragana:(NSArray *)knowsJapan;
 
 -(Kana *) getKatakanaWithRomanji:(NSString *)romanji;
 -(Kana *) getKatakanaWithJapan:(NSString *)romanji;
@@ -51,5 +51,7 @@
 - (void) setWithKey:(NSString *)key andValue:(NSData *)value;
 
 -(void)flush;
+
+- (void) upgradeDatabaseForStat;
 
 @end

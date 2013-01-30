@@ -11,6 +11,7 @@
 #import "HomeKanaViewController.h"
 #import "VocabularyViewController.h"
 #import "UIColor+RGB.h"
+#import "AppDelegate.h"
 
 @interface HomeViewController ()
 
@@ -35,6 +36,10 @@
     gradient.bounds = self.view.bounds;
     gradient.frame = CGRectMake(0, 0, 1024, 320);
     gradient.colors = [NSArray arrayWithObjects:(id)[[UIColor colorWithR:255 G:77 B:63 A:1]CGColor], (id)[[UIColor colorWithR:127 G:0 B:13 A:1]CGColor], nil];
+    
+    AppDelegate * appDelegate = (AppDelegate*)[[UIApplication sharedApplication]delegate];
+    
+    self.version.text = [appDelegate appNameAndVersionNumberDisplayString];
     
     [self.view.layer insertSublayer:gradient atIndex:0];
 }

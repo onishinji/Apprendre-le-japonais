@@ -33,4 +33,25 @@
     
 }
 
+
+- (void) increaseScore
+{
+    NSNumber * futurValue = [NSNumber numberWithInt:[self.scoring intValue] + 1];
+    
+    if([futurValue intValue] <= SCORE_MAX)
+    {
+        self.scoring = futurValue;
+    }
+}
+
+- (void) decrementScore
+{
+    NSNumber * futurValue = [NSNumber numberWithInt:[self.scoring intValue] - 1];
+    
+    if([futurValue intValue] >= SCORE_MIN)
+    {
+        self.scoring = futurValue;
+    }
+}
+
 @end

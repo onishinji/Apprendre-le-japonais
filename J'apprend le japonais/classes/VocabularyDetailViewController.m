@@ -28,7 +28,7 @@
 {
     [super viewDidLoad];
     
-    nbSizeUpDown = 0;
+    nbSizeUpDown = -1;
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:[NSBundle mainBundle]];
     

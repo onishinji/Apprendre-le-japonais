@@ -36,3 +36,15 @@ QCM.Neko.FalseResponse7="As tu appris ?";
 QCM.Neko.FalseResponse8="Gomen, c'est pas ça ..";
 QCM.Neko.FalseResponse9="Un petit effort";
 QCM.Neko.FalseResponse10="Presque ...";
+STATS.CELL.KANA="%@ - %@ a un score de %i";
+STATS.LABEL.MSG.HIRAGANA = "Mes scores Hiragana";
+STATS.LABEL.MSG.KATAKANA = "Mes scores Katakana";
+STATS.NEKO.MSG.GOOD = "Bravo ! Tu peux être fier de toi !";
+STATS.NEKO.MSG.PENDING = "Pas mal ! Tu es sur la bonne voie !";
+STATS.NEKO.MSG.BAD = "Il te reste encore beaucoup de travail !";
+SECTION_GOJUON = "Gojûon";
+SECTION_GOJUON_DAKUTEN = "Gojûon avec (han)dakuten";
+SECTION_YOON = "Yôon";
+SECTION_YOON_DAKUTEN = "Yôon avec (han)dakuten";
+
+

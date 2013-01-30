@@ -8,6 +8,7 @@
 
 #import "LessonViewController.h"
 #import "ContentViewController.h"
+#import "SVModalWebViewController.h"
 
 #define FONT_SIZE 16.0f
 #define CELL_CONTENT_WIDTH 320.0f
@@ -37,22 +38,17 @@
     
     nbSizeUpDown = [self getDefaultNbUpDownFont];
     
-    NSDictionary *options = [NSDictionary dictionaryWithObject: [NSNumber numberWithInteger:UIPageViewControllerSpineLocationMin] forKey: UIPageViewControllerOptionSpineLocationKey];
+    _pageController = [[RAPageViewController alloc] init];
+    [_pageController.view setFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     
-    _pageController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options: options];
+    [_pageController setDelegate:self];
     
-    _pageController.dataSource = self;
     [[_pageController view] setFrame:[[self view] bounds]];
     
-    ContentViewController *initialViewController = [self viewControllerAtIndex:0];
-    NSArray *viewControllers = [NSArray arrayWithObject:initialViewController];
-    
-    [_pageController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
     
     [self addChildViewController:_pageController];
     [[self view] addSubview:[_pageController view]];
     [_pageController didMoveToParentViewController:self];
-    
     
     UIBarButtonItem *Button1 = [[UIBarButtonItem alloc]initWithTitle:@"aA" style:UIBarButtonItemStylePlain
                                                               target:self action:@selector(sizeUp:)] ;
@@ -65,7 +61,6 @@
     self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:btnSommaire, Button1,Button2, nil];
     
     [self restoreIndex];
-    
 }
 
 #pragma mark - data source
@@ -228,6 +223,8 @@
     dataViewController.dataObject = _pageContent[index];
     dataViewController.nbUpDown = [NSNumber numberWithInt:nbSizeUpDown];
     
+    [dataViewController setDelegate:self];
+    
     return dataViewController;
 }
 
@@ -239,6 +236,7 @@
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
 {
     currentIndex = [self indexOfViewController:(ContentViewController *)viewController];
+    
     if ((currentIndex == 0) || (currentIndex == NSNotFound))
     {
         return nil;
@@ -246,7 +244,7 @@
     
     currentIndex--;
     
-    [self saveIndex:currentIndex];
+   // [self saveIndex:currentIndex];
     
     return [self viewControllerAtIndex:currentIndex];
 }
@@ -266,15 +264,24 @@
         return nil;
     }
     
-    [self saveIndex:currentIndex];
+   // [self saveIndex:currentIndex];
     
     return [self viewControllerAtIndex:currentIndex];
+}
+
+- (void) pageViewController:(RAPageViewController *)pvc isShowing:(UIViewController *)vc
+{
+    
+    int index = [self indexOfViewController:(ContentViewController *)vc];
+    [self saveIndex:index];
 }
 
 #pragma mark - bookmark actions
 
 - (void) saveIndex:(int) index
 {
+    NSLog(@"Save Index Page to %i", [[NSNumber numberWithInt:index] intValue]);
+    
     [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:index] forKey:@"current_page"];
     [[NSUserDefaults standardUserDefaults] synchronize];
     
@@ -285,9 +292,14 @@
 {
     NSNumber * index = (NSNumber *)[[NSUserDefaults standardUserDefaults] objectForKey:@"current_page"];
     NSLog(@"restore %@", index);
-    if(index != nil && [index intValue] > 0)
+    if(index != nil && [index intValue] >= 0)
     {
         [self flipToPage:[index intValue]];
+    }
+    
+    if(!index)
+    {
+        [self flipToPage:0];
     }
 }
 
@@ -500,32 +512,11 @@
 }
 
 -(void) flipToPage:(int)index {
-    
-    
-    int x = index;
-    ContentViewController *theCurrentViewController = [self.pageController.viewControllers   objectAtIndex:0];
-    
-    NSUInteger retreivedIndex = [self indexOfViewController:theCurrentViewController];
-    
-    ContentViewController *firstViewController = [self viewControllerAtIndex:x];
-    
-    
+
+    ContentViewController *firstViewController = [self viewControllerAtIndex:index];
     NSArray *viewControllers = nil;
-    
     viewControllers = [NSArray arrayWithObjects:firstViewController, nil];
-    
-    
-    if (retreivedIndex < x)
-    {
-        [self.pageController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:NULL];
-    }
-    else
-    {
-        if (retreivedIndex > x )
-        {
-            [self.pageController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionReverse animated:YES completion:NULL];
-        } 
-    }
+    [self.pageController setViewControllers:viewControllers];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -535,4 +526,16 @@
 }
 
 
+#pragma mark - ContentViewControllerDelegate
+
+- (void) openExternWebView:(NSURL *)url
+{
+    
+    SVModalWebViewController *webViewController = [[SVModalWebViewController alloc] initWithURL:url];
+    webViewController.barsTintColor = [UIColor blackColor];
+    webViewController.modalPresentationStyle = UIModalPresentationPageSheet;
+    webViewController.availableActions = SVWebViewControllerAvailableActionsOpenInSafari | SVWebViewControllerAvailableActionsCopyLink | SVWebViewControllerAvailableActionsMailLink;
+    
+    [self presentModalViewController:webViewController animated:YES];
+}
 @end

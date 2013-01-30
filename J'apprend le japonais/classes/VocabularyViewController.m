@@ -80,12 +80,7 @@
         [service setServiceShouldFollowNextLinks:YES];
     }
     
-    if(removeCache)
-    {
-        [[Computer sharedInstance] setWithKey:self.url.absoluteString andValue:nil];
-    }
-    
-    if([[self kownUrl:self.url.absoluteString] isEqualToString:@"alreayKnow"])
+    if(removeCache == FALSE && [[self kownUrl:self.url.absoluteString] isEqualToString:@"alreayKnow"])
     {
         if([self.mode isEqualToString:@"list"])
         {
@@ -354,29 +349,33 @@ finishedWithFeed:(GDataFeedBase *)feed
 {
     // Navigation logic may go here. Create and push another view controller.
     
-    VocabularyItem * item = [results objectAtIndex:indexPath.row];
-    
-    if([self.mode isEqualToString:@"list"])
-    {   UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:[NSBundle mainBundle]];
-        
-        VocabularyViewController *subListController = [storyboard instantiateViewControllerWithIdentifier:@"vocabularyList"];
-        
-        subListController.mode = @"detail";
-        subListController.url = item.url;
-        [subListController activeDetail];
-        [subListController runDownload:FALSE];
-        [self.navigationController pushViewController:subListController animated:YES];
-        
-    }
-    else
+    if(indexPath.row < [results count])
     {
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:[NSBundle mainBundle]];
+    
+        VocabularyItem * item = [results objectAtIndex:indexPath.row];
         
-        VocabularyDetailViewController *detailViewController = [storyboard instantiateViewControllerWithIdentifier:@"vocabularyDetail"];
-        
-        detailViewController.currentItem = item;
-        
-        [self.navigationController pushViewController:detailViewController animated:YES];
+        if([self.mode isEqualToString:@"list"])
+        {   UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:[NSBundle mainBundle]];
+            
+            VocabularyViewController *subListController = [storyboard instantiateViewControllerWithIdentifier:@"vocabularyList"];
+            
+            subListController.mode = @"detail";
+            subListController.url = item.url;
+            [subListController activeDetail];
+            [subListController runDownload:FALSE];
+            [self.navigationController pushViewController:subListController animated:YES];
+            
+        }
+        else
+        {
+            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:[NSBundle mainBundle]];
+            
+            VocabularyDetailViewController *detailViewController = [storyboard instantiateViewControllerWithIdentifier:@"vocabularyDetail"];
+            
+            detailViewController.currentItem = item;
+            
+            [self.navigationController pushViewController:detailViewController animated:YES];
+        }
     }
     
 }

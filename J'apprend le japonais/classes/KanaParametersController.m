@@ -151,18 +151,19 @@
     UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(20, 12, 240, 35)];
     label.textAlignment = NSTextAlignmentCenter;
     
+    
     switch (indexPath.section) {
         case 0:
-            label.text = @"gojûon";
+            label.text = NSLocalizedString(@"SECTION_GOJUON", "");
             break;
         case 1:
-            label.text = @"gojûon avec (han)dakuten";
+            label.text = NSLocalizedString(@"SECTION_GOJUON_DAKUTEN", "");
             break;
         case 2:
-            label.text = @"yôon";
+            label.text = NSLocalizedString(@"SECTION_YOON", "");
             break;
         case 3:
-            label.text = @"yôon avec (han)dakuten";
+            label.text = NSLocalizedString(@"SECTION_YOON_DAKUTEN", "");;
             break;
         default:
             break;

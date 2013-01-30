@@ -5,7 +5,7 @@ if (document.body.style.fontSize == '')
 
 document.body.style.fontSize = parseFloat(document.body.style.fontSize) + 0.1 + ' em';
 
-var size =parseFloat(document.body.style.fontSize) + 1 + ' em';
+var size =parseFloat(document.body.style.fontSize) + ' em';
 
 var tableRows = document.getElementsByTagName("table");
 

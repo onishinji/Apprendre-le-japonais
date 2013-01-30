@@ -10,4 +10,6 @@
 
 @interface HomeViewController : UIViewController
 @property (strong, nonatomic) NSManagedObjectContext * managedObjectContext;
+
+@property (weak, nonatomic) IBOutlet UILabel * version;
 @end

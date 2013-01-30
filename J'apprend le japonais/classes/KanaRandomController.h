@@ -16,7 +16,7 @@
 @interface KanaRandomController : ExerciseController
 {
     NSMutableArray * knows;
-    NSMutableArray * knowsRomanji;
+    NSMutableArray * knowsJapan;
     int currentPos;
      
 }
