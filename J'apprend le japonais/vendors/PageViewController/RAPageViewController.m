@@ -230,7 +230,7 @@
 	};
 	
 	CGFloat (^distance)(CGPoint, CGPoint) = ^ (CGPoint lhs, CGPoint rhs) {
-		return sqrtf(
+		return (CGFloat)sqrtf(
 			powf(lhs.x - rhs.x, 2) +
 			powf(lhs.y - rhs.y, 2)
 		);
